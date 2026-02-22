@@ -1,0 +1,1474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="theme-color" content="#000000"/>
+<meta name="mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<meta name="apple-mobile-web-app-title" content="漢語"/>
+<link rel="manifest" href="manifest.json"/>
+<title>漢語</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;700&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<style>
+/* ─── RESET & ROOT ─────────────────────────────────────────── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+:root{
+  --black:#000;--white:#fff;--off-white:#f5f5f5;--gray-100:#e8e8e8;
+  --gray-200:#d0d0d0;--gray-400:#888;--gray-600:#444;--gray-800:#1a1a1a;
+  --red:#c0392b;--green:#27ae60;--amber:#d4730a;
+  --chinese-font:'Noto Serif TC',serif;
+  --ui-font:'DM Sans',sans-serif;
+  --mono-font:'DM Mono',monospace;
+  --radius:2px;--radius-lg:4px;
+  --nav-h:56px;--bottom-h:64px;
+}
+html,body{height:100%;overflow:hidden;background:var(--white);color:var(--black)}
+body{font-family:var(--ui-font);font-size:15px;line-height:1.5;display:flex;flex-direction:column}
+button{font-family:var(--ui-font);cursor:pointer;border:none;background:none;color:inherit}
+input,textarea{font-family:var(--ui-font);color:var(--black);background:none;border:none;outline:none}
+input::placeholder,textarea::placeholder{color:var(--gray-400)}
+select{font-family:var(--ui-font)}
+
+/* ─── SCROLLBAR ─────────────────────────────────────────────── */
+::-webkit-scrollbar{width:2px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:var(--gray-200)}
+
+/* ─── LAYOUT ────────────────────────────────────────────────── */
+#app{display:flex;flex-direction:column;height:100dvh;height:100vh}
+.top-bar{
+  height:var(--nav-h);min-height:var(--nav-h);
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 20px;border-bottom:1px solid var(--gray-100);
+  background:var(--white);position:relative;z-index:10;
+}
+.top-bar-title{font-size:13px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase}
+.top-bar-action{font-size:12px;font-weight:400;color:var(--gray-400);letter-spacing:0.04em;padding:6px 0}
+
+.main-scroll{flex:1;overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch;background:var(--white)}
+
+.bottom-nav{
+  height:var(--bottom-h);min-height:var(--bottom-h);
+  display:flex;border-top:1px solid var(--gray-100);
+  background:var(--white);
+}
+.bn-btn{
+  flex:1;display:flex;flex-direction:column;align-items:center;
+  justify-content:center;gap:4px;color:var(--gray-400);
+  font-size:10px;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;
+  transition:color 0.15s;padding:8px 4px;
+}
+.bn-btn.active{color:var(--black)}
+.bn-icon{font-size:18px;line-height:1}
+
+/* ─── SCREENS ───────────────────────────────────────────────── */
+.screen{display:none;padding:24px 20px;animation:fadeUp 0.2s ease both}
+.screen.active{display:block}
+@keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+
+/* ─── TYPOGRAPHY SYSTEM ─────────────────────────────────────── */
+.label{font-size:11px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray-400)}
+.heading{font-size:22px;font-weight:300;letter-spacing:-0.02em;line-height:1.2}
+.subheading{font-size:14px;font-weight:400;color:var(--gray-600)}
+.mono{font-family:var(--mono-font);font-size:13px}
+.chinese{font-family:var(--chinese-font)}
+.chinese-lg{font-family:var(--chinese-font);font-size:2.8rem;font-weight:400;line-height:1.15;letter-spacing:0.02em}
+.chinese-xl{font-family:var(--chinese-font);font-size:3.8rem;font-weight:300;line-height:1.1;letter-spacing:0.02em}
+
+/* ─── DIVIDERS & SPACING ────────────────────────────────────── */
+.divider{height:1px;background:var(--gray-100);margin:20px 0}
+.section{margin-bottom:32px}
+.section-header{margin-bottom:16px}
+
+/* ─── STAT GRID ─────────────────────────────────────────────── */
+.stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--gray-100);border:1px solid var(--gray-100);margin-bottom:1px}
+.stat-cell{background:var(--white);padding:20px 16px}
+.stat-num{font-size:2.2rem;font-weight:300;letter-spacing:-0.03em;line-height:1;display:block;margin-bottom:4px}
+.stat-label{font-size:11px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-400)}
+
+/* ─── CARDS ─────────────────────────────────────────────────── */
+.card{border:1px solid var(--gray-100);padding:20px;margin-bottom:8px;cursor:pointer;transition:border-color 0.15s,background 0.15s}
+.card:active,.card:hover{border-color:var(--gray-200);background:var(--off-white)}
+.card-row{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.card-main{flex:1;min-width:0}
+
+/* ─── MODE SELECTOR ─────────────────────────────────────────── */
+.mode-grid{display:grid;grid-template-columns:1fr;gap:8px;margin-bottom:24px}
+.mode-btn{
+  border:1px solid var(--gray-200);padding:20px;text-align:left;
+  display:flex;align-items:center;gap:16px;transition:all 0.15s;
+  background:var(--white);
+}
+.mode-btn.selected{border-color:var(--black);background:var(--black);color:var(--white)}
+.mode-btn.selected .mode-sub{color:var(--gray-400)}
+.mode-icon{font-size:1.5rem;line-height:1;min-width:32px}
+.mode-name{font-size:15px;font-weight:500;margin-bottom:2px}
+.mode-sub{font-size:12px;color:var(--gray-400)}
+
+/* ─── LESSON PILLS ───────────────────────────────────────────── */
+.pill-row{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px}
+.pill{
+  border:1px solid var(--gray-200);padding:6px 14px;font-size:12px;
+  font-weight:500;letter-spacing:0.04em;cursor:pointer;transition:all 0.15s;
+  background:var(--white);
+}
+.pill.selected{border-color:var(--black);background:var(--black);color:var(--white)}
+
+/* ─── LENGTH SLIDER ──────────────────────────────────────────── */
+.slider-row{display:flex;align-items:center;gap:16px}
+input[type=range]{
+  -webkit-appearance:none;flex:1;height:2px;
+  background:var(--gray-200);outline:none;
+}
+input[type=range]::-webkit-slider-thumb{
+  -webkit-appearance:none;width:16px;height:16px;
+  background:var(--black);border-radius:50%;cursor:pointer;
+}
+.slider-val{font-family:var(--mono-font);font-size:15px;font-weight:500;min-width:24px;text-align:right}
+
+/* ─── PRIMARY BUTTON ─────────────────────────────────────────── */
+.btn-primary{
+  width:100%;padding:18px;background:var(--black);color:var(--white);
+  font-size:13px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;
+  transition:opacity 0.15s;margin-top:8px;
+}
+.btn-primary:active{opacity:0.8}
+.btn-primary:disabled{opacity:0.25;cursor:not-allowed}
+.btn-secondary{
+  width:100%;padding:16px;background:var(--white);color:var(--black);
+  font-size:13px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;
+  border:1px solid var(--gray-200);transition:all 0.15s;margin-top:8px;
+}
+.btn-secondary:active{background:var(--off-white)}
+
+/* ─── SESSION UI ─────────────────────────────────────────────── */
+#session-wrap{
+  display:none;flex-direction:column;height:100dvh;height:100vh;
+  background:var(--white);position:fixed;inset:0;z-index:100;overflow:hidden;
+}
+#session-wrap.active{display:flex}
+
+.session-header{
+  padding:16px 20px;border-bottom:1px solid var(--gray-100);
+  display:flex;align-items:center;gap:16px;
+  background:var(--white);flex-shrink:0;
+}
+.session-progress{flex:1;height:2px;background:var(--gray-100);position:relative}
+.session-progress-fill{height:100%;background:var(--black);transition:width 0.4s ease}
+.session-counter{font-family:var(--mono-font);font-size:12px;color:var(--gray-400);white-space:nowrap}
+.session-close{font-size:20px;color:var(--gray-400);padding:4px;line-height:1}
+
+.session-body{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;padding:28px 20px}
+
+.q-type-label{font-size:11px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray-400);margin-bottom:20px}
+.q-prompt{margin-bottom:24px}
+.q-prompt-text{font-size:1rem;line-height:1.6;margin-bottom:8px}
+.q-chinese-prompt{font-family:var(--chinese-font);font-size:2rem;line-height:1.3;margin-bottom:8px}
+.q-audio-btn{
+  display:flex;align-items:center;gap:8px;padding:12px 16px;
+  border:1px solid var(--gray-200);font-size:13px;font-weight:500;
+  letter-spacing:0.04em;width:100%;margin-bottom:16px;
+  transition:all 0.15s;background:var(--white);
+}
+.q-audio-btn:active{background:var(--off-white)}
+
+.answer-area{margin-bottom:20px}
+.answer-label{font-size:11px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-400);margin-bottom:10px}
+.answer-input{
+  width:100%;border:1px solid var(--gray-200);padding:16px;
+  font-size:1.1rem;resize:none;line-height:1.5;min-height:80px;
+  transition:border-color 0.15s;
+  font-family:var(--chinese-font);
+}
+.answer-input:focus{border-color:var(--black)}
+.answer-input.latin{font-family:var(--ui-font);font-size:15px}
+.answer-hint{font-size:11px;color:var(--gray-400);margin-top:6px;font-style:italic}
+
+.session-footer{padding:16px 20px 20px;border-top:1px solid var(--gray-100);background:var(--white);flex-shrink:0}
+
+/* ─── FEEDBACK ───────────────────────────────────────────────── */
+.feedback-box{border:1px solid var(--gray-100);padding:20px;margin-bottom:16px;animation:fadeUp 0.25s ease}
+.feedback-verdict{display:flex;align-items:center;gap:10px;margin-bottom:16px}
+.verdict-badge{
+  font-size:11px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;
+  padding:4px 10px;
+}
+.verdict-badge.correct{background:var(--black);color:var(--white)}
+.verdict-badge.partial{background:var(--amber);color:var(--white)}
+.verdict-badge.incorrect{background:var(--red);color:var(--white)}
+.verdict-type{font-size:12px;color:var(--gray-400);font-style:italic}
+
+.feedback-section{margin-bottom:14px}
+.feedback-section-label{font-size:10px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray-400);margin-bottom:6px}
+.feedback-text{font-size:14px;line-height:1.6;color:var(--gray-600)}
+.feedback-corrected{font-family:var(--chinese-font);font-size:1.6rem;line-height:1.3;margin-bottom:6px}
+.feedback-pinyin{font-family:var(--mono-font);font-size:13px;color:var(--gray-600)}
+
+/* ─── REFERENCE UI ───────────────────────────────────────────── */
+.search-bar{
+  display:flex;align-items:center;gap:10px;border:1px solid var(--gray-200);
+  padding:12px 16px;margin-bottom:16px;
+}
+.search-bar input{flex:1;font-size:14px}
+.search-bar-icon{font-size:16px;color:var(--gray-400)}
+
+.ref-tabs{display:flex;border-bottom:1px solid var(--gray-100);margin-bottom:20px}
+.ref-tab{
+  flex:1;padding:12px;font-size:12px;font-weight:500;letter-spacing:0.08em;
+  text-transform:uppercase;text-align:center;color:var(--gray-400);
+  border-bottom:2px solid transparent;transition:all 0.15s;cursor:pointer;
+}
+.ref-tab.active{color:var(--black);border-bottom-color:var(--black)}
+
+.word-card{border-bottom:1px solid var(--gray-100);padding:20px 0;cursor:pointer}
+.word-card:last-child{border-bottom:none}
+.word-card-header{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:4px}
+.word-hanzi{font-family:var(--chinese-font);font-size:2rem;font-weight:400;line-height:1.2}
+.mastery-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;margin-top:8px}
+.mastery-dot.red{background:var(--red)}
+.mastery-dot.amber{background:var(--amber)}
+.mastery-dot.yellow{background:#e6c229}
+.mastery-dot.green{background:var(--green)}
+.mastery-dot.gray{background:var(--gray-200)}
+.word-pinyin{font-family:var(--mono-font);font-size:13px;color:var(--gray-600);margin-bottom:4px}
+.word-meaning{font-size:14px;color:var(--gray-800)}
+.word-pos{font-size:11px;color:var(--gray-400);font-style:italic}
+
+.word-detail{background:var(--off-white);padding:16px;margin-top:12px;display:none}
+.word-detail.open{display:block}
+.word-detail-row{margin-bottom:10px}
+.word-detail-label{font-size:10px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-400);margin-bottom:4px}
+.example-item{margin-bottom:10px;padding-left:12px;border-left:2px solid var(--gray-200)}
+.example-zh{font-family:var(--chinese-font);font-size:1.1rem;line-height:1.4;margin-bottom:2px}
+.example-py{font-family:var(--mono-font);font-size:11px;color:var(--gray-400);margin-bottom:2px}
+.example-en{font-size:13px;color:var(--gray-600)}
+
+.grammar-card{border-bottom:1px solid var(--gray-100);padding:20px 0;cursor:pointer}
+.grammar-card:last-child{border-bottom:none}
+.grammar-name{font-size:16px;font-weight:500;margin-bottom:4px}
+.grammar-pattern{font-family:var(--mono-font);font-size:13px;color:var(--gray-600);margin-bottom:4px}
+.grammar-lesson{font-size:11px;color:var(--gray-400)}
+.grammar-detail{background:var(--off-white);padding:16px;margin-top:12px;display:none}
+.grammar-detail.open{display:block}
+
+/* ─── DASHBOARD ──────────────────────────────────────────────── */
+.lesson-row{border-bottom:1px solid var(--gray-100);padding:16px 0;cursor:pointer}
+.lesson-row:last-child{border-bottom:none}
+.lesson-row-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
+.lesson-name{font-size:15px;font-weight:500}
+.lesson-score{font-family:var(--mono-font);font-size:13px;color:var(--gray-600)}
+.progress-bar-wrap{height:2px;background:var(--gray-100);margin-bottom:6px}
+.progress-bar-fill{height:100%;background:var(--black);transition:width 0.6s ease}
+.sub-scores{display:flex;gap:16px}
+.sub-score-item{font-size:11px;color:var(--gray-400)}
+.sub-score-val{font-family:var(--mono-font);color:var(--gray-800);font-weight:500}
+
+.weak-item{border-bottom:1px solid var(--gray-100);padding:14px 0;display:flex;align-items:center;gap:12px}
+.weak-item:last-child{border-bottom:none}
+.weak-zh{font-family:var(--chinese-font);font-size:1.4rem;min-width:48px}
+.weak-info{flex:1}
+.weak-meaning{font-size:13px;color:var(--gray-600)}
+.weak-meta{font-size:11px;color:var(--gray-400);margin-top:2px}
+
+/* ─── SETTINGS ───────────────────────────────────────────────── */
+.settings-row{border-bottom:1px solid var(--gray-100);padding:16px 0;display:flex;align-items:center;justify-content:space-between}
+.settings-row:last-child{border-bottom:none}
+.settings-label{font-size:14px;font-weight:400}
+.settings-sub{font-size:12px;color:var(--gray-400);margin-top:2px}
+.settings-input{
+  border:1px solid var(--gray-200);padding:10px 14px;font-size:13px;
+  font-family:var(--mono-font);width:100%;margin-top:8px;
+  transition:border-color 0.15s;
+}
+.settings-input:focus{border-color:var(--black)}
+.toggle-wrap{display:flex;align-items:center;gap:8px}
+.toggle{width:44px;height:24px;background:var(--gray-200);border-radius:12px;position:relative;cursor:pointer;transition:background 0.2s;flex-shrink:0}
+.toggle.on{background:var(--black)}
+.toggle::after{content:'';position:absolute;top:2px;left:2px;width:20px;height:20px;background:var(--white);border-radius:50%;transition:transform 0.2s}
+.toggle.on::after{transform:translateX(20px)}
+
+/* ─── SESSION COMPLETE ───────────────────────────────────────── */
+.complete-screen{text-align:center;padding:40px 20px}
+.complete-icon{font-size:3rem;margin-bottom:20px;display:block}
+.complete-stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--gray-100);border:1px solid var(--gray-100);margin:24px 0}
+
+/* ─── RESUME BANNER ──────────────────────────────────────────── */
+.resume-banner{
+  background:var(--black);color:var(--white);padding:16px 20px;
+  display:flex;align-items:center;justify-content:space-between;
+  margin-bottom:20px;cursor:pointer;
+}
+.resume-text{font-size:14px;font-weight:500}
+.resume-sub{font-size:12px;opacity:0.6;margin-top:2px}
+.resume-arrow{font-size:18px;opacity:0.6}
+
+/* ─── TOAST ──────────────────────────────────────────────────── */
+.toast{
+  position:fixed;bottom:80px;left:50%;transform:translateX(-50%) translateY(10px);
+  background:var(--black);color:var(--white);padding:10px 20px;
+  font-size:13px;opacity:0;transition:all 0.25s;z-index:999;pointer-events:none;
+  white-space:nowrap;
+}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* ─── EMPTY STATE ────────────────────────────────────────────── */
+.empty-state{text-align:center;padding:48px 20px;color:var(--gray-400)}
+.empty-state-icon{font-size:2rem;margin-bottom:12px;display:block;opacity:0.4}
+.empty-state-text{font-size:14px}
+</style>
+</head>
+<body>
+
+<div id="app">
+  <!-- ── TOP BAR ── -->
+  <header class="top-bar">
+    <span class="top-bar-title" id="top-title">漢語</span>
+    <button class="top-bar-action" id="top-action" onclick="handleTopAction()"></button>
+  </header>
+
+  <!-- ── MAIN CONTENT ── -->
+  <div class="main-scroll" id="main-scroll">
+
+    <!-- HOME -->
+    <div class="screen active" id="screen-home">
+      <div id="resume-container"></div>
+
+      <div class="stat-grid">
+        <div class="stat-cell"><span class="stat-num" id="h-words">0</span><span class="stat-label">Words</span></div>
+        <div class="stat-cell"><span class="stat-num" id="h-due">0</span><span class="stat-label">Due today</span></div>
+        <div class="stat-cell"><span class="stat-num" id="h-mastered">0</span><span class="stat-label">Mastered</span></div>
+        <div class="stat-cell"><span class="stat-num" id="h-streak">0</span><span class="stat-label">Day streak</span></div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="section">
+        <div class="section-header"><p class="label">Session mode</p></div>
+        <div class="mode-grid">
+          <div class="mode-btn selected" id="mode-vocab" onclick="selectMode('vocab',this)">
+            <span class="mode-icon">词</span>
+            <div><div class="mode-name">Vocabulary Review</div><div class="mode-sub">Produce Chinese from English and vice versa</div></div>
+          </div>
+          <div class="mode-btn" id="mode-rw" onclick="selectMode('rw',this)">
+            <span class="mode-icon">文</span>
+            <div><div class="mode-name">Reading & Writing</div><div class="mode-sub">Translation, fill-in-blank, sentence building</div></div>
+          </div>
+          <div class="mode-btn" id="mode-listen" onclick="selectMode('listen',this)">
+            <span class="mode-icon">聽</span>
+            <div><div class="mode-name">Listening</div><div class="mode-sub">Transcribe and respond to audio</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header"><p class="label">Lesson scope</p></div>
+        <div class="pill-row" id="lesson-pills"></div>
+        <div class="divider" style="margin:12px 0 16px"></div>
+        <div class="section-header" style="display:flex;align-items:center;justify-content:space-between">
+          <p class="label">Focus</p>
+        </div>
+        <div class="pill-row">
+          <div class="pill selected" id="focus-all" onclick="selectFocus('all',this)">All items</div>
+          <div class="pill" id="focus-weak" onclick="selectFocus('weak',this)">Weak items only</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header" style="display:flex;align-items:center;justify-content:space-between">
+          <p class="label">Questions</p>
+          <span class="mono" id="length-display">10</span>
+        </div>
+        <div class="slider-row">
+          <span class="mono" style="color:var(--gray-400);font-size:11px">5</span>
+          <input type="range" id="length-slider" min="5" max="30" step="5" value="10" oninput="document.getElementById('length-display').textContent=this.value">
+          <span class="mono" style="color:var(--gray-400);font-size:11px">30</span>
+        </div>
+      </div>
+
+      <button class="btn-primary" onclick="startSession()">Start session →</button>
+    </div>
+
+    <!-- REFERENCE -->
+    <div class="screen" id="screen-ref">
+      <div class="search-bar">
+        <span class="search-bar-icon">⌕</span>
+        <input type="text" id="search-input" placeholder="Search characters, pinyin, meaning…" oninput="renderReference()">
+      </div>
+      <div class="ref-tabs">
+        <div class="ref-tab active" id="tab-words" onclick="setRefTab('words',this)">Vocabulary</div>
+        <div class="ref-tab" id="tab-grammar" onclick="setRefTab('grammar',this)">Grammar</div>
+      </div>
+      <div class="pill-row" id="ref-lesson-pills" style="margin-bottom:16px"></div>
+      <div id="ref-list"></div>
+    </div>
+
+    <!-- DASHBOARD -->
+    <div class="screen" id="screen-dash">
+      <div class="section">
+        <div class="section-header"><p class="label">Overview</p></div>
+        <div class="stat-grid">
+          <div class="stat-cell"><span class="stat-num" id="d-total">0</span><span class="stat-label">Total items</span></div>
+          <div class="stat-cell"><span class="stat-num" id="d-mastery">0%</span><span class="stat-label">Mastery</span></div>
+          <div class="stat-cell"><span class="stat-num" id="d-sessions">0</span><span class="stat-label">Sessions</span></div>
+          <div class="stat-cell"><span class="stat-num" id="d-streak">0</span><span class="stat-label">Streak</span></div>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="section">
+        <div class="section-header"><p class="label">By lesson</p></div>
+        <div id="lesson-breakdown"></div>
+      </div>
+      <div class="divider"></div>
+      <div class="section">
+        <div class="section-header"><p class="label">Weak items</p></div>
+        <div id="weak-list"></div>
+      </div>
+      <div class="divider"></div>
+      <div class="section">
+        <div class="section-header"><p class="label">Recent sessions</p></div>
+        <div id="session-history"></div>
+      </div>
+    </div>
+
+    <!-- SETTINGS -->
+    <div class="screen" id="screen-settings">
+      <div class="section">
+        <div class="section-header"><p class="label">AI Configuration</p></div>
+        <div class="settings-row" style="display:block">
+          <div class="settings-label">Qwen API Key</div>
+          <div class="settings-sub">Get a free key at console.qwen.ai — used for exercise generation and feedback</div>
+          <input type="password" class="settings-input" id="qwen-key" placeholder="sk-…" oninput="saveSetting('qwenKey',this.value)">
+        </div>
+        <div class="settings-row" style="display:block">
+          <div class="settings-label">Feedback language</div>
+          <div class="settings-sub">Language used for explanations in feedback</div>
+          <div class="pill-row" style="margin-top:8px">
+            <div class="pill" id="lang-en" onclick="setFeedbackLang('en',this)">English</div>
+            <div class="pill" id="lang-fr" onclick="setFeedbackLang('fr',this)">Français</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="section">
+        <div class="section-header"><p class="label">Notifications</p></div>
+        <div class="settings-row">
+          <div><div class="settings-label">Daily reminder</div><div class="settings-sub">If no session completed today</div></div>
+          <div class="toggle-wrap"><div class="toggle on" id="toggle-daily" onclick="toggleNotif('daily',this)"></div></div>
+        </div>
+        <div class="settings-row">
+          <div><div class="settings-label">Streak alert</div><div class="settings-sub">2h before midnight if streak at risk</div></div>
+          <div class="toggle-wrap"><div class="toggle on" id="toggle-streak" onclick="toggleNotif('streak',this)"></div></div>
+        </div>
+        <div class="settings-row">
+          <div><div class="settings-label">SRS due alert</div><div class="settings-sub">When 10+ items are overdue</div></div>
+          <div class="toggle-wrap"><div class="toggle on" id="toggle-srs" onclick="toggleNotif('srs',this)"></div></div>
+        </div>
+        <div class="settings-row" style="display:block">
+          <div class="settings-label">Reminder time</div>
+          <input type="time" class="settings-input" id="notif-time" value="19:00" style="width:auto;margin-top:8px" oninput="saveSetting('notifTime',this.value)">
+        </div>
+        <button class="btn-secondary" onclick="requestNotifications()" style="margin-top:8px">Enable push notifications</button>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="section">
+        <div class="section-header"><p class="label">Database</p></div>
+        <div class="settings-row">
+          <div><div class="settings-label">Database URL</div><div class="settings-sub">Raw GitHub URL of your database.json file</div></div>
+        </div>
+        <input type="url" class="settings-input" id="db-url" placeholder="https://raw.githubusercontent.com/…/database.json" oninput="saveSetting('dbUrl',this.value)">
+        <button class="btn-secondary" onclick="syncDatabase()" style="margin-top:8px">Sync from GitHub →</button>
+        <p style="font-size:12px;color:var(--gray-400);margin-top:8px" id="sync-status"></p>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="section">
+        <div class="section-header"><p class="label">Data</p></div>
+        <button class="btn-secondary" onclick="exportData()">Export database (JSON)</button>
+        <button class="btn-secondary" onclick="resetProgress()" style="margin-top:8px;color:var(--red);border-color:var(--red)">Reset all progress</button>
+      </div>
+    </div>
+
+  </div><!-- end main-scroll -->
+
+  <!-- ── BOTTOM NAV ── -->
+  <nav class="bottom-nav">
+    <button class="bn-btn active" id="nav-home" onclick="showScreen('home',this)">
+      <span class="bn-icon">◎</span><span>Study</span>
+    </button>
+    <button class="bn-btn" id="nav-ref" onclick="showScreen('ref',this)">
+      <span class="bn-icon">典</span><span>Reference</span>
+    </button>
+    <button class="bn-btn" id="nav-dash" onclick="showScreen('dash',this)">
+      <span class="bn-icon">▦</span><span>Progress</span>
+    </button>
+    <button class="bn-btn" id="nav-settings" onclick="showScreen('settings',this)">
+      <span class="bn-icon">⊙</span><span>Settings</span>
+    </button>
+  </nav>
+</div><!-- end #app -->
+
+<!-- ── SESSION OVERLAY ── -->
+<div id="session-wrap">
+  <div class="session-header">
+    <button class="session-close" onclick="confirmEndSession()">✕</button>
+    <div class="session-progress"><div class="session-progress-fill" id="s-prog-fill"></div></div>
+    <span class="session-counter" id="s-counter">0/0</span>
+  </div>
+  <div class="session-body" id="session-body">
+    <!-- Dynamically populated -->
+  </div>
+  <div class="session-footer" id="session-footer">
+    <button class="btn-primary" id="s-submit-btn" onclick="handleSubmit()">Check answer →</button>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+/* ═══════════════════════════════════════════════════════════════
+   STATE & PERSISTENCE
+═══════════════════════════════════════════════════════════════ */
+let DB = {words:[], grammar:[], sessions:[]};
+let STATE = loadState();
+
+function loadState(){
+  const s = localStorage.getItem('hanyu_state');
+  return s ? JSON.parse(s) : {
+    qwenKey:'', feedbackLang:'en', dbUrl:'',
+    notifTime:'19:00', notifDaily:true, notifStreak:true, notifSrs:true,
+    streak:0, lastStudied:null, totalSessions:0,
+    selectedMode:'vocab', selectedLessons:[], selectedFocus:'all', sessionLength:10,
+    pendingSession:null
+  };
+}
+function saveState(){localStorage.setItem('hanyu_state',JSON.stringify(STATE))}
+
+function loadDB(){
+  const d = localStorage.getItem('hanyu_db');
+  if(d) DB = JSON.parse(d);
+  else{ DB = getSeedData(); saveDB(); }
+}
+function saveDB(){localStorage.setItem('hanyu_db',JSON.stringify(DB))}
+
+/* ═══════════════════════════════════════════════════════════════
+   SCREEN ROUTING
+═══════════════════════════════════════════════════════════════ */
+let currentScreen = 'home';
+const SCREEN_TITLES = {home:'漢語', ref:'Reference', dash:'Progress', settings:'Settings'};
+const SCREEN_ACTIONS = {home:'', ref:'', dash:'', settings:''};
+
+function showScreen(name, btn){
+  document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
+  document.getElementById('screen-'+name).classList.add('active');
+  document.querySelectorAll('.bn-btn').forEach(b=>b.classList.remove('active'));
+  if(btn) btn.classList.add('active');
+  else document.getElementById('nav-'+name).classList.add('active');
+  document.getElementById('top-title').textContent = SCREEN_TITLES[name];
+  document.getElementById('top-action').textContent = SCREEN_ACTIONS[name]||'';
+  document.getElementById('main-scroll').scrollTop = 0;
+  currentScreen = name;
+  if(name==='home') renderHome();
+  if(name==='ref') renderReference();
+  if(name==='dash') renderDashboard();
+  if(name==='settings') renderSettings();
+}
+function handleTopAction(){}
+
+/* ═══════════════════════════════════════════════════════════════
+   HOME SCREEN
+═══════════════════════════════════════════════════════════════ */
+function renderHome(){
+  const now = Date.now();
+  const allItems = [...DB.words, ...DB.grammar];
+  const due = DB.words.filter(w=>!w.performance.due || w.performance.due<=now).length;
+  const mastered = DB.words.filter(w=>getMastery(w)>=0.9).length;
+  document.getElementById('h-words').textContent = DB.words.length;
+  document.getElementById('h-due').textContent = due;
+  document.getElementById('h-mastered').textContent = mastered;
+  document.getElementById('h-streak').textContent = STATE.streak;
+
+  // Lesson pills
+  const lessons = getAvailableLessons();
+  if(STATE.selectedLessons.length===0) STATE.selectedLessons = lessons.slice(0);
+  const pillsEl = document.getElementById('lesson-pills');
+  pillsEl.innerHTML = lessons.map(l=>`
+    <div class="pill ${STATE.selectedLessons.includes(l)?'selected':''}" onclick="toggleLesson(${l},this)">
+      Lesson ${l}
+    </div>
+  `).join('')+`
+    <div class="pill ${STATE.selectedLessons.length===lessons.length&&lessons.length>1?'selected':''}" onclick="selectAllLessons(this)">All</div>
+  `;
+
+  // Mode selection
+  document.querySelectorAll('.mode-btn').forEach(b=>b.classList.remove('selected'));
+  document.getElementById('mode-'+STATE.selectedMode).classList.add('selected');
+
+  // Focus
+  document.querySelectorAll('#focus-all,#focus-weak').forEach(b=>b.classList.remove('selected'));
+  document.getElementById('focus-'+STATE.selectedFocus).classList.add('selected');
+
+  // Length
+  document.getElementById('length-slider').value = STATE.sessionLength;
+  document.getElementById('length-display').textContent = STATE.sessionLength;
+
+  // Resume banner
+  renderResumeBanner();
+}
+
+function renderResumeBanner(){
+  const c = document.getElementById('resume-container');
+  if(STATE.pendingSession && STATE.pendingSession.queue && STATE.pendingSession.index < STATE.pendingSession.queue.length){
+    const rem = STATE.pendingSession.queue.length - STATE.pendingSession.index;
+    c.innerHTML = `<div class="resume-banner" onclick="resumeSession()">
+      <div><div class="resume-text">Resume session</div><div class="resume-sub">${rem} questions remaining</div></div>
+      <div class="resume-arrow">→</div>
+    </div>`;
+  } else {
+    c.innerHTML = '';
+    STATE.pendingSession = null;
+    saveState();
+  }
+}
+
+function selectMode(mode, el){
+  STATE.selectedMode = mode;
+  saveState();
+  document.querySelectorAll('.mode-btn').forEach(b=>b.classList.remove('selected'));
+  el.classList.add('selected');
+}
+
+function toggleLesson(l, el){
+  const idx = STATE.selectedLessons.indexOf(l);
+  if(idx>=0) STATE.selectedLessons.splice(idx,1);
+  else STATE.selectedLessons.push(l);
+  if(STATE.selectedLessons.length===0) STATE.selectedLessons = [l]; // always keep at least one
+  saveState();
+  renderHome();
+}
+
+function selectAllLessons(el){
+  STATE.selectedLessons = getAvailableLessons().slice(0);
+  saveState();
+  renderHome();
+}
+
+function selectFocus(focus, el){
+  STATE.selectedFocus = focus;
+  saveState();
+  document.querySelectorAll('#focus-all,#focus-weak').forEach(b=>b.classList.remove('selected'));
+  el.classList.add('selected');
+}
+
+document.getElementById('length-slider').addEventListener('input', function(){
+  STATE.sessionLength = parseInt(this.value);
+  saveState();
+});
+
+/* ═══════════════════════════════════════════════════════════════
+   SESSION ENGINE
+═══════════════════════════════════════════════════════════════ */
+let SESSION = null; // {queue, index, answers, mode, startTime}
+
+function startSession(){
+  const items = getSessionItems(STATE.selectedMode, STATE.selectedLessons, STATE.selectedFocus, STATE.sessionLength);
+  if(items.length===0){ toast('No items available for this selection.'); return; }
+  SESSION = {
+    queue: items,
+    index: 0,
+    answers: [],
+    mode: STATE.selectedMode,
+    startTime: Date.now()
+  };
+  STATE.pendingSession = {queue:items.map(i=>i.id), index:0, mode:STATE.selectedMode};
+  saveState();
+  openSessionUI();
+  renderQuestion();
+}
+
+function resumeSession(){
+  if(!STATE.pendingSession) return;
+  // Rebuild session from pending state
+  const allItems = [...DB.words, ...DB.grammar];
+  const queueItems = STATE.pendingSession.queue.map(id=>allItems.find(i=>i.id===id)).filter(Boolean);
+  if(queueItems.length===0){ STATE.pendingSession=null; saveState(); renderHome(); return; }
+  SESSION = {
+    queue: queueItems,
+    index: STATE.pendingSession.index||0,
+    answers: [],
+    mode: STATE.pendingSession.mode||'vocab',
+    startTime: Date.now()
+  };
+  openSessionUI();
+  renderQuestion();
+}
+
+function getSessionItems(mode, lessons, focus, count){
+  const now = Date.now();
+  let pool = DB.words.filter(w=>lessons.includes(w.lesson));
+  if(mode==='grammar') pool = DB.grammar.filter(g=>lessons.includes(g.lesson));
+  if(focus==='weak') pool = pool.filter(i=>getMastery(i)<0.5);
+  // Sort: struggling first, then by due date
+  pool.sort((a,b)=>{
+    const ma=getMastery(a), mb=getMastery(b);
+    if(ma<0.4 && mb>=0.4) return -1;
+    if(mb<0.4 && ma>=0.4) return 1;
+    const da = a.performance.due||0, db_ = b.performance.due||0;
+    return da-db_;
+  });
+  return shuffle(pool).slice(0, Math.min(count, pool.length));
+}
+
+function openSessionUI(){
+  document.getElementById('session-wrap').classList.add('active');
+  document.body.style.overflow='hidden';
+}
+
+function closeSessionUI(){
+  document.getElementById('session-wrap').classList.remove('active');
+  document.body.style.overflow='';
+  SESSION = null;
+}
+
+function renderQuestion(){
+  if(!SESSION || SESSION.index >= SESSION.queue.length){
+    showSessionComplete();
+    return;
+  }
+  const item = SESSION.queue[SESSION.index];
+  const total = SESSION.queue.length;
+  const idx = SESSION.index;
+
+  // Progress
+  document.getElementById('s-prog-fill').style.width = (idx/total*100)+'%';
+  document.getElementById('s-counter').textContent = `${idx+1}/${total}`;
+
+  // Generate exercise for this item and mode
+  const ex = generateExercise(item, SESSION.mode);
+  SESSION.currentExercise = ex;
+  SESSION.questionStart = Date.now();
+
+  const body = document.getElementById('session-body');
+  body.innerHTML = buildQuestionHTML(ex, item);
+  body.scrollTop = 0;
+
+  const footer = document.getElementById('session-footer');
+  footer.innerHTML = `<button class="btn-primary" id="s-submit-btn" onclick="handleSubmit()">Check answer →</button>`;
+
+  // If listening, auto-play
+  if(ex.type==='listen_transcribe'||ex.type==='listen_answer') speakText(ex.audioText);
+}
+
+function generateExercise(item, mode){
+  const r = Math.random();
+  if(mode==='vocab'){
+    return r<0.5 ?
+      {type:'produce_chinese', prompt_en:item.english, prompt_fr:item.french, answer:item.traditional, item} :
+      {type:'produce_english', prompt_zh:item.traditional, answer:item.english, item};
+  }
+  if(mode==='rw'){
+    const types = ['translate_to_chinese','translate_to_english','fill_blank','construct_sentence'];
+    // If item has examples, use them for context
+    const ex = item.sentences && item.sentences.length>0 ? item.sentences[0] : null;
+    const t = types[Math.floor(r*types.length)];
+    if(t==='translate_to_chinese') return {type:'translate_to_chinese', prompt_en: ex?ex.english:item.english, answer:ex?ex.chinese:item.traditional, item};
+    if(t==='translate_to_english') return {type:'translate_to_english', prompt_zh: ex?ex.chinese:item.traditional, answer:ex?ex.english:item.english, item};
+    if(t==='fill_blank' && ex) {
+      const words = ex.chinese.split('');
+      const tLen = item.traditional.length;
+      const blankStart = ex.chinese.indexOf(item.traditional);
+      if(blankStart>=0){
+        const blanked = ex.chinese.substring(0,blankStart) + '＿'.repeat(tLen) + ex.chinese.substring(blankStart+tLen);
+        return {type:'fill_blank', prompt_zh:blanked, hint_en:ex.english, answer:item.traditional, item};
+      }
+    }
+    return {type:'translate_to_chinese', prompt_en: ex?ex.english:item.english, answer:ex?ex.chinese:item.traditional, item};
+  }
+  if(mode==='listen'){
+    const ex = item.sentences && item.sentences.length>0 ? item.sentences[Math.floor(r*item.sentences.length)] : null;
+    const text = ex?ex.chinese:item.traditional;
+    return r<0.5 ?
+      {type:'listen_transcribe', audioText:text, answer:text, item} :
+      {type:'listen_answer', audioText:text, question_en:ex?'Answer in Chinese: '+ex.english:'Write the meaning in Chinese', answer:item.traditional, item};
+  }
+  return {type:'produce_chinese', prompt_en:item.english, answer:item.traditional, item};
+}
+
+function buildQuestionHTML(ex, item){
+  const typeLabels = {
+    produce_chinese:'Vocabulary → Produce Chinese',
+    produce_english:'Vocabulary → Produce English',
+    translate_to_chinese:'Translate to Chinese',
+    translate_to_english:'Translate to English',
+    fill_blank:'Fill in the blank',
+    construct_sentence:'Sentence construction',
+    listen_transcribe:'Listening → Transcribe',
+    listen_answer:'Listening → Answer'
+  };
+  let html = `<p class="q-type-label">${typeLabels[ex.type]||ex.type}</p>`;
+
+  if(ex.type==='produce_chinese'){
+    html += `<div class="q-prompt"><p class="q-prompt-text" style="font-size:1.3rem;font-weight:500">${ex.prompt_en}</p><p style="font-size:13px;color:var(--gray-400);margin-top:4px">${ex.prompt_fr||''}</p></div>`;
+    html += `<div class="answer-area"><p class="answer-label">Write in Traditional Chinese</p><textarea class="answer-input" id="answer-field" rows="3" placeholder="Type characters here…"></textarea><p class="answer-hint">Pinyin support not shown in questions — attempt the characters first</p></div>`;
+  }
+  else if(ex.type==='produce_english'){
+    html += `<div class="q-prompt"><p class="q-chinese-prompt">${ex.prompt_zh}</p></div>`;
+    html += `<div class="answer-area"><p class="answer-label">Write the English meaning</p><textarea class="answer-input latin" id="answer-field" rows="3" placeholder="Type meaning here…"></textarea></div>`;
+  }
+  else if(ex.type==='translate_to_chinese'){
+    html += `<div class="q-prompt"><p class="q-prompt-text">${ex.prompt_en}</p></div>`;
+    html += `<div class="answer-area"><p class="answer-label">Translate to Traditional Chinese</p><textarea class="answer-input" id="answer-field" rows="4" placeholder="Type characters here…"></textarea></div>`;
+  }
+  else if(ex.type==='translate_to_english'){
+    html += `<div class="q-prompt"><p class="q-chinese-prompt">${ex.prompt_zh}</p></div>`;
+    html += `<div class="answer-area"><p class="answer-label">Translate to English</p><textarea class="answer-input latin" id="answer-field" rows="3" placeholder="Type translation here…"></textarea></div>`;
+  }
+  else if(ex.type==='fill_blank'){
+    html += `<div class="q-prompt"><p class="q-chinese-prompt">${ex.prompt_zh}</p><p style="font-size:13px;color:var(--gray-400);margin-top:6px;font-style:italic">${ex.hint_en||''}</p></div>`;
+    html += `<div class="answer-area"><p class="answer-label">Fill in the blank</p><textarea class="answer-input" id="answer-field" rows="2" placeholder="Missing word(s)…"></textarea></div>`;
+  }
+  else if(ex.type==='listen_transcribe'){
+    html += `<button class="q-audio-btn" onclick="speakText('${ex.audioText.replace(/'/g,"\\'")}')">▶ Play audio again</button>`;
+    html += `<div class="answer-area"><p class="answer-label">Transcribe what you heard in Chinese</p><textarea class="answer-input" id="answer-field" rows="3" placeholder="Type what you heard…"></textarea></div>`;
+  }
+  else if(ex.type==='listen_answer'){
+    html += `<button class="q-audio-btn" onclick="speakText('${ex.audioText.replace(/'/g,"\\'")}')">▶ Play audio again</button>`;
+    html += `<div class="q-prompt"><p class="q-prompt-text">${ex.question_en||''}</p></div>`;
+    html += `<div class="answer-area"><p class="answer-label">Answer in Chinese</p><textarea class="answer-input" id="answer-field" rows="3" placeholder="Type your answer…"></textarea></div>`;
+  }
+
+  // Focus textarea after render
+  setTimeout(()=>{
+    const f = document.getElementById('answer-field');
+    if(f) f.focus();
+  }, 100);
+  return html;
+}
+
+async function handleSubmit(){
+  const feedbackEl = document.getElementById('feedback-box');
+  if(feedbackEl){ // feedback already shown — go to next
+    advanceQuestion();
+    return;
+  }
+  const field = document.getElementById('answer-field');
+  if(!field) return;
+  const answer = field.value.trim();
+  if(!answer){ toast('Please write an answer first'); return; }
+
+  const btn = document.getElementById('s-submit-btn');
+  btn.disabled = true;
+  btn.textContent = 'Checking…';
+
+  const speedMs = Date.now() - SESSION.questionStart;
+  const ex = SESSION.currentExercise;
+
+  let feedback;
+  if(STATE.qwenKey){
+    feedback = await getAIFeedback(ex, answer);
+  } else {
+    feedback = getLocalFeedback(ex, answer);
+  }
+
+  // Record result
+  const isCorrect = feedback.verdict === 'correct';
+  const isPartial = feedback.verdict === 'partial';
+  updatePerformance(ex.item, isCorrect ? 1 : isPartial ? 0.5 : 0, speedMs);
+  SESSION.answers.push({itemId:ex.item.id, correct:isCorrect, answer, speedMs});
+
+  // Update pending session index
+  STATE.pendingSession.index = SESSION.index + 1;
+  saveState();
+
+  renderFeedback(feedback, ex);
+}
+
+function renderFeedback(feedback, ex){
+  const body = document.getElementById('session-body');
+  const verdictClass = {correct:'correct',partial:'partial',incorrect:'incorrect'}[feedback.verdict]||'incorrect';
+  const verdictText = {correct:'Correct',partial:'Partially correct',incorrect:'Incorrect'}[feedback.verdict];
+
+  const feedbackHTML = `
+    <div class="feedback-box" id="feedback-box">
+      <div class="feedback-verdict">
+        <span class="verdict-badge ${verdictClass}">${verdictText}</span>
+        <span class="verdict-type">${feedback.errorType||''}</span>
+      </div>
+      ${feedback.explanation?`<div class="feedback-section">
+        <p class="feedback-section-label">Explanation</p>
+        <p class="feedback-text">${feedback.explanation}</p>
+      </div>`:''}
+      <div class="feedback-section">
+        <p class="feedback-section-label">Correct answer</p>
+        <p class="feedback-corrected">${feedback.corrected||ex.answer}</p>
+        <p class="feedback-pinyin">${feedback.pinyin||ex.item.pinyin||''}</p>
+      </div>
+    </div>
+  `;
+  body.insertAdjacentHTML('beforeend', feedbackHTML);
+  body.scrollTop = body.scrollHeight;
+
+  const footer = document.getElementById('session-footer');
+  footer.innerHTML = `<button class="btn-primary" onclick="advanceQuestion()">Next →</button>`;
+}
+
+function advanceQuestion(){
+  SESSION.index++;
+  if(SESSION.index >= SESSION.queue.length) showSessionComplete();
+  else renderQuestion();
+}
+
+function showSessionComplete(){
+  const correct = SESSION.answers.filter(a=>a.correct).length;
+  const total = SESSION.answers.length;
+  const pct = total>0?Math.round(correct/total*100):0;
+
+  // Record session
+  DB.sessions = (DB.sessions||[]);
+  DB.sessions.unshift({
+    date: new Date().toISOString(),
+    mode: SESSION.mode,
+    lessons: STATE.selectedLessons,
+    total, correct, pct
+  });
+  if(DB.sessions.length>50) DB.sessions = DB.sessions.slice(0,50);
+  saveDB();
+
+  // Update streak
+  updateStreak();
+  STATE.pendingSession = null;
+  STATE.totalSessions = (STATE.totalSessions||0)+1;
+  saveState();
+
+  const body = document.getElementById('session-body');
+  body.innerHTML = `
+    <div class="complete-screen">
+      <span class="complete-icon">${pct>=80?'◉':pct>=50?'◎':'○'}</span>
+      <h2 class="heading">Session complete</h2>
+      <p class="subheading" style="margin-top:8px">${correct} of ${total} correct</p>
+      <div class="complete-stat-grid stat-grid" style="margin:24px 0">
+        <div class="stat-cell"><span class="stat-num">${pct}%</span><span class="stat-label">Accuracy</span></div>
+        <div class="stat-cell"><span class="stat-num">${STATE.streak}</span><span class="stat-label">Streak</span></div>
+      </div>
+    </div>
+  `;
+  const footer = document.getElementById('session-footer');
+  footer.innerHTML = `<button class="btn-primary" onclick="closeSessionUI()">Done</button>`;
+  document.getElementById('s-prog-fill').style.width = '100%';
+  document.getElementById('s-counter').textContent = `${total}/${total}`;
+}
+
+function confirmEndSession(){
+  if(confirm('End session? Progress will be saved.')){
+    STATE.pendingSession = SESSION ? {...STATE.pendingSession, index:SESSION.index} : null;
+    saveState();
+    closeSessionUI();
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   AI FEEDBACK
+═══════════════════════════════════════════════════════════════ */
+async function getAIFeedback(ex, userAnswer){
+  const lang = STATE.feedbackLang==='fr'?'French':'English';
+  const prompts = {
+    produce_chinese:`You are a Traditional Chinese tutor. The student was asked to write the Chinese for: "${ex.prompt_en}". The correct answer is: "${ex.answer}". The student wrote: "${userAnswer}". Evaluate their answer. Respond ONLY with valid JSON: {"verdict":"correct"|"partial"|"incorrect","errorType":"Grammar error"|"Word choice"|"Character error"|"Semantic error"|null,"explanation":"1-2 sentences in ${lang} explaining any errors, referencing grammar rules by name if applicable","corrected":"${ex.answer}","pinyin":"pinyin of correct answer"}`,
+    produce_english:`You are a Traditional Chinese tutor. A Chinese word was shown: "${ex.prompt_zh}". Correct English meaning: "${ex.answer}". Student wrote: "${userAnswer}". Respond ONLY with valid JSON: {"verdict":"correct"|"partial"|"incorrect","errorType":null,"explanation":"1-2 sentences in ${lang}","corrected":"${ex.answer}","pinyin":"${ex.item.pinyin}"}`,
+    translate_to_chinese:`You are a Traditional Chinese tutor. Student translated to Chinese: English="${ex.prompt_en}", Correct answer="${ex.answer}", Student wrote="${userAnswer}". Respond ONLY with valid JSON: {"verdict":"correct"|"partial"|"incorrect","errorType":"Grammar error"|"Word choice"|"Character error"|"Semantic error"|null,"explanation":"1-2 sentences in ${lang}","corrected":"${ex.answer}","pinyin":"pinyin of correct answer"}`,
+    translate_to_english:`You are a Traditional Chinese tutor. Student translated from Chinese: Chinese="${ex.prompt_zh}", Correct English="${ex.answer}", Student wrote="${userAnswer}". Respond ONLY with valid JSON: {"verdict":"correct"|"partial"|"incorrect","errorType":null,"explanation":"1-2 sentences in ${lang}","corrected":"${ex.answer}","pinyin":"${ex.item.pinyin}"}`,
+    fill_blank:`You are a Traditional Chinese tutor. Fill-in-blank exercise. Sentence with blank: "${ex.prompt_zh}". Correct answer for blank: "${ex.answer}". Student wrote: "${userAnswer}". Respond ONLY with valid JSON: {"verdict":"correct"|"partial"|"incorrect","errorType":"Grammar error"|"Word choice"|"Character error"|null,"explanation":"1-2 sentences in ${lang}","corrected":"${ex.answer}","pinyin":"${ex.item.pinyin}"}`,
+    listen_transcribe:`You are a Traditional Chinese tutor. Student listened to: "${ex.audioText}". Student transcribed: "${userAnswer}". Correct: "${ex.answer}". Respond ONLY with valid JSON: {"verdict":"correct"|"partial"|"incorrect","errorType":"Character error"|null,"explanation":"1-2 sentences in ${lang}","corrected":"${ex.answer}","pinyin":"${ex.item.pinyin}"}`,
+    listen_answer:`You are a Traditional Chinese tutor. Student heard Chinese audio and was asked to answer in Chinese. Student wrote: "${userAnswer}". A good answer relates to: "${ex.item.english}". Respond ONLY with valid JSON: {"verdict":"correct"|"partial"|"incorrect","errorType":null,"explanation":"1-2 sentences in ${lang}","corrected":"${ex.answer}","pinyin":"${ex.item.pinyin}"}`
+  };
+  const prompt = prompts[ex.type] || prompts.produce_chinese;
+  try{
+    const res = await fetch('https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions',{
+      method:'POST',
+      headers:{'Content-Type':'application/json','Authorization':'Bearer '+STATE.qwenKey},
+      body:JSON.stringify({
+        model:'qwen-plus',
+        messages:[{role:'user',content:prompt}],
+        max_tokens:400,
+        temperature:0.1
+      })
+    });
+    const data = await res.json();
+    const text = data.choices?.[0]?.message?.content||'{}';
+    const clean = text.replace(/```json|```/g,'').trim();
+    return JSON.parse(clean);
+  } catch(e){
+    return getLocalFeedback(ex, userAnswer);
+  }
+}
+
+function getLocalFeedback(ex, userAnswer){
+  // Simple local comparison when no API key
+  const correct = userAnswer.trim().toLowerCase() === ex.answer.trim().toLowerCase();
+  const partial = !correct && ex.answer.toLowerCase().includes(userAnswer.toLowerCase().substring(0,2));
+  return {
+    verdict: correct?'correct':partial?'partial':'incorrect',
+    errorType: correct?null:'Character error',
+    explanation: correct ? null : `The correct answer is shown below. Compare carefully with what you wrote.`,
+    corrected: ex.answer,
+    pinyin: ex.item.pinyin||''
+  };
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   PERFORMANCE TRACKING (SM-2 + Mastery Score)
+═══════════════════════════════════════════════════════════════ */
+function updatePerformance(item, result, speedMs){
+  const p = item.performance;
+  // Keep last 5 only in the active vectors, full history irrelevant for scheduling
+  p.production = [...(p.production||[]), result].slice(-5);
+  p.speed_ms = [...(p.speed_ms||[]), speedMs].slice(-5);
+  p.last_seen = Date.now();
+  // SM-2 scheduling
+  const quality = result>=1?4:result>=0.5?2:1;
+  p.ef = Math.max(1.3,(p.ef||2.5)+(0.1-(5-quality)*(0.08+(5-quality)*0.02)));
+  if(quality<3){ p.interval=1; }
+  else if(!p.interval){ p.interval=1; }
+  else if(p.interval===1){ p.interval=4; }
+  else{ p.interval=Math.round(p.interval*p.ef); }
+  p.due = Date.now() + p.interval*86400000;
+  saveDB();
+}
+
+function getMastery(item){
+  const p = item.performance;
+  if(!p||!p.production||p.production.length===0) return 0;
+  const weights=[0.10,0.15,0.20,0.25,0.30];
+  const prod = p.production.slice(-5);
+  const wSum = prod.reduce((s,v,i)=>s+v*(weights[i+(5-prod.length)]||0.2),0);
+  const speeds = (p.speed_ms||[]).slice(-5);
+  const avgSpeed = speeds.length>0?speeds.reduce((a,b)=>a+b,0)/speeds.length:15000;
+  const speedScore = Math.max(0,Math.min(1,(30000-avgSpeed)/25000));
+  const last3 = prod.slice(-3);
+  const consistency = last3.length===3&&last3.every(v=>v>=1)?1:0;
+  return wSum*0.6 + speedScore*0.2 + consistency*0.2;
+}
+
+function getMasteryTier(score){
+  if(score<0.4) return {tier:'struggling',color:'red',label:'Struggling'};
+  if(score<0.7) return {tier:'learning',color:'amber',label:'Learning'};
+  if(score<0.9) return {tier:'consolidating',color:'yellow',label:'Consolidating'};
+  return {tier:'mastered',color:'green',label:'Mastered'};
+}
+
+function updateStreak(){
+  const now = Date.now();
+  const last = STATE.lastStudied;
+  if(!last){STATE.streak=1;}
+  else{
+    const daysSince = Math.floor((now-last)/86400000);
+    if(daysSince===0){/* same day, no change */}
+    else if(daysSince===1){STATE.streak=(STATE.streak||0)+1;}
+    else{STATE.streak=1;}
+  }
+  STATE.lastStudied = now;
+  saveState();
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   REFERENCE SCREEN
+═══════════════════════════════════════════════════════════════ */
+let refTab = 'words';
+let refLesson = null;
+let openCardId = null;
+
+function setRefTab(tab, el){
+  refTab = tab;
+  document.querySelectorAll('.ref-tab').forEach(t=>t.classList.remove('active'));
+  el.classList.add('active');
+  renderReference();
+}
+
+function renderReference(){
+  // Lesson filter pills
+  const lessons = getAvailableLessons();
+  const pillsEl = document.getElementById('ref-lesson-pills');
+  pillsEl.innerHTML = `<div class="pill ${refLesson===null?'selected':''}" onclick="setRefLesson(null)">All</div>`+
+    lessons.map(l=>`<div class="pill ${refLesson===l?'selected':''}" onclick="setRefLesson(${l})">L${l}</div>`).join('');
+
+  const query = (document.getElementById('search-input').value||'').toLowerCase().trim();
+  const list = document.getElementById('ref-list');
+
+  if(refTab==='words'){
+    let items = DB.words.filter(w=>refLesson===null||w.lesson===refLesson);
+    if(query) items = items.filter(w=>
+      w.traditional.includes(query)||
+      (w.pinyin||'').toLowerCase().includes(query)||
+      (w.english||'').toLowerCase().includes(query)||
+      (w.french||'').toLowerCase().includes(query)
+    );
+    if(items.length===0){list.innerHTML='<div class="empty-state"><span class="empty-state-icon">典</span><p class="empty-state-text">No words found</p></div>';return;}
+    list.innerHTML = items.map(w=>{
+      const m = getMastery(w);
+      const tier = getMasteryTier(m);
+      const isOpen = openCardId===w.id;
+      return `
+        <div class="word-card" onclick="toggleWordCard('${w.id}')">
+          <div class="word-card-header">
+            <div>
+              <div class="word-hanzi">${w.traditional}</div>
+              <div class="word-pinyin">${w.pinyin||''}</div>
+            </div>
+            <div class="mastery-dot ${tier.color}" title="${tier.label} — ${Math.round(m*100)}%"></div>
+          </div>
+          <div class="word-meaning">${w.english}</div>
+          ${w.french?`<div class="word-pos">${w.french}</div>`:''}
+          <div class="word-detail ${isOpen?'open':''}" id="wd-${w.id}">
+            ${w.sentences&&w.sentences.length>0?`
+              <div class="word-detail-row">
+                <div class="word-detail-label">Example sentences</div>
+                ${w.sentences.map(s=>`
+                  <div class="example-item">
+                    <div class="example-zh">${s.chinese}</div>
+                    <div class="example-py">${s.pinyin||''}</div>
+                    <div class="example-en">${s.english}</div>
+                  </div>`).join('')}
+              </div>`:''}
+            ${w.grammar_links&&w.grammar_links.length>0?`
+              <div class="word-detail-row">
+                <div class="word-detail-label">Grammar</div>
+                ${w.grammar_links.map(gid=>{
+                  const g=DB.grammar.find(x=>x.id===gid);
+                  return g?`<p style="font-size:13px;color:var(--gray-600)">${g.name}</p>`:'';
+                }).join('')}
+              </div>`:''}
+            <div class="word-detail-row" style="margin-top:8px">
+              <div class="word-detail-label">Performance</div>
+              <p style="font-size:13px;color:var(--gray-600)">${tier.label} — ${Math.round(m*100)}% mastery · Lesson ${w.lesson}</p>
+            </div>
+          </div>
+        </div>`;
+    }).join('');
+  } else {
+    let items = DB.grammar.filter(g=>refLesson===null||g.lesson===refLesson);
+    if(query) items = items.filter(g=>
+      (g.name||'').toLowerCase().includes(query)||
+      (g.pattern||'').toLowerCase().includes(query)||
+      (g.description_en||'').toLowerCase().includes(query)
+    );
+    if(items.length===0){list.innerHTML='<div class="empty-state"><span class="empty-state-icon">文</span><p class="empty-state-text">No grammar patterns found</p></div>';return;}
+    list.innerHTML = items.map(g=>{
+      const m = getMastery(g);
+      const tier = getMasteryTier(m);
+      const isOpen = openCardId===g.id;
+      return `
+        <div class="grammar-card" onclick="toggleWordCard('${g.id}')">
+          <div class="card-row">
+            <div class="card-main">
+              <div class="grammar-name">${g.name}</div>
+              <div class="grammar-pattern">${g.pattern||''}</div>
+              <div class="grammar-lesson">Lesson ${g.lesson}</div>
+            </div>
+            <div class="mastery-dot ${tier.color}"></div>
+          </div>
+          <div class="grammar-detail ${isOpen?'open':''}" id="wd-${g.id}">
+            <div class="word-detail-row">
+              <div class="word-detail-label">Description</div>
+              <p style="font-size:13px;color:var(--gray-600);line-height:1.6">${g.description_en||''}</p>
+              ${g.description_fr?`<p style="font-size:13px;color:var(--gray-400);font-style:italic;margin-top:4px">${g.description_fr}</p>`:''}
+            </div>
+            ${g.examples&&g.examples.length>0?`
+              <div class="word-detail-row">
+                <div class="word-detail-label">Examples</div>
+                ${g.examples.map(e=>`
+                  <div class="example-item">
+                    <div class="example-zh">${e.chinese}</div>
+                    <div class="example-py">${e.pinyin||''}</div>
+                    <div class="example-en">${e.english}</div>
+                  </div>`).join('')}
+              </div>`:''}
+          </div>
+        </div>`;
+    }).join('');
+  }
+}
+
+function setRefLesson(l){refLesson=l; renderReference();}
+
+function toggleWordCard(id){
+  openCardId = openCardId===id?null:id;
+  renderReference();
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   DASHBOARD
+═══════════════════════════════════════════════════════════════ */
+function renderDashboard(){
+  const allItems = [...DB.words,...DB.grammar];
+  const overall = allItems.length>0 ? allItems.reduce((s,i)=>s+getMastery(i),0)/allItems.length : 0;
+  document.getElementById('d-total').textContent = allItems.length;
+  document.getElementById('d-mastery').textContent = Math.round(overall*100)+'%';
+  document.getElementById('d-sessions').textContent = STATE.totalSessions||0;
+  document.getElementById('d-streak').textContent = STATE.streak||0;
+
+  // Per-lesson
+  const lessons = getAvailableLessons();
+  const lessonEl = document.getElementById('lesson-breakdown');
+  if(lessons.length===0){lessonEl.innerHTML='<div class="empty-state"><span class="empty-state-icon">▦</span><p class="empty-state-text">No data yet</p></div>';return;}
+  lessonEl.innerHTML = lessons.map(l=>{
+    const lWords = DB.words.filter(w=>w.lesson===l);
+    const lGrammar = DB.grammar.filter(g=>g.lesson===l);
+    const vScore = lWords.length>0?lWords.reduce((s,w)=>s+getMastery(w),0)/lWords.length:0;
+    const gScore = lGrammar.length>0?lGrammar.reduce((s,g)=>s+getMastery(g),0)/lGrammar.length:0;
+    const total = (vScore+gScore)/2;
+    return `<div class="lesson-row">
+      <div class="lesson-row-header">
+        <span class="lesson-name">Lesson ${l}</span>
+        <span class="lesson-score">${Math.round(total*100)}%</span>
+      </div>
+      <div class="progress-bar-wrap"><div class="progress-bar-fill" style="width:${total*100}%"></div></div>
+      <div class="sub-scores">
+        <span class="sub-score-item">Vocab <span class="sub-score-val">${Math.round(vScore*100)}%</span></span>
+        ${lGrammar.length>0?`<span class="sub-score-item">Grammar <span class="sub-score-val">${Math.round(gScore*100)}%</span></span>`:''}
+        <span class="sub-score-item">${lWords.length} words · ${lGrammar.length} patterns</span>
+      </div>
+    </div>`;
+  }).join('');
+
+  // Weak items
+  const weakEl = document.getElementById('weak-list');
+  const weak = DB.words.filter(w=>getMastery(w)<0.4).slice(0,10);
+  if(weak.length===0){weakEl.innerHTML='<p style="font-size:14px;color:var(--gray-400)">No struggling items — keep it up.</p>';}
+  else{weakEl.innerHTML=weak.map(w=>
+    `<div class="weak-item">
+      <div class="weak-zh">${w.traditional}</div>
+      <div class="weak-info">
+        <div style="font-size:14px;font-weight:500">${w.traditional} · ${w.pinyin}</div>
+        <div class="weak-meaning">${w.english}</div>
+        <div class="weak-meta">Lesson ${w.lesson} · ${Math.round(getMastery(w)*100)}% mastery</div>
+      </div>
+    </div>`).join('');}
+
+  // Sessions
+  const histEl = document.getElementById('session-history');
+  const sess = (DB.sessions||[]).slice(0,10);
+  if(sess.length===0){histEl.innerHTML='<p style="font-size:14px;color:var(--gray-400)">No sessions yet.</p>';}
+  else{histEl.innerHTML=sess.map(s=>
+    `<div style="border-bottom:1px solid var(--gray-100);padding:12px 0;display:flex;justify-content:space-between;align-items:center">
+      <div>
+        <div style="font-size:14px;font-weight:500;text-transform:capitalize">${s.mode} — L${(s.lessons||[]).join(',')}</div>
+        <div style="font-size:12px;color:var(--gray-400);margin-top:2px">${new Date(s.date).toLocaleDateString()}</div>
+      </div>
+      <div style="font-family:var(--mono-font);font-size:14px">${s.pct}%</div>
+    </div>`).join('');}
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   SETTINGS
+═══════════════════════════════════════════════════════════════ */
+function renderSettings(){
+  document.getElementById('qwen-key').value = STATE.qwenKey||'';
+  document.getElementById('db-url').value = STATE.dbUrl||'';
+  document.getElementById('notif-time').value = STATE.notifTime||'19:00';
+  ['daily','streak','srs'].forEach(k=>{
+    const el = document.getElementById('toggle-'+k);
+    if(STATE['notif'+k.charAt(0).toUpperCase()+k.slice(1)]===false) el.classList.remove('on');
+    else el.classList.add('on');
+  });
+  // Feedback lang
+  document.querySelectorAll('#lang-en,#lang-fr').forEach(b=>b.classList.remove('selected'));
+  document.getElementById('lang-'+(STATE.feedbackLang||'en')).classList.add('selected');
+}
+
+function saveSetting(key, val){STATE[key]=val;saveState();}
+
+function setFeedbackLang(lang, el){
+  STATE.feedbackLang=lang; saveState();
+  document.querySelectorAll('#lang-en,#lang-fr').forEach(b=>b.classList.remove('selected'));
+  el.classList.add('selected');
+}
+
+function toggleNotif(key, el){
+  const stateKey = 'notif'+key.charAt(0).toUpperCase()+key.slice(1);
+  STATE[stateKey] = !STATE[stateKey];
+  saveState();
+  if(STATE[stateKey]) el.classList.add('on'); else el.classList.remove('on');
+}
+
+async function requestNotifications(){
+  if(!('Notification' in window)||!('serviceWorker' in navigator)){
+    toast('Push notifications require Chrome on Android');
+    return;
+  }
+  const perm = await Notification.requestPermission();
+  if(perm==='granted'){
+    toast('Notifications enabled ✓');
+    scheduleNotifications();
+  } else {
+    toast('Notifications blocked — enable in Chrome settings');
+  }
+}
+
+function scheduleNotifications(){
+  // Service worker handles this
+  if('serviceWorker' in navigator){
+    navigator.serviceWorker.ready.then(reg=>{
+      reg.active.postMessage({type:'SCHEDULE_NOTIFS',settings:{
+        time:STATE.notifTime,
+        daily:STATE.notifDaily,
+        streak:STATE.notifStreak,
+        srs:STATE.notifSrs,
+        dueCount:DB.words.filter(w=>w.performance.due&&w.performance.due<=Date.now()).length
+      }});
+    });
+  }
+}
+
+async function syncDatabase(){
+  const url = STATE.dbUrl;
+  if(!url){toast('Please enter a database URL first');return;}
+  const statusEl = document.getElementById('sync-status');
+  statusEl.textContent = 'Syncing…';
+  try{
+    const res = await fetch(url+'?t='+Date.now());
+    if(!res.ok) throw new Error('HTTP '+res.status);
+    const data = await res.json();
+    // Merge: add new items, update existing (preserve performance data)
+    if(data.words){
+      data.words.forEach(nw=>{
+        const existing = DB.words.find(w=>w.id===nw.id||w.traditional===nw.traditional);
+        if(!existing) DB.words.push({...nw, performance:{production:[],speed_ms:[],due:0,ef:2.5,interval:0}});
+        else{ Object.assign(existing,{...nw, performance:existing.performance}); }
+      });
+    }
+    if(data.grammar){
+      data.grammar.forEach(ng=>{
+        const existing = DB.grammar.find(g=>g.id===ng.id||g.name===ng.name);
+        if(!existing) DB.grammar.push({...ng, performance:{production:[],speed_ms:[],due:0,ef:2.5,interval:0}});
+        else{ Object.assign(existing,{...ng, performance:existing.performance}); }
+      });
+    }
+    saveDB();
+    statusEl.textContent = `✓ Synced — ${DB.words.length} words, ${DB.grammar.length} grammar patterns`;
+    toast('Database synced ✓');
+  } catch(e){
+    statusEl.textContent = '✗ Sync failed: '+e.message;
+    toast('Sync failed: '+e.message);
+  }
+}
+
+function exportData(){
+  const blob = new Blob([JSON.stringify(DB,null,2)],{type:'application/json'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'hanyu-database.json';
+  a.click();
+  toast('Database exported ✓');
+}
+
+function resetProgress(){
+  if(!confirm('Reset ALL progress? This cannot be undone.')) return;
+  DB.words.forEach(w=>{w.performance={production:[],speed_ms:[],due:0,ef:2.5,interval:0};});
+  DB.grammar.forEach(g=>{g.performance={production:[],speed_ms:[],due:0,ef:2.5,interval:0};});
+  DB.sessions=[];
+  STATE.streak=0; STATE.lastStudied=null; STATE.totalSessions=0;
+  saveDB(); saveState();
+  toast('Progress reset');
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   TTS
+═══════════════════════════════════════════════════════════════ */
+function speakText(text){
+  if(!window.speechSynthesis) return;
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = 'zh-TW';
+  u.rate = 0.85;
+  speechSynthesis.cancel();
+  // Try to get a zh-TW voice
+  const voices = speechSynthesis.getVoices();
+  const zhVoice = voices.find(v=>v.lang==='zh-TW')||voices.find(v=>v.lang.startsWith('zh'));
+  if(zhVoice) u.voice = zhVoice;
+  speechSynthesis.speak(u);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   UTILITIES
+═══════════════════════════════════════════════════════════════ */
+function getAvailableLessons(){
+  const ls = new Set([...DB.words.map(w=>w.lesson),...DB.grammar.map(g=>g.lesson)]);
+  return [...ls].sort((a,b)=>a-b);
+}
+
+function shuffle(arr){
+  const a=[...arr];
+  for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}
+  return a;
+}
+
+let toastTimer;
+function toast(msg){
+  const el=document.getElementById('toast');
+  el.textContent=msg;
+  el.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer=setTimeout(()=>el.classList.remove('show'),2800);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   SEED DATA (Lessons 1–4, Traditional Chinese)
+═══════════════════════════════════════════════════════════════ */
+function getSeedData(){
+  return {
+    words:[
+      {id:'w001',traditional:'你好',pinyin:'nǐ hǎo',english:'Hello',french:'Bonjour',part_of_speech:'phrase',lesson:1,sentences:[{chinese:'你好！我叫安東。',pinyin:'Nǐ hǎo! Wǒ jiào Āndōng.',english:'Hello! My name is Antoine.'},{chinese:'你好，請問你是哪裡人？',pinyin:'Nǐ hǎo, qǐngwèn nǐ shì nǎlǐ rén?',english:'Hello, may I ask where you are from?'}],grammar_links:[],performance:{production:[],speed_ms:[],due:0,ef:2.5,interval:0}},
+      {id:'w002',traditional:'謝謝',pinyin:'xiè xie',english:'Thank you',french:'Merci',part_of_speech:'phrase',lesson:1,sentences:[{chinese:'謝謝你的幫助。',pinyin:'Xiè xie nǐ de bāngzhù.',english:'Thank you for your help.'},{chinese:'不客氣，謝謝。',pinyin:'Bù kèqì, xiè xie.',english:'You\'re welcome, thank you.'}],grammar_links:[],performance:{production:[],speed_ms:[],due:0,ef:2.5,interval:0}},
+      {id:'w003',traditional:'再見',pinyin:'zài jiàn',english:'Goodbye',french:'Au revoir',part_of_speech:'phrase',lesson:1,sentences:[{chinese:'明天見！再見！',pinyin:'Míngtiān jiàn! Zài jiàn!',english:'See you tomorrow! Goodbye!'},{chinese:'老師，再見。',pinyin:'Lǎoshī, zài jiàn.',english:'Teacher, goodbye.'}],grammar_links:[],performance:{production:[],speed_ms:[],due:0,ef:2.5,interval:0}},
+      {id:'w004',traditional:'我',pinyin:'wǒ',english:'I / me',french:'Je / moi',part_of_speech:'pronoun',lesson:1,sentences:[{chinese:'我是法國人。',pinyin:'Wǒ shì Fàguó rén.',english:'I am French.'},{chinese:'我學中文。',pinyin:'Wǒ xué Zhōngwén.',english:'I study Chinese.'}],grammar_links:['g001'],performance:{production:[],speed_ms:[],due:0,ef:2.5,interval:0}},
+      {id:'w005',traditional:'是',pinyin:'shì',english:'to be (am/is/are)',french:'être',part_of_speech:'verb',lesson:1,sentences:[{chinese:'我是學生。',pinyin:'Wǒ shì xuéshēng.',english:'I am a student.'},{chinese:'他是老師。',pinyin:'Tā shì lǎoshī.',english:'He is a teacher.'}],grammar_links:['g001'],performance:{production:[],speed_ms:[],due:0,ef:2.5,interval:0}},
+      {id:'w006',traditional:'不',pinyin:'bù',english:'not / no',french:'ne pas / non',part_of_speech:'adverb',lesson:2,sentences:[{chinese:'我不是老師。',pinyin:'Wǒ bù shì lǎoshī.',english:'I am not a teacher.'},{chinese:'他不喝茶。',pinyin:'Tā bù hē chá.',english:'He does not drink tea.'}],grammar_links:['g002'],performance:{production:[],speed_ms:[],due:0,ef:2.5,interval:0}},
+      {id:'w007',traditional:'你',pinyin:'nǐ',english:'you (singular)',french:'tu / toi',part_of_speech:'pronoun',lesson:2,sentences:[{chinese:'你叫什麼名字？',pinyin:'Nǐ jiào shénme míngzi?',english:'What is your name?'},{chinese:'你是哪裡人？',pinyin:'Nǐ shì nǎlǐ rén?',english:'Where are you from?'}],grammar_links:[],performance:{production:[],speed_ms:[],due:0,ef:2.5,interval:0}},
+      {id:'w008',traditional:'什麼',pinyin:'shénme',english:'what',french:'quoi / quel',part_of_speech:'pronoun',lesson:2,sentences:[{chinese:'這是什麼？',pinyin:'Zhè shì shénme?',english:'What is this?'},{chinese:'你要什麼？',pinyin:'Nǐ yào shénme?',english:'What do you want?'}],grammar_links:[],performance:{production:[],speed_ms:[],due:0,ef:2.5,interval:0}},
+      {id:'w009',traditional:'名字',pinyin:'míngzi',english:'name',french:'prénom / nom',part_of_speech:'noun',lesson:2,sentences:[{chinese:'你叫什麼名字？',pinyin:'Nǐ jiào shénme míngzi?',english:'What is your name?'},{chinese:'我的名字是安東。',pinyin:'Wǒ de míngzi shì Āndōng.',english:'My name is Antoine.'}],grammar_links:[],performance:{production:[],speed_ms:[],due:0,ef:2.5,interval:0}},
+      {id:'w010',traditional:'中文',pinyin:'Zhōngwén',english:'Chinese language',french:'le chinois (langue)',part_of_speech:'noun',lesson:2,sentences:[{chinese:'我學中文。',pinyin:'Wǒ xué Zhōngwén.',english:'I study Chinese.'},{chinese:'中文很有趣。',pinyin:'Zhōngwén hěn yǒuqù.',english:'Chinese is very interesting.'}],grammar_links:[],performance:{production:[],speed_ms:[],due:0,ef:2.5,interval:0}},
+      {id:'w011',traditional:'好',pinyin:'hǎo',english:'good / well',french:'bien / bon',part_of_speech:'adjective',lesson:3,sentences:[{chinese:'你的中文很好！',pinyin:'Nǐ de Zhōngwén hěn hǎo!',english:'Your Chinese is very good!'},{chinese:'今天天氣很好。',pinyin:'Jīntiān tiānqì hěn hǎo.',english:'The weather is very good today.'}],grammar_links:['g003'],performance:{production:[],speed_ms:[],due:0,ef:2.5,interval:0}},
+      {id:'w012',traditional:'很',pinyin:'hěn',english:'very',french:'très',part_of_speech:'adverb',lesson:3,sentences:[{chinese:'這很有趣。',pinyin:'Zhè hěn yǒuqù.',english:'This is very interesting.'},{chinese:'他很忙。',pinyin:'Tā hěn máng.',english:'He is very busy.'}],grammar_links:['g003'],performance:{production:[],speed_ms:[],due:0,ef:2.5,interval:0}},
+      {id:'w013',traditional:'學習',pinyin:'xuéxí',english:'to study / to learn',french:'étudier / apprendre',part_of_speech:'verb',lesson:3,sentences:[{chinese:'我每天學習中文。',pinyin:'Wǒ měitiān xuéxí Zhōngwén.',english:'I study Chinese every day.'},{chinese:'學習語言很有趣。',pinyin:'Xuéxí yǔyán hěn yǒuqù.',english:'Learning languages is very interesting.'}],grammar_links:[],performance:{production:[],speed_ms:[],due:0,ef:2.5,interval:0}},
+      {id:'w014',traditional:'老師',pinyin:'lǎoshī',english:'teacher',french:'professeur',part_of_speech:'noun',lesson:3,sentences:[{chinese:'我的老師很好。',pinyin:'Wǒ de lǎoshī hěn hǎo.',english:'My teacher is very good.'},{chinese:'老師，請問這個字怎麼念？',pinyin:'Lǎoshī, qǐngwèn zhège zì zěnme niàn?',english:'Teacher, how do you read this character?'}],grammar_links:[],performance:{production:[],speed_ms:[],due:0,ef:2.5,interval:0}},
+      {id:'w015',traditional:'學生',pinyin:'xuéshēng',english:'student',french:'étudiant',part_of_speech:'noun',lesson:3,sentences:[{chinese:'我是學生。',pinyin:'Wǒ shì xuéshēng.',english:'I am a student.'},{chinese:'這個學生很認真。',pinyin:'Zhège xuéshēng hěn rènzhēn.',english:'This student is very diligent.'}],grammar_links:['g001'],performance:{production:[],speed_ms:[],due:0,ef:2.5,interval:0}},
+      {id:'w016',traditional:'今天',pinyin:'jīntiān',english:'today',french:"aujourd'hui",part_of_speech:'noun',lesson:4,sentences:[{chinese:'今天天氣很好。',pinyin:'Jīntiān tiānqì hěn hǎo.',english:'The weather is very good today.'},{chinese:'今天是星期幾？',pinyin:'Jīntiān shì xīngqī jǐ?',english:'What day is it today?'}],grammar_links:[],performance:{production:[],speed_ms:[],due:0,ef:2.5,interval:0}},
+      {id:'w017',traditional:'明天',pinyin:'míngtiān',english:'tomorrow',french:'demain',part_of_speech:'noun',lesson:4,sentences:[{chinese:'明天我們去公園。',pinyin:'Míngtiān wǒmen qù gōngyuán.',english:'Tomorrow we go to the park.'},{chinese:'明天見！',pinyin:'Míngtiān jiàn!',english:'See you tomorrow!'}],grammar_links:[],performance:{production:[],speed_ms:[],due:0,ef:2.5,interval:0}},
+      {id:'w018',traditional:'工作',pinyin:'gōngzuò',english:'work / to work',french:'travail / travailler',part_of_speech:'noun/verb',lesson:4,sentences:[{chinese:'我在公司工作。',pinyin:'Wǒ zài gōngsī gōngzuò.',english:'I work at a company.'},{chinese:'你的工作是什麼？',pinyin:'Nǐ de gōngzuò shì shénme?',english:'What is your job?'}],grammar_links:[],performance:{production:[],speed_ms:[],due:0,ef:2.5,interval:0}},
+      {id:'w019',traditional:'吃',pinyin:'chī',english:'to eat',french:'manger',part_of_speech:'verb',lesson:4,sentences:[{chinese:'我想吃餃子。',pinyin:'Wǒ xiǎng chī jiǎozi.',english:'I want to eat dumplings.'},{chinese:'你吃飯了嗎？',pinyin:'Nǐ chīfàn le ma?',english:'Have you eaten yet?'}],grammar_links:[],performance:{production:[],speed_ms:[],due:0,ef:2.5,interval:0}},
+      {id:'w020',traditional:'喝',pinyin:'hē',english:'to drink',french:'boire',part_of_speech:'verb',lesson:4,sentences:[{chinese:'我喝茶。',pinyin:'Wǒ hē chá.',english:'I drink tea.'},{chinese:'你要喝什麼？',pinyin:'Nǐ yào hē shénme?',english:'What do you want to drink?'}],grammar_links:[],performance:{production:[],speed_ms:[],due:0,ef:2.5,interval:0}}
+    ],
+    grammar:[
+      {id:'g001',name:'Subject-Verb-Object (SVO)',lesson:1,pattern:'S + 是 + N',description_en:'The basic sentence structure in Mandarin. Subject comes first, then verb, then object. Unlike French, adjectives typically precede nouns without agreement.',description_fr:'La structure de phrase de base en mandarin. Sujet d\'abord, puis verbe, puis objet.',examples:[{chinese:'我是學生。',pinyin:'Wǒ shì xuéshēng.',english:'I am a student.'},{chinese:'他是法國人。',pinyin:'Tā shì Fàguó rén.',english:'He is French.'}],performance:{production:[],speed_ms:[],due:0,ef:2.5,interval:0}},
+      {id:'g002',name:'Negation with 不 (bù)',lesson:2,pattern:'S + 不 + V + O',description_en:'To negate most verbs and adjectives, place 不 (bù) directly before them. The tone changes to 2nd tone (bú) before 4th tone words.',description_fr:'Pour nier un verbe ou un adjectif, placez 不 (bù) directement avant. Le ton change en 2ème ton devant un mot en 4ème ton.',examples:[{chinese:'我不是老師。',pinyin:'Wǒ bù shì lǎoshī.',english:'I am not a teacher.'},{chinese:'我不喝咖啡。',pinyin:'Wǒ bù hē kāfēi.',english:'I don\'t drink coffee.'}],performance:{production:[],speed_ms:[],due:0,ef:2.5,interval:0}},
+      {id:'g003',name:'Adjectival predicate with 很 (hěn)',lesson:3,pattern:'S + 很 + Adj',description_en:'In Chinese, adjectives can directly function as predicates without a copula (是). However, 很 is typically added before the adjective, not necessarily meaning "very" but acting as a linking element.',description_fr:'En chinois, les adjectifs peuvent directement servir de prédicats sans copule. 很 est ajouté devant l\'adjectif comme élément de liaison.',examples:[{chinese:'她很漂亮。',pinyin:'Tā hěn piàoliang.',english:'She is beautiful.'},{chinese:'中文很難。',pinyin:'Zhōngwén hěn nán.',english:'Chinese is difficult.'}],performance:{production:[],speed_ms:[],due:0,ef:2.5,interval:0}},
+      {id:'g004',name:'Question particle 嗎 (ma)',lesson:2,pattern:'Statement + 嗎？',description_en:'Add 嗎 at the end of any statement to turn it into a yes/no question. The sentence structure stays the same — only 嗎 is appended.',description_fr:'Ajoutez 嗎 à la fin de n\'importe quelle phrase déclarative pour la transformer en question oui/non.',examples:[{chinese:'你是學生嗎？',pinyin:'Nǐ shì xuéshēng ma?',english:'Are you a student?'},{chinese:'你喜歡中文嗎？',pinyin:'Nǐ xǐhuān Zhōngwén ma?',english:'Do you like Chinese?'}],performance:{production:[],speed_ms:[],due:0,ef:2.5,interval:0}},
+      {id:'g005',name:'Possession with 的 (de)',lesson:3,pattern:'Possessor + 的 + Thing',description_en:'The particle 的 indicates possession, similar to apostrophe-s in English. It links possessor to the possessed noun.',description_fr:'La particule 的 indique la possession, similaire au génitif saxon en anglais.',examples:[{chinese:'我的書',pinyin:'Wǒ de shū',english:'my book'},{chinese:'老師的名字',pinyin:'Lǎoshī de míngzi',english:'the teacher\'s name'},{chinese:'我的中文老師很好。',pinyin:'Wǒ de Zhōngwén lǎoshī hěn hǎo.',english:'My Chinese teacher is very good.'}],performance:{production:[],speed_ms:[],due:0,ef:2.5,interval:0}},
+      {id:'g006',name:'Time expressions before verb',lesson:4,pattern:'S + Time + V + O',description_en:'In Mandarin, time words (today, tomorrow, now) come before the verb, not after as in French. They can also appear at the very beginning of the sentence.',description_fr:'En mandarin, les expressions de temps se placent avant le verbe, contrairement au français où elles viennent souvent après.',examples:[{chinese:'我今天學習中文。',pinyin:'Wǒ jīntiān xuéxí Zhōngwén.',english:'I study Chinese today.'},{chinese:'明天你去哪裡？',pinyin:'Míngtiān nǐ qù nǎlǐ?',english:'Where are you going tomorrow?'}],performance:{production:[],speed_ms:[],due:0,ef:2.5,interval:0}}
+    ],
+    sessions:[]
+  };
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   INIT
+═══════════════════════════════════════════════════════════════ */
+loadDB();
+renderHome();
+
+// Service worker registration
+if('serviceWorker' in navigator){
+  navigator.serviceWorker.register('sw.js').catch(()=>{});
+}
+
+// Load voices for TTS
+window.speechSynthesis.onvoiceschanged = () => { window.speechSynthesis.getVoices(); };
+</script>
+</body>
+</html>
