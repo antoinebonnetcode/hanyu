@@ -479,11 +479,45 @@ input[type=range]::-webkit-slider-thumb{
       <div class="divider"></div>
 
       <div class="section">
-        <div class="section-header"><p class="label">Database</p></div>
-        <div class="settings-row">
-          <div><div class="settings-label">Database URL</div><div class="settings-sub">Raw GitHub URL of your database.json file</div></div>
+        <div class="section-header"><p class="label">Import content</p></div>
+
+        <!-- Method A: Paste JSON -->
+        <div class="settings-row" style="display:block;margin-bottom:0">
+          <div class="settings-label">Paste from Claude</div>
+          <div class="settings-sub">Copy the JSON block Claude gives you and paste it here</div>
         </div>
-        <input type="url" class="settings-input" id="db-url" placeholder="https://raw.githubusercontent.com/…/database.json" oninput="saveSetting('dbUrl',this.value)">
+        <textarea id="paste-import" class="settings-input" rows="5" style="margin-top:8px;font-family:var(--mono-font);font-size:12px;resize:vertical" placeholder='{"words":[...],"grammar":[...]}'></textarea>
+        <button class="btn-secondary" onclick="importPasted()" style="margin-top:8px">Import pasted JSON →</button>
+
+        <div style="display:flex;align-items:center;gap:12px;margin:16px 0">
+          <div style="flex:1;height:1px;background:var(--gray-100)"></div>
+          <span style="font-size:11px;color:var(--gray-400);letter-spacing:0.08em;text-transform:uppercase">or</span>
+          <div style="flex:1;height:1px;background:var(--gray-100)"></div>
+        </div>
+
+        <!-- Method B: Upload file -->
+        <div class="settings-row" style="display:block;margin-bottom:0">
+          <div class="settings-label">Upload a file</div>
+          <div class="settings-sub">Upload a .json file exported from this app or provided by Claude</div>
+        </div>
+        <div id="drop-zone" style="border:1px dashed var(--gray-200);padding:24px;text-align:center;margin-top:8px;cursor:pointer;transition:all 0.15s" onclick="document.getElementById('file-input').click()" ondragover="event.preventDefault();this.style.borderColor='#000'" ondragleave="this.style.borderColor='var(--gray-200)'" ondrop="handleFileDrop(event)">
+          <p style="font-size:13px;color:var(--gray-400)">Tap to choose file, or drag and drop</p>
+          <p style="font-size:11px;color:var(--gray-200);margin-top:4px">.json files only</p>
+        </div>
+        <input type="file" id="file-input" accept=".json,application/json" style="display:none" onchange="handleFileSelect(event)">
+
+        <div style="display:flex;align-items:center;gap:12px;margin:16px 0">
+          <div style="flex:1;height:1px;background:var(--gray-100)"></div>
+          <span style="font-size:11px;color:var(--gray-400);letter-spacing:0.08em;text-transform:uppercase">or</span>
+          <div style="flex:1;height:1px;background:var(--gray-100)"></div>
+        </div>
+
+        <!-- Method C: GitHub sync (advanced) -->
+        <div class="settings-row" style="display:block;margin-bottom:0">
+          <div class="settings-label">Sync from GitHub <span style="font-size:10px;color:var(--gray-400);text-transform:uppercase;letter-spacing:0.08em;margin-left:6px">Advanced</span></div>
+          <div class="settings-sub">Raw URL of your database.json on GitHub</div>
+        </div>
+        <input type="url" class="settings-input" id="db-url" placeholder="https://raw.githubusercontent.com/…/database.json" oninput="saveSetting('dbUrl',this.value)" style="margin-top:8px">
         <button class="btn-secondary" onclick="syncDatabase()" style="margin-top:8px">Sync from GitHub →</button>
         <p style="font-size:12px;color:var(--gray-400);margin-top:8px" id="sync-status"></p>
       </div>
@@ -491,9 +525,10 @@ input[type=range]::-webkit-slider-thumb{
       <div class="divider"></div>
 
       <div class="section">
-        <div class="section-header"><p class="label">Data</p></div>
+        <div class="section-header"><p class="label">Export & reset</p></div>
         <button class="btn-secondary" onclick="exportData()">Export database (JSON)</button>
-        <button class="btn-secondary" onclick="resetProgress()" style="margin-top:8px;color:var(--red);border-color:var(--red)">Reset all progress</button>
+        <p style="font-size:12px;color:var(--gray-400);margin-top:6px;margin-bottom:8px">Use this to back up your data, or to share with Claude for merging new lessons.</p>
+        <button class="btn-secondary" onclick="resetProgress()" style="margin-top:4px;color:var(--red);border-color:var(--red)">Reset all progress</button>
       </div>
     </div>
 
@@ -1366,6 +1401,84 @@ function exportData(){
   a.download = 'hanyu-database.json';
   a.click();
   toast('Database exported ✓');
+}
+
+function importPasted(){
+  const raw = document.getElementById('paste-import').value.trim();
+  if(!raw){ toast('Nothing pasted yet'); return; }
+  try{
+    const data = JSON.parse(raw);
+    const result = mergeImport(data);
+    document.getElementById('paste-import').value = '';
+    toast(`✓ Imported: +${result.newWords} words, +${result.newGrammar} grammar patterns`);
+  } catch(e){
+    toast('Invalid JSON — check for formatting errors');
+  }
+}
+
+function handleFileDrop(e){
+  e.preventDefault();
+  document.getElementById('drop-zone').style.borderColor = 'var(--gray-200)';
+  const file = e.dataTransfer.files[0];
+  if(file) readImportFile(file);
+}
+
+function handleFileSelect(e){
+  const file = e.target.files[0];
+  if(file) readImportFile(file);
+  e.target.value = ''; // reset so same file can be re-selected
+}
+
+function readImportFile(file){
+  if(!file.name.endsWith('.json') && file.type !== 'application/json'){
+    toast('Please select a .json file'); return;
+  }
+  const reader = new FileReader();
+  reader.onload = (e) => {
+    try{
+      const data = JSON.parse(e.target.result);
+      const result = mergeImport(data);
+      toast(`✓ Imported: +${result.newWords} words, +${result.newGrammar} grammar patterns`);
+      document.getElementById('drop-zone').innerHTML = `<p style="font-size:13px;color:var(--green)">✓ ${file.name} imported</p>`;
+      setTimeout(()=>{
+        document.getElementById('drop-zone').innerHTML = `<p style="font-size:13px;color:var(--gray-400)">Tap to choose file, or drag and drop</p><p style="font-size:11px;color:var(--gray-200);margin-top:4px">.json files only</p>`;
+      }, 3000);
+    } catch(err){
+      toast('Could not parse file — check it\'s valid JSON');
+    }
+  };
+  reader.readAsText(file);
+}
+
+function mergeImport(data){
+  let newWords = 0, newGrammar = 0;
+  if(data.words && Array.isArray(data.words)){
+    data.words.forEach(nw=>{
+      if(!nw.traditional) return; // skip malformed entries
+      const existing = DB.words.find(w=>w.id===nw.id || w.traditional===nw.traditional);
+      if(!existing){
+        DB.words.push({...nw, performance: nw.performance || {production:[],speed_ms:[],due:0,ef:2.5,interval:0}});
+        newWords++;
+      } else {
+        // Update content but preserve performance scores
+        Object.assign(existing, {...nw, performance: existing.performance});
+      }
+    });
+  }
+  if(data.grammar && Array.isArray(data.grammar)){
+    data.grammar.forEach(ng=>{
+      if(!ng.name) return;
+      const existing = DB.grammar.find(g=>g.id===ng.id || g.name===ng.name);
+      if(!existing){
+        DB.grammar.push({...ng, performance: ng.performance || {production:[],speed_ms:[],due:0,ef:2.5,interval:0}});
+        newGrammar++;
+      } else {
+        Object.assign(existing, {...ng, performance: existing.performance});
+      }
+    });
+  }
+  saveDB();
+  return {newWords, newGrammar};
 }
 
 function resetProgress(){
