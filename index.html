@@ -162,7 +162,7 @@ input[type=range]::-webkit-slider-thumb{
 .session-counter{font-family:var(--mono-font);font-size:12px;color:var(--gray-400);white-space:nowrap}
 .session-close{font-size:20px;color:var(--gray-400);padding:4px;line-height:1}
 
-.session-body{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;padding:28px 20px}
+.session-body{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;padding:28px 20px 12px}
 
 .q-type-label{font-size:11px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray-400);margin-bottom:20px}
 .q-prompt{margin-bottom:24px}
@@ -188,7 +188,7 @@ input[type=range]::-webkit-slider-thumb{
 .answer-input.latin{font-family:var(--ui-font);font-size:15px}
 .answer-hint{font-size:11px;color:var(--gray-400);margin-top:6px;font-style:italic}
 
-.session-footer{padding:16px 20px 20px;border-top:1px solid var(--gray-100);background:var(--white);flex-shrink:0}
+.session-footer{padding:12px 20px;padding-bottom:max(16px,env(safe-area-inset-bottom));border-top:1px solid var(--gray-100);background:var(--white);flex-shrink:0}
 
 /* ─── FEEDBACK ───────────────────────────────────────────────── */
 .feedback-box{border:1px solid var(--gray-100);padding:20px;margin-bottom:16px;animation:fadeUp 0.25s ease}
@@ -207,6 +207,38 @@ input[type=range]::-webkit-slider-thumb{
 .feedback-text{font-size:14px;line-height:1.6;color:var(--gray-600)}
 .feedback-corrected{font-family:var(--chinese-font);font-size:1.6rem;line-height:1.3;margin-bottom:6px}
 .feedback-pinyin{font-family:var(--mono-font);font-size:13px;color:var(--gray-600)}
+
+/* ─── VOCAB REVIEW CARD ──────────────────────────────────────── */
+.vr-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;gap:12px}
+.vr-direction-toggle{display:flex;border:1px solid var(--gray-200);border-radius:2px;overflow:hidden;flex-shrink:0}
+.vr-dir-btn{font-size:11px;font-weight:500;letter-spacing:0.07em;padding:6px 12px;background:var(--white);color:var(--gray-400);transition:all 0.15s;white-space:nowrap}
+.vr-dir-btn.active{background:var(--black);color:var(--white)}
+
+.vr-card{
+  border:1px solid var(--gray-100);padding:28px 20px;text-align:center;
+  cursor:pointer;transition:all 0.2s;position:relative;
+  min-height:160px;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  margin-bottom:8px;
+}
+.vr-card:active{background:var(--off-white)}
+.vr-card .vr-prompt{font-size:2.4rem;font-family:var(--chinese-font);line-height:1.2;margin-bottom:6px}
+.vr-card .vr-prompt.latin{font-family:var(--ui-font);font-size:1.3rem}
+.vr-card .vr-reveal{margin-top:20px;padding-top:20px;border-top:1px solid var(--gray-100);width:100%}
+.vr-card .vr-hint{font-size:12px;color:var(--gray-400);letter-spacing:0.06em;text-transform:uppercase;margin-bottom:16px}
+.vr-card .vr-answer{font-size:2rem;font-family:var(--chinese-font);margin-bottom:6px}
+.vr-card .vr-answer.latin{font-family:var(--ui-font);font-size:1.2rem}
+.vr-card .vr-pinyin{font-family:var(--mono-font);font-size:13px;color:var(--gray-600);margin-bottom:10px}
+.vr-audio-btn{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:var(--gray-400);border:1px solid var(--gray-200);padding:6px 12px;background:var(--white);letter-spacing:0.04em;margin-top:4px}
+.vr-audio-btn:active{background:var(--off-white)}
+
+/* ─── SELECTION TOOLTIP ──────────────────────────────────────── */
+#selection-tooltip{
+  position:fixed;z-index:999;background:var(--black);color:var(--white);
+  padding:6px 12px;font-size:12px;font-family:var(--mono-font);
+  pointer-events:none;opacity:0;transition:opacity 0.15s;
+  max-width:240px;line-height:1.4;
+}
+#selection-tooltip.visible{opacity:1}
 
 /* ─── REFERENCE UI ───────────────────────────────────────────── */
 .search-bar{
@@ -394,9 +426,15 @@ input[type=range]::-webkit-slider-thumb{
 
     <!-- REFERENCE -->
     <div class="screen" id="screen-ref">
-      <div class="search-bar">
-        <span class="search-bar-icon">⌕</span>
-        <input type="text" id="search-input" placeholder="Search characters, pinyin, meaning…" oninput="renderReference()">
+      <div class="vr-header">
+        <div class="search-bar" style="flex:1;margin-bottom:0">
+          <span class="search-bar-icon">⌕</span>
+          <input type="text" id="search-input" placeholder="Search characters, pinyin, meaning…" oninput="renderReference()">
+        </div>
+        <div class="vr-direction-toggle" id="vr-toggle">
+          <button class="vr-dir-btn active" id="vrd-zh" onclick="setVRDirection('zh',this)">ZH→EN</button>
+          <button class="vr-dir-btn" id="vrd-en" onclick="setVRDirection('en',this)">EN→ZH</button>
+        </div>
       </div>
       <div class="ref-tabs">
         <div class="ref-tab active" id="tab-words" onclick="setRefTab('words',this)">Vocabulary</div>
@@ -568,6 +606,8 @@ input[type=range]::-webkit-slider-thumb{
 
 <div class="toast" id="toast"></div>
 
+<div id="selection-tooltip"></div>
+
 <script>
 /* ═══════════════════════════════════════════════════════════════
    STATE & PERSISTENCE
@@ -714,16 +754,16 @@ document.getElementById('length-slider').addEventListener('input', function(){
 let SESSION = null; // {queue, index, answers, mode, startTime}
 
 function startSession(){
-  const items = getSessionItems(STATE.selectedMode, STATE.selectedLessons, STATE.selectedFocus, STATE.sessionLength);
-  if(items.length===0){ toast('No items available for this selection.'); return; }
+  const queueItems = getSessionItems(STATE.selectedMode, STATE.selectedLessons, STATE.selectedFocus, STATE.sessionLength);
+  if(queueItems.length===0){ toast('No items available for this selection.'); return; }
   SESSION = {
-    queue: items,
+    queue: queueItems, // Each item is {item, forcedType}
     index: 0,
     answers: [],
     mode: STATE.selectedMode,
     startTime: Date.now()
   };
-  STATE.pendingSession = {queue:items.map(i=>i.id), index:0, mode:STATE.selectedMode};
+  STATE.pendingSession = {queue:queueItems.map(q=>({id:q.item.id,ft:q.forcedType})), index:0, mode:STATE.selectedMode};
   saveState();
   openSessionUI();
   renderQuestion();
@@ -731,9 +771,14 @@ function startSession(){
 
 function resumeSession(){
   if(!STATE.pendingSession) return;
-  // Rebuild session from pending state
   const allItems = [...DB.words, ...DB.grammar];
-  const queueItems = STATE.pendingSession.queue.map(id=>allItems.find(i=>i.id===id)).filter(Boolean);
+  const queueItems = (STATE.pendingSession.queue||[]).map(q=>{
+    // Support both old format (just id) and new format ({id, ft})
+    const id = typeof q === 'string' ? q : q.id;
+    const ft = typeof q === 'object' ? q.ft : null;
+    const item = allItems.find(i=>i.id===id);
+    return item ? {item, forcedType:ft||null} : null;
+  }).filter(Boolean);
   if(queueItems.length===0){ STATE.pendingSession=null; saveState(); renderHome(); return; }
   SESSION = {
     queue: queueItems,
@@ -759,7 +804,18 @@ function getSessionItems(mode, lessons, focus, count){
     const da = a.performance.due||0, db_ = b.performance.due||0;
     return da-db_;
   });
-  return shuffle(pool).slice(0, Math.min(count, pool.length));
+  const selected = shuffle(pool).slice(0, Math.min(count, pool.length));
+  
+  // Group by question type to reduce context-switching cognitive load
+  // Vocab mode: batch all ZH→EN first, then EN→ZH
+  if(mode==='vocab'){
+    const half = Math.ceil(selected.length/2);
+    return [
+      ...selected.slice(0, half).map(item=>({item, forcedType:'produce_chinese'})),
+      ...selected.slice(half).map(item=>({item, forcedType:'produce_english'}))
+    ];
+  }
+  return selected.map(item=>({item, forcedType:null}));
 }
 
 function openSessionUI(){
@@ -778,7 +834,9 @@ function renderQuestion(){
     showSessionComplete();
     return;
   }
-  const item = SESSION.queue[SESSION.index];
+  const queueEntry = SESSION.queue[SESSION.index];
+  const item = queueEntry.item || queueEntry; // support both formats
+  const forcedType = queueEntry.forcedType || null;
   const total = SESSION.queue.length;
   const idx = SESSION.index;
 
@@ -787,7 +845,7 @@ function renderQuestion(){
   document.getElementById('s-counter').textContent = `${idx+1}/${total}`;
 
   // Generate exercise for this item and mode
-  const ex = generateExercise(item, SESSION.mode);
+  const ex = generateExercise(item, SESSION.mode, forcedType);
   SESSION.currentExercise = ex;
   SESSION.questionStart = Date.now();
 
@@ -802,12 +860,13 @@ function renderQuestion(){
   if(ex.type==='listen_transcribe'||ex.type==='listen_answer') speakText(ex.audioText);
 }
 
-function generateExercise(item, mode){
+function generateExercise(item, mode, forcedType){
   const r = Math.random();
   if(mode==='vocab'){
-    return r<0.5 ?
-      {type:'produce_chinese', prompt_en:item.english, prompt_fr:item.french, answer:item.traditional, item} :
-      {type:'produce_english', prompt_zh:item.traditional, answer:item.english, item};
+    const type = forcedType || (r<0.5 ? 'produce_chinese' : 'produce_english');
+    return type==='produce_chinese'
+      ? {type:'produce_chinese', prompt_en:item.english, prompt_fr:item.french, answer:item.traditional, item}
+      : {type:'produce_english', prompt_zh:item.traditional, answer:item.english, item};
   }
   if(mode==='rw'){
     const types = ['translate_to_chinese','translate_to_english','fill_blank','construct_sentence'];
@@ -839,8 +898,8 @@ function generateExercise(item, mode){
 
 function buildQuestionHTML(ex, item){
   const typeLabels = {
-    produce_chinese:'Vocabulary → Produce Chinese',
-    produce_english:'Vocabulary → Produce English',
+    produce_chinese:'EN → ZH',
+    produce_english:'ZH → EN',
     translate_to_chinese:'Translate to Chinese',
     translate_to_english:'Translate to English',
     fill_blank:'Fill in the blank',
@@ -848,7 +907,9 @@ function buildQuestionHTML(ex, item){
     listen_transcribe:'Listening → Transcribe',
     listen_answer:'Listening → Answer'
   };
-  let html = `<p class="q-type-label">${typeLabels[ex.type]||ex.type}</p>`;
+  // Show type group + question number context
+  const groupLabel = typeLabels[ex.type]||ex.type;
+  let html = `<p class="q-type-label">${groupLabel}</p>`;
 
   if(ex.type==='produce_chinese'){
     html += `<div class="q-prompt"><p class="q-prompt-text" style="font-size:1.3rem;font-weight:500">${ex.prompt_en}</p><p style="font-size:13px;color:var(--gray-400);margin-top:4px">${ex.prompt_fr||''}</p></div>`;
@@ -913,28 +974,41 @@ async function handleSubmit(){
     feedback = getLocalFeedback(ex, answer);
   }
 
-  // Record result
-  const isCorrect = feedback.verdict === 'correct';
-  const isPartial = feedback.verdict === 'partial';
-  updatePerformance(ex.item, isCorrect ? 1 : isPartial ? 0.5 : 0, speedMs);
-  SESSION.answers.push({itemId:ex.item.id, correct:isCorrect, answer, speedMs});
+  // Dynamic score: correct=1.0, partial=0.6, incorrect=0.0
+  // If API gave a score field, use it; otherwise map verdict
+  const scoreMap = {correct:1.0, partial:0.6, incorrect:0.0};
+  const dynamicScore = feedback.score !== undefined ? parseFloat(feedback.score) : (scoreMap[feedback.verdict]||0);
+  const isCorrect = dynamicScore >= 0.9;
+  const isPartial = dynamicScore >= 0.4 && dynamicScore < 0.9;
+  updatePerformance(ex.item, dynamicScore, speedMs);
+  SESSION.answers.push({itemId:ex.item.id, correct:isCorrect, score:dynamicScore, answer, speedMs});
 
   // Update pending session index
   STATE.pendingSession.index = SESSION.index + 1;
   saveState();
 
-  renderFeedback(feedback, ex);
+  renderFeedback(feedback, ex, dynamicScore);
 }
 
-function renderFeedback(feedback, ex){
+function renderFeedback(feedback, ex, dynamicScore){
   const body = document.getElementById('session-body');
-  const verdictClass = {correct:'correct',partial:'partial',incorrect:'incorrect'}[feedback.verdict]||'incorrect';
-  const verdictText = {correct:'Correct',partial:'Partially correct',incorrect:'Incorrect'}[feedback.verdict];
+  const score = dynamicScore !== undefined ? dynamicScore : (feedback.verdict==='correct'?1:feedback.verdict==='partial'?0.6:0);
+  const verdictClass = score>=0.9?'correct':score>=0.4?'partial':'incorrect';
+  const verdictText = score>=0.9?'Correct':score>=0.4?'Partially correct':'Incorrect';
+
+  // Find example sentence pinyin if the question was sentence-level
+  let sentencePinyin = '';
+  if(ex.type==='translate_to_chinese'||ex.type==='translate_to_english'||ex.type==='fill_blank'){
+    const matchedSentence = (ex.item.sentences||[]).find(s=>s.chinese===ex.answer||(ex.prompt_zh&&s.chinese===ex.prompt_zh));
+    if(matchedSentence && matchedSentence.pinyin) sentencePinyin = matchedSentence.pinyin;
+  }
+  const displayPinyin = sentencePinyin || feedback.pinyin || ex.item.pinyin || '';
 
   const feedbackHTML = `
     <div class="feedback-box" id="feedback-box">
       <div class="feedback-verdict">
         <span class="verdict-badge ${verdictClass}">${verdictText}</span>
+        ${score>0&&score<1?`<span class="verdict-type" style="font-family:var(--mono-font);font-size:11px">${Math.round(score*100)}%</span>`:''}
         <span class="verdict-type">${feedback.errorType||''}</span>
       </div>
       ${feedback.explanation?`<div class="feedback-section">
@@ -944,7 +1018,7 @@ function renderFeedback(feedback, ex){
       <div class="feedback-section">
         <p class="feedback-section-label">Correct answer</p>
         <p class="feedback-corrected">${feedback.corrected||ex.answer}</p>
-        <p class="feedback-pinyin">${feedback.pinyin||ex.item.pinyin||''}</p>
+        <p class="feedback-pinyin">${displayPinyin}</p>
       </div>
     </div>
   `;
@@ -1118,6 +1192,29 @@ function updateStreak(){
 let refTab = 'words';
 let refLesson = null;
 let openCardId = null;
+let vrDirection = 'zh'; // 'zh' = show Chinese, reveal English; 'en' = show English, reveal Chinese
+let revealedCards = new Set();
+
+function setVRDirection(dir, el){
+  vrDirection = dir;
+  revealedCards.clear();
+  document.querySelectorAll('.vr-dir-btn').forEach(b=>b.classList.remove('active'));
+  el.classList.add('active');
+  renderReference();
+}
+
+function toggleReveal(id, ev){
+  ev.stopPropagation();
+  if(revealedCards.has(id)) revealedCards.delete(id);
+  else revealedCards.add(id);
+  // Re-render just the card
+  renderReference();
+}
+
+function playWordAudio(text, ev){
+  ev.stopPropagation();
+  speakText(text);
+}
 
 function setRefTab(tab, el){
   refTab = tab;
@@ -1148,42 +1245,26 @@ function renderReference(){
     list.innerHTML = items.map(w=>{
       const m = getMastery(w);
       const tier = getMasteryTier(m);
-      const isOpen = openCardId===w.id;
+      const isRevealed = revealedCards.has(w.id);
+      const showZH = vrDirection === 'zh';
+      const promptText = showZH
+        ? `<div class="vr-prompt">${w.traditional}</div>`
+        : `<div class="vr-prompt latin">${w.english}</div>`;
+      const answerContent = showZH
+        ? `<div class="vr-answer latin">${w.english}${w.french?`<div style="font-size:13px;color:var(--gray-400);font-style:italic;margin-top:2px">${w.french}</div>`:''}</div>`
+        : `<div class="vr-answer">${w.traditional}</div>`;
+      const revealSection = isRevealed ? `
+        <div class="vr-reveal">
+          ${showZH?`<div class="vr-pinyin">${w.pinyin||''}</div>`:''}
+          ${answerContent}
+          ${!showZH?`<div class="vr-pinyin">${w.pinyin||''}</div>`:''}
+          <button class="vr-audio-btn" onclick="playWordAudio('${w.traditional.replace(/'/g,"\'")}', event)">▶ Audio</button>
+        </div>` : `<div class="vr-hint">tap to reveal</div>`;
       return `
-        <div class="word-card" onclick="toggleWordCard('${w.id}')">
-          <div class="word-card-header">
-            <div>
-              <div class="word-hanzi">${w.traditional}</div>
-              <div class="word-pinyin">${w.pinyin||''}</div>
-            </div>
-            <div class="mastery-dot ${tier.color}" title="${tier.label} — ${Math.round(m*100)}%"></div>
-          </div>
-          <div class="word-meaning">${w.english}</div>
-          ${w.french?`<div class="word-pos">${w.french}</div>`:''}
-          <div class="word-detail ${isOpen?'open':''}" id="wd-${w.id}">
-            ${w.sentences&&w.sentences.length>0?`
-              <div class="word-detail-row">
-                <div class="word-detail-label">Example sentences</div>
-                ${w.sentences.map(s=>`
-                  <div class="example-item">
-                    <div class="example-zh">${s.chinese}</div>
-                    <div class="example-py">${s.pinyin||''}</div>
-                    <div class="example-en">${s.english}</div>
-                  </div>`).join('')}
-              </div>`:''}
-            ${w.grammar_links&&w.grammar_links.length>0?`
-              <div class="word-detail-row">
-                <div class="word-detail-label">Grammar</div>
-                ${w.grammar_links.map(gid=>{
-                  const g=DB.grammar.find(x=>x.id===gid);
-                  return g?`<p style="font-size:13px;color:var(--gray-600)">${g.name}</p>`:'';
-                }).join('')}
-              </div>`:''}
-            <div class="word-detail-row" style="margin-top:8px">
-              <div class="word-detail-label">Performance</div>
-              <p style="font-size:13px;color:var(--gray-600)">${tier.label} — ${Math.round(m*100)}% mastery · Lesson ${w.lesson}</p>
-            </div>
-          </div>
+        <div class="vr-card" onclick="toggleReveal('${w.id}', event)">
+          <div style="position:absolute;top:10px;right:12px"><div class="mastery-dot ${tier.color}" title="${tier.label} — ${Math.round(m*100)}%"></div></div>
+          ${promptText}
+          ${revealSection}
         </div>`;
     }).join('');
   } else {
@@ -1529,6 +1610,46 @@ function toast(msg){
   clearTimeout(toastTimer);
   toastTimer=setTimeout(()=>el.classList.remove('show'),2800);
 }
+
+/* ─── SELECTION TOOLTIP ─────────────────────────────────────── */
+// Shows translation when user selects Chinese text during a test
+let tooltipTimer = null;
+const tooltip = document.getElementById('selection-tooltip');
+
+document.addEventListener('selectionchange', ()=>{
+  clearTimeout(tooltipTimer);
+  tooltipTimer = setTimeout(()=>{
+    const sel = window.getSelection();
+    const text = sel ? sel.toString().trim() : '';
+    if(!text || text.length < 1 || text.length > 6){
+      tooltip.classList.remove('visible');
+      return;
+    }
+    // Only show in session body
+    if(!sel.anchorNode) return;
+    const inSession = document.getElementById('session-wrap').contains(sel.anchorNode);
+    if(!inSession){ tooltip.classList.remove('visible'); return; }
+
+    // Look up the selected word
+    const found = DB.words.find(w=>w.traditional===text||w.traditional.includes(text)||text.includes(w.traditional));
+    if(!found){ tooltip.classList.remove('visible'); return; }
+
+    // Position near selection
+    const range = sel.getRangeAt(0);
+    const rect = range.getBoundingClientRect();
+    const x = Math.min(rect.left, window.innerWidth - 260);
+    const y = rect.top > 60 ? rect.top - 56 : rect.bottom + 8;
+
+    tooltip.style.left = Math.max(8, x)+'px';
+    tooltip.style.top = y+'px';
+    tooltip.innerHTML = `<span style="opacity:0.6;font-size:10px">${found.traditional} · ${found.pinyin||''}</span><br>${found.english}${found.french?`<br><span style="opacity:0.6">${found.french}</span>`:''}`;
+    tooltip.classList.add('visible');
+  }, 200);
+});
+
+document.addEventListener('click', (e)=>{
+  if(e.target !== tooltip) tooltip.classList.remove('visible');
+});
 
 /* ═══════════════════════════════════════════════════════════════
    SEED DATA (Lessons 1–4, Traditional Chinese)

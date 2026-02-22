@@ -1,4 +1,5 @@
 {
+  "version": "1.2",
   "words": [
     {
       "id": "w021",
@@ -13,6 +14,16 @@
           "chinese": "你好！",
           "pinyin": "Nǐ hǎo!",
           "english": "Hello!"
+        },
+        {
+          "chinese": "你喜歡喝茶嗎？",
+          "pinyin": "Nǐ xǐhuān hē chá ma?",
+          "english": "Do you like to drink tea?"
+        },
+        {
+          "chinese": "你是哪國人？",
+          "pinyin": "Nǐ shì nǎ guó rén?",
+          "english": "Which country are you from?"
         }
       ],
       "grammar_links": [],
@@ -37,6 +48,16 @@
           "chinese": "歡迎你來臺灣！",
           "pinyin": "Huānyíng nǐ lái Táiwān!",
           "english": "Welcome to Taiwan!"
+        },
+        {
+          "chinese": "他來接我們。",
+          "pinyin": "Tā lái jiē wǒmen.",
+          "english": "He came to pick us up."
+        },
+        {
+          "chinese": "明天你來嗎？",
+          "pinyin": "Míngtiān nǐ lái ma?",
+          "english": "Are you coming tomorrow?"
         }
       ],
       "grammar_links": [],
@@ -52,7 +73,7 @@
       "id": "w023",
       "traditional": "是",
       "pinyin": "shì",
-      "english": "to be",
+      "english": "to be (am/is/are)",
       "french": "être",
       "part_of_speech": "verb",
       "lesson": 1,
@@ -61,6 +82,16 @@
           "chinese": "我是李明華。",
           "pinyin": "Wǒ shì Lǐ Mínghuá.",
           "english": "I am Li Minghua."
+        },
+        {
+          "chinese": "他是老師。",
+          "pinyin": "Tā shì lǎoshī.",
+          "english": "He is a teacher."
+        },
+        {
+          "chinese": "你是臺灣人嗎？",
+          "pinyin": "Nǐ shì Táiwān rén ma?",
+          "english": "Are you Taiwanese?"
         }
       ],
       "grammar_links": [],
@@ -85,6 +116,16 @@
           "chinese": "請問你是陳月美小姐嗎？",
           "pinyin": "Qǐngwèn nǐ shì Chén Yuèměi xiǎojiě ma?",
           "english": "Excuse me, are you Miss Chen Yuemei?"
+        },
+        {
+          "chinese": "那位小姐很漂亮。",
+          "pinyin": "Nà wèi xiǎojiě hěn piàoliang.",
+          "english": "That lady is very pretty."
+        },
+        {
+          "chinese": "小姐，請問你要喝什麼？",
+          "pinyin": "Xiǎojiě, qǐngwèn nǐ yào hē shénme?",
+          "english": "Miss, what would you like to drink?"
         }
       ],
       "grammar_links": [],
@@ -100,7 +141,7 @@
       "id": "w025",
       "traditional": "嗎",
       "pinyin": "ma",
-      "english": "question particle",
+      "english": "question particle (yes/no questions)",
       "french": "particule interrogative",
       "part_of_speech": "particle",
       "lesson": 1,
@@ -109,6 +150,16 @@
           "chinese": "他是日本人嗎？",
           "pinyin": "Tā shì Rìběn rén ma?",
           "english": "Is he Japanese?"
+        },
+        {
+          "chinese": "你喜歡運動嗎？",
+          "pinyin": "Nǐ xǐhuān yùndòng ma?",
+          "english": "Do you like sports?"
+        },
+        {
+          "chinese": "你有兄弟姐妹嗎？",
+          "pinyin": "Nǐ yǒu xiōngdì jiěmèi ma?",
+          "english": "Do you have siblings?"
         }
       ],
       "grammar_links": [],
@@ -124,7 +175,7 @@
       "id": "w026",
       "traditional": "接",
       "pinyin": "jiē",
-      "english": "to pick someone up",
+      "english": "to pick someone up; to receive",
       "french": "aller chercher quelqu'un",
       "part_of_speech": "verb",
       "lesson": 1,
@@ -133,6 +184,16 @@
           "chinese": "謝謝你來接我們。",
           "pinyin": "Xièxie nǐ lái jiē wǒmen.",
           "english": "Thank you for coming to pick us up."
+        },
+        {
+          "chinese": "明天我去接你。",
+          "pinyin": "Míngtiān wǒ qù jiē nǐ.",
+          "english": "I will pick you up tomorrow."
+        },
+        {
+          "chinese": "他接了我的電話。",
+          "pinyin": "Tā jiē le wǒ de diànhuà.",
+          "english": "He answered my phone call."
         }
       ],
       "grammar_links": [],
@@ -157,6 +218,16 @@
           "chinese": "歡迎你們來臺灣。",
           "pinyin": "Huānyíng nǐmen lái Táiwān.",
           "english": "Welcome to Taiwan."
+        },
+        {
+          "chinese": "我們一起去看電影。",
+          "pinyin": "Wǒmen yīqǐ qù kàn diànyǐng.",
+          "english": "Let's go see a movie together."
+        },
+        {
+          "chinese": "我們都喜歡喝茶。",
+          "pinyin": "Wǒmen dōu xǐhuān hē chá.",
+          "english": "We all like to drink tea."
         }
       ],
       "grammar_links": [],
@@ -181,6 +252,16 @@
           "chinese": "我是美國人。",
           "pinyin": "Wǒ shì Měiguó rén.",
           "english": "I am American."
+        },
+        {
+          "chinese": "我喜歡看電影。",
+          "pinyin": "Wǒ xǐhuān kàn diànyǐng.",
+          "english": "I like to watch movies."
+        },
+        {
+          "chinese": "我有兩個妹妹。",
+          "pinyin": "Wǒ yǒu liǎng gè mèimei.",
+          "english": "I have two younger sisters."
         }
       ],
       "grammar_links": [],
@@ -205,6 +286,16 @@
           "chinese": "這是王先生。",
           "pinyin": "Zhè shì Wáng Xiānshēng.",
           "english": "This is Mr. Wang."
+        },
+        {
+          "chinese": "這張照片很好看。",
+          "pinyin": "Zhè zhāng zhàopiàn hěn hǎokàn.",
+          "english": "This photo is very nice."
+        },
+        {
+          "chinese": "這杯茶很好喝。",
+          "pinyin": "Zhè bēi chá hěn hǎohē.",
+          "english": "This cup of tea tastes great."
         }
       ],
       "grammar_links": [],
@@ -220,8 +311,8 @@
       "id": "w030",
       "traditional": "先生",
       "pinyin": "xiānshēng",
-      "english": "Mr.",
-      "french": "Monsieur",
+      "english": "Mr.; husband; sir",
+      "french": "Monsieur; mari",
       "part_of_speech": "noun",
       "lesson": 1,
       "sentences": [
@@ -229,6 +320,16 @@
           "chinese": "王先生要不要喝咖啡？",
           "pinyin": "Wáng Xiānshēng yào bú yào hē kāfēi?",
           "english": "Does Mr. Wang want some coffee?"
+        },
+        {
+          "chinese": "請問你先生是哪國人？",
+          "pinyin": "Qǐngwèn nǐ xiānshēng shì nǎ guó rén?",
+          "english": "May I ask what nationality your husband is?"
+        },
+        {
+          "chinese": "這位先生是老師。",
+          "pinyin": "Zhè wèi xiānshēng shì lǎoshī.",
+          "english": "This gentleman is a teacher."
         }
       ],
       "grammar_links": [],
@@ -244,7 +345,7 @@
       "id": "w031",
       "traditional": "好",
       "pinyin": "hǎo",
-      "english": "fine, well, good",
+      "english": "good, fine, well",
       "french": "bien, bon",
       "part_of_speech": "adjective",
       "lesson": 1,
@@ -253,6 +354,16 @@
           "chinese": "我很好。",
           "pinyin": "Wǒ hěn hǎo.",
           "english": "I am fine."
+        },
+        {
+          "chinese": "這個主意很好。",
+          "pinyin": "Zhè gè zhǔyì hěn hǎo.",
+          "english": "This idea is very good."
+        },
+        {
+          "chinese": "好，謝謝你。",
+          "pinyin": "Hǎo, xièxie nǐ.",
+          "english": "OK, thank you."
         }
       ],
       "grammar_links": [],
@@ -268,7 +379,7 @@
       "id": "w032",
       "traditional": "姓",
       "pinyin": "xìng",
-      "english": "to be surnamed",
+      "english": "to be surnamed; family name",
       "french": "avoir pour nom de famille",
       "part_of_speech": "verb",
       "lesson": 1,
@@ -277,6 +388,16 @@
           "chinese": "我姓王，叫開文。",
           "pinyin": "Wǒ xìng Wáng, jiào Kāiwén.",
           "english": "My surname is Wang, my first name is Kaiwen."
+        },
+        {
+          "chinese": "請問你姓什麼？",
+          "pinyin": "Qǐngwèn nǐ xìng shénme?",
+          "english": "May I ask what your surname is?"
+        },
+        {
+          "chinese": "他姓陳。",
+          "pinyin": "Tā xìng Chén.",
+          "english": "His surname is Chen."
         }
       ],
       "grammar_links": [],
@@ -292,7 +413,7 @@
       "id": "w033",
       "traditional": "叫",
       "pinyin": "jiào",
-      "english": "to be called, to have the first name",
+      "english": "to be called; to have the first name",
       "french": "s'appeler (prénom)",
       "part_of_speech": "verb",
       "lesson": 1,
@@ -301,6 +422,16 @@
           "chinese": "你叫什麼名字？",
           "pinyin": "Nǐ jiào shénme míngzi?",
           "english": "What is your name?"
+        },
+        {
+          "chinese": "我叫開文。",
+          "pinyin": "Wǒ jiào Kāiwén.",
+          "english": "My name is Kaiwen."
+        },
+        {
+          "chinese": "她叫什麼？",
+          "pinyin": "Tā jiào shénme?",
+          "english": "What is her name?"
         }
       ],
       "grammar_links": [],
@@ -325,6 +456,16 @@
           "chinese": "你們好。",
           "pinyin": "Nǐmen hǎo.",
           "english": "Hello everyone."
+        },
+        {
+          "chinese": "你們都是臺灣人嗎？",
+          "pinyin": "Nǐmen dōu shì Táiwān rén ma?",
+          "english": "Are you all Taiwanese?"
+        },
+        {
+          "chinese": "我們和你們一起去。",
+          "pinyin": "Wǒmen hàn nǐmen yīqǐ qù.",
+          "english": "We will go together with you."
         }
       ],
       "grammar_links": [],
@@ -342,13 +483,23 @@
       "pinyin": "Táiwān",
       "english": "Taiwan",
       "french": "Taïwan",
-      "part_of_speech": "noun",
+      "part_of_speech": "proper_noun",
       "lesson": 1,
       "sentences": [
         {
           "chinese": "歡迎你們來臺灣。",
           "pinyin": "Huānyíng nǐmen lái Táiwān.",
           "english": "Welcome to Taiwan."
+        },
+        {
+          "chinese": "臺灣人喜歡喝茶。",
+          "pinyin": "Táiwān rén xǐhuān hē chá.",
+          "english": "Taiwanese people like to drink tea."
+        },
+        {
+          "chinese": "他是臺灣人。",
+          "pinyin": "Tā shì Táiwān rén.",
+          "english": "He is Taiwanese."
         }
       ],
       "grammar_links": [],
@@ -373,6 +524,16 @@
           "chinese": "歡迎你們來臺灣！",
           "pinyin": "Huānyíng nǐmen lái Táiwān!",
           "english": "Welcome to Taiwan!"
+        },
+        {
+          "chinese": "老闆，歡迎！",
+          "pinyin": "Lǎobǎn, huānyíng!",
+          "english": "Welcome, sir!"
+        },
+        {
+          "chinese": "歡迎你來我家。",
+          "pinyin": "Huānyíng nǐ lái wǒ jiā.",
+          "english": "Welcome to my home."
         }
       ],
       "grammar_links": [],
@@ -388,7 +549,7 @@
       "id": "w037",
       "traditional": "請問",
       "pinyin": "qǐngwèn",
-      "english": "May I ask / Excuse me",
+      "english": "May I ask / Excuse me (polite opener)",
       "french": "Puis-je demander / Excusez-moi",
       "part_of_speech": "phrase",
       "lesson": 1,
@@ -397,6 +558,16 @@
           "chinese": "請問你是陳月美小姐嗎？",
           "pinyin": "Qǐngwèn nǐ shì Chén Yuèměi xiǎojiě ma?",
           "english": "Excuse me, are you Miss Chen Yuemei?"
+        },
+        {
+          "chinese": "請問一共多少錢？",
+          "pinyin": "Qǐngwèn yīgòng duōshǎo qián?",
+          "english": "Excuse me, how much is it in total?"
+        },
+        {
+          "chinese": "請問你姓什麼？",
+          "pinyin": "Qǐngwèn nǐ xìng shénme?",
+          "english": "May I ask what your surname is?"
         }
       ],
       "grammar_links": [],
@@ -412,7 +583,7 @@
       "id": "w038",
       "traditional": "是的",
       "pinyin": "shìde",
-      "english": "yes",
+      "english": "yes; that's right",
       "french": "oui, c'est ça",
       "part_of_speech": "phrase",
       "lesson": 1,
@@ -421,6 +592,16 @@
           "chinese": "是的。謝謝你來接我們。",
           "pinyin": "Shìde. Xièxie nǐ lái jiē wǒmen.",
           "english": "Yes. Thank you for coming to pick us up."
+        },
+        {
+          "chinese": "是的，我是臺灣人。",
+          "pinyin": "Shìde, wǒ shì Táiwān rén.",
+          "english": "Yes, I am Taiwanese."
+        },
+        {
+          "chinese": "是的，我喜歡喝茶。",
+          "pinyin": "Shìde, wǒ xǐhuān hē chá.",
+          "english": "Yes, I like to drink tea."
         }
       ],
       "grammar_links": [],
@@ -445,6 +626,16 @@
           "chinese": "謝謝你。",
           "pinyin": "Xièxie nǐ.",
           "english": "Thank you."
+        },
+        {
+          "chinese": "謝謝你來接我們。",
+          "pinyin": "Xièxie nǐ lái jiē wǒmen.",
+          "english": "Thank you for coming to pick us up."
+        },
+        {
+          "chinese": "不客氣，謝謝你。",
+          "pinyin": "Bú kèqi, xièxie nǐ.",
+          "english": "You're welcome, thank you."
         }
       ],
       "grammar_links": [],
@@ -460,8 +651,8 @@
       "id": "w040",
       "traditional": "不客氣",
       "pinyin": "bú kèqi",
-      "english": "You're welcome",
-      "french": "De rien",
+      "english": "You're welcome; don't mention it",
+      "french": "De rien; je vous en prie",
       "part_of_speech": "phrase",
       "lesson": 1,
       "sentences": [
@@ -469,6 +660,16 @@
           "chinese": "不客氣。我是李明華。",
           "pinyin": "Bú kèqi. Wǒ shì Lǐ Mínghuá.",
           "english": "You're welcome. I am Li Minghua."
+        },
+        {
+          "chinese": "謝謝！不客氣！",
+          "pinyin": "Xièxie! Bú kèqi!",
+          "english": "Thank you! You're welcome!"
+        },
+        {
+          "chinese": "不客氣，這是我家。",
+          "pinyin": "Bú kèqi, zhè shì wǒ jiā.",
+          "english": "Don't mention it, this is my home."
         }
       ],
       "grammar_links": [],
@@ -493,6 +694,16 @@
           "chinese": "你好。我姓王，叫開文。",
           "pinyin": "Nǐ hǎo. Wǒ xìng Wáng, jiào Kāiwén.",
           "english": "Hello. My surname is Wang, my first name is Kaiwen."
+        },
+        {
+          "chinese": "你好，請問你是哪國人？",
+          "pinyin": "Nǐ hǎo, qǐngwèn nǐ shì nǎ guó rén?",
+          "english": "Hello, may I ask what nationality you are?"
+        },
+        {
+          "chinese": "老師，你好！",
+          "pinyin": "Lǎoshī, nǐ hǎo!",
+          "english": "Hello, Teacher!"
         }
       ],
       "grammar_links": [],
@@ -508,8 +719,8 @@
       "id": "w042",
       "traditional": "請",
       "pinyin": "qǐng",
-      "english": "please",
-      "french": "s'il vous plaît, veuillez",
+      "english": "please; to invite; to treat",
+      "french": "s'il vous plaît; inviter",
       "part_of_speech": "verb",
       "lesson": 1,
       "sentences": [
@@ -517,6 +728,16 @@
           "chinese": "請喝茶。",
           "pinyin": "Qǐng hē chá.",
           "english": "Please have some tea."
+        },
+        {
+          "chinese": "請坐！要不要喝茶？",
+          "pinyin": "Qǐng zuò! Yào bú yào hē chá?",
+          "english": "Please have a seat! Would you like some tea?"
+        },
+        {
+          "chinese": "請問，你叫什麼名字？",
+          "pinyin": "Qǐngwèn, nǐ jiào shénme míngzi?",
+          "english": "Excuse me, what is your name?"
         }
       ],
       "grammar_links": [],
@@ -541,6 +762,16 @@
           "chinese": "我喜歡喝茶。",
           "pinyin": "Wǒ xǐhuān hē chá.",
           "english": "I like to drink tea."
+        },
+        {
+          "chinese": "你要喝什麼？",
+          "pinyin": "Nǐ yào hē shénme?",
+          "english": "What would you like to drink?"
+        },
+        {
+          "chinese": "他不喝咖啡。",
+          "pinyin": "Tā bù hē kāfēi.",
+          "english": "He doesn't drink coffee."
         }
       ],
       "grammar_links": [],
@@ -565,6 +796,16 @@
           "chinese": "這是烏龍茶。",
           "pinyin": "Zhè shì Wūlóng chá.",
           "english": "This is Oolong tea."
+        },
+        {
+          "chinese": "臺灣人很喜歡喝茶。",
+          "pinyin": "Táiwān rén hěn xǐhuān hē chá.",
+          "english": "Taiwanese people really like to drink tea."
+        },
+        {
+          "chinese": "請喝茶！",
+          "pinyin": "Qǐng hē chá!",
+          "english": "Please have some tea!"
         }
       ],
       "grammar_links": [],
@@ -589,6 +830,16 @@
           "chinese": "烏龍茶很好喝。",
           "pinyin": "Wūlóng chá hěn hǎohē.",
           "english": "Oolong tea tastes very good."
+        },
+        {
+          "chinese": "我家很漂亮。",
+          "pinyin": "Wǒ jiā hěn piàoliang.",
+          "english": "My home is very pretty."
+        },
+        {
+          "chinese": "他很忙。",
+          "pinyin": "Tā hěn máng.",
+          "english": "He is very busy."
         }
       ],
       "grammar_links": [],
@@ -613,6 +864,16 @@
           "chinese": "謝謝。很好喝。",
           "pinyin": "Xièxie. Hěn hǎohē.",
           "english": "Thank you. This tastes good."
+        },
+        {
+          "chinese": "這杯茶很好喝！",
+          "pinyin": "Zhè bēi chá hěn hǎohē!",
+          "english": "This cup of tea tastes great!"
+        },
+        {
+          "chinese": "烏龍茶好喝嗎？",
+          "pinyin": "Wūlóng chá hǎohē ma?",
+          "english": "Does Oolong tea taste good?"
         }
       ],
       "grammar_links": [],
@@ -628,7 +889,7 @@
       "id": "w047",
       "traditional": "什麼",
       "pinyin": "shénme",
-      "english": "what",
+      "english": "what; what kind of",
       "french": "quoi, quel",
       "part_of_speech": "noun",
       "lesson": 1,
@@ -637,6 +898,16 @@
           "chinese": "請問這是什麼茶？",
           "pinyin": "Qǐngwèn zhè shì shénme chá?",
           "english": "May I ask what kind of tea this is?"
+        },
+        {
+          "chinese": "你叫什麼名字？",
+          "pinyin": "Nǐ jiào shénme míngzi?",
+          "english": "What is your name?"
+        },
+        {
+          "chinese": "你要喝什麼？",
+          "pinyin": "Nǐ yào hē shénme?",
+          "english": "What would you like to drink?"
         }
       ],
       "grammar_links": [],
@@ -652,8 +923,8 @@
       "id": "w048",
       "traditional": "人",
       "pinyin": "rén",
-      "english": "person, people",
-      "french": "personne, gens",
+      "english": "person; people; nationality suffix",
+      "french": "personne, gens; suffixe de nationalité",
       "part_of_speech": "noun",
       "lesson": 1,
       "sentences": [
@@ -661,6 +932,16 @@
           "chinese": "臺灣人喜歡喝茶。",
           "pinyin": "Táiwān rén xǐhuān hē chá.",
           "english": "Taiwanese people like to drink tea."
+        },
+        {
+          "chinese": "他是哪國人？",
+          "pinyin": "Tā shì nǎ guó rén?",
+          "english": "What nationality is he?"
+        },
+        {
+          "chinese": "我家有五個人。",
+          "pinyin": "Wǒ jiā yǒu wǔ gè rén.",
+          "english": "There are five people in my family."
         }
       ],
       "grammar_links": [],
@@ -676,7 +957,7 @@
       "id": "w049",
       "traditional": "喜歡",
       "pinyin": "xǐhuān",
-      "english": "to like",
+      "english": "to like; to enjoy",
       "french": "aimer, apprécier",
       "part_of_speech": "verb",
       "lesson": 1,
@@ -685,6 +966,16 @@
           "chinese": "我喜歡喝茶。",
           "pinyin": "Wǒ xǐhuān hē chá.",
           "english": "I like to drink tea."
+        },
+        {
+          "chinese": "你喜歡運動嗎？",
+          "pinyin": "Nǐ xǐhuān yùndòng ma?",
+          "english": "Do you like sports?"
+        },
+        {
+          "chinese": "他喜歡看書。",
+          "pinyin": "Tā xǐhuān kànshū.",
+          "english": "He likes to read."
         }
       ],
       "grammar_links": [],
@@ -700,7 +991,7 @@
       "id": "w050",
       "traditional": "呢",
       "pinyin": "ne",
-      "english": "sentence final particle (contrastive question)",
+      "english": "sentence-final particle (contrastive question / softener)",
       "french": "particule finale (question contrastive)",
       "part_of_speech": "particle",
       "lesson": 1,
@@ -709,6 +1000,16 @@
           "chinese": "我要喝茶，你呢？",
           "pinyin": "Wǒ yào hē chá, nǐ ne?",
           "english": "I want to drink tea, and you?"
+        },
+        {
+          "chinese": "他喜歡游泳，你呢？",
+          "pinyin": "Tā xǐhuān yóuyǒng, nǐ ne?",
+          "english": "He likes swimming. What about you?"
+        },
+        {
+          "chinese": "我有兩個姐姐，你呢？",
+          "pinyin": "Wǒ yǒu liǎng gè jiějie, nǐ ne?",
+          "english": "I have two older sisters. What about you?"
         }
       ],
       "grammar_links": [],
@@ -733,6 +1034,16 @@
           "chinese": "他不是日本人。",
           "pinyin": "Tā bú shì Rìběn rén.",
           "english": "He is not Japanese."
+        },
+        {
+          "chinese": "他喜歡看書。",
+          "pinyin": "Tā xǐhuān kànshū.",
+          "english": "He likes to read."
+        },
+        {
+          "chinese": "他有一個哥哥。",
+          "pinyin": "Tā yǒu yī gè gēge.",
+          "english": "He has one older brother."
         }
       ],
       "grammar_links": [],
@@ -748,7 +1059,7 @@
       "id": "w052",
       "traditional": "不",
       "pinyin": "bù / bú",
-      "english": "not",
+      "english": "not; no (negation)",
       "french": "ne...pas",
       "part_of_speech": "adverb",
       "lesson": 1,
@@ -757,6 +1068,16 @@
           "chinese": "我不喝咖啡。",
           "pinyin": "Wǒ bù hē kāfēi.",
           "english": "I don't drink coffee."
+        },
+        {
+          "chinese": "他不是老師。",
+          "pinyin": "Tā bú shì lǎoshī.",
+          "english": "He is not a teacher."
+        },
+        {
+          "chinese": "我不去，你去吧。",
+          "pinyin": "Wǒ bù qù, nǐ qù ba.",
+          "english": "I'm not going; you go ahead."
         }
       ],
       "grammar_links": [],
@@ -772,7 +1093,7 @@
       "id": "w053",
       "traditional": "哪",
       "pinyin": "nǎ / něi",
-      "english": "which",
+      "english": "which; where",
       "french": "quel, lequel",
       "part_of_speech": "determiner",
       "lesson": 1,
@@ -781,6 +1102,16 @@
           "chinese": "對不起，你是哪國人？",
           "pinyin": "Duìbuqǐ, nǐ shì nǎ guó rén?",
           "english": "I'm sorry, which country are you from?"
+        },
+        {
+          "chinese": "你喜歡哪種茶？",
+          "pinyin": "Nǐ xǐhuān nǎ zhǒng chá?",
+          "english": "Which kind of tea do you like?"
+        },
+        {
+          "chinese": "哪個是你的書？",
+          "pinyin": "Nǎ gè shì nǐ de shū?",
+          "english": "Which one is your book?"
         }
       ],
       "grammar_links": [],
@@ -796,8 +1127,8 @@
       "id": "w054",
       "traditional": "要",
       "pinyin": "yào",
-      "english": "to want to",
-      "french": "vouloir",
+      "english": "to want; to need; will (future)",
+      "french": "vouloir; avoir besoin de",
       "part_of_speech": "verb",
       "lesson": 1,
       "sentences": [
@@ -805,6 +1136,16 @@
           "chinese": "你要不要喝咖啡？",
           "pinyin": "Nǐ yào bú yào hē kāfēi?",
           "english": "Would you like some coffee?"
+        },
+        {
+          "chinese": "我要大杯。",
+          "pinyin": "Wǒ yào dà bēi.",
+          "english": "I want a large cup."
+        },
+        {
+          "chinese": "你要什麼？",
+          "pinyin": "Nǐ yào shénme?",
+          "english": "What do you want?"
         }
       ],
       "grammar_links": [],
@@ -829,6 +1170,16 @@
           "chinese": "我不喝咖啡，我喜歡喝茶。",
           "pinyin": "Wǒ bù hē kāfēi, wǒ xǐhuān hē chá.",
           "english": "I don't drink coffee, I like to drink tea."
+        },
+        {
+          "chinese": "一杯熱咖啡，多少錢？",
+          "pinyin": "Yī bēi rè kāfēi, duōshǎo qián?",
+          "english": "How much is one cup of hot coffee?"
+        },
+        {
+          "chinese": "你要熱咖啡還是冷咖啡？",
+          "pinyin": "Nǐ yào rè kāfēi háishì lěng kāfēi?",
+          "english": "Do you want hot or cold coffee?"
         }
       ],
       "grammar_links": [],
@@ -853,6 +1204,16 @@
           "chinese": "這是烏龍茶。",
           "pinyin": "Zhè shì Wūlóng chá.",
           "english": "This is Oolong tea."
+        },
+        {
+          "chinese": "烏龍茶很好喝。",
+          "pinyin": "Wūlóng chá hěn hǎohē.",
+          "english": "Oolong tea tastes very good."
+        },
+        {
+          "chinese": "你要烏龍茶還是咖啡？",
+          "pinyin": "Nǐ yào Wūlóng chá háishì kāfēi?",
+          "english": "Do you want Oolong tea or coffee?"
         }
       ],
       "grammar_links": [],
@@ -870,13 +1231,23 @@
       "pinyin": "Rìběn",
       "english": "Japan",
       "french": "Japon",
-      "part_of_speech": "noun",
+      "part_of_speech": "proper_noun",
       "lesson": 1,
       "sentences": [
         {
           "chinese": "他不是日本人。",
           "pinyin": "Tā bú shì Rìběn rén.",
           "english": "He is not Japanese."
+        },
+        {
+          "chinese": "日本人很喜歡喝茶。",
+          "pinyin": "Rìběn rén hěn xǐhuān hē chá.",
+          "english": "Japanese people really like to drink tea."
+        },
+        {
+          "chinese": "你去過日本嗎？",
+          "pinyin": "Nǐ qùguò Rìběn ma?",
+          "english": "Have you been to Japan?"
         }
       ],
       "grammar_links": [],
@@ -894,13 +1265,23 @@
       "pinyin": "Měiguó",
       "english": "America, United States",
       "french": "États-Unis, Amérique",
-      "part_of_speech": "noun",
+      "part_of_speech": "proper_noun",
       "lesson": 1,
       "sentences": [
         {
           "chinese": "我是美國人。",
           "pinyin": "Wǒ shì Měiguó rén.",
           "english": "I am American."
+        },
+        {
+          "chinese": "美國電影很好看。",
+          "pinyin": "Měiguó diànyǐng hěn hǎokàn.",
+          "english": "American movies are very good."
+        },
+        {
+          "chinese": "他想去美國。",
+          "pinyin": "Tā xiǎng qù Měiguó.",
+          "english": "He wants to go to America."
         }
       ],
       "grammar_links": [],
@@ -916,8 +1297,8 @@
       "id": "w059",
       "traditional": "對不起",
       "pinyin": "duìbuqǐ",
-      "english": "I'm sorry",
-      "french": "Je suis désolé, Excusez-moi",
+      "english": "I'm sorry; excuse me",
+      "french": "Je suis désolé; Excusez-moi",
       "part_of_speech": "phrase",
       "lesson": 1,
       "sentences": [
@@ -925,6 +1306,16 @@
           "chinese": "對不起，你是哪國人？",
           "pinyin": "Duìbuqǐ, nǐ shì nǎ guó rén?",
           "english": "I'm sorry, which country are you from?"
+        },
+        {
+          "chinese": "對不起，我不喝咖啡。",
+          "pinyin": "Duìbuqǐ, wǒ bù hē kāfēi.",
+          "english": "I'm sorry, I don't drink coffee."
+        },
+        {
+          "chinese": "對不起，我不知道。",
+          "pinyin": "Duìbuqǐ, wǒ bù zhīdào.",
+          "english": "I'm sorry, I don't know."
         }
       ],
       "grammar_links": [],
@@ -940,7 +1331,7 @@
       "id": "w060",
       "traditional": "的",
       "pinyin": "de",
-      "english": "modification/possessive marker",
+      "english": "modification/possessive particle",
       "french": "marqueur de modification/possession",
       "part_of_speech": "particle",
       "lesson": 2,
@@ -949,6 +1340,16 @@
           "chinese": "我的書",
           "pinyin": "wǒ de shū",
           "english": "my book"
+        },
+        {
+          "chinese": "我家有很多他的照片。",
+          "pinyin": "Wǒ jiā yǒu hěn duō tā de zhàopiàn.",
+          "english": "My house has a lot of his photos."
+        },
+        {
+          "chinese": "那是老師的書。",
+          "pinyin": "Nà shì lǎoshī de shū.",
+          "english": "That is the teacher's book."
         }
       ],
       "grammar_links": [],
@@ -973,6 +1374,16 @@
           "chinese": "我家人都很喜歡照相。",
           "pinyin": "Wǒ jiārén dōu hěn xǐhuān zhàoxiàng.",
           "english": "My family all like to take photos."
+        },
+        {
+          "chinese": "你家人都是臺灣人嗎？",
+          "pinyin": "Nǐ jiārén dōu shì Táiwān rén ma?",
+          "english": "Are all your family members Taiwanese?"
+        },
+        {
+          "chinese": "我家人都很好。",
+          "pinyin": "Wǒ jiārén dōu hěn hǎo.",
+          "english": "My family are all doing well."
         }
       ],
       "grammar_links": [],
@@ -988,8 +1399,8 @@
       "id": "w062",
       "traditional": "家",
       "pinyin": "jiā",
-      "english": "home, house",
-      "french": "maison, foyer",
+      "english": "home; house; family",
+      "french": "maison, foyer, famille",
       "part_of_speech": "noun",
       "lesson": 2,
       "sentences": [
@@ -997,6 +1408,16 @@
           "chinese": "這是我家。請進！",
           "pinyin": "Zhè shì wǒ jiā. Qǐng jìn!",
           "english": "This is my house. Please come in!"
+        },
+        {
+          "chinese": "我家有五個人。",
+          "pinyin": "Wǒ jiā yǒu wǔ gè rén.",
+          "english": "There are five people in my family."
+        },
+        {
+          "chinese": "你家很漂亮。",
+          "pinyin": "Nǐ jiā hěn piàoliang.",
+          "english": "Your home is very beautiful."
         }
       ],
       "grammar_links": [],
@@ -1011,16 +1432,26 @@
     {
       "id": "w063",
       "traditional": "漂亮",
-      "pinyin": "piàoliàng",
-      "english": "pretty",
+      "pinyin": "piàoliang",
+      "english": "pretty; beautiful",
       "french": "joli, beau",
       "part_of_speech": "adjective",
       "lesson": 2,
       "sentences": [
         {
           "chinese": "很漂亮的房子！",
-          "pinyin": "Hěn piàoliàng de fángzi!",
+          "pinyin": "Hěn piàoliang de fángzi!",
           "english": "What a pretty house!"
+        },
+        {
+          "chinese": "你妹妹很漂亮。",
+          "pinyin": "Nǐ mèimei hěn piàoliang.",
+          "english": "Your younger sister is very pretty."
+        },
+        {
+          "chinese": "這張照片很漂亮。",
+          "pinyin": "Zhè zhāng zhàopiàn hěn piàoliang.",
+          "english": "This photo is very beautiful."
         }
       ],
       "grammar_links": [],
@@ -1036,15 +1467,25 @@
       "id": "w064",
       "traditional": "房子",
       "pinyin": "fángzi",
-      "english": "house",
+      "english": "house; building",
       "french": "maison",
       "part_of_speech": "noun",
       "lesson": 2,
       "sentences": [
         {
           "chinese": "很漂亮的房子！",
-          "pinyin": "Hěn piàoliàng de fángzi!",
+          "pinyin": "Hěn piàoliang de fángzi!",
           "english": "What a pretty house!"
+        },
+        {
+          "chinese": "這是誰的房子？",
+          "pinyin": "Zhè shì shéi de fángzi?",
+          "english": "Whose house is this?"
+        },
+        {
+          "chinese": "他家的房子很大。",
+          "pinyin": "Tā jiā de fángzi hěn dà.",
+          "english": "His family's house is very big."
         }
       ],
       "grammar_links": [],
@@ -1069,6 +1510,16 @@
           "chinese": "請坐！要不要喝茶？",
           "pinyin": "Qǐng zuò! Yào bú yào hē chá?",
           "english": "Please have a seat! Would you like some tea?"
+        },
+        {
+          "chinese": "我們坐下來喝茶。",
+          "pinyin": "Wǒmen zuò xiàlái hē chá.",
+          "english": "Let's sit down and have some tea."
+        },
+        {
+          "chinese": "他坐在我旁邊。",
+          "pinyin": "Tā zuò zài wǒ pángbiān.",
+          "english": "He is sitting next to me."
         }
       ],
       "grammar_links": [],
@@ -1084,8 +1535,8 @@
       "id": "w066",
       "traditional": "有",
       "pinyin": "yǒu",
-      "english": "to have",
-      "french": "avoir",
+      "english": "to have; there is/are",
+      "french": "avoir; il y a",
       "part_of_speech": "verb",
       "lesson": 2,
       "sentences": [
@@ -1093,6 +1544,16 @@
           "chinese": "你家有很多照片。",
           "pinyin": "Nǐ jiā yǒu hěn duō zhàopiàn.",
           "english": "You have a lot of photos in your house."
+        },
+        {
+          "chinese": "我有兩個妹妹。",
+          "pinyin": "Wǒ yǒu liǎng gè mèimei.",
+          "english": "I have two younger sisters."
+        },
+        {
+          "chinese": "這裡有很多書。",
+          "pinyin": "Zhèlǐ yǒu hěn duō shū.",
+          "english": "There are a lot of books here."
         }
       ],
       "grammar_links": [],
@@ -1108,7 +1569,7 @@
       "id": "w067",
       "traditional": "多",
       "pinyin": "duō",
-      "english": "many, much",
+      "english": "many; much; a lot",
       "french": "beaucoup, nombreux",
       "part_of_speech": "adjective",
       "lesson": 2,
@@ -1117,6 +1578,16 @@
           "chinese": "你家有很多照片。",
           "pinyin": "Nǐ jiā yǒu hěn duō zhàopiàn.",
           "english": "You have a lot of photos."
+        },
+        {
+          "chinese": "我們家有很多書。",
+          "pinyin": "Wǒmen jiā yǒu hěn duō shū.",
+          "english": "Our family has a lot of books."
+        },
+        {
+          "chinese": "那裡有很多人。",
+          "pinyin": "Nàlǐ yǒu hěn duō rén.",
+          "english": "There are a lot of people there."
         }
       ],
       "grammar_links": [],
@@ -1132,7 +1603,7 @@
       "id": "w068",
       "traditional": "照片",
       "pinyin": "zhàopiàn",
-      "english": "photo",
+      "english": "photo; photograph",
       "french": "photo",
       "part_of_speech": "noun",
       "lesson": 2,
@@ -1141,6 +1612,16 @@
           "chinese": "這張照片很好看。",
           "pinyin": "Zhè zhāng zhàopiàn hěn hǎokàn.",
           "english": "This photo is very nice."
+        },
+        {
+          "chinese": "你有家人的照片嗎？",
+          "pinyin": "Nǐ yǒu jiārén de zhàopiàn ma?",
+          "english": "Do you have photos of your family?"
+        },
+        {
+          "chinese": "這些照片都是他拍的。",
+          "pinyin": "Zhèxiē zhàopiàn dōu shì tā pāi de.",
+          "english": "All these photos were taken by him."
         }
       ],
       "grammar_links": [],
@@ -1156,7 +1637,7 @@
       "id": "w069",
       "traditional": "都",
       "pinyin": "dōu",
-      "english": "all, both",
+      "english": "all; both; entirely",
       "french": "tous, toutes",
       "part_of_speech": "adverb",
       "lesson": 2,
@@ -1165,6 +1646,16 @@
           "chinese": "我家人都很喜歡照相。",
           "pinyin": "Wǒ jiārén dōu hěn xǐhuān zhàoxiàng.",
           "english": "My family all like to take photos."
+        },
+        {
+          "chinese": "他們都是老師。",
+          "pinyin": "Tāmen dōu shì lǎoshī.",
+          "english": "They are all teachers."
+        },
+        {
+          "chinese": "我們都喜歡運動。",
+          "pinyin": "Wǒmen dōu xǐhuān yùndòng.",
+          "english": "We all like sports."
         }
       ],
       "grammar_links": [],
@@ -1189,6 +1680,16 @@
           "chinese": "我家人都很喜歡照相。",
           "pinyin": "Wǒ jiārén dōu hěn xǐhuān zhàoxiàng.",
           "english": "My family all like to take photos."
+        },
+        {
+          "chinese": "我們去公園照相吧！",
+          "pinyin": "Wǒmen qù gōngyuán zhàoxiàng ba!",
+          "english": "Let's go to the park to take photos!"
+        },
+        {
+          "chinese": "你喜歡照相嗎？",
+          "pinyin": "Nǐ xǐhuān zhàoxiàng ma?",
+          "english": "Do you like taking photos?"
         }
       ],
       "grammar_links": [],
@@ -1206,13 +1707,23 @@
       "pinyin": "zhāng",
       "english": "measure word for flat objects (paper, photos, tickets)",
       "french": "classificateur pour objets plats (papier, photos)",
-      "part_of_speech": "measure word",
+      "part_of_speech": "measure_word",
       "lesson": 2,
       "sentences": [
         {
           "chinese": "這張照片很好看。",
           "pinyin": "Zhè zhāng zhàopiàn hěn hǎokàn.",
           "english": "This photo is very nice."
+        },
+        {
+          "chinese": "我有一張家人的照片。",
+          "pinyin": "Wǒ yǒu yī zhāng jiārén de zhàopiàn.",
+          "english": "I have one photo of my family."
+        },
+        {
+          "chinese": "那張照片是誰拍的？",
+          "pinyin": "Nà zhāng zhàopiàn shì shéi pāi de?",
+          "english": "Who took that photo?"
         }
       ],
       "grammar_links": [],
@@ -1228,7 +1739,7 @@
       "id": "w072",
       "traditional": "好看",
       "pinyin": "hǎokàn",
-      "english": "good-looking, attractive",
+      "english": "good-looking; attractive; nice to look at",
       "french": "beau, attrayant",
       "part_of_speech": "adjective",
       "lesson": 2,
@@ -1237,6 +1748,16 @@
           "chinese": "你家人都很好看。",
           "pinyin": "Nǐ jiārén dōu hěn hǎokàn.",
           "english": "Your family members are all very good-looking."
+        },
+        {
+          "chinese": "這本書很好看。",
+          "pinyin": "Zhè běn shū hěn hǎokàn.",
+          "english": "This book looks great."
+        },
+        {
+          "chinese": "那個房子很好看。",
+          "pinyin": "Nà gè fángzi hěn hǎokàn.",
+          "english": "That house looks very nice."
         }
       ],
       "grammar_links": [],
@@ -1261,6 +1782,16 @@
           "chinese": "這是誰？你姐姐嗎？",
           "pinyin": "Zhè shì shéi? Nǐ jiějie ma?",
           "english": "Who is this? Your older sister?"
+        },
+        {
+          "chinese": "你家裡有誰？",
+          "pinyin": "Nǐ jiālǐ yǒu shéi?",
+          "english": "Who is in your family?"
+        },
+        {
+          "chinese": "那張照片是誰？",
+          "pinyin": "Nà zhāng zhàopiàn shì shéi?",
+          "english": "Who is in that photo?"
         }
       ],
       "grammar_links": [],
@@ -1285,6 +1816,16 @@
           "chinese": "這是誰？你姐姐嗎？",
           "pinyin": "Zhè shì shéi? Nǐ jiějie ma?",
           "english": "Who is this? Your older sister?"
+        },
+        {
+          "chinese": "我姐姐是老師。",
+          "pinyin": "Wǒ jiějie shì lǎoshī.",
+          "english": "My older sister is a teacher."
+        },
+        {
+          "chinese": "他沒有姐姐。",
+          "pinyin": "Tā méi yǒu jiějie.",
+          "english": "He doesn't have an older sister."
         }
       ],
       "grammar_links": [],
@@ -1309,6 +1850,16 @@
           "chinese": "不是，是我妹妹。",
           "pinyin": "Bú shì, shì wǒ mèimei.",
           "english": "No, that is my younger sister."
+        },
+        {
+          "chinese": "我有兩個妹妹。",
+          "pinyin": "Wǒ yǒu liǎng gè mèimei.",
+          "english": "I have two younger sisters."
+        },
+        {
+          "chinese": "她妹妹也很喜歡運動。",
+          "pinyin": "Tā mèimei yě hěn xǐhuān yùndòng.",
+          "english": "Her younger sister also really likes sports."
         }
       ],
       "grammar_links": [],
@@ -1324,7 +1875,7 @@
       "id": "w076",
       "traditional": "爸爸",
       "pinyin": "bàba",
-      "english": "dad",
+      "english": "dad; father",
       "french": "papa",
       "part_of_speech": "noun",
       "lesson": 2,
@@ -1333,6 +1884,16 @@
           "chinese": "這是我爸爸、媽媽。",
           "pinyin": "Zhè shì wǒ bàba, māma.",
           "english": "These are my dad and mom."
+        },
+        {
+          "chinese": "我爸爸是老師。",
+          "pinyin": "Wǒ bàba shì lǎoshī.",
+          "english": "My dad is a teacher."
+        },
+        {
+          "chinese": "你爸爸喜歡運動嗎？",
+          "pinyin": "Nǐ bàba xǐhuān yùndòng ma?",
+          "english": "Does your dad like sports?"
         }
       ],
       "grammar_links": [],
@@ -1348,7 +1909,7 @@
       "id": "w077",
       "traditional": "媽媽",
       "pinyin": "māma",
-      "english": "mom",
+      "english": "mom; mother",
       "french": "maman",
       "part_of_speech": "noun",
       "lesson": 2,
@@ -1357,6 +1918,16 @@
           "chinese": "這是我爸爸、媽媽。",
           "pinyin": "Zhè shì wǒ bàba, māma.",
           "english": "These are my dad and mom."
+        },
+        {
+          "chinese": "我媽媽很喜歡照相。",
+          "pinyin": "Wǒ māma hěn xǐhuān zhàoxiàng.",
+          "english": "My mom really likes taking photos."
+        },
+        {
+          "chinese": "你媽媽是哪國人？",
+          "pinyin": "Nǐ māma shì nǎ guó rén?",
+          "english": "What nationality is your mom?"
         }
       ],
       "grammar_links": [],
@@ -1381,6 +1952,16 @@
           "chinese": "這是我家。請進！",
           "pinyin": "Zhè shì wǒ jiā. Qǐng jìn!",
           "english": "This is my house. Please come in!"
+        },
+        {
+          "chinese": "請進！請坐！",
+          "pinyin": "Qǐng jìn! Qǐng zuò!",
+          "english": "Please come in! Please have a seat!"
+        },
+        {
+          "chinese": "老師說請進。",
+          "pinyin": "Lǎoshī shuō qǐng jìn.",
+          "english": "The teacher said please come in."
         }
       ],
       "grammar_links": [],
@@ -1396,7 +1977,7 @@
       "id": "w079",
       "traditional": "伯母",
       "pinyin": "bómǔ",
-      "english": "aunt; polite term for a friend's mother",
+      "english": "aunt (father's elder brother's wife); polite term for friend's mother",
       "french": "tante; terme poli pour la mère d'un ami",
       "part_of_speech": "noun",
       "lesson": 2,
@@ -1405,6 +1986,16 @@
           "chinese": "伯母，您好。",
           "pinyin": "Bómǔ, nín hǎo.",
           "english": "Hello, Mrs. Li (Auntie)."
+        },
+        {
+          "chinese": "伯母，請喝茶！",
+          "pinyin": "Bómǔ, qǐng hē chá!",
+          "english": "Auntie, please have some tea!"
+        },
+        {
+          "chinese": "他的伯母是老師。",
+          "pinyin": "Tā de bómǔ shì lǎoshī.",
+          "english": "His aunt is a teacher."
         }
       ],
       "grammar_links": [],
@@ -1420,7 +2011,7 @@
       "id": "w080",
       "traditional": "您",
       "pinyin": "nín",
-      "english": "you (honorific)",
+      "english": "you (honorific/respectful form)",
       "french": "vous (honorifique)",
       "part_of_speech": "pronoun",
       "lesson": 2,
@@ -1429,6 +2020,16 @@
           "chinese": "伯母，您好。",
           "pinyin": "Bómǔ, nín hǎo.",
           "english": "Hello, Auntie."
+        },
+        {
+          "chinese": "老師，您要喝茶嗎？",
+          "pinyin": "Lǎoshī, nín yào hē chá ma?",
+          "english": "Teacher, would you like some tea?"
+        },
+        {
+          "chinese": "請問，您姓什麼？",
+          "pinyin": "Qǐngwèn, nín xìng shénme?",
+          "english": "May I ask, what is your surname?"
         }
       ],
       "grammar_links": [],
@@ -1444,7 +2045,7 @@
       "id": "w081",
       "traditional": "名字",
       "pinyin": "míngzi",
-      "english": "name",
+      "english": "name (full name or given name)",
       "french": "prénom, nom",
       "part_of_speech": "noun",
       "lesson": 2,
@@ -1453,6 +2054,16 @@
           "chinese": "你叫什麼名字？",
           "pinyin": "Nǐ jiào shénme míngzi?",
           "english": "What is your name?"
+        },
+        {
+          "chinese": "他的名字很好聽。",
+          "pinyin": "Tā de míngzi hěn hǎotīng.",
+          "english": "His name sounds very nice."
+        },
+        {
+          "chinese": "請告訴我你的名字。",
+          "pinyin": "Qǐng gàosù wǒ nǐ de míngzi.",
+          "english": "Please tell me your name."
         }
       ],
       "grammar_links": [],
@@ -1477,6 +2088,16 @@
           "chinese": "你們家有很多書。",
           "pinyin": "Nǐmen jiā yǒu hěn duō shū.",
           "english": "You have a lot of books."
+        },
+        {
+          "chinese": "這是老師的書。",
+          "pinyin": "Zhè shì lǎoshī de shū.",
+          "english": "This is the teacher's book."
+        },
+        {
+          "chinese": "我喜歡看書。",
+          "pinyin": "Wǒ xǐhuān kànshū.",
+          "english": "I like to read books."
         }
       ],
       "grammar_links": [],
@@ -1501,6 +2122,16 @@
           "chinese": "都是我哥哥的書。",
           "pinyin": "Dōu shì wǒ gēge de shū.",
           "english": "They are all my older brother's books."
+        },
+        {
+          "chinese": "我哥哥是老師。",
+          "pinyin": "Wǒ gēge shì lǎoshī.",
+          "english": "My older brother is a teacher."
+        },
+        {
+          "chinese": "你有哥哥嗎？",
+          "pinyin": "Nǐ yǒu gēge ma?",
+          "english": "Do you have an older brother?"
         }
       ],
       "grammar_links": [],
@@ -1525,6 +2156,16 @@
           "chinese": "他是老師，他很喜歡看書。",
           "pinyin": "Tā shì lǎoshī, tā hěn xǐhuān kànshū.",
           "english": "He is a teacher; he likes to read."
+        },
+        {
+          "chinese": "老師，您好！",
+          "pinyin": "Lǎoshī, nín hǎo!",
+          "english": "Hello, Teacher!"
+        },
+        {
+          "chinese": "我媽媽是老師。",
+          "pinyin": "Wǒ māma shì lǎoshī.",
+          "english": "My mom is a teacher."
         }
       ],
       "grammar_links": [],
@@ -1549,6 +2190,16 @@
           "chinese": "他很喜歡看書。",
           "pinyin": "Tā hěn xǐhuān kànshū.",
           "english": "He really likes to read."
+        },
+        {
+          "chinese": "我週末常看書。",
+          "pinyin": "Wǒ zhōumò cháng kànshū.",
+          "english": "I often read on weekends."
+        },
+        {
+          "chinese": "你喜歡看書還是看電影？",
+          "pinyin": "Nǐ xǐhuān kànshū háishì kàn diànyǐng?",
+          "english": "Do you prefer reading or watching movies?"
         }
       ],
       "grammar_links": [],
@@ -1564,8 +2215,8 @@
       "id": "w086",
       "traditional": "幾",
       "pinyin": "jǐ",
-      "english": "how many",
-      "french": "combien",
+      "english": "how many (for small numbers, under 10)",
+      "french": "combien (petit nombre)",
       "part_of_speech": "noun",
       "lesson": 2,
       "sentences": [
@@ -1573,6 +2224,16 @@
           "chinese": "你家有幾個人？",
           "pinyin": "Nǐ jiā yǒu jǐ gè rén?",
           "english": "How many people are in your family?"
+        },
+        {
+          "chinese": "你有幾個妹妹？",
+          "pinyin": "Nǐ yǒu jǐ gè mèimei?",
+          "english": "How many younger sisters do you have?"
+        },
+        {
+          "chinese": "你有幾本書？",
+          "pinyin": "Nǐ yǒu jǐ běn shū?",
+          "english": "How many books do you have?"
         }
       ],
       "grammar_links": [],
@@ -1588,15 +2249,25 @@
       "id": "w087",
       "traditional": "個",
       "pinyin": "gè",
-      "english": "general measure word",
+      "english": "general measure word (for people and many objects)",
       "french": "classificateur général",
-      "part_of_speech": "measure word",
+      "part_of_speech": "measure_word",
       "lesson": 2,
       "sentences": [
         {
           "chinese": "我家有五個人。",
           "pinyin": "Wǒ jiā yǒu wǔ gè rén.",
           "english": "There are five people in my family."
+        },
+        {
+          "chinese": "我有兩個妹妹。",
+          "pinyin": "Wǒ yǒu liǎng gè mèimei.",
+          "english": "I have two younger sisters."
+        },
+        {
+          "chinese": "你有幾個朋友？",
+          "pinyin": "Nǐ yǒu jǐ gè péngyǒu?",
+          "english": "How many friends do you have?"
         }
       ],
       "grammar_links": [],
@@ -1612,7 +2283,7 @@
       "id": "w088",
       "traditional": "沒",
       "pinyin": "méi",
-      "english": "not (negation for 有)",
+      "english": "not (negation of 有 yǒu)",
       "french": "ne...pas (négation de 有)",
       "part_of_speech": "adverb",
       "lesson": 2,
@@ -1621,6 +2292,16 @@
           "chinese": "我沒有書。",
           "pinyin": "Wǒ méi yǒu shū.",
           "english": "I don't have a book."
+        },
+        {
+          "chinese": "他沒有哥哥。",
+          "pinyin": "Tā méi yǒu gēge.",
+          "english": "He doesn't have an older brother."
+        },
+        {
+          "chinese": "我沒有去。",
+          "pinyin": "Wǒ méi yǒu qù.",
+          "english": "I didn't go."
         }
       ],
       "grammar_links": [],
@@ -1636,7 +2317,7 @@
       "id": "w089",
       "traditional": "兄弟",
       "pinyin": "xiōngdì",
-      "english": "brothers",
+      "english": "brothers; male siblings",
       "french": "frères",
       "part_of_speech": "noun",
       "lesson": 2,
@@ -1645,6 +2326,16 @@
           "chinese": "你有沒有兄弟姐妹？",
           "pinyin": "Nǐ yǒu méi yǒu xiōngdì jiěmèi?",
           "english": "Do you have any brothers or sisters?"
+        },
+        {
+          "chinese": "我有一個兄弟。",
+          "pinyin": "Wǒ yǒu yī gè xiōngdì.",
+          "english": "I have one brother."
+        },
+        {
+          "chinese": "他們是兄弟。",
+          "pinyin": "Tāmen shì xiōngdì.",
+          "english": "They are brothers."
         }
       ],
       "grammar_links": [],
@@ -1660,7 +2351,7 @@
       "id": "w090",
       "traditional": "姐妹",
       "pinyin": "jiěmèi",
-      "english": "sisters",
+      "english": "sisters; female siblings",
       "french": "sœurs",
       "part_of_speech": "noun",
       "lesson": 2,
@@ -1669,6 +2360,16 @@
           "chinese": "我沒有兄弟姐妹。",
           "pinyin": "Wǒ méi yǒu xiōngdì jiěmèi.",
           "english": "I don't have any brothers or sisters."
+        },
+        {
+          "chinese": "你有幾個姐妹？",
+          "pinyin": "Nǐ yǒu jǐ gè jiěmèi?",
+          "english": "How many sisters do you have?"
+        },
+        {
+          "chinese": "她們都是姐妹。",
+          "pinyin": "Tāmen dōu shì jiěmèi.",
+          "english": "They are all sisters."
         }
       ],
       "grammar_links": [],
@@ -1693,6 +2394,16 @@
           "chinese": "我家有五個人。",
           "pinyin": "Wǒ jiā yǒu wǔ gè rén.",
           "english": "There are five people in my family."
+        },
+        {
+          "chinese": "我有五本書。",
+          "pinyin": "Wǒ yǒu wǔ běn shū.",
+          "english": "I have five books."
+        },
+        {
+          "chinese": "他有五個朋友。",
+          "pinyin": "Tā yǒu wǔ gè péngyǒu.",
+          "english": "He has five friends."
         }
       ],
       "grammar_links": [],
@@ -1717,30 +2428,16 @@
           "chinese": "我有兩個妹妹。",
           "pinyin": "Wǒ yǒu liǎng gè mèimei.",
           "english": "I have two younger sisters."
-        }
-      ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
-    },
-    {
-      "id": "w093",
-      "traditional": "好",
-      "pinyin": "hǎo",
-      "english": "OK (particle of agreement)",
-      "french": "d'accord, OK",
-      "part_of_speech": "particle",
-      "lesson": 2,
-      "sentences": [
+        },
         {
-          "chinese": "好，謝謝你。",
-          "pinyin": "Hǎo, xièxie nǐ.",
-          "english": "OK, thank you."
+          "chinese": "我們家有兩本書。",
+          "pinyin": "Wǒmen jiā yǒu liǎng běn shū.",
+          "english": "Our family has two books."
+        },
+        {
+          "chinese": "他有兩個哥哥。",
+          "pinyin": "Tā yǒu liǎng gè gēge.",
+          "english": "He has two older brothers."
         }
       ],
       "grammar_links": [],
@@ -1765,12 +2462,19 @@
           "chinese": "明天是週末，我們去踢足球，怎麼樣？",
           "pinyin": "Míngtiān shì zhōumò, wǒmen qù tī zúqiú, zěnmeyàng?",
           "english": "Tomorrow is the weekend. How about we go play soccer?"
+        },
+        {
+          "chinese": "週末你想做什麼？",
+          "pinyin": "Zhōumò nǐ xiǎng zuò shénme?",
+          "english": "What do you want to do on the weekend?"
+        },
+        {
+          "chinese": "週末我常去公園運動。",
+          "pinyin": "Zhōumò wǒ cháng qù gōngyuán yùndòng.",
+          "english": "On weekends I often go to the park to exercise."
         }
       ],
-      "grammar_links": [
-        "g017",
-        "g018"
-      ],
+      "grammar_links": [],
       "performance": {
         "production": [],
         "speed_ms": [],
@@ -1783,7 +2487,7 @@
       "id": "w095",
       "traditional": "聽",
       "pinyin": "tīng",
-      "english": "to listen",
+      "english": "to listen; to hear",
       "french": "écouter",
       "part_of_speech": "verb",
       "lesson": 3,
@@ -1792,6 +2496,16 @@
           "chinese": "我不喜歡聽音樂。",
           "pinyin": "Wǒ bù xǐhuān tīng yīnyuè.",
           "english": "I don't like listening to music."
+        },
+        {
+          "chinese": "你喜歡聽什麼音樂？",
+          "pinyin": "Nǐ xǐhuān tīng shénme yīnyuè?",
+          "english": "What kind of music do you like to listen to?"
+        },
+        {
+          "chinese": "老師說，我們都在聽。",
+          "pinyin": "Lǎoshī shuō, wǒmen dōu zài tīng.",
+          "english": "The teacher is speaking and we are all listening."
         }
       ],
       "grammar_links": [],
@@ -1816,6 +2530,16 @@
           "chinese": "你喜歡聽音樂嗎？",
           "pinyin": "Nǐ xǐhuān tīng yīnyuè ma?",
           "english": "Do you like listening to music?"
+        },
+        {
+          "chinese": "我常聽音樂。",
+          "pinyin": "Wǒ cháng tīng yīnyuè.",
+          "english": "I often listen to music."
+        },
+        {
+          "chinese": "他不喜歡聽音樂，他喜歡看書。",
+          "pinyin": "Tā bù xǐhuān tīng yīnyuè, tā xǐhuān kànshū.",
+          "english": "He doesn't like music, he likes reading."
         }
       ],
       "grammar_links": [],
@@ -1831,8 +2555,8 @@
       "id": "w097",
       "traditional": "運動",
       "pinyin": "yùndòng",
-      "english": "to exercise; sports",
-      "french": "faire du sport ; sport",
+      "english": "to exercise; sports; physical activity",
+      "french": "faire du sport; sport",
       "part_of_speech": "verb",
       "lesson": 3,
       "sentences": [
@@ -1840,6 +2564,16 @@
           "chinese": "我喜歡運動。",
           "pinyin": "Wǒ xǐhuān yùndòng.",
           "english": "I like to exercise."
+        },
+        {
+          "chinese": "你常運動嗎？",
+          "pinyin": "Nǐ cháng yùndòng ma?",
+          "english": "Do you exercise often?"
+        },
+        {
+          "chinese": "週末我和朋友一起去運動。",
+          "pinyin": "Zhōumò wǒ hàn péngyǒu yīqǐ qù yùndòng.",
+          "english": "On weekends I go exercise with friends."
         }
       ],
       "grammar_links": [],
@@ -1855,8 +2589,8 @@
       "id": "w098",
       "traditional": "打",
       "pinyin": "dǎ",
-      "english": "to play (ball games)",
-      "french": "jouer à (sports de balle)",
+      "english": "to play (ball sports using hands); to hit",
+      "french": "jouer à (sports de balle avec les mains)",
       "part_of_speech": "verb",
       "lesson": 3,
       "sentences": [
@@ -1864,6 +2598,16 @@
           "chinese": "我常打籃球。",
           "pinyin": "Wǒ cháng dǎ lánqiú.",
           "english": "I often play basketball."
+        },
+        {
+          "chinese": "你喜歡打網球還是打棒球？",
+          "pinyin": "Nǐ xǐhuān dǎ wǎngqiú háishì dǎ bàngqiú?",
+          "english": "Do you prefer tennis or baseball?"
+        },
+        {
+          "chinese": "週末我們去打棒球吧！",
+          "pinyin": "Zhōumò wǒmen qù dǎ bàngqiú ba!",
+          "english": "Let's go play baseball on the weekend!"
         }
       ],
       "grammar_links": [],
@@ -1888,6 +2632,16 @@
           "chinese": "你喜歡打網球嗎？",
           "pinyin": "Nǐ xǐhuān dǎ wǎngqiú ma?",
           "english": "Do you like to play tennis?"
+        },
+        {
+          "chinese": "我常打網球和游泳。",
+          "pinyin": "Wǒ cháng dǎ wǎngqiú hàn yóuyǒng.",
+          "english": "I often play tennis and swim."
+        },
+        {
+          "chinese": "網球很好玩。",
+          "pinyin": "Wǎngqiú hěn hǎowán.",
+          "english": "Tennis is a lot of fun."
         }
       ],
       "grammar_links": [],
@@ -1912,6 +2666,16 @@
           "chinese": "打棒球和游泳，你呢？",
           "pinyin": "Dǎ bàngqiú hàn yóuyǒng, nǐ ne?",
           "english": "Playing baseball and swimming — what about you?"
+        },
+        {
+          "chinese": "他喜歡打棒球。",
+          "pinyin": "Tā xǐhuān dǎ bàngqiú.",
+          "english": "He likes to play baseball."
+        },
+        {
+          "chinese": "週末我們去打棒球吧！",
+          "pinyin": "Zhōumò wǒmen qù dǎ bàngqiú ba!",
+          "english": "Let's play baseball on the weekend!"
         }
       ],
       "grammar_links": [],
@@ -1927,8 +2691,8 @@
       "id": "w101",
       "traditional": "和",
       "pinyin": "hàn",
-      "english": "and; as well as",
-      "french": "et ; ainsi que",
+      "english": "and; as well as (connecting nouns)",
+      "french": "et; ainsi que",
       "part_of_speech": "conjunction",
       "lesson": 3,
       "sentences": [
@@ -1936,6 +2700,16 @@
           "chinese": "我和老師都去看電影。",
           "pinyin": "Wǒ hàn lǎoshī dōu qù kàn diànyǐng.",
           "english": "The teacher and I are both going to see a movie."
+        },
+        {
+          "chinese": "爸爸和媽媽都很好。",
+          "pinyin": "Bàba hàn māma dōu hěn hǎo.",
+          "english": "Dad and Mom are both doing well."
+        },
+        {
+          "chinese": "我喜歡音樂和運動。",
+          "pinyin": "Wǒ xǐhuān yīnyuè hàn yùndòng.",
+          "english": "I like music and sports."
         }
       ],
       "grammar_links": [],
@@ -1960,11 +2734,19 @@
           "chinese": "明天早上我不去游泳。",
           "pinyin": "Míngtiān zǎoshàng wǒ bù qù yóuyǒng.",
           "english": "I am not going to go swimming tomorrow morning."
+        },
+        {
+          "chinese": "你喜歡游泳嗎？",
+          "pinyin": "Nǐ xǐhuān yóuyǒng ma?",
+          "english": "Do you like swimming?"
+        },
+        {
+          "chinese": "我常去游泳。",
+          "pinyin": "Wǒ cháng qù yóuyǒng.",
+          "english": "I often go swimming."
         }
       ],
-      "grammar_links": [
-        "g018"
-      ],
+      "grammar_links": [],
       "performance": {
         "production": [],
         "speed_ms": [],
@@ -1978,7 +2760,7 @@
       "traditional": "常",
       "pinyin": "cháng",
       "english": "often; frequently",
-      "french": "souvent ; fréquemment",
+      "french": "souvent; fréquemment",
       "part_of_speech": "adverb",
       "lesson": 3,
       "sentences": [
@@ -1986,11 +2768,19 @@
           "chinese": "我常打籃球，也常踢足球。",
           "pinyin": "Wǒ cháng dǎ lánqiú, yě cháng tī zúqiú.",
           "english": "I often play basketball and also often play soccer."
+        },
+        {
+          "chinese": "他常去公園運動。",
+          "pinyin": "Tā cháng qù gōngyuán yùndòng.",
+          "english": "He often goes to the park to exercise."
+        },
+        {
+          "chinese": "你常看電影嗎？",
+          "pinyin": "Nǐ cháng kàn diànyǐng ma?",
+          "english": "Do you often watch movies?"
         }
       ],
-      "grammar_links": [
-        "g020"
-      ],
+      "grammar_links": [],
       "performance": {
         "production": [],
         "speed_ms": [],
@@ -2012,6 +2802,16 @@
           "chinese": "週末他要去打籃球。",
           "pinyin": "Zhōumò tā yào qù dǎ lánqiú.",
           "english": "This weekend he is going to play basketball."
+        },
+        {
+          "chinese": "我喜歡打籃球。",
+          "pinyin": "Wǒ xǐhuān dǎ lánqiú.",
+          "english": "I like to play basketball."
+        },
+        {
+          "chinese": "籃球很好玩。",
+          "pinyin": "Lánqiú hěn hǎowán.",
+          "english": "Basketball is very fun."
         }
       ],
       "grammar_links": [],
@@ -2027,8 +2827,8 @@
       "id": "w105",
       "traditional": "也",
       "pinyin": "yě",
-      "english": "also; too",
-      "french": "aussi ; également",
+      "english": "also; too; as well",
+      "french": "aussi; également",
       "part_of_speech": "adverb",
       "lesson": 3,
       "sentences": [
@@ -2036,11 +2836,19 @@
           "chinese": "我是美國人，他也是美國人。",
           "pinyin": "Wǒ shì Měiguó rén, tā yě shì Měiguó rén.",
           "english": "I am American and he is also American."
+        },
+        {
+          "chinese": "她也喜歡游泳。",
+          "pinyin": "Tā yě xǐhuān yóuyǒng.",
+          "english": "She also likes swimming."
+        },
+        {
+          "chinese": "我也想去看電影。",
+          "pinyin": "Wǒ yě xiǎng qù kàn diànyǐng.",
+          "english": "I also want to go see a movie."
         }
       ],
-      "grammar_links": [
-        "g020"
-      ],
+      "grammar_links": [],
       "performance": {
         "production": [],
         "speed_ms": [],
@@ -2054,7 +2862,7 @@
       "traditional": "踢",
       "pinyin": "tī",
       "english": "to kick; to play (soccer)",
-      "french": "donner un coup de pied ; jouer (au football)",
+      "french": "donner un coup de pied; jouer (au football)",
       "part_of_speech": "verb",
       "lesson": 3,
       "sentences": [
@@ -2062,6 +2870,16 @@
           "chinese": "你常去踢足球嗎？",
           "pinyin": "Nǐ cháng qù tī zúqiú ma?",
           "english": "Do you often go play soccer?"
+        },
+        {
+          "chinese": "我喜歡踢足球。",
+          "pinyin": "Wǒ xǐhuān tī zúqiú.",
+          "english": "I like to play soccer."
+        },
+        {
+          "chinese": "週末我們去踢足球吧！",
+          "pinyin": "Zhōumò wǒmen qù tī zúqiú ba!",
+          "english": "Let's go play soccer on the weekend!"
         }
       ],
       "grammar_links": [],
@@ -2086,6 +2904,16 @@
           "chinese": "我覺得踢足球很好玩。",
           "pinyin": "Wǒ juéde tī zúqiú hěn hǎowán.",
           "english": "I think playing soccer is fun."
+        },
+        {
+          "chinese": "他常打籃球，不常踢足球。",
+          "pinyin": "Tā cháng dǎ lánqiú, bù cháng tī zúqiú.",
+          "english": "He often plays basketball, not soccer."
+        },
+        {
+          "chinese": "週末我們去踢足球。",
+          "pinyin": "Zhōumò wǒmen qù tī zúqiú.",
+          "english": "On the weekend we'll go play soccer."
         }
       ],
       "grammar_links": [],
@@ -2101,8 +2929,8 @@
       "id": "w108",
       "traditional": "覺得",
       "pinyin": "juéde",
-      "english": "to feel; to think",
-      "french": "penser ; trouver ; avoir le sentiment que",
+      "english": "to feel; to think; to find (subjective opinion)",
+      "french": "penser; trouver; avoir le sentiment que",
       "part_of_speech": "verb",
       "lesson": 3,
       "sentences": [
@@ -2110,6 +2938,16 @@
           "chinese": "我覺得踢足球很好玩。",
           "pinyin": "Wǒ juéde tī zúqiú hěn hǎowán.",
           "english": "I think playing soccer is fun."
+        },
+        {
+          "chinese": "你覺得怎麼樣？",
+          "pinyin": "Nǐ juéde zěnmeyàng?",
+          "english": "What do you think?"
+        },
+        {
+          "chinese": "我覺得他是好人。",
+          "pinyin": "Wǒ juéde tā shì hǎo rén.",
+          "english": "I think he is a good person."
         }
       ],
       "grammar_links": [],
@@ -2125,8 +2963,8 @@
       "id": "w109",
       "traditional": "好玩",
       "pinyin": "hǎowán",
-      "english": "fun; interesting",
-      "french": "amusant ; intéressant",
+      "english": "fun; interesting; enjoyable",
+      "french": "amusant; intéressant",
       "part_of_speech": "adjective",
       "lesson": 3,
       "sentences": [
@@ -2134,11 +2972,19 @@
           "chinese": "踢足球，我覺得很好玩。",
           "pinyin": "Tī zúqiú, wǒ juéde hěn hǎowán.",
           "english": "As for playing soccer, I think it is very fun."
+        },
+        {
+          "chinese": "去水族館很好玩！",
+          "pinyin": "Qù shuǐzúguǎn hěn hǎowán!",
+          "english": "Going to the aquarium is very fun!"
+        },
+        {
+          "chinese": "游泳很好玩，你要不要去？",
+          "pinyin": "Yóuyǒng hěn hǎowán, nǐ yào bú yào qù?",
+          "english": "Swimming is fun, do you want to go?"
         }
       ],
-      "grammar_links": [
-        "g019"
-      ],
+      "grammar_links": [],
       "performance": {
         "production": [],
         "speed_ms": [],
@@ -2160,11 +3006,19 @@
           "chinese": "明天你想做什麼？",
           "pinyin": "Míngtiān nǐ xiǎng zuò shénme?",
           "english": "What would you like to do tomorrow?"
+        },
+        {
+          "chinese": "明天我要去打籃球。",
+          "pinyin": "Míngtiān wǒ yào qù dǎ lánqiú.",
+          "english": "Tomorrow I'm going to play basketball."
+        },
+        {
+          "chinese": "明天是週末，我們去爬山。",
+          "pinyin": "Míngtiān shì zhōumò, wǒmen qù páshān.",
+          "english": "Tomorrow is the weekend, let's go hiking."
         }
       ],
-      "grammar_links": [
-        "g017"
-      ],
+      "grammar_links": [],
       "performance": {
         "production": [],
         "speed_ms": [],
@@ -2186,11 +3040,19 @@
           "chinese": "我們早上去踢足球，怎麼樣？",
           "pinyin": "Wǒmen zǎoshàng qù tī zúqiú, zěnmeyàng?",
           "english": "How about we go play soccer in the morning?"
+        },
+        {
+          "chinese": "我早上常去游泳。",
+          "pinyin": "Wǒ zǎoshàng cháng qù yóuyǒng.",
+          "english": "I often go swimming in the morning."
+        },
+        {
+          "chinese": "早上你做什麼？",
+          "pinyin": "Zǎoshàng nǐ zuò shénme?",
+          "english": "What do you do in the morning?"
         }
       ],
-      "grammar_links": [
-        "g017"
-      ],
+      "grammar_links": [],
       "performance": {
         "production": [],
         "speed_ms": [],
@@ -2212,11 +3074,19 @@
           "chinese": "我去打網球。",
           "pinyin": "Wǒ qù dǎ wǎngqiú.",
           "english": "I am going to go play tennis."
+        },
+        {
+          "chinese": "我們一起去吧！",
+          "pinyin": "Wǒmen yīqǐ qù ba!",
+          "english": "Let's go together!"
+        },
+        {
+          "chinese": "你要去哪裡？",
+          "pinyin": "Nǐ yào qù nǎlǐ?",
+          "english": "Where are you going?"
         }
       ],
-      "grammar_links": [
-        "g018"
-      ],
+      "grammar_links": [],
       "performance": {
         "production": [],
         "speed_ms": [],
@@ -2229,8 +3099,8 @@
       "id": "w113",
       "traditional": "怎麼樣",
       "pinyin": "zěnmeyàng",
-      "english": "how about it?; what do you think?",
-      "french": "qu'est-ce que tu en penses ? ; comment ça te semble ?",
+      "english": "how about it?; what do you think?; how is it?",
+      "french": "qu'est-ce que tu en penses?; comment ça te semble?",
       "part_of_speech": "phrase",
       "lesson": 3,
       "sentences": [
@@ -2238,6 +3108,16 @@
           "chinese": "我們週末去打籃球，怎麼樣？",
           "pinyin": "Wǒmen zhōumò qù dǎ lánqiú, zěnmeyàng?",
           "english": "Let's go play basketball on the weekend. How does that sound?"
+        },
+        {
+          "chinese": "你覺得怎麼樣？",
+          "pinyin": "Nǐ juéde zěnmeyàng?",
+          "english": "What do you think?"
+        },
+        {
+          "chinese": "這個好不好？怎麼樣？",
+          "pinyin": "Zhè gè hǎo bu hǎo? Zěnmeyàng?",
+          "english": "Is this good? What do you think?"
         }
       ],
       "grammar_links": [],
@@ -2253,7 +3133,7 @@
       "id": "w114",
       "traditional": "啊",
       "pinyin": "a",
-      "english": "sentence-final particle (expressing assent or exclamation)",
+      "english": "sentence-final particle (expressing assent, exclamation, or softening)",
       "french": "particule finale (approbation ou exclamation)",
       "part_of_speech": "particle",
       "lesson": 3,
@@ -2262,6 +3142,16 @@
           "chinese": "好啊！",
           "pinyin": "Hǎo a!",
           "english": "Great!"
+        },
+        {
+          "chinese": "你來啊！",
+          "pinyin": "Nǐ lái a!",
+          "english": "Oh, you came!"
+        },
+        {
+          "chinese": "這個很好玩啊！",
+          "pinyin": "Zhè gè hěn hǎowán a!",
+          "english": "This is really fun!"
         }
       ],
       "grammar_links": [],
@@ -2286,11 +3176,19 @@
           "chinese": "今天晚上我們去看電影，好不好？",
           "pinyin": "Jīntiān wǎnshàng wǒmen qù kàn diànyǐng, hǎo bu hǎo?",
           "english": "Let's go see a movie tonight, OK?"
+        },
+        {
+          "chinese": "今天你忙嗎？",
+          "pinyin": "Jīntiān nǐ máng ma?",
+          "english": "Are you busy today?"
+        },
+        {
+          "chinese": "今天是週末，我想去爬山。",
+          "pinyin": "Jīntiān shì zhōumò, wǒ xiǎng qù páshān.",
+          "english": "Today is the weekend, I want to go hiking."
         }
       ],
-      "grammar_links": [
-        "g017"
-      ],
+      "grammar_links": [],
       "performance": {
         "production": [],
         "speed_ms": [],
@@ -2304,7 +3202,7 @@
       "traditional": "晚上",
       "pinyin": "wǎnshàng",
       "english": "evening; night",
-      "french": "soir ; nuit",
+      "french": "soir; nuit",
       "part_of_speech": "noun",
       "lesson": 3,
       "sentences": [
@@ -2312,11 +3210,19 @@
           "chinese": "今天晚上我們看什麼電影？",
           "pinyin": "Jīntiān wǎnshàng wǒmen kàn shénme diànyǐng?",
           "english": "What movie are we watching tonight?"
+        },
+        {
+          "chinese": "晚上我想去吃晚飯。",
+          "pinyin": "Wǎnshàng wǒ xiǎng qù chī wǎnfàn.",
+          "english": "Tonight I want to go eat dinner."
+        },
+        {
+          "chinese": "你晚上要做什麼？",
+          "pinyin": "Nǐ wǎnshàng yào zuò shénme?",
+          "english": "What are you doing tonight?"
         }
       ],
-      "grammar_links": [
-        "g017"
-      ],
+      "grammar_links": [],
       "performance": {
         "production": [],
         "speed_ms": [],
@@ -2329,8 +3235,8 @@
       "id": "w117",
       "traditional": "看",
       "pinyin": "kàn",
-      "english": "to see; to watch",
-      "french": "voir ; regarder",
+      "english": "to see; to watch; to look at; to read",
+      "french": "voir; regarder",
       "part_of_speech": "verb",
       "lesson": 3,
       "sentences": [
@@ -2338,11 +3244,19 @@
           "chinese": "我們去看臺灣電影吧！",
           "pinyin": "Wǒmen qù kàn Táiwān diànyǐng ba!",
           "english": "Let's watch a Taiwanese movie."
+        },
+        {
+          "chinese": "你看！那是誰？",
+          "pinyin": "Nǐ kàn! Nà shì shéi?",
+          "english": "Look! Who is that?"
+        },
+        {
+          "chinese": "你常看電影嗎？",
+          "pinyin": "Nǐ cháng kàn diànyǐng ma?",
+          "english": "Do you often watch movies?"
         }
       ],
-      "grammar_links": [
-        "g021"
-      ],
+      "grammar_links": [],
       "performance": {
         "production": [],
         "speed_ms": [],
@@ -2356,7 +3270,7 @@
       "traditional": "電影",
       "pinyin": "diànyǐng",
       "english": "movie; film",
-      "french": "film ; cinéma",
+      "french": "film; cinéma",
       "part_of_speech": "noun",
       "lesson": 3,
       "sentences": [
@@ -2364,6 +3278,16 @@
           "chinese": "看電影可以學中文。",
           "pinyin": "Kàn diànyǐng kěyǐ xué Zhōngwén.",
           "english": "Watching movies, I can learn Chinese."
+        },
+        {
+          "chinese": "你喜歡看什麼電影？",
+          "pinyin": "Nǐ xǐhuān kàn shénme diànyǐng?",
+          "english": "What kind of movies do you like?"
+        },
+        {
+          "chinese": "今天晚上我們去看電影吧！",
+          "pinyin": "Jīntiān wǎnshàng wǒmen qù kàn diànyǐng ba!",
+          "english": "Let's go to the movies tonight!"
         }
       ],
       "grammar_links": [],
@@ -2379,8 +3303,8 @@
       "id": "w119",
       "traditional": "妳",
       "pinyin": "nǐ",
-      "english": "you (female)",
-      "french": "tu / vous (féminin)",
+      "english": "you (female written form)",
+      "french": "tu/vous (féminin)",
       "part_of_speech": "pronoun",
       "lesson": 3,
       "sentences": [
@@ -2388,6 +3312,16 @@
           "chinese": "妳想看美國電影還是臺灣電影？",
           "pinyin": "Nǐ xiǎng kàn Měiguó diànyǐng háishì Táiwān diànyǐng?",
           "english": "Do you want to see an American movie or a Taiwanese movie?"
+        },
+        {
+          "chinese": "妳是哪國人？",
+          "pinyin": "Nǐ shì nǎ guó rén?",
+          "english": "What nationality are you?"
+        },
+        {
+          "chinese": "妳喜歡做什麼運動？",
+          "pinyin": "Nǐ xǐhuān zuò shénme yùndòng?",
+          "english": "What sports do you like?"
         }
       ],
       "grammar_links": [],
@@ -2403,8 +3337,8 @@
       "id": "w120",
       "traditional": "想",
       "pinyin": "xiǎng",
-      "english": "to want; to think",
-      "french": "vouloir ; penser",
+      "english": "to want; to think; to miss",
+      "french": "vouloir; penser; manquer",
       "part_of_speech": "verb",
       "lesson": 3,
       "sentences": [
@@ -2412,11 +3346,19 @@
           "chinese": "美國電影、臺灣電影，我都想看。",
           "pinyin": "Měiguó diànyǐng, Táiwān diànyǐng, wǒ dōu xiǎng kàn.",
           "english": "American movies, Taiwanese movies — I want to watch both."
+        },
+        {
+          "chinese": "你想去哪裡？",
+          "pinyin": "Nǐ xiǎng qù nǎlǐ?",
+          "english": "Where do you want to go?"
+        },
+        {
+          "chinese": "我想學中文。",
+          "pinyin": "Wǒ xiǎng xué Zhōngwén.",
+          "english": "I want to learn Chinese."
         }
       ],
-      "grammar_links": [
-        "g019"
-      ],
+      "grammar_links": [],
       "performance": {
         "production": [],
         "speed_ms": [],
@@ -2429,7 +3371,7 @@
       "id": "w121",
       "traditional": "還是",
       "pinyin": "háishì",
-      "english": "or (used in questions)",
+      "english": "or (in questions); still is",
       "french": "ou bien (dans les questions)",
       "part_of_speech": "conjunction",
       "lesson": 3,
@@ -2438,6 +3380,16 @@
           "chinese": "妳想看美國電影還是臺灣電影？",
           "pinyin": "Nǐ xiǎng kàn Měiguó diànyǐng háishì Táiwān diànyǐng?",
           "english": "Do you want to see an American movie or a Taiwanese movie?"
+        },
+        {
+          "chinese": "你要外帶還是內用？",
+          "pinyin": "Nǐ yào wàidài háishì nèiyòng?",
+          "english": "Do you want to take out or dine in?"
+        },
+        {
+          "chinese": "你喜歡大的還是小的？",
+          "pinyin": "Nǐ xǐhuān dà de háishì xiǎo de?",
+          "english": "Do you like big ones or small ones?"
         }
       ],
       "grammar_links": [],
@@ -2453,8 +3405,8 @@
       "id": "w122",
       "traditional": "吧",
       "pinyin": "ba",
-      "english": "sentence-final particle for suggestions",
-      "french": "particule finale de suggestion",
+      "english": "sentence-final particle for suggestions or mild confirmation",
+      "french": "particule finale de suggestion ou confirmation douce",
       "part_of_speech": "particle",
       "lesson": 3,
       "sentences": [
@@ -2462,11 +3414,19 @@
           "chinese": "我們去看臺灣電影吧！",
           "pinyin": "Wǒmen qù kàn Táiwān diànyǐng ba!",
           "english": "Let's watch a Taiwanese movie."
+        },
+        {
+          "chinese": "你也去吧？",
+          "pinyin": "Nǐ yě qù ba?",
+          "english": "You're coming too, right?"
+        },
+        {
+          "chinese": "好吧，我們一起去。",
+          "pinyin": "Hǎo ba, wǒmen yīqǐ qù.",
+          "english": "Alright then, let's go together."
         }
       ],
-      "grammar_links": [
-        "g021"
-      ],
+      "grammar_links": [],
       "performance": {
         "production": [],
         "speed_ms": [],
@@ -2479,8 +3439,8 @@
       "id": "w123",
       "traditional": "可以",
       "pinyin": "kěyǐ",
-      "english": "can; may (possibility/permission)",
-      "french": "pouvoir ; être permis de",
+      "english": "can; may; it's OK (possibility or permission)",
+      "french": "pouvoir; être permis de",
       "part_of_speech": "verb",
       "lesson": 3,
       "sentences": [
@@ -2488,6 +3448,16 @@
           "chinese": "看電影可以學中文。",
           "pinyin": "Kàn diànyǐng kěyǐ xué Zhōngwén.",
           "english": "Watching movies, one can learn Chinese."
+        },
+        {
+          "chinese": "我可以去嗎？",
+          "pinyin": "Wǒ kěyǐ qù ma?",
+          "english": "May I go?"
+        },
+        {
+          "chinese": "你可以來我家。",
+          "pinyin": "Nǐ kěyǐ lái wǒ jiā.",
+          "english": "You can come to my home."
         }
       ],
       "grammar_links": [],
@@ -2504,7 +3474,7 @@
       "traditional": "學",
       "pinyin": "xué",
       "english": "to learn; to study",
-      "french": "apprendre ; étudier",
+      "french": "apprendre; étudier",
       "part_of_speech": "verb",
       "lesson": 3,
       "sentences": [
@@ -2512,6 +3482,16 @@
           "chinese": "看電影可以學中文。",
           "pinyin": "Kàn diànyǐng kěyǐ xué Zhōngwén.",
           "english": "Watching movies, one can learn Chinese."
+        },
+        {
+          "chinese": "我在學中文。",
+          "pinyin": "Wǒ zài xué Zhōngwén.",
+          "english": "I am studying Chinese."
+        },
+        {
+          "chinese": "你也想學中文嗎？",
+          "pinyin": "Nǐ yě xiǎng xué Zhōngwén ma?",
+          "english": "Do you also want to learn Chinese?"
         }
       ],
       "grammar_links": [],
@@ -2527,7 +3507,7 @@
       "id": "w125",
       "traditional": "中文",
       "pinyin": "Zhōngwén",
-      "english": "Chinese language",
+      "english": "Chinese language (written and spoken)",
       "french": "langue chinoise",
       "part_of_speech": "noun",
       "lesson": 3,
@@ -2536,6 +3516,16 @@
           "chinese": "看電影可以學中文。",
           "pinyin": "Kàn diànyǐng kěyǐ xué Zhōngwén.",
           "english": "Watching movies, one can learn Chinese."
+        },
+        {
+          "chinese": "你會說中文嗎？",
+          "pinyin": "Nǐ huì shuō Zhōngwén ma?",
+          "english": "Can you speak Chinese?"
+        },
+        {
+          "chinese": "我想學中文。",
+          "pinyin": "Wǒ xiǎng xué Zhōngwén.",
+          "english": "I want to learn Chinese."
         }
       ],
       "grammar_links": [],
@@ -2560,6 +3550,16 @@
           "chinese": "晚上要不要一起吃晚飯？",
           "pinyin": "Wǎnshàng yào bu yào yīqǐ chī wǎnfàn?",
           "english": "Would you like to have dinner together tonight?"
+        },
+        {
+          "chinese": "我們一起去吧！",
+          "pinyin": "Wǒmen yīqǐ qù ba!",
+          "english": "Let's go together!"
+        },
+        {
+          "chinese": "我和朋友一起去爬山。",
+          "pinyin": "Wǒ hàn péngyǒu yīqǐ qù páshān.",
+          "english": "I went hiking together with friends."
         }
       ],
       "grammar_links": [],
@@ -2584,6 +3584,16 @@
           "chinese": "我們去吃越南菜。",
           "pinyin": "Wǒmen qù chī Yuènán cài.",
           "english": "Let's go eat Vietnamese food."
+        },
+        {
+          "chinese": "你喜歡吃什麼？",
+          "pinyin": "Nǐ xǐhuān chī shénme?",
+          "english": "What do you like to eat?"
+        },
+        {
+          "chinese": "早上我吃包子。",
+          "pinyin": "Zǎoshàng wǒ chī bāozi.",
+          "english": "In the morning I eat baozi."
         }
       ],
       "grammar_links": [],
@@ -2599,8 +3609,8 @@
       "id": "w128",
       "traditional": "晚飯",
       "pinyin": "wǎnfàn",
-      "english": "dinner",
-      "french": "dîner ; repas du soir",
+      "english": "dinner; evening meal",
+      "french": "dîner; repas du soir",
       "part_of_speech": "noun",
       "lesson": 3,
       "sentences": [
@@ -2608,6 +3618,16 @@
           "chinese": "晚上要不要一起吃晚飯？",
           "pinyin": "Wǎnshàng yào bu yào yīqǐ chī wǎnfàn?",
           "english": "Would you like to have dinner together tonight?"
+        },
+        {
+          "chinese": "今天晚飯我做菜。",
+          "pinyin": "Jīntiān wǎnfàn wǒ zuò cài.",
+          "english": "I'll cook for tonight's dinner."
+        },
+        {
+          "chinese": "你喜歡吃越南晚飯嗎？",
+          "pinyin": "Nǐ xǐhuān chī Yuènán wǎnfàn ma?",
+          "english": "Do you like eating Vietnamese dinner?"
         }
       ],
       "grammar_links": [],
@@ -2625,13 +3645,23 @@
       "pinyin": "Yuènán",
       "english": "Vietnam",
       "french": "Vietnam",
-      "part_of_speech": "noun",
+      "part_of_speech": "proper_noun",
       "lesson": 3,
       "sentences": [
         {
           "chinese": "我們去吃越南菜。",
           "pinyin": "Wǒmen qù chī Yuènán cài.",
           "english": "Let's go eat Vietnamese food."
+        },
+        {
+          "chinese": "越南菜很好吃。",
+          "pinyin": "Yuènán cài hěn hǎochī.",
+          "english": "Vietnamese food is very delicious."
+        },
+        {
+          "chinese": "你去過越南嗎？",
+          "pinyin": "Nǐ qùguò Yuènán ma?",
+          "english": "Have you been to Vietnam?"
         }
       ],
       "grammar_links": [],
@@ -2656,6 +3686,16 @@
           "chinese": "我和三個朋友去水族館。",
           "pinyin": "Wǒ hàn sān gè péngyǒu qù shuǐzúguǎn.",
           "english": "I went to the aquarium with three friends."
+        },
+        {
+          "chinese": "你去過水族館嗎？",
+          "pinyin": "Nǐ qùguò shuǐzúguǎn ma?",
+          "english": "Have you been to the aquarium?"
+        },
+        {
+          "chinese": "水族館很好玩！",
+          "pinyin": "Shuǐzúguǎn hěn hǎowán!",
+          "english": "The aquarium is very fun!"
         }
       ],
       "grammar_links": [],
@@ -2680,6 +3720,16 @@
           "chinese": "我和三個朋友去跳舞。",
           "pinyin": "Wǒ hàn sān gè péngyǒu qù tiàowǔ.",
           "english": "I went dancing with three friends."
+        },
+        {
+          "chinese": "他是我的好朋友。",
+          "pinyin": "Tā shì wǒ de hǎo péngyǒu.",
+          "english": "He is my good friend."
+        },
+        {
+          "chinese": "你有很多朋友嗎？",
+          "pinyin": "Nǐ yǒu hěn duō péngyǒu ma?",
+          "english": "Do you have many friends?"
         }
       ],
       "grammar_links": [],
@@ -2704,6 +3754,16 @@
           "chinese": "我們去公園玩吧！",
           "pinyin": "Wǒmen qù gōngyuán wán ba!",
           "english": "Let's go to the park!"
+        },
+        {
+          "chinese": "我常去公園運動。",
+          "pinyin": "Wǒ cháng qù gōngyuán yùndòng.",
+          "english": "I often go to the park to exercise."
+        },
+        {
+          "chinese": "公園裡有很多人。",
+          "pinyin": "Gōngyuán lǐ yǒu hěn duō rén.",
+          "english": "There are many people in the park."
         }
       ],
       "grammar_links": [],
@@ -2718,16 +3778,26 @@
     {
       "id": "w133",
       "traditional": "可愛",
-      "pinyin": "kěài",
+      "pinyin": "kě'ài",
       "english": "cute; adorable",
-      "french": "mignon ; adorable",
+      "french": "mignon; adorable",
       "part_of_speech": "adjective",
       "lesson": 3,
       "sentences": [
         {
+          "chinese": "你的孩子很可愛。",
+          "pinyin": "Nǐ de háizi hěn kě'ài.",
+          "english": "Your child is very cute."
+        },
+        {
           "chinese": "那隻貓很可愛。",
-          "pinyin": "Nà zhī māo hěn kěài.",
+          "pinyin": "Nà zhī māo hěn kě'ài.",
           "english": "That cat is very cute."
+        },
+        {
+          "chinese": "他很可愛，我喜歡他。",
+          "pinyin": "Tā hěn kě'ài, wǒ xǐhuān tā.",
+          "english": "He is very cute; I like him."
         }
       ],
       "grammar_links": [],
@@ -2743,7 +3813,7 @@
       "id": "w134",
       "traditional": "累",
       "pinyin": "lèi",
-      "english": "tired",
+      "english": "tired; exhausted",
       "french": "fatigué(e)",
       "part_of_speech": "adjective",
       "lesson": 3,
@@ -2752,6 +3822,16 @@
           "chinese": "今天我很累。",
           "pinyin": "Jīntiān wǒ hěn lèi.",
           "english": "I am very tired today."
+        },
+        {
+          "chinese": "爬山很累，但是很好玩。",
+          "pinyin": "Páshān hěn lèi, dànshì hěn hǎowán.",
+          "english": "Hiking is tiring, but very fun."
+        },
+        {
+          "chinese": "你累不累？",
+          "pinyin": "Nǐ lèi bú lèi?",
+          "english": "Are you tired?"
         }
       ],
       "grammar_links": [],
@@ -2776,6 +3856,16 @@
           "chinese": "你今天忙嗎？",
           "pinyin": "Nǐ jīntiān máng ma?",
           "english": "Are you busy today?"
+        },
+        {
+          "chinese": "我很忙，不能去。",
+          "pinyin": "Wǒ hěn máng, bù néng qù.",
+          "english": "I'm very busy and can't go."
+        },
+        {
+          "chinese": "他常很忙。",
+          "pinyin": "Tā cháng hěn máng.",
+          "english": "He is often very busy."
         }
       ],
       "grammar_links": [],
@@ -2791,8 +3881,8 @@
       "id": "w136",
       "traditional": "爬山",
       "pinyin": "páshān",
-      "english": "to hike; to climb a mountain",
-      "french": "faire de la randonnée ; gravir une montagne",
+      "english": "to hike; to go mountain climbing",
+      "french": "faire de la randonnée; gravir une montagne",
       "part_of_speech": "verb",
       "lesson": 3,
       "sentences": [
@@ -2800,6 +3890,16 @@
           "chinese": "週末我想去爬山。",
           "pinyin": "Zhōumò wǒ xiǎng qù páshān.",
           "english": "I want to go hiking on the weekend."
+        },
+        {
+          "chinese": "你喜歡爬山嗎？",
+          "pinyin": "Nǐ xǐhuān páshān ma?",
+          "english": "Do you like hiking?"
+        },
+        {
+          "chinese": "我們一起去爬山吧！",
+          "pinyin": "Wǒmen yīqǐ qù páshān ba!",
+          "english": "Let's go hiking together!"
         }
       ],
       "grammar_links": [],
@@ -2816,7 +3916,7 @@
       "traditional": "一共",
       "pinyin": "yīgòng",
       "english": "altogether; in total",
-      "french": "en tout ; au total",
+      "french": "en tout; au total",
       "part_of_speech": "adverb",
       "lesson": 4,
       "sentences": [
@@ -2824,6 +3924,16 @@
           "chinese": "請問一共多少錢？",
           "pinyin": "Qǐngwèn yīgòng duōshǎo qián?",
           "english": "Excuse me, how much does that cost in total?"
+        },
+        {
+          "chinese": "一共一百二十塊。",
+          "pinyin": "Yīgòng yībǎi èrshí kuài.",
+          "english": "That's 120 in total."
+        },
+        {
+          "chinese": "我們一共有五個人。",
+          "pinyin": "Wǒmen yīgòng yǒu wǔ gè rén.",
+          "english": "There are five of us in total."
         }
       ],
       "grammar_links": [],
@@ -2848,6 +3958,16 @@
           "chinese": "一支賣多少錢？",
           "pinyin": "Yī zhī mài duōshǎo qián?",
           "english": "How much does one cost?"
+        },
+        {
+          "chinese": "你家有多少人？",
+          "pinyin": "Nǐ jiā yǒu duōshǎo rén?",
+          "english": "How many people are in your family?"
+        },
+        {
+          "chinese": "這本書多少錢？",
+          "pinyin": "Zhè běn shū duōshǎo qián?",
+          "english": "How much does this book cost?"
         }
       ],
       "grammar_links": [],
@@ -2863,7 +3983,7 @@
       "id": "w139",
       "traditional": "錢",
       "pinyin": "qián",
-      "english": "money",
+      "english": "money; currency",
       "french": "argent",
       "part_of_speech": "noun",
       "lesson": 4,
@@ -2872,6 +3992,16 @@
           "chinese": "一共一百二十塊錢。",
           "pinyin": "Yīgòng yībǎi èrshí kuài qián.",
           "english": "That will be 120 dollars in total."
+        },
+        {
+          "chinese": "你有錢嗎？",
+          "pinyin": "Nǐ yǒu qián ma?",
+          "english": "Do you have money?"
+        },
+        {
+          "chinese": "那個手機很貴，要很多錢。",
+          "pinyin": "Nà gè shǒujī hěn guì, yào hěn duō qián.",
+          "english": "That phone is expensive; it costs a lot of money."
         }
       ],
       "grammar_links": [],
@@ -2887,8 +4017,8 @@
       "id": "w140",
       "traditional": "老闆",
       "pinyin": "lǎobǎn",
-      "english": "store owner; boss",
-      "french": "patron ; propriétaire de magasin",
+      "english": "store owner; boss; sir (to staff)",
+      "french": "patron; propriétaire de magasin",
       "part_of_speech": "noun",
       "lesson": 4,
       "sentences": [
@@ -2896,6 +4026,16 @@
           "chinese": "老闆，請問你要買什麼？",
           "pinyin": "Lǎobǎn, qǐngwèn nǐ yào mǎi shénme?",
           "english": "Boss, what would you like to order?"
+        },
+        {
+          "chinese": "老闆，一共多少錢？",
+          "pinyin": "Lǎobǎn, yīgòng duōshǎo qián?",
+          "english": "Boss, how much is it in total?"
+        },
+        {
+          "chinese": "他是這裡的老闆。",
+          "pinyin": "Tā shì zhèlǐ de lǎobǎn.",
+          "english": "He is the owner here."
         }
       ],
       "grammar_links": [],
@@ -2920,6 +4060,16 @@
           "chinese": "我想買一支新手機。",
           "pinyin": "Wǒ xiǎng mǎi yī zhī xīn shǒujī.",
           "english": "I want to buy a new cell phone."
+        },
+        {
+          "chinese": "你要買什麼？",
+          "pinyin": "Nǐ yào mǎi shénme?",
+          "english": "What do you want to buy?"
+        },
+        {
+          "chinese": "這個太貴了，我不買。",
+          "pinyin": "Zhè gè tài guì le, wǒ bù mǎi.",
+          "english": "This is too expensive, I won't buy it."
         }
       ],
       "grammar_links": [],
@@ -2935,8 +4085,8 @@
       "id": "w142",
       "traditional": "杯",
       "pinyin": "bēi",
-      "english": "cup (measure word)",
-      "french": "tasse ; verre (classificateur)",
+      "english": "cup; glass (measure word and noun)",
+      "french": "tasse; verre (classificateur et nom)",
       "part_of_speech": "noun",
       "lesson": 4,
       "sentences": [
@@ -2944,11 +4094,19 @@
           "chinese": "一杯熱咖啡，兩個包子。",
           "pinyin": "Yī bēi rè kāfēi, liǎng gè bāozi.",
           "english": "A cup of hot coffee and two baozi."
+        },
+        {
+          "chinese": "你要大杯還是小杯？",
+          "pinyin": "Nǐ yào dà bēi háishì xiǎo bēi?",
+          "english": "Do you want a large or small cup?"
+        },
+        {
+          "chinese": "請問這杯茶多少錢？",
+          "pinyin": "Qǐngwèn zhè bēi chá duōshǎo qián?",
+          "english": "How much is this cup of tea?"
         }
       ],
-      "grammar_links": [
-        "g022"
-      ],
+      "grammar_links": [],
       "performance": {
         "production": [],
         "speed_ms": [],
@@ -2961,7 +4119,7 @@
       "id": "w143",
       "traditional": "熱",
       "pinyin": "rè",
-      "english": "hot",
+      "english": "hot (temperature)",
       "french": "chaud(e)",
       "part_of_speech": "adjective",
       "lesson": 4,
@@ -2970,11 +4128,19 @@
           "chinese": "這杯咖啡不熱，我要熱的。",
           "pinyin": "Zhè bēi kāfēi bù rè, wǒ yào rè de.",
           "english": "This cup of coffee is not hot. I want a hot one."
+        },
+        {
+          "chinese": "你要熱的還是冷的？",
+          "pinyin": "Nǐ yào rè de háishì lěng de?",
+          "english": "Do you want hot or cold?"
+        },
+        {
+          "chinese": "今天很熱。",
+          "pinyin": "Jīntiān hěn rè.",
+          "english": "Today is very hot."
         }
       ],
-      "grammar_links": [
-        "g024"
-      ],
+      "grammar_links": [],
       "performance": {
         "production": [],
         "speed_ms": [],
@@ -2987,7 +4153,7 @@
       "id": "w144",
       "traditional": "包子",
       "pinyin": "bāozi",
-      "english": "steamed buns with filling",
+      "english": "steamed buns with filling (baozi)",
       "french": "baozi (petits pains cuits à la vapeur fourrés)",
       "part_of_speech": "noun",
       "lesson": 4,
@@ -2996,11 +4162,19 @@
           "chinese": "包子請幫我微波。",
           "pinyin": "Bāozi qǐng bāng wǒ wēibō.",
           "english": "Please microwave the baozi for me."
+        },
+        {
+          "chinese": "我要兩個包子。",
+          "pinyin": "Wǒ yào liǎng gè bāozi.",
+          "english": "I want two baozi."
+        },
+        {
+          "chinese": "你喜歡吃包子嗎？",
+          "pinyin": "Nǐ xǐhuān chī bāozi ma?",
+          "english": "Do you like eating baozi?"
         }
       ],
-      "grammar_links": [
-        "g023"
-      ],
+      "grammar_links": [],
       "performance": {
         "production": [],
         "speed_ms": [],
@@ -3014,7 +4188,7 @@
       "traditional": "大",
       "pinyin": "dà",
       "english": "large; big",
-      "french": "grand(e) ; gros(se)",
+      "french": "grand(e); gros(se)",
       "part_of_speech": "adjective",
       "lesson": 4,
       "sentences": [
@@ -3022,11 +4196,19 @@
           "chinese": "大杯。",
           "pinyin": "Dà bēi.",
           "english": "Large."
+        },
+        {
+          "chinese": "你家很大。",
+          "pinyin": "Nǐ jiā hěn dà.",
+          "english": "Your house is very big."
+        },
+        {
+          "chinese": "我要大的，不要小的。",
+          "pinyin": "Wǒ yào dà de, bú yào xiǎo de.",
+          "english": "I want a large one, not a small one."
         }
       ],
-      "grammar_links": [
-        "g024"
-      ],
+      "grammar_links": [],
       "performance": {
         "production": [],
         "speed_ms": [],
@@ -3048,6 +4230,16 @@
           "chinese": "你要大杯、中杯還是小杯？",
           "pinyin": "Nǐ yào dà bēi, zhōng bēi háishì xiǎo bēi?",
           "english": "Would you like a large, medium, or small cup?"
+        },
+        {
+          "chinese": "我要中杯。",
+          "pinyin": "Wǒ yào zhōng bēi.",
+          "english": "I want a medium."
+        },
+        {
+          "chinese": "中的就好。",
+          "pinyin": "Zhōng de jiù hǎo.",
+          "english": "Medium is fine."
         }
       ],
       "grammar_links": [],
@@ -3063,7 +4255,7 @@
       "id": "w147",
       "traditional": "小",
       "pinyin": "xiǎo",
-      "english": "small; little",
+      "english": "small; little; young",
       "french": "petit(e)",
       "part_of_speech": "adjective",
       "lesson": 4,
@@ -3072,11 +4264,19 @@
           "chinese": "大的很貴，小的很便宜。",
           "pinyin": "Dà de hěn guì, xiǎo de hěn piányí.",
           "english": "Large ones are expensive; small ones are cheap."
+        },
+        {
+          "chinese": "我要小杯。",
+          "pinyin": "Wǒ yào xiǎo bēi.",
+          "english": "I want a small one."
+        },
+        {
+          "chinese": "他有一個小妹妹。",
+          "pinyin": "Tā yǒu yī gè xiǎo mèimei.",
+          "english": "He has a little sister."
         }
       ],
-      "grammar_links": [
-        "g024"
-      ],
+      "grammar_links": [],
       "performance": {
         "production": [],
         "speed_ms": [],
@@ -3089,8 +4289,8 @@
       "id": "w148",
       "traditional": "幫",
       "pinyin": "bāng",
-      "english": "to help; for (on behalf of)",
-      "french": "aider ; pour (au nom de)",
+      "english": "to help; to do something for someone",
+      "french": "aider; faire quelque chose pour quelqu'un",
       "part_of_speech": "verb",
       "lesson": 4,
       "sentences": [
@@ -3098,11 +4298,19 @@
           "chinese": "請幫我微波包子。",
           "pinyin": "Qǐng bāng wǒ wēibō bāozi.",
           "english": "Please microwave the baozi for me."
+        },
+        {
+          "chinese": "你可以幫我嗎？",
+          "pinyin": "Nǐ kěyǐ bāng wǒ ma?",
+          "english": "Can you help me?"
+        },
+        {
+          "chinese": "謝謝你幫我。",
+          "pinyin": "Xièxie nǐ bāng wǒ.",
+          "english": "Thank you for helping me."
         }
       ],
-      "grammar_links": [
-        "g023"
-      ],
+      "grammar_links": [],
       "performance": {
         "production": [],
         "speed_ms": [],
@@ -3124,11 +4332,19 @@
           "chinese": "請幫我微波包子。",
           "pinyin": "Qǐng bāng wǒ wēibō bāozi.",
           "english": "Please microwave the baozi for me."
+        },
+        {
+          "chinese": "你可以幫我微波嗎？",
+          "pinyin": "Nǐ kěyǐ bāng wǒ wēibō ma?",
+          "english": "Can you microwave it for me?"
+        },
+        {
+          "chinese": "包子冷了，我要微波。",
+          "pinyin": "Bāozi lěng le, wǒ yào wēibō.",
+          "english": "The baozi is cold, I need to microwave it."
         }
       ],
-      "grammar_links": [
-        "g023"
-      ],
+      "grammar_links": [],
       "performance": {
         "production": [],
         "speed_ms": [],
@@ -3150,6 +4366,16 @@
           "chinese": "一共一百二十塊。",
           "pinyin": "Yīgòng yībǎi èrshí kuài.",
           "english": "That's 120 in total."
+        },
+        {
+          "chinese": "這個手機要一百塊。",
+          "pinyin": "Zhè gè shǒujī yào yībǎi kuài.",
+          "english": "This phone costs 100 dollars."
+        },
+        {
+          "chinese": "我有一百塊錢。",
+          "pinyin": "Wǒ yǒu yībǎi kuài qián.",
+          "english": "I have 100 dollars."
         }
       ],
       "grammar_links": [],
@@ -3165,8 +4391,8 @@
       "id": "w151",
       "traditional": "塊",
       "pinyin": "kuài",
-      "english": "dollar (measure word for Chinese currency)",
-      "french": "yuan/dollar (classificateur monétaire chinois)",
+      "english": "dollar (colloquial measure word for currency)",
+      "french": "yuan/dollar (classificateur monétaire courant)",
       "part_of_speech": "noun",
       "lesson": 4,
       "sentences": [
@@ -3174,11 +4400,19 @@
           "chinese": "咖啡八十，包子四十，一共一百二十塊。",
           "pinyin": "Kāfēi bāshí, bāozi sìshí, yīgòng yībǎi èrshí kuài.",
           "english": "80 for the coffee, 40 for the baozi — 120 in total."
+        },
+        {
+          "chinese": "一共多少塊？",
+          "pinyin": "Yīgòng duōshǎo kuài?",
+          "english": "How many dollars in total?"
+        },
+        {
+          "chinese": "這個要五十塊。",
+          "pinyin": "Zhè gè yào wǔshí kuài.",
+          "english": "This costs 50 dollars."
         }
       ],
-      "grammar_links": [
-        "g022"
-      ],
+      "grammar_links": [],
       "performance": {
         "production": [],
         "speed_ms": [],
@@ -3191,7 +4425,7 @@
       "id": "w152",
       "traditional": "外帶",
       "pinyin": "wàidài",
-      "english": "to go; take out",
+      "english": "to take out; takeaway",
       "french": "à emporter",
       "part_of_speech": "phrase",
       "lesson": 4,
@@ -3200,6 +4434,16 @@
           "chinese": "請問外帶還是內用？",
           "pinyin": "Qǐngwèn wàidài háishì nèiyòng?",
           "english": "Excuse me, is this to go or for here?"
+        },
+        {
+          "chinese": "我要外帶。",
+          "pinyin": "Wǒ yào wàidài.",
+          "english": "I want to take it out."
+        },
+        {
+          "chinese": "外帶可以，謝謝。",
+          "pinyin": "Wàidài kěyǐ, xièxie.",
+          "english": "Takeaway is fine, thank you."
         }
       ],
       "grammar_links": [],
@@ -3224,6 +4468,16 @@
           "chinese": "請問外帶還是內用？",
           "pinyin": "Qǐngwèn wàidài háishì nèiyòng?",
           "english": "Excuse me, is this to go or for here?"
+        },
+        {
+          "chinese": "我要內用。",
+          "pinyin": "Wǒ yào nèiyòng.",
+          "english": "I want to dine in."
+        },
+        {
+          "chinese": "內用還是外帶？",
+          "pinyin": "Nèiyòng háishì wàidài?",
+          "english": "For here or to go?"
         }
       ],
       "grammar_links": [],
@@ -3239,20 +4493,28 @@
       "id": "w154",
       "traditional": "支",
       "pinyin": "zhī",
-      "english": "measure word for long thin objects (phones, pens)",
+      "english": "measure word for long thin objects (phones, pens, cigarettes)",
       "french": "classificateur pour objets longs et fins (téléphones, stylos)",
-      "part_of_speech": "noun",
+      "part_of_speech": "measure_word",
       "lesson": 4,
       "sentences": [
         {
           "chinese": "我想買一支新手機。",
           "pinyin": "Wǒ xiǎng mǎi yī zhī xīn shǒujī.",
           "english": "I want to buy a new cell phone."
+        },
+        {
+          "chinese": "你有幾支手機？",
+          "pinyin": "Nǐ yǒu jǐ zhī shǒujī?",
+          "english": "How many cell phones do you have?"
+        },
+        {
+          "chinese": "一支多少錢？",
+          "pinyin": "Yī zhī duōshǎo qián?",
+          "english": "How much for one?"
         }
       ],
-      "grammar_links": [
-        "g022"
-      ],
+      "grammar_links": [],
       "performance": {
         "production": [],
         "speed_ms": [],
@@ -3266,19 +4528,27 @@
       "traditional": "新",
       "pinyin": "xīn",
       "english": "new",
-      "french": "nouveau / nouvelle ; neuf / neuve",
+      "french": "nouveau/nouvelle; neuf/neuve",
       "part_of_speech": "adjective",
       "lesson": 4,
       "sentences": [
         {
           "chinese": "我要新的，不要舊的。",
-          "pinyin": "Wǒ yào xīn de, bù yào jiù de.",
+          "pinyin": "Wǒ yào xīn de, bú yào jiù de.",
           "english": "I want a new one, not an old one."
+        },
+        {
+          "chinese": "那支新手機很好。",
+          "pinyin": "Nà zhī xīn shǒujī hěn hǎo.",
+          "english": "That new phone is very good."
+        },
+        {
+          "chinese": "你買了新書嗎？",
+          "pinyin": "Nǐ mǎi le xīn shū ma?",
+          "english": "Did you buy a new book?"
         }
       ],
-      "grammar_links": [
-        "g024"
-      ],
+      "grammar_links": [],
       "performance": {
         "production": [],
         "speed_ms": [],
@@ -3291,7 +4561,7 @@
       "id": "w156",
       "traditional": "手機",
       "pinyin": "shǒujī",
-      "english": "cell phone",
+      "english": "cell phone; mobile phone",
       "french": "téléphone portable",
       "part_of_speech": "noun",
       "lesson": 4,
@@ -3300,6 +4570,16 @@
           "chinese": "妳的手機很好，為什麼要買新的？",
           "pinyin": "Nǐ de shǒujī hěn hǎo, wèishénme yào mǎi xīn de?",
           "english": "Your cell phone is fine. Why do you want to buy a new one?"
+        },
+        {
+          "chinese": "我的手機太舊了。",
+          "pinyin": "Wǒ de shǒujī tài jiù le.",
+          "english": "My phone is too old."
+        },
+        {
+          "chinese": "新手機能上網。",
+          "pinyin": "Xīn shǒujī néng shàngwǎng.",
+          "english": "The new phone can go online."
         }
       ],
       "grammar_links": [],
@@ -3315,7 +4595,7 @@
       "id": "w157",
       "traditional": "太",
       "pinyin": "tài",
-      "english": "too; overly",
+      "english": "too; overly; excessively",
       "french": "trop",
       "part_of_speech": "adverb",
       "lesson": 4,
@@ -3324,11 +4604,19 @@
           "chinese": "那支手機太貴了。",
           "pinyin": "Nà zhī shǒujī tài guì le.",
           "english": "That cell phone is way too expensive."
+        },
+        {
+          "chinese": "這個太小了，我要大的。",
+          "pinyin": "Zhè gè tài xiǎo le, wǒ yào dà de.",
+          "english": "This is too small, I want a large one."
+        },
+        {
+          "chinese": "你太忙了！",
+          "pinyin": "Nǐ tài máng le!",
+          "english": "You are way too busy!"
         }
       ],
-      "grammar_links": [
-        "g025"
-      ],
+      "grammar_links": [],
       "performance": {
         "production": [],
         "speed_ms": [],
@@ -3341,8 +4629,8 @@
       "id": "w158",
       "traditional": "舊",
       "pinyin": "jiù",
-      "english": "old (of objects); outdated",
-      "french": "vieux / vieille (objet) ; démodé(e)",
+      "english": "old (of objects); outdated; worn",
+      "french": "vieux/vieille (objet); démodé(e)",
       "part_of_speech": "adjective",
       "lesson": 4,
       "sentences": [
@@ -3350,11 +4638,19 @@
           "chinese": "我這支手機太舊了，不好看。",
           "pinyin": "Wǒ zhè zhī shǒujī tài jiù le, bù hǎokàn.",
           "english": "This cell phone of mine is too old. It's unattractive."
+        },
+        {
+          "chinese": "舊的便宜，新的貴。",
+          "pinyin": "Jiù de piányí, xīn de guì.",
+          "english": "Old ones are cheap, new ones are expensive."
+        },
+        {
+          "chinese": "那本書很舊了。",
+          "pinyin": "Nà běn shū hěn jiù le.",
+          "english": "That book is very old."
         }
       ],
-      "grammar_links": [
-        "g025"
-      ],
+      "grammar_links": [],
       "performance": {
         "production": [],
         "speed_ms": [],
@@ -3367,8 +4663,8 @@
       "id": "w159",
       "traditional": "了",
       "pinyin": "le",
-      "english": "sentence-final particle indicating certainty or change of state",
-      "french": "particule finale indiquant la certitude ou un changement d'état",
+      "english": "particle indicating completed action or change of state",
+      "french": "particule indiquant l'accomplissement ou un changement d'état",
       "part_of_speech": "particle",
       "lesson": 4,
       "sentences": [
@@ -3376,11 +4672,19 @@
           "chinese": "那支手機太舊了。",
           "pinyin": "Nà zhī shǒujī tài jiù le.",
           "english": "That cell phone is too old."
+        },
+        {
+          "chinese": "我買了一支新手機。",
+          "pinyin": "Wǒ mǎi le yī zhī xīn shǒujī.",
+          "english": "I bought a new cell phone."
+        },
+        {
+          "chinese": "他去了，不在這裡。",
+          "pinyin": "Tā qù le, bú zài zhèlǐ.",
+          "english": "He has gone; he's not here."
         }
       ],
-      "grammar_links": [
-        "g025"
-      ],
+      "grammar_links": [],
       "performance": {
         "production": [],
         "speed_ms": [],
@@ -3393,20 +4697,28 @@
       "id": "w160",
       "traditional": "種",
       "pinyin": "zhǒng",
-      "english": "kind; type (measure word)",
-      "french": "sorte ; type (classificateur)",
-      "part_of_speech": "noun",
+      "english": "kind; type; variety (measure word)",
+      "french": "sorte; type (classificateur)",
+      "part_of_speech": "measure_word",
       "lesson": 4,
       "sentences": [
         {
           "chinese": "妳想買哪種手機？",
           "pinyin": "Nǐ xiǎng mǎi nǎ zhǒng shǒujī?",
           "english": "What kind of cell phone do you want to buy?"
+        },
+        {
+          "chinese": "這種茶很好喝。",
+          "pinyin": "Zhè zhǒng chá hěn hǎohē.",
+          "english": "This kind of tea tastes very good."
+        },
+        {
+          "chinese": "你喜歡哪種運動？",
+          "pinyin": "Nǐ xǐhuān nǎ zhǒng yùndòng?",
+          "english": "What kind of sports do you like?"
         }
       ],
-      "grammar_links": [
-        "g022"
-      ],
+      "grammar_links": [],
       "performance": {
         "production": [],
         "speed_ms": [],
@@ -3419,8 +4731,8 @@
       "id": "w161",
       "traditional": "能",
       "pinyin": "néng",
-      "english": "can; to be able to",
-      "french": "pouvoir ; être capable de",
+      "english": "can; to be able to (ability or capability)",
+      "french": "pouvoir; être capable de",
       "part_of_speech": "verb",
       "lesson": 4,
       "sentences": [
@@ -3428,11 +4740,19 @@
           "chinese": "新手機能上網。",
           "pinyin": "Xīn shǒujī néng shàngwǎng.",
           "english": "New cell phones can go online."
+        },
+        {
+          "chinese": "你能來嗎？",
+          "pinyin": "Nǐ néng lái ma?",
+          "english": "Can you come?"
+        },
+        {
+          "chinese": "我不能去，我很忙。",
+          "pinyin": "Wǒ bù néng qù, wǒ hěn máng.",
+          "english": "I can't go, I'm very busy."
         }
       ],
-      "grammar_links": [
-        "g026"
-      ],
+      "grammar_links": [],
       "performance": {
         "production": [],
         "speed_ms": [],
@@ -3446,7 +4766,7 @@
       "traditional": "上網",
       "pinyin": "shàngwǎng",
       "english": "to go online; to access the internet",
-      "french": "aller sur internet ; surfer",
+      "french": "aller sur internet; surfer",
       "part_of_speech": "verb",
       "lesson": 4,
       "sentences": [
@@ -3454,11 +4774,19 @@
           "chinese": "能照相也能上網。",
           "pinyin": "Néng zhàoxiàng yě néng shàngwǎng.",
           "english": "(It) can take pictures and also go online."
+        },
+        {
+          "chinese": "我常上網看電影。",
+          "pinyin": "Wǒ cháng shàngwǎng kàn diànyǐng.",
+          "english": "I often go online to watch movies."
+        },
+        {
+          "chinese": "這個手機能上網嗎？",
+          "pinyin": "Zhè gè shǒujī néng shàngwǎng ma?",
+          "english": "Can this phone go online?"
         }
       ],
-      "grammar_links": [
-        "g026"
-      ],
+      "grammar_links": [],
       "performance": {
         "production": [],
         "speed_ms": [],
@@ -3471,15 +4799,25 @@
       "id": "w163",
       "traditional": "那",
       "pinyin": "nà / nèi",
-      "english": "that",
-      "french": "ce / cet / cette (démonstratif éloigné)",
-      "part_of_speech": "pronoun",
+      "english": "that; those",
+      "french": "ce/cet/cette (démonstratif éloigné)",
+      "part_of_speech": "determiner",
       "lesson": 4,
       "sentences": [
         {
           "chinese": "那種手機很好，我哥哥有一支。",
           "pinyin": "Nà zhǒng shǒujī hěn hǎo, wǒ gēge yǒu yī zhī.",
-          "english": "Those kinds of cell phones are good. My brother has one."
+          "english": "Those kinds of cell phones are great; my older brother has one."
+        },
+        {
+          "chinese": "那張照片是誰的？",
+          "pinyin": "Nà zhāng zhàopiàn shì shéi de?",
+          "english": "Whose is that photo?"
+        },
+        {
+          "chinese": "那個很貴。",
+          "pinyin": "Nà gè hěn guì.",
+          "english": "That one is very expensive."
         }
       ],
       "grammar_links": [],
@@ -3493,22 +4831,30 @@
     },
     {
       "id": "w164",
-      "traditional": "貴",
-      "pinyin": "guì",
-      "english": "expensive",
-      "french": "cher / chère",
-      "part_of_speech": "adjective",
-      "lesson": 4,
+      "traditional": "做",
+      "pinyin": "zuò",
+      "english": "to do; to make; to cook",
+      "french": "faire; cuisiner; préparer",
+      "part_of_speech": "verb",
+      "lesson": 3,
       "sentences": [
         {
-          "chinese": "貴不貴？一支賣多少錢？",
-          "pinyin": "Guì bu guì? Yī zhī mài duōshǎo qián?",
-          "english": "Is it expensive? How much does one cost?"
+          "chinese": "你喜歡做什麼？",
+          "pinyin": "Nǐ xǐhuān zuò shénme?",
+          "english": "What do you like to do?"
+        },
+        {
+          "chinese": "媽媽做菜很好吃。",
+          "pinyin": "Māma zuò cài hěn hǎochī.",
+          "english": "Mom's cooking is delicious."
+        },
+        {
+          "chinese": "週末我想做運動。",
+          "pinyin": "Zhōumò wǒ xiǎng zuò yùndòng.",
+          "english": "I want to exercise on the weekend."
         }
       ],
-      "grammar_links": [
-        "g025"
-      ],
+      "grammar_links": [],
       "performance": {
         "production": [],
         "speed_ms": [],
@@ -3519,17 +4865,27 @@
     },
     {
       "id": "w165",
-      "traditional": "賣",
-      "pinyin": "mài",
-      "english": "to sell",
-      "french": "vendre",
-      "part_of_speech": "verb",
-      "lesson": 4,
+      "traditional": "菜",
+      "pinyin": "cài",
+      "english": "dish; vegetables; food (cooked)",
+      "french": "plat; légumes; cuisine",
+      "part_of_speech": "noun",
+      "lesson": 3,
       "sentences": [
         {
-          "chinese": "一支要一萬五千多。",
-          "pinyin": "Yī zhī yào yīwàn wǔqiān duō.",
-          "english": "One costs over NT$15,000."
+          "chinese": "你會做菜嗎？",
+          "pinyin": "Nǐ huì zuò cài ma?",
+          "english": "Can you cook?"
+        },
+        {
+          "chinese": "今天的菜很好吃。",
+          "pinyin": "Jīntiān de cài hěn hǎochī.",
+          "english": "Today's food is very tasty."
+        },
+        {
+          "chinese": "我不喜歡吃這個菜。",
+          "pinyin": "Wǒ bù xǐhuān chī zhège cài.",
+          "english": "I don't like eating this dish."
         }
       ],
       "grammar_links": [],
@@ -3543,17 +4899,27 @@
     },
     {
       "id": "w166",
-      "traditional": "便宜",
-      "pinyin": "piányí",
-      "english": "cheap; inexpensive",
-      "french": "bon marché ; pas cher",
-      "part_of_speech": "adjective",
-      "lesson": 4,
+      "traditional": "年",
+      "pinyin": "nián",
+      "english": "year",
+      "french": "année; an",
+      "part_of_speech": "noun",
+      "lesson": 3,
       "sentences": [
         {
-          "chinese": "那種手機不便宜。",
-          "pinyin": "Nà zhǒng shǒujī bù piányí.",
-          "english": "That kind of cell phone is not cheap."
+          "chinese": "你今年幾歲？",
+          "pinyin": "Nǐ jīnnián jǐ suì?",
+          "english": "How old are you this year?"
+        },
+        {
+          "chinese": "我今年二十五年。",
+          "pinyin": "Wǒ jīnnián èrshíwǔ nián.",
+          "english": "This year I am 25 years old."
+        },
+        {
+          "chinese": "他去年去了日本。",
+          "pinyin": "Tā qùnián qù le Rìběn.",
+          "english": "He went to Japan last year."
         }
       ],
       "grammar_links": [],
@@ -3567,69 +4933,27 @@
     },
     {
       "id": "w167",
-      "traditional": "萬",
-      "pinyin": "wàn",
-      "english": "ten thousand",
-      "french": "dix mille",
+      "traditional": "月",
+      "pinyin": "yuè",
+      "english": "month; moon",
+      "french": "mois; lune",
       "part_of_speech": "noun",
-      "lesson": 4,
+      "lesson": 3,
       "sentences": [
         {
-          "chinese": "一支要一萬五千多。",
-          "pinyin": "Yī zhī yào yīwàn wǔqiān duō.",
-          "english": "One costs over NT$15,000."
-        }
-      ],
-      "grammar_links": [
-        "g027"
-      ],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
-    },
-    {
-      "id": "w168",
-      "traditional": "千",
-      "pinyin": "qiān",
-      "english": "thousand",
-      "french": "mille",
-      "part_of_speech": "noun",
-      "lesson": 4,
-      "sentences": [
+          "chinese": "你幾月生日？",
+          "pinyin": "Nǐ jǐ yuè shēngrì?",
+          "english": "What month is your birthday?"
+        },
         {
-          "chinese": "一支要一萬五千多。",
-          "pinyin": "Yī zhī yào yīwàn wǔqiān duō.",
-          "english": "One costs over NT$15,000."
-        }
-      ],
-      "grammar_links": [
-        "g027"
-      ],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
-    },
-    {
-      "id": "w169",
-      "traditional": "為什麼",
-      "pinyin": "wèishénme",
-      "english": "why",
-      "french": "pourquoi",
-      "part_of_speech": "noun",
-      "lesson": 4,
-      "sentences": [
+          "chinese": "我三月生日。",
+          "pinyin": "Wǒ sānyuè shēngrì.",
+          "english": "My birthday is in March."
+        },
         {
-          "chinese": "妳的手機很好，為什麼要買新的？",
-          "pinyin": "Nǐ de shǒujī hěn hǎo, wèishénme yào mǎi xīn de?",
-          "english": "Your cell phone is fine. Why do you want to buy a new one?"
+          "chinese": "這個月你忙嗎？",
+          "pinyin": "Zhège yuè nǐ máng ma?",
+          "english": "Are you busy this month?"
         }
       ],
       "grammar_links": [],
@@ -3640,343 +4964,33 @@
         "ef": 2.5,
         "interval": 0
       }
-    }
-  ],
-  "grammar": [
-    {
-      "id": "g007",
-      "name": "A-not-A Questions",
-      "lesson": 1,
-      "pattern": "S + V + 不 + V + O?",
-      "description_en": "The A-not-A form is the most neutral way to ask yes/no questions in Chinese. The first verbal element is repeated in its negative form (V 不 V). When the verb is disyllabic (XY), the pattern can be shortened to X + 不 + XY.",
-      "description_fr": "La forme A-pas-A est la façon la plus neutre de poser des questions oui/non en chinois. Le premier élément verbal est répété sous forme négative (V 不 V). Quand le verbe est dissyllabique (XY), la structure peut être raccourcie en X + 不 + XY.",
-      "examples": [
-        {
-          "chinese": "王先生要不要喝咖啡？",
-          "pinyin": "Wáng Xiānshēng yào bú yào hē kāfēi?",
-          "english": "Does Mr. Wang want to have some coffee?"
-        },
-        {
-          "chinese": "你是不是日本人？",
-          "pinyin": "Nǐ shì bú shì Rìběn rén?",
-          "english": "Are you Japanese?"
-        },
-        {
-          "chinese": "他來不來臺灣？",
-          "pinyin": "Tā lái bù lái Táiwān?",
-          "english": "Is he coming to Taiwan?"
-        }
-      ],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
     },
     {
-      "id": "g008",
-      "name": "Questions with 嗎",
-      "lesson": 1,
-      "pattern": "SENTENCE + 嗎?",
-      "description_en": "Questions can be formed by adding the particle 嗎 at the end of a statement. It is usually used for short or simple questions. Unlike A-not-A questions, 嗎 questions cannot be combined with A-not-A form in the same sentence.",
-      "description_fr": "Les questions peuvent être formées en ajoutant la particule 嗎 à la fin d'une phrase déclarative. Elle est généralement utilisée pour des questions courtes ou simples. Contrairement aux questions A-pas-A, les questions en 嗎 ne peuvent pas être combinées avec la forme A-pas-A.",
-      "examples": [
-        {
-          "chinese": "你好嗎？",
-          "pinyin": "Nǐ hǎo ma?",
-          "english": "How are you?"
-        },
-        {
-          "chinese": "他是日本人嗎？",
-          "pinyin": "Tā shì Rìběn rén ma?",
-          "english": "Is he Japanese?"
-        },
-        {
-          "chinese": "你要喝茶嗎？",
-          "pinyin": "Nǐ yào hē chá ma?",
-          "english": "Do you want to drink tea?"
-        }
-      ],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
-    },
-    {
-      "id": "g009",
-      "name": "Negative Replies with 不",
-      "lesson": 1,
-      "pattern": "不 + V (+ O)",
-      "description_en": "Negative replies are formed by placing 不 before the main verb. 不 is an adverb placed before a verb or another adverb. For short answers, repeating just 不 + verb from the question suffices.",
-      "description_fr": "Les réponses négatives se forment en plaçant 不 avant le verbe principal. 不 est un adverbe placé avant un verbe ou un autre adverbe. Pour les réponses courtes, répéter simplement 不 + verbe de la question suffit.",
-      "examples": [
-        {
-          "chinese": "不是，他不是李先生。",
-          "pinyin": "Bú shì, tā bú shì Lǐ Xiānshēng.",
-          "english": "No, he is not Mr. Li."
-        },
-        {
-          "chinese": "不，他不喝。",
-          "pinyin": "Bù, tā bù hē.",
-          "english": "No, he doesn't drink (tea)."
-        }
-      ],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
-    },
-    {
-      "id": "g010",
-      "name": "Modification Marker 很",
-      "lesson": 1,
-      "pattern": "S + 很 + State Verb",
-      "description_en": "The adverb 很 modifies state verbs (adjectives). In Chinese, adjectival state verbs must generally be preceded by either 不 or an intensifier like 很. When no special intensity is intended, 很 is used as a default modifier and may simply mean the state verb without emphasizing 'very'.",
-      "description_fr": "L'adverbe 很 modifie les verbes d'état (adjectifs). En chinois, les verbes d'état adjectivaux doivent généralement être précédés de 不 ou d'un intensificateur comme 很. Quand aucune intensité particulière n'est voulue, 很 est utilisé par défaut et peut simplement signifier le verbe d'état sans insister sur 'très'.",
-      "examples": [
-        {
-          "chinese": "我很好。",
-          "pinyin": "Wǒ hěn hǎo.",
-          "english": "I am fine."
-        },
-        {
-          "chinese": "烏龍茶很好喝。",
-          "pinyin": "Wūlóng chá hěn hǎohē.",
-          "english": "Oolong tea tastes good."
-        },
-        {
-          "chinese": "他很喜歡臺灣。",
-          "pinyin": "Tā hěn xǐhuān Táiwān.",
-          "english": "He likes Taiwan."
-        }
-      ],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
-    },
-    {
-      "id": "g011",
-      "name": "Contrastive Questions with 呢",
-      "lesson": 1,
-      "pattern": "S1 V O, S2 呢? / S V O1, O2 呢?",
-      "description_en": "The 呢 question is a tag question used after a statement to ask about a contrasting subject or object. It can be used with the same predicate and different subjects, or the same subject with different objects/predicates.",
-      "description_fr": "La question en 呢 est une question tag utilisée après une déclaration pour interroger sur un sujet ou objet contrastif. Elle peut s'utiliser avec le même prédicat et des sujets différents, ou le même sujet avec des objets/prédicats différents.",
-      "examples": [
-        {
-          "chinese": "我要喝茶，你呢？",
-          "pinyin": "Wǒ yào hē chá, nǐ ne?",
-          "english": "I want to drink tea, and you?"
-        },
-        {
-          "chinese": "王先生是日本人，李先生呢？",
-          "pinyin": "Wáng Xiānshēng shì Rìběn rén, Lǐ Xiānshēng ne?",
-          "english": "Mr. Wang is Japanese. What about Mr. Li?"
-        }
-      ],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
-    },
-    {
-      "id": "g012",
-      "name": "Possessive Marker 的",
-      "lesson": 2,
-      "pattern": "Possessor + 的 + Object Possessed",
-      "description_en": "的 is placed between the possessor and the object possessed to show possession. 的 can be omitted when the relationship between the two nouns is close (e.g., family members) and the possessor is a pronoun. 的 cannot be omitted when the possessor is a proper noun or a full noun phrase.",
-      "description_fr": "的 est placé entre le possesseur et l'objet possédé pour exprimer la possession. 的 peut être omis quand la relation entre les deux noms est étroite (ex. membres de la famille) et que le possesseur est un pronom. 的 ne peut pas être omis quand le possesseur est un nom propre ou un syntagme nominal complet.",
-      "examples": [
-        {
-          "chinese": "我的書",
-          "pinyin": "wǒ de shū",
-          "english": "my book"
-        },
-        {
-          "chinese": "李老師的姐姐",
-          "pinyin": "Lǐ lǎoshī de jiějie",
-          "english": "Teacher Li's older sister"
-        },
-        {
-          "chinese": "我媽媽",
-          "pinyin": "wǒ māma",
-          "english": "my mom (的 omitted)"
-        }
-      ],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
-    },
-    {
-      "id": "g013",
-      "name": "Modifier Marker 的 (adjective + noun)",
-      "lesson": 2,
-      "pattern": "Modifier + 的 + Noun",
-      "description_en": "的 is used between a modifier (adjective or descriptive phrase) and the head noun it modifies. 的 can be omitted when the modifier and noun are used together very frequently, such as nationality expressions (臺灣人 not 臺灣的人).",
-      "description_fr": "的 est utilisé entre un modificateur (adjectif ou phrase descriptive) et le nom principal qu'il modifie. 的 peut être omis quand le modificateur et le nom sont très fréquemment utilisés ensemble, comme les expressions de nationalité (臺灣人 et non 臺灣的人).",
-      "examples": [
-        {
-          "chinese": "漂亮的小姐",
-          "pinyin": "piàoliàng de xiǎojiě",
-          "english": "pretty young lady"
-        },
-        {
-          "chinese": "很好看的房子",
-          "pinyin": "hěn hǎokàn de fángzi",
-          "english": "beautiful house"
-        },
-        {
-          "chinese": "好喝的咖啡",
-          "pinyin": "hǎohē de kāfēi",
-          "english": "tasty coffee"
-        }
-      ],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
-    },
-    {
-      "id": "g014",
-      "name": "Possession with 有 and negation with 沒有",
-      "lesson": 2,
-      "pattern": "S + 有 + O / S + 沒有 + O",
-      "description_en": "The verb 有 expresses possession or ownership. Unlike most verbs in Chinese, 有 is always negated with 沒 (not 不). Questions use the A-not-A form 有沒有 or the 嗎 particle.",
-      "description_fr": "Le verbe 有 exprime la possession. Contrairement à la plupart des verbes en chinois, 有 se nie toujours avec 沒 (pas avec 不). Les questions utilisent la forme A-pas-A 有沒有 ou la particule 嗎.",
-      "examples": [
-        {
-          "chinese": "我有很多照片。",
-          "pinyin": "Wǒ yǒu hěn duō zhàopiàn.",
-          "english": "I have many photos."
-        },
-        {
-          "chinese": "他沒有房子。",
-          "pinyin": "Tā méi yǒu fángzi.",
-          "english": "He does not have a house."
-        },
-        {
-          "chinese": "你有沒有兄弟姐妹？",
-          "pinyin": "Nǐ yǒu méi yǒu xiōngdì jiěmèi?",
-          "english": "Do you have any brothers or sisters?"
-        }
-      ],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
-    },
-    {
-      "id": "g015",
-      "name": "Totality Adverb 都",
-      "lesson": 2,
-      "pattern": "Noun(s) + 都 + VP",
-      "description_en": "都 indicates that all items referred to by the subject share a common quality or action. It is an adverb placed after the noun(s) it relates to and before the main verb. All members of the group must appear before 都. In negation, 都不/沒 means 'none', while 不都 means 'not all'.",
-      "description_fr": "都 indique que tous les éléments référencés par le sujet partagent une qualité ou action commune. C'est un adverbe placé après le(s) nom(s) auquel il se rapporte et avant le verbe principal. Tous les membres du groupe doivent apparaître avant 都. En négation, 都不/沒 signifie 'aucun', tandis que 不都 signifie 'pas tous'.",
-      "examples": [
-        {
-          "chinese": "我家人都很喜歡照相。",
-          "pinyin": "Wǒ jiārén dōu hěn xǐhuān zhàoxiàng.",
-          "english": "My family all like to take photos."
-        },
-        {
-          "chinese": "我們都不是美國人。",
-          "pinyin": "Wǒmen dōu bú shì Měiguó rén.",
-          "english": "None of us is American."
-        },
-        {
-          "chinese": "這兩張照片都是我姐姐的。",
-          "pinyin": "Zhè liǎng zhāng zhàopiàn dōu shì wǒ jiějie de.",
-          "english": "Both of these two photos are my older sister's."
-        }
-      ],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
-    },
-    {
-      "id": "g016",
-      "name": "Measure Words 個 and 張",
-      "lesson": 2,
-      "pattern": "Number + Measure Word + Noun",
-      "description_en": "In Chinese, a measure word must be placed between a number and a noun. 個 is the most general measure word used for people and many objects. 張 is used for flat objects like paper, photos, and tables. When the number is two, 兩 is used instead of 二 before measure words.",
-      "description_fr": "En chinois, un classificateur doit être placé entre un nombre et un nom. 個 est le classificateur le plus général, utilisé pour les personnes et de nombreux objets. 張 est utilisé pour les objets plats comme le papier, les photos et les tables. Quand le nombre est deux, 兩 est utilisé à la place de 二 avant les classificateurs.",
-      "examples": [
-        {
-          "chinese": "我家有五個人。",
-          "pinyin": "Wǒ jiā yǒu wǔ gè rén.",
-          "english": "There are five people in my family."
-        },
-        {
-          "chinese": "兩張好看的照片",
-          "pinyin": "liǎng zhāng hǎokàn de zhàopiàn",
-          "english": "two pretty photos"
-        },
-        {
-          "chinese": "幾個老師？",
-          "pinyin": "Jǐ gè lǎoshī?",
-          "english": "How many teachers?"
-        }
-      ],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
-    },
-    {
-      "id": "g017",
-      "name": "Placement of Time Words",
+      "id": "w168",
+      "traditional": "號",
+      "pinyin": "hào",
+      "english": "date (day of month); number",
+      "french": "numéro (du jour du mois)",
+      "part_of_speech": "noun",
       "lesson": 3,
-      "pattern": "Time Word + S + VP  /  S + Time Word + VP",
-      "description_en": "Time words in Chinese can appear either before or after the subject, but always before the verb phrase. Units of time are ordered from largest to smallest (e.g., weekend → morning, not morning → weekend).",
-      "description_fr": "Les mots de temps en chinois se placent avant ou après le sujet, mais toujours avant le groupe verbal. Les unités de temps s'ordonnent du plus grand au plus petit (ex. week-end → matin, pas l'inverse).",
-      "examples": [
+      "sentences": [
         {
-          "chinese": "我們今天去看電影。",
-          "pinyin": "Wǒmen jīntiān qù kàn diànyǐng.",
-          "english": "We are going to see a movie today."
+          "chinese": "今天幾號？",
+          "pinyin": "Jīntiān jǐ hào?",
+          "english": "What's today's date?"
         },
         {
-          "chinese": "週末他要去打籃球。",
-          "pinyin": "Zhōumò tā yào qù dǎ lánqiú.",
-          "english": "This weekend he is going to play basketball."
+          "chinese": "今天十五號。",
+          "pinyin": "Jīntiān shíwǔ hào.",
+          "english": "Today is the 15th."
         },
         {
-          "chinese": "明天晚上我們看什麼電影？",
-          "pinyin": "Míngtiān wǎnshàng wǒmen kàn shénme diànyǐng?",
-          "english": "What movie are we watching tomorrow evening?"
+          "chinese": "你的生日是幾月幾號？",
+          "pinyin": "Nǐ de shēngrì shì jǐ yuè jǐ hào?",
+          "english": "What month and day is your birthday?"
         }
       ],
+      "grammar_links": [],
       "performance": {
         "production": [],
         "speed_ms": [],
@@ -3986,29 +5000,31 @@
       }
     },
     {
-      "id": "g018",
-      "name": "去 + VP (going to do something)",
+      "id": "w169",
+      "traditional": "日",
+      "pinyin": "rì",
+      "english": "day; sun; date (formal)",
+      "french": "jour; date (formel); soleil",
+      "part_of_speech": "noun",
       "lesson": 3,
-      "pattern": "S + 去 + VP",
-      "description_en": "去 (qù) followed by a verb phrase expresses the intention to go somewhere in order to do something. Negation markers, auxiliary verbs, and adverbs are placed before 去, not before the main verb.",
-      "description_fr": "去 (qù) suivi d'un groupe verbal exprime l'intention d'aller faire quelque chose. Les marqueurs de négation, les auxiliaires et les adverbes se placent avant 去, pas avant le verbe principal.",
-      "examples": [
+      "sentences": [
         {
-          "chinese": "我去打網球。",
-          "pinyin": "Wǒ qù dǎ wǎngqiú.",
-          "english": "I am going to go play tennis."
+          "chinese": "今天是三月十五日。",
+          "pinyin": "Jīntiān shì sānyuè shíwǔ rì.",
+          "english": "Today is March 15th."
         },
         {
-          "chinese": "明天早上我不去游泳。",
-          "pinyin": "Míngtiān zǎoshàng wǒ bù qù yóuyǒng.",
-          "english": "I am not going to go swimming tomorrow morning."
+          "chinese": "你喜歡哪日？",
+          "pinyin": "Nǐ xǐhuān nǎ rì?",
+          "english": "Which day do you prefer?"
         },
         {
-          "chinese": "你們常去吃越南菜嗎？",
-          "pinyin": "Nǐmen cháng qù chī Yuènán cài ma?",
-          "english": "Do you often go eat Vietnamese food?"
+          "chinese": "星期日我去爬山。",
+          "pinyin": "Xīngqīrì wǒ qù páshān.",
+          "english": "On Sunday I go hiking."
         }
       ],
+      "grammar_links": [],
       "performance": {
         "production": [],
         "speed_ms": [],
@@ -4018,29 +5034,31 @@
       }
     },
     {
-      "id": "g019",
-      "name": "Topic-Comment Sentences with 都",
+      "id": "w170",
+      "traditional": "星期",
+      "pinyin": "xīngqī",
+      "english": "week; day of the week",
+      "french": "semaine; jour de la semaine",
+      "part_of_speech": "noun",
       "lesson": 3,
-      "pattern": "Topic + , + S + 都 + VP",
-      "description_en": "A topic is placed at the very beginning of the sentence to frame what is being discussed. The rest of the sentence is the comment. When the fronted topic is a collective noun or multiple nouns, the totality marker 都 (dōu) is required in the comment.",
-      "description_fr": "Le thème est placé en tête de phrase pour cadrer le sujet. Le reste constitue le commentaire. Quand le thème est un nom collectif ou plusieurs noms, le marqueur de totalité 都 (dōu) est obligatoire dans le commentaire.",
-      "examples": [
+      "sentences": [
         {
-          "chinese": "美國電影、臺灣電影，我都想看。",
-          "pinyin": "Měiguó diànyǐng, Táiwān diànyǐng, wǒ dōu xiǎng kàn.",
-          "english": "American movies, Taiwanese movies — I want to watch both."
+          "chinese": "你喜歡星期幾？",
+          "pinyin": "Nǐ xǐhuān xīngqī jǐ?",
+          "english": "What day of the week do you like?"
         },
         {
-          "chinese": "打棒球，我不喜歡。",
-          "pinyin": "Dǎ bàngqiú, wǒ bù xǐhuān.",
-          "english": "Playing baseball, I don't like it."
+          "chinese": "星期一我很忙。",
+          "pinyin": "Xīngqīyī wǒ hěn máng.",
+          "english": "I'm very busy on Monday."
         },
         {
-          "chinese": "弟弟、妹妹，我都有。",
-          "pinyin": "Dìdi, mèimei, wǒ dōu yǒu.",
-          "english": "Younger brothers and sisters — I have both."
+          "chinese": "這個星期你有空嗎？",
+          "pinyin": "Zhège xīngqī nǐ yǒu kòng ma?",
+          "english": "Do you have free time this week?"
         }
       ],
+      "grammar_links": [],
       "performance": {
         "production": [],
         "speed_ms": [],
@@ -4050,29 +5068,31 @@
       }
     },
     {
-      "id": "g020",
-      "name": "Word Order of 也, 都, and 常",
+      "id": "w171",
+      "traditional": "昨天",
+      "pinyin": "zuótiān",
+      "english": "yesterday",
+      "french": "hier",
+      "part_of_speech": "noun",
       "lesson": 3,
-      "pattern": "S + 也 / 都 / 常 + VP  (when combined: 也 precedes 都 or 常)",
-      "description_en": "也 (yě), 都 (dōu), and 常 (cháng) are adverbs that always appear before the verb. When 也 co-occurs with 都 or 常, 也 must come first. In negation, 也 precedes the negation marker 不/沒, while 常 follows 不.",
-      "description_fr": "也 (yě), 都 (dōu) et 常 (cháng) sont des adverbes qui se placent toujours avant le verbe. Quand 也 coexiste avec 都 ou 常, 也 vient en premier. En négation, 也 précède 不/沒, tandis que 常 suit 不.",
-      "examples": [
+      "sentences": [
         {
-          "chinese": "我常打網球，也常踢足球。",
-          "pinyin": "Wǒ cháng dǎ wǎngqiú, yě cháng tī zúqiú.",
-          "english": "I often play tennis and also often play soccer."
+          "chinese": "昨天你去哪裡？",
+          "pinyin": "Zuótiān nǐ qù nǎlǐ?",
+          "english": "Where did you go yesterday?"
         },
         {
-          "chinese": "你常去踢足球，我們也都常去踢足球。",
-          "pinyin": "Nǐ cháng qù tī zúqiú, wǒmen yě dōu cháng qù tī zúqiú.",
-          "english": "You often go play soccer; we also all often go play soccer."
+          "chinese": "昨天我很忙。",
+          "pinyin": "Zuótiān wǒ hěn máng.",
+          "english": "Yesterday I was very busy."
         },
         {
-          "chinese": "我不常看電影。",
-          "pinyin": "Wǒ bù cháng kàn diànyǐng.",
-          "english": "I don't watch movies often."
+          "chinese": "昨天我們去看電影。",
+          "pinyin": "Zuótiān wǒmen qù kàn diànyǐng.",
+          "english": "Yesterday we went to watch a movie."
         }
       ],
+      "grammar_links": [],
       "performance": {
         "production": [],
         "speed_ms": [],
@@ -4082,29 +5102,31 @@
       }
     },
     {
-      "id": "g021",
-      "name": "Making Suggestions with 吧",
+      "id": "w172",
+      "traditional": "中午",
+      "pinyin": "zhōngwǔ",
+      "english": "noon; midday",
+      "french": "midi",
+      "part_of_speech": "noun",
       "lesson": 3,
-      "pattern": "S + VP + 吧",
-      "description_en": "The sentence-final particle 吧 (ba) softens a statement into a suggestion or mild imperative. It is placed at the very end of the sentence. Without 吧, an imperative sounds harsh and direct.",
-      "description_fr": "La particule finale 吧 (ba) transforme un énoncé en suggestion ou impératif atténué. Elle se place en toute fin de phrase. Sans 吧, un impératif est perçu comme brusque et peut sembler impoli.",
-      "examples": [
+      "sentences": [
         {
-          "chinese": "我們去喝咖啡吧。",
-          "pinyin": "Wǒmen qù hē kāfēi ba.",
-          "english": "Let's go drink coffee."
+          "chinese": "中午你吃什麼？",
+          "pinyin": "Zhōngwǔ nǐ chī shénme?",
+          "english": "What do you eat at noon?"
         },
         {
-          "chinese": "我們看臺灣電影吧！",
-          "pinyin": "Wǒmen kàn Táiwān diànyǐng ba!",
-          "english": "Let's watch a Taiwanese movie."
+          "chinese": "我中午和朋友吃飯。",
+          "pinyin": "Wǒ zhōngwǔ hé péngyǒu chī fàn.",
+          "english": "I eat lunch with a friend at noon."
         },
         {
-          "chinese": "我們打網球吧！",
-          "pinyin": "Wǒmen dǎ wǎngqiú ba!",
-          "english": "Let's play tennis!"
+          "chinese": "中午我不忙。",
+          "pinyin": "Zhōngwǔ wǒ bù máng.",
+          "english": "I'm not busy at noon."
         }
       ],
+      "grammar_links": [],
       "performance": {
         "production": [],
         "speed_ms": [],
@@ -4114,29 +5136,31 @@
       }
     },
     {
-      "id": "g022",
-      "name": "Measure Words: 塊, 杯, 支, 種",
-      "lesson": 4,
-      "pattern": "Number + Measure Word + Noun  /  Det + (Number) + Measure Word + Noun",
-      "description_en": "A measure word is required between a number (or determiner) and a noun. 塊 (kuài) is used for money, 杯 (bēi) for cups of liquid, 支 (zhī) for long thin objects like phones, and 種 (zhǒng) for kinds or types. When a determiner like 這/那/哪 is used, the numeral 一 (yī) is typically omitted.",
-      "description_fr": "Un classificateur est obligatoire entre un nombre (ou un déterminant) et un nom. 塊 (kuài) s'utilise pour l'argent, 杯 (bēi) pour les boissons, 支 (zhī) pour les objets longs et fins comme les téléphones, et 種 (zhǒng) pour les types ou sortes. Quand un déterminant comme 這/那/哪 est utilisé, le numéral 一 (yī) est généralement omis.",
-      "examples": [
+      "id": "w173",
+      "traditional": "下午",
+      "pinyin": "xiàwǔ",
+      "english": "afternoon",
+      "french": "après-midi",
+      "part_of_speech": "noun",
+      "lesson": 3,
+      "sentences": [
         {
-          "chinese": "這兩杯熱咖啡一共多少錢？",
-          "pinyin": "Zhè liǎng bēi rè kāfēi yīgòng duōshǎo qián?",
-          "english": "How much in total for these two cups of hot coffee?"
+          "chinese": "下午你要去哪裡？",
+          "pinyin": "Xiàwǔ nǐ yào qù nǎlǐ?",
+          "english": "Where are you going this afternoon?"
         },
         {
-          "chinese": "那三支手機太舊了。",
-          "pinyin": "Nà sān zhī shǒujī tài jiù le.",
-          "english": "Those three cell phones are too old."
+          "chinese": "下午我想去游泳。",
+          "pinyin": "Xiàwǔ wǒ xiǎng qù yóuyǒng.",
+          "english": "I want to go swimming this afternoon."
         },
         {
-          "chinese": "哪種手機不貴？",
-          "pinyin": "Nǎ zhǒng shǒujī bù guì?",
-          "english": "Which type of cell phone is not expensive?"
+          "chinese": "今天下午很熱。",
+          "pinyin": "Jīntiān xiàwǔ hěn rè.",
+          "english": "This afternoon is very hot."
         }
       ],
+      "grammar_links": [],
       "performance": {
         "production": [],
         "speed_ms": [],
@@ -4146,29 +5170,31 @@
       }
     },
     {
-      "id": "g023",
-      "name": "幫 as Beneficiary Preposition",
-      "lesson": 4,
-      "pattern": "幫 + Beneficiary + VP",
-      "description_en": "The preposition 幫 (bāng) introduces the person who benefits from an action, equivalent to 'for someone' in English. Negation is placed before 幫, not before the main verb.",
-      "description_fr": "La préposition 幫 (bāng) introduit le bénéficiaire d'une action, équivalent à 'pour quelqu'un' en français. La négation se place avant 幫, pas avant le verbe principal.",
-      "examples": [
+      "id": "w174",
+      "traditional": "早餐",
+      "pinyin": "zǎocān",
+      "english": "breakfast",
+      "french": "petit-déjeuner",
+      "part_of_speech": "noun",
+      "lesson": 3,
+      "sentences": [
         {
-          "chinese": "請幫我微波包子。",
-          "pinyin": "Qǐng bāng wǒ wēibō bāozi.",
-          "english": "Please microwave the baozi for me."
+          "chinese": "你吃早餐了嗎？",
+          "pinyin": "Nǐ chī zǎocān le ma?",
+          "english": "Did you eat breakfast?"
         },
         {
-          "chinese": "他不幫我買咖啡。",
-          "pinyin": "Tā bù bāng wǒ mǎi kāfēi.",
-          "english": "He won't buy coffee for me."
+          "chinese": "我每天吃早餐。",
+          "pinyin": "Wǒ měitiān chī zǎocān.",
+          "english": "I eat breakfast every day."
         },
         {
-          "chinese": "誰能幫安同微波包子？",
-          "pinyin": "Shéi néng bāng Āntóng wēibō bāozi?",
-          "english": "Who can microwave a baozi for Antong?"
+          "chinese": "早餐你吃什麼？",
+          "pinyin": "Zǎocān nǐ chī shénme?",
+          "english": "What do you eat for breakfast?"
         }
       ],
+      "grammar_links": [],
       "performance": {
         "production": [],
         "speed_ms": [],
@@ -4178,29 +5204,31 @@
       }
     },
     {
-      "id": "g024",
-      "name": "的-Phrase with Head Noun Omitted",
-      "lesson": 4,
-      "pattern": "Modifier + 的 (+ omitted head noun)",
-      "description_en": "When a modified noun is clear from context, the head noun can be omitted after 的 (de), leaving just the modifier + 的 to stand as a noun phrase. This is used to avoid repetition and is common in answering questions.",
-      "description_fr": "Quand le nom modifié est évident dans le contexte, le nom principal peut être omis après 的 (de), laissant modificateur + 的 fonctionner comme un groupe nominal. Cela permet d'éviter les répétitions et est courant dans les réponses.",
-      "examples": [
+      "id": "w175",
+      "traditional": "午餐",
+      "pinyin": "wǔcān",
+      "english": "lunch",
+      "french": "déjeuner",
+      "part_of_speech": "noun",
+      "lesson": 3,
+      "sentences": [
         {
-          "chinese": "我要新的，不要舊的。",
-          "pinyin": "Wǒ yào xīn de, bù yào jiù de.",
-          "english": "I want a new one. I don't want an old one."
+          "chinese": "午餐你想吃什麼？",
+          "pinyin": "Wǔcān nǐ xiǎng chī shénme?",
+          "english": "What do you want to eat for lunch?"
         },
         {
-          "chinese": "新的很貴。",
-          "pinyin": "Xīn de hěn guì.",
-          "english": "New ones are expensive."
+          "chinese": "我們一起吃午餐吧！",
+          "pinyin": "Wǒmen yīqǐ chī wǔcān ba!",
+          "english": "Let's have lunch together!"
         },
         {
-          "chinese": "這杯咖啡不熱，我要熱的。",
-          "pinyin": "Zhè bēi kāfēi bù rè, wǒ yào rè de.",
-          "english": "This cup of coffee is not hot. I want a hot one."
+          "chinese": "今天午餐我吃包子。",
+          "pinyin": "Jīntiān wǔcān wǒ chī bāozi.",
+          "english": "Today I had baozi for lunch."
         }
       ],
+      "grammar_links": [],
       "performance": {
         "production": [],
         "speed_ms": [],
@@ -4210,29 +5238,31 @@
       }
     },
     {
-      "id": "g025",
-      "name": "太…了 (too / overly)",
-      "lesson": 4,
-      "pattern": "太 + Vs + 了",
-      "description_en": "太 (tài) + Vs means 'too' or 'overly' adjective. Adding 了 (le) at the end makes the expression more subjective, emphasizing the speaker's sense that something is excessively so. 太 + Vs alone (without 了) is slightly less emphatic but still expresses excess.",
-      "description_fr": "太 (tài) + adjectif signifie 'trop'. Ajouter 了 (le) à la fin rend l'expression plus subjective, soulignant le sentiment du locuteur que quelque chose est excessif. 太 + adjectif seul (sans 了) est légèrement moins emphatique mais exprime aussi l'excès.",
-      "examples": [
+      "id": "w176",
+      "traditional": "晚餐",
+      "pinyin": "wǎncān",
+      "english": "dinner; evening meal",
+      "french": "dîner; repas du soir",
+      "part_of_speech": "noun",
+      "lesson": 3,
+      "sentences": [
         {
-          "chinese": "那支手機太貴了。",
-          "pinyin": "Nà zhī shǒujī tài guì le.",
-          "english": "That cell phone is way too expensive."
+          "chinese": "今晚吃晚餐，你來嗎？",
+          "pinyin": "Jīnwǎn chī wǎncān, nǐ lái ma?",
+          "english": "We're having dinner tonight. Are you coming?"
         },
         {
-          "chinese": "太大了。",
-          "pinyin": "Tài dà le.",
-          "english": "Too big."
+          "chinese": "晚餐你要吃什麼？",
+          "pinyin": "Wǎncān nǐ yào chī shénme?",
+          "english": "What do you want to eat for dinner?"
         },
         {
-          "chinese": "我這支手機太舊了，不好看。",
-          "pinyin": "Wǒ zhè zhī shǒujī tài jiù le, bù hǎokàn.",
-          "english": "This cell phone of mine is too old. It's unattractive."
+          "chinese": "我喜歡和家人一起吃晚餐。",
+          "pinyin": "Wǒ xǐhuān hé jiārén yīqǐ chī wǎncān.",
+          "english": "I like having dinner together with family."
         }
       ],
+      "grammar_links": [],
       "performance": {
         "production": [],
         "speed_ms": [],
@@ -4242,29 +5272,31 @@
       }
     },
     {
-      "id": "g026",
-      "name": "能 for Capability",
-      "lesson": 4,
-      "pattern": "S + 能 + VP",
-      "description_en": "The auxiliary verb 能 (néng) expresses capability or ability of the subject. Negation 不 is placed before 能, not after. In A-not-A questions, 能 is placed in the A position: 能不能 + VP.",
-      "description_fr": "L'auxiliaire 能 (néng) exprime la capacité ou l'aptitude du sujet. La négation 不 se place avant 能, pas après. Dans les questions A-non-A, 能 se place en position A : 能不能 + VP.",
-      "examples": [
+      "id": "w177",
+      "traditional": "換",
+      "pinyin": "huàn",
+      "english": "to change; to exchange; to swap",
+      "french": "changer; échanger",
+      "part_of_speech": "verb",
+      "lesson": 3,
+      "sentences": [
         {
-          "chinese": "新手機能上網。",
-          "pinyin": "Xīn shǒujī néng shàngwǎng.",
-          "english": "New cell phones can go online."
+          "chinese": "我要換尿布。",
+          "pinyin": "Wǒ yào huàn niàobù.",
+          "english": "I need to change the diaper."
         },
         {
-          "chinese": "我的手機不能照相。",
-          "pinyin": "Wǒ de shǒujī bù néng zhàoxiàng.",
-          "english": "My cell phone cannot take pictures."
+          "chinese": "你可以幫我換嗎？",
+          "pinyin": "Nǐ kěyǐ bāng wǒ huàn ma?",
+          "english": "Can you help me change it?"
         },
         {
-          "chinese": "你的手機能不能上網？",
-          "pinyin": "Nǐ de shǒujī néng bu néng shàngwǎng?",
-          "english": "Can your cell phone go online?"
+          "chinese": "我想換一個新手機。",
+          "pinyin": "Wǒ xiǎng huàn yī gè xīn shǒujī.",
+          "english": "I want to get a new phone."
         }
       ],
+      "grammar_links": [],
       "performance": {
         "production": [],
         "speed_ms": [],
@@ -4274,29 +5306,1153 @@
       }
     },
     {
-      "id": "g027",
-      "name": "多 for 'and more / over'",
-      "lesson": 4,
-      "pattern": "Number + 多 + Measure + Noun",
-      "description_en": "多 (duō) placed after a round number indicates 'more than' or 'over' that amount, but less than the next round number. When used after numbers ≥10, it indicates the residual unspecified amount. When used after single digits or small numbers, it means 'a bit more than' that figure.",
-      "description_fr": "多 (duō) placé après un nombre rond indique 'plus de' ce montant, mais moins que le nombre rond suivant. Après des nombres ≥ 10, il indique le reste non précisé. Après de petits chiffres, il signifie 'un peu plus que' ce chiffre.",
-      "examples": [
+      "id": "w178",
+      "traditional": "尿布",
+      "pinyin": "niàobù",
+      "english": "diaper; nappy",
+      "french": "couche (bébé)",
+      "part_of_speech": "noun",
+      "lesson": 3,
+      "sentences": [
         {
-          "chinese": "二十多個人",
-          "pinyin": "Èrshí duō gè rén",
-          "english": "over 20 people (but under 30)"
+          "chinese": "我要換尿布了。",
+          "pinyin": "Wǒ yào huàn niàobù le.",
+          "english": "I need to change the diaper now."
         },
         {
-          "chinese": "一千多支手機",
-          "pinyin": "Yīqiān duō zhī shǒujī",
-          "english": "over 1,000 cell phones (but under 2,000)"
+          "chinese": "你有尿布嗎？",
+          "pinyin": "Nǐ yǒu niàobù ma?",
+          "english": "Do you have a diaper?"
         },
         {
-          "chinese": "一支要一萬五千多。",
-          "pinyin": "Yī zhī yào yīwàn wǔqiān duō.",
-          "english": "One costs over NT$15,000."
+          "chinese": "寶寶的尿布濕了。",
+          "pinyin": "Bǎobǎo de niàobù shī le.",
+          "english": "The baby's diaper is wet."
         }
       ],
+      "grammar_links": [],
+      "performance": {
+        "production": [],
+        "speed_ms": [],
+        "due": 0,
+        "ef": 2.5,
+        "interval": 0
+      }
+    },
+    {
+      "id": "w179",
+      "traditional": "對啊",
+      "pinyin": "duì a",
+      "english": "that's right; exactly; yeah",
+      "french": "c'est ça; exactement; ouais",
+      "part_of_speech": "phrase",
+      "lesson": 3,
+      "sentences": [
+        {
+          "chinese": "你喜歡打網球嗎？對啊，很好玩！",
+          "pinyin": "Nǐ xǐhuān dǎ wǎngqiú ma? Duì a, hěn hǎowán!",
+          "english": "Do you like playing tennis? Yeah, it's a lot of fun!"
+        },
+        {
+          "chinese": "對啊，我今天很忙。",
+          "pinyin": "Duì a, wǒ jīntiān hěn máng.",
+          "english": "Yeah, I'm very busy today."
+        },
+        {
+          "chinese": "他是老師嗎？對啊。",
+          "pinyin": "Tā shì lǎoshī ma? Duì a.",
+          "english": "Is he a teacher? That's right."
+        }
+      ],
+      "grammar_links": [],
+      "performance": {
+        "production": [],
+        "speed_ms": [],
+        "due": 0,
+        "ef": 2.5,
+        "interval": 0
+      }
+    },
+    {
+      "id": "w180",
+      "traditional": "跳舞",
+      "pinyin": "tiàowǔ",
+      "english": "to dance",
+      "french": "danser",
+      "part_of_speech": "verb",
+      "lesson": 3,
+      "sentences": [
+        {
+          "chinese": "你喜歡跳舞嗎？",
+          "pinyin": "Nǐ xǐhuān tiàowǔ ma?",
+          "english": "Do you like dancing?"
+        },
+        {
+          "chinese": "我不會跳舞，但我想學。",
+          "pinyin": "Wǒ bú huì tiàowǔ, dàn wǒ xiǎng xué.",
+          "english": "I can't dance, but I want to learn."
+        },
+        {
+          "chinese": "週末我們去跳舞吧！",
+          "pinyin": "Zhōumò wǒmen qù tiàowǔ ba!",
+          "english": "Let's go dancing on the weekend!"
+        }
+      ],
+      "grammar_links": [],
+      "performance": {
+        "production": [],
+        "speed_ms": [],
+        "due": 0,
+        "ef": 2.5,
+        "interval": 0
+      }
+    },
+    {
+      "id": "w181",
+      "traditional": "唱歌",
+      "pinyin": "chànggē",
+      "english": "to sing; to sing a song",
+      "french": "chanter",
+      "part_of_speech": "verb",
+      "lesson": 3,
+      "sentences": [
+        {
+          "chinese": "你喜歡唱歌嗎？",
+          "pinyin": "Nǐ xǐhuān chànggē ma?",
+          "english": "Do you like singing?"
+        },
+        {
+          "chinese": "她唱歌很好聽。",
+          "pinyin": "Tā chànggē hěn hǎotīng.",
+          "english": "She sings beautifully."
+        },
+        {
+          "chinese": "我常唱歌，很好玩。",
+          "pinyin": "Wǒ cháng chànggē, hěn hǎowán.",
+          "english": "I often sing; it's a lot of fun."
+        }
+      ],
+      "grammar_links": [],
+      "performance": {
+        "production": [],
+        "speed_ms": [],
+        "due": 0,
+        "ef": 2.5,
+        "interval": 0
+      }
+    },
+    {
+      "id": "w182",
+      "traditional": "畫畫",
+      "pinyin": "huàhuà",
+      "english": "to draw; to paint; to do drawing",
+      "french": "dessiner; peindre",
+      "part_of_speech": "verb",
+      "lesson": 3,
+      "sentences": [
+        {
+          "chinese": "我喜歡畫畫，你呢？",
+          "pinyin": "Wǒ xǐhuān huàhuà, nǐ ne?",
+          "english": "I like drawing. What about you?"
+        },
+        {
+          "chinese": "週末我畫畫。",
+          "pinyin": "Zhōumò wǒ huàhuà.",
+          "english": "I draw on weekends."
+        },
+        {
+          "chinese": "你畫畫很好看！",
+          "pinyin": "Nǐ huàhuà hěn hǎokàn!",
+          "english": "Your drawings look great!"
+        }
+      ],
+      "grammar_links": [],
+      "performance": {
+        "production": [],
+        "speed_ms": [],
+        "due": 0,
+        "ef": 2.5,
+        "interval": 0
+      }
+    },
+    {
+      "id": "w183",
+      "traditional": "睡覺",
+      "pinyin": "shuìjiào",
+      "english": "to sleep; to go to bed",
+      "french": "dormir; aller se coucher",
+      "part_of_speech": "verb",
+      "lesson": 3,
+      "sentences": [
+        {
+          "chinese": "你幾點睡覺？",
+          "pinyin": "Nǐ jǐ diǎn shuìjiào?",
+          "english": "What time do you go to sleep?"
+        },
+        {
+          "chinese": "我晚上十一點睡覺。",
+          "pinyin": "Wǒ wǎnshàng shíyī diǎn shuìjiào.",
+          "english": "I go to sleep at 11 PM."
+        },
+        {
+          "chinese": "你累了嗎？去睡覺吧。",
+          "pinyin": "Nǐ lèi le ma? Qù shuìjiào ba.",
+          "english": "Are you tired? Go to sleep."
+        }
+      ],
+      "grammar_links": [],
+      "performance": {
+        "production": [],
+        "speed_ms": [],
+        "due": 0,
+        "ef": 2.5,
+        "interval": 0
+      }
+    },
+    {
+      "id": "w184",
+      "traditional": "走路",
+      "pinyin": "zǒulù",
+      "english": "to walk; to go on foot",
+      "french": "marcher; aller à pied",
+      "part_of_speech": "verb",
+      "lesson": 3,
+      "sentences": [
+        {
+          "chinese": "你喜歡走路嗎？",
+          "pinyin": "Nǐ xǐhuān zǒulù ma?",
+          "english": "Do you like walking?"
+        },
+        {
+          "chinese": "我每天走路去公園。",
+          "pinyin": "Wǒ měitiān zǒulù qù gōngyuán.",
+          "english": "I walk to the park every day."
+        },
+        {
+          "chinese": "走路很好，可以運動。",
+          "pinyin": "Zǒulù hěn hǎo, kěyǐ yùndòng.",
+          "english": "Walking is great; you get exercise."
+        }
+      ],
+      "grammar_links": [],
+      "performance": {
+        "production": [],
+        "speed_ms": [],
+        "due": 0,
+        "ef": 2.5,
+        "interval": 0
+      }
+    },
+    {
+      "id": "w185",
+      "traditional": "跑步",
+      "pinyin": "pǎobù",
+      "english": "to run; to jog",
+      "french": "courir; faire du jogging",
+      "part_of_speech": "verb",
+      "lesson": 3,
+      "sentences": [
+        {
+          "chinese": "你常跑步嗎？",
+          "pinyin": "Nǐ cháng pǎobù ma?",
+          "english": "Do you run often?"
+        },
+        {
+          "chinese": "我每天早上跑步。",
+          "pinyin": "Wǒ měitiān zǎoshàng pǎobù.",
+          "english": "I run every morning."
+        },
+        {
+          "chinese": "跑步很好，你要試試。",
+          "pinyin": "Pǎobù hěn hǎo, nǐ yào shìshì.",
+          "english": "Running is great; you should try it."
+        }
+      ],
+      "grammar_links": [],
+      "performance": {
+        "production": [],
+        "speed_ms": [],
+        "due": 0,
+        "ef": 2.5,
+        "interval": 0
+      }
+    },
+    {
+      "id": "w186",
+      "traditional": "慢跑",
+      "pinyin": "màn pǎo",
+      "english": "to jog; jogging",
+      "french": "faire du jogging (lent)",
+      "part_of_speech": "verb",
+      "lesson": 3,
+      "sentences": [
+        {
+          "chinese": "你喜歡慢跑還是快跑？",
+          "pinyin": "Nǐ xǐhuān màn pǎo háishì kuài pǎo?",
+          "english": "Do you prefer jogging or running fast?"
+        },
+        {
+          "chinese": "我每天早上慢跑三十分鐘。",
+          "pinyin": "Wǒ měitiān zǎoshàng màn pǎo sānshí fēnzhōng.",
+          "english": "I jog for 30 minutes every morning."
+        },
+        {
+          "chinese": "慢跑對身體很好。",
+          "pinyin": "Màn pǎo duì shēntǐ hěn hǎo.",
+          "english": "Jogging is very good for the body."
+        }
+      ],
+      "grammar_links": [],
+      "performance": {
+        "production": [],
+        "speed_ms": [],
+        "due": 0,
+        "ef": 2.5,
+        "interval": 0
+      }
+    },
+    {
+      "id": "w187",
+      "traditional": "健身",
+      "pinyin": "jiànshēn",
+      "english": "to work out; to exercise at the gym",
+      "french": "faire de la musculation; aller à la salle de sport",
+      "part_of_speech": "verb",
+      "lesson": 3,
+      "sentences": [
+        {
+          "chinese": "你常健身嗎？",
+          "pinyin": "Nǐ cháng jiànshēn ma?",
+          "english": "Do you work out often?"
+        },
+        {
+          "chinese": "我週末去健身。",
+          "pinyin": "Wǒ zhōumò qù jiànshēn.",
+          "english": "I go to the gym on weekends."
+        },
+        {
+          "chinese": "健身很好，我也想去。",
+          "pinyin": "Jiànshēn hěn hǎo, wǒ yě xiǎng qù.",
+          "english": "Working out is great; I want to go too."
+        }
+      ],
+      "grammar_links": [],
+      "performance": {
+        "production": [],
+        "speed_ms": [],
+        "due": 0,
+        "ef": 2.5,
+        "interval": 0
+      }
+    },
+    {
+      "id": "w188",
+      "traditional": "看電視",
+      "pinyin": "kàn diànshì",
+      "english": "to watch TV; to watch television",
+      "french": "regarder la télévision",
+      "part_of_speech": "verb",
+      "lesson": 3,
+      "sentences": [
+        {
+          "chinese": "你喜歡看電視嗎？",
+          "pinyin": "Nǐ xǐhuān kàn diànshì ma?",
+          "english": "Do you like watching TV?"
+        },
+        {
+          "chinese": "我晚上常看電視。",
+          "pinyin": "Wǒ wǎnshàng cháng kàn diànshì.",
+          "english": "I often watch TV in the evening."
+        },
+        {
+          "chinese": "今天晚上我要看電視。",
+          "pinyin": "Jīntiān wǎnshàng wǒ yào kàn diànshì.",
+          "english": "Tonight I want to watch TV."
+        }
+      ],
+      "grammar_links": [],
+      "performance": {
+        "production": [],
+        "speed_ms": [],
+        "due": 0,
+        "ef": 2.5,
+        "interval": 0
+      }
+    },
+    {
+      "id": "w189",
+      "traditional": "寫功課",
+      "pinyin": "xiě gōngkè",
+      "english": "to do homework; to write homework",
+      "french": "faire ses devoirs",
+      "part_of_speech": "verb",
+      "lesson": 3,
+      "sentences": [
+        {
+          "chinese": "你寫功課了嗎？",
+          "pinyin": "Nǐ xiě gōngkè le ma?",
+          "english": "Did you do your homework?"
+        },
+        {
+          "chinese": "我每天下午寫功課。",
+          "pinyin": "Wǒ měitiān xiàwǔ xiě gōngkè.",
+          "english": "I do homework every afternoon."
+        },
+        {
+          "chinese": "我要先寫功課，然後看電視。",
+          "pinyin": "Wǒ yào xiān xiě gōngkè, ránhòu kàn diànshì.",
+          "english": "I need to do homework first, then watch TV."
+        }
+      ],
+      "grammar_links": [],
+      "performance": {
+        "production": [],
+        "speed_ms": [],
+        "due": 0,
+        "ef": 2.5,
+        "interval": 0
+      }
+    },
+    {
+      "id": "w190",
+      "traditional": "騎腳踏車",
+      "pinyin": "qí jiǎotàchē",
+      "english": "to ride a bicycle",
+      "french": "faire du vélo",
+      "part_of_speech": "verb",
+      "lesson": 3,
+      "sentences": [
+        {
+          "chinese": "你喜歡騎腳踏車嗎？",
+          "pinyin": "Nǐ xǐhuān qí jiǎotàchē ma?",
+          "english": "Do you like riding bicycles?"
+        },
+        {
+          "chinese": "週末我騎腳踏車去公園。",
+          "pinyin": "Zhōumò wǒ qí jiǎotàchē qù gōngyuán.",
+          "english": "On weekends I ride my bike to the park."
+        },
+        {
+          "chinese": "騎腳踏車很好玩！",
+          "pinyin": "Qí jiǎotàchē hěn hǎowán!",
+          "english": "Riding a bicycle is a lot of fun!"
+        }
+      ],
+      "grammar_links": [],
+      "performance": {
+        "production": [],
+        "speed_ms": [],
+        "due": 0,
+        "ef": 2.5,
+        "interval": 0
+      }
+    },
+    {
+      "id": "w191",
+      "traditional": "做瑜伽",
+      "pinyin": "zuò yújiā",
+      "english": "to do yoga",
+      "french": "faire du yoga",
+      "part_of_speech": "verb",
+      "lesson": 3,
+      "sentences": [
+        {
+          "chinese": "你喜歡做瑜伽嗎？",
+          "pinyin": "Nǐ xǐhuān zuò yújiā ma?",
+          "english": "Do you like doing yoga?"
+        },
+        {
+          "chinese": "我每天早上做瑜伽。",
+          "pinyin": "Wǒ měitiān zǎoshàng zuò yújiā.",
+          "english": "I do yoga every morning."
+        },
+        {
+          "chinese": "做瑜伽對身體很好。",
+          "pinyin": "Zuò yújiā duì shēntǐ hěn hǎo.",
+          "english": "Yoga is very good for the body."
+        }
+      ],
+      "grammar_links": [],
+      "performance": {
+        "production": [],
+        "speed_ms": [],
+        "due": 0,
+        "ef": 2.5,
+        "interval": 0
+      }
+    },
+    {
+      "id": "w192",
+      "traditional": "貴",
+      "pinyin": "guì",
+      "english": "expensive; costly",
+      "french": "cher/chère; coûteux",
+      "part_of_speech": "adjective",
+      "lesson": 4,
+      "sentences": [
+        {
+          "chinese": "那支手機很貴。",
+          "pinyin": "Nà zhī shǒujī hěn guì.",
+          "english": "That cell phone is very expensive."
+        },
+        {
+          "chinese": "大的貴，小的便宜。",
+          "pinyin": "Dà de guì, xiǎo de piányí.",
+          "english": "Big ones are expensive; small ones are cheap."
+        },
+        {
+          "chinese": "這裡的東西都很貴。",
+          "pinyin": "Zhèlǐ de dōngxi dōu hěn guì.",
+          "english": "Everything here is very expensive."
+        }
+      ],
+      "grammar_links": [],
+      "performance": {
+        "production": [],
+        "speed_ms": [],
+        "due": 0,
+        "ef": 2.5,
+        "interval": 0
+      }
+    },
+    {
+      "id": "w193",
+      "traditional": "便宜",
+      "pinyin": "piányí",
+      "english": "cheap; inexpensive; affordable",
+      "french": "bon marché; pas cher",
+      "part_of_speech": "adjective",
+      "lesson": 4,
+      "sentences": [
+        {
+          "chinese": "這個包子很便宜，才十塊。",
+          "pinyin": "Zhège bāozi hěn piányí, cái shí kuài.",
+          "english": "These baozi are very cheap, only 10 dollars."
+        },
+        {
+          "chinese": "你有便宜一點的嗎？",
+          "pinyin": "Nǐ yǒu piányí yīdiǎn de ma?",
+          "english": "Do you have something cheaper?"
+        },
+        {
+          "chinese": "舊的很便宜，新的貴。",
+          "pinyin": "Jiù de hěn piányí, xīn de guì.",
+          "english": "Old ones are cheap; new ones are expensive."
+        }
+      ],
+      "grammar_links": [],
+      "performance": {
+        "production": [],
+        "speed_ms": [],
+        "due": 0,
+        "ef": 2.5,
+        "interval": 0
+      }
+    },
+    {
+      "id": "w194",
+      "traditional": "為什麼",
+      "pinyin": "wèishénme",
+      "english": "why; for what reason",
+      "french": "pourquoi",
+      "part_of_speech": "adverb",
+      "lesson": 4,
+      "sentences": [
+        {
+          "chinese": "你為什麼要買新手機？",
+          "pinyin": "Nǐ wèishénme yào mǎi xīn shǒujī?",
+          "english": "Why do you want to buy a new phone?"
+        },
+        {
+          "chinese": "他為什麼不來？",
+          "pinyin": "Tā wèishénme bù lái?",
+          "english": "Why isn't he coming?"
+        },
+        {
+          "chinese": "你為什麼不喜歡？",
+          "pinyin": "Nǐ wèishénme bù xǐhuān?",
+          "english": "Why don't you like it?"
+        }
+      ],
+      "grammar_links": [],
+      "performance": {
+        "production": [],
+        "speed_ms": [],
+        "due": 0,
+        "ef": 2.5,
+        "interval": 0
+      }
+    },
+    {
+      "id": "w195",
+      "traditional": "萬",
+      "pinyin": "wàn",
+      "english": "ten thousand; 10,000",
+      "french": "dix mille; 10 000",
+      "part_of_speech": "noun",
+      "lesson": 4,
+      "sentences": [
+        {
+          "chinese": "這支手機要一萬塊。",
+          "pinyin": "Zhè zhī shǒujī yào yī wàn kuài.",
+          "english": "This phone costs 10,000 dollars."
+        },
+        {
+          "chinese": "一萬很貴！",
+          "pinyin": "Yī wàn hěn guì!",
+          "english": "Ten thousand is very expensive!"
+        },
+        {
+          "chinese": "我有兩萬塊。",
+          "pinyin": "Wǒ yǒu liǎng wàn kuài.",
+          "english": "I have 20,000 dollars."
+        }
+      ],
+      "grammar_links": [],
+      "performance": {
+        "production": [],
+        "speed_ms": [],
+        "due": 0,
+        "ef": 2.5,
+        "interval": 0
+      }
+    },
+    {
+      "id": "w196",
+      "traditional": "千",
+      "pinyin": "qiān",
+      "english": "thousand; 1,000",
+      "french": "mille; 1 000",
+      "part_of_speech": "noun",
+      "lesson": 4,
+      "sentences": [
+        {
+          "chinese": "這個手機要五千塊。",
+          "pinyin": "Zhège shǒujī yào wǔ qiān kuài.",
+          "english": "This phone costs 5,000 dollars."
+        },
+        {
+          "chinese": "三千便宜嗎？",
+          "pinyin": "Sān qiān piányí ma?",
+          "english": "Is 3,000 cheap?"
+        },
+        {
+          "chinese": "我有一千塊。",
+          "pinyin": "Wǒ yǒu yī qiān kuài.",
+          "english": "I have 1,000 dollars."
+        }
+      ],
+      "grammar_links": [],
+      "performance": {
+        "production": [],
+        "speed_ms": [],
+        "due": 0,
+        "ef": 2.5,
+        "interval": 0
+      }
+    },
+    {
+      "id": "w197",
+      "traditional": "住",
+      "pinyin": "zhù",
+      "english": "to live; to reside; to stay",
+      "french": "habiter; résider; rester",
+      "part_of_speech": "verb",
+      "lesson": 4,
+      "sentences": [
+        {
+          "chinese": "你住在哪裡？",
+          "pinyin": "Nǐ zhù zài nǎlǐ?",
+          "english": "Where do you live?"
+        },
+        {
+          "chinese": "我住在台北。",
+          "pinyin": "Wǒ zhù zài Táiběi.",
+          "english": "I live in Taipei."
+        },
+        {
+          "chinese": "你住在大城市嗎？",
+          "pinyin": "Nǐ zhù zài dà chéngshì ma?",
+          "english": "Do you live in a big city?"
+        }
+      ],
+      "grammar_links": [],
+      "performance": {
+        "production": [],
+        "speed_ms": [],
+        "due": 0,
+        "ef": 2.5,
+        "interval": 0
+      }
+    },
+    {
+      "id": "w198",
+      "traditional": "城市",
+      "pinyin": "chéngshì",
+      "english": "city; town",
+      "french": "ville",
+      "part_of_speech": "noun",
+      "lesson": 4,
+      "sentences": [
+        {
+          "chinese": "你住在哪個城市？",
+          "pinyin": "Nǐ zhù zài nǎge chéngshì?",
+          "english": "Which city do you live in?"
+        },
+        {
+          "chinese": "台北是一個大城市。",
+          "pinyin": "Táiběi shì yī gè dà chéngshì.",
+          "english": "Taipei is a big city."
+        },
+        {
+          "chinese": "我喜歡這個城市。",
+          "pinyin": "Wǒ xǐhuān zhège chéngshì.",
+          "english": "I like this city."
+        }
+      ],
+      "grammar_links": [],
+      "performance": {
+        "production": [],
+        "speed_ms": [],
+        "due": 0,
+        "ef": 2.5,
+        "interval": 0
+      }
+    },
+    {
+      "id": "w199",
+      "traditional": "電腦",
+      "pinyin": "diànnǎo",
+      "english": "computer; laptop",
+      "french": "ordinateur",
+      "part_of_speech": "noun",
+      "lesson": 4,
+      "sentences": [
+        {
+          "chinese": "你有電腦嗎？",
+          "pinyin": "Nǐ yǒu diànnǎo ma?",
+          "english": "Do you have a computer?"
+        },
+        {
+          "chinese": "我用電腦上網。",
+          "pinyin": "Wǒ yòng diànnǎo shàngwǎng.",
+          "english": "I use the computer to go online."
+        },
+        {
+          "chinese": "這台電腦很新。",
+          "pinyin": "Zhè tái diànnǎo hěn xīn.",
+          "english": "This computer is very new."
+        }
+      ],
+      "grammar_links": [],
+      "performance": {
+        "production": [],
+        "speed_ms": [],
+        "due": 0,
+        "ef": 2.5,
+        "interval": 0
+      }
+    },
+    {
+      "id": "w200",
+      "traditional": "歐元",
+      "pinyin": "ōuyuán",
+      "english": "euro (currency)",
+      "french": "euro (monnaie)",
+      "part_of_speech": "noun",
+      "lesson": 4,
+      "sentences": [
+        {
+          "chinese": "這個多少歐元？",
+          "pinyin": "Zhège duōshǎo ōuyuán?",
+          "english": "How much is this in euros?"
+        },
+        {
+          "chinese": "一百歐元很貴。",
+          "pinyin": "Yī bǎi ōuyuán hěn guì.",
+          "english": "One hundred euros is very expensive."
+        },
+        {
+          "chinese": "你有歐元嗎？",
+          "pinyin": "Nǐ yǒu ōuyuán ma?",
+          "english": "Do you have euros?"
+        }
+      ],
+      "grammar_links": [],
+      "performance": {
+        "production": [],
+        "speed_ms": [],
+        "due": 0,
+        "ef": 2.5,
+        "interval": 0
+      }
+    },
+    {
+      "id": "w201",
+      "traditional": "每",
+      "pinyin": "měi",
+      "english": "every; each",
+      "french": "chaque; tous les",
+      "part_of_speech": "determiner",
+      "lesson": 4,
+      "sentences": [
+        {
+          "chinese": "我每天跑步。",
+          "pinyin": "Wǒ měitiān pǎobù.",
+          "english": "I run every day."
+        },
+        {
+          "chinese": "他每週末去爬山。",
+          "pinyin": "Tā měi zhōumò qù páshān.",
+          "english": "He goes hiking every weekend."
+        },
+        {
+          "chinese": "每個人都喜歡吃包子。",
+          "pinyin": "Měi gè rén dōu xǐhuān chī bāozi.",
+          "english": "Everyone likes eating baozi."
+        }
+      ],
+      "grammar_links": [],
+      "performance": {
+        "production": [],
+        "speed_ms": [],
+        "due": 0,
+        "ef": 2.5,
+        "interval": 0
+      }
+    },
+    {
+      "id": "w202",
+      "traditional": "花",
+      "pinyin": "huā",
+      "english": "to spend (money or time); flower",
+      "french": "dépenser (argent ou temps); fleur",
+      "part_of_speech": "verb",
+      "lesson": 4,
+      "sentences": [
+        {
+          "chinese": "你花了多少錢？",
+          "pinyin": "Nǐ huā le duōshǎo qián?",
+          "english": "How much money did you spend?"
+        },
+        {
+          "chinese": "我花了一百塊買這個。",
+          "pinyin": "Wǒ huā le yī bǎi kuài mǎi zhège.",
+          "english": "I spent 100 dollars to buy this."
+        },
+        {
+          "chinese": "他花很多錢買手機。",
+          "pinyin": "Tā huā hěn duō qián mǎi shǒujī.",
+          "english": "He spent a lot of money buying a phone."
+        }
+      ],
+      "grammar_links": [],
+      "performance": {
+        "production": [],
+        "speed_ms": [],
+        "due": 0,
+        "ef": 2.5,
+        "interval": 0
+      }
+    },
+    {
+      "id": "w203",
+      "traditional": "大概",
+      "pinyin": "dàgài",
+      "english": "approximately; probably; roughly",
+      "french": "environ; approximativement; probablement",
+      "part_of_speech": "adverb",
+      "lesson": 4,
+      "sentences": [
+        {
+          "chinese": "大概多少錢？",
+          "pinyin": "Dàgài duōshǎo qián?",
+          "english": "How much does it cost roughly?"
+        },
+        {
+          "chinese": "大概一千塊。",
+          "pinyin": "Dàgài yī qiān kuài.",
+          "english": "About 1,000 dollars."
+        },
+        {
+          "chinese": "他大概今天來。",
+          "pinyin": "Tā dàgài jīntiān lái.",
+          "english": "He will probably come today."
+        }
+      ],
+      "grammar_links": [],
+      "performance": {
+        "production": [],
+        "speed_ms": [],
+        "due": 0,
+        "ef": 2.5,
+        "interval": 0
+      }
+    },
+    {
+      "id": "w204",
+      "traditional": "歐洲",
+      "pinyin": "ōuzhōu",
+      "english": "Europe",
+      "french": "Europe",
+      "part_of_speech": "noun",
+      "lesson": 4,
+      "sentences": [
+        {
+          "chinese": "你去過歐洲嗎？",
+          "pinyin": "Nǐ qùguò ōuzhōu ma?",
+          "english": "Have you been to Europe?"
+        },
+        {
+          "chinese": "我想去歐洲。",
+          "pinyin": "Wǒ xiǎng qù ōuzhōu.",
+          "english": "I want to go to Europe."
+        },
+        {
+          "chinese": "歐洲很大，有很多城市。",
+          "pinyin": "Ōuzhōu hěn dà, yǒu hěn duō chéngshì.",
+          "english": "Europe is very big and has many cities."
+        }
+      ],
+      "grammar_links": [],
+      "performance": {
+        "production": [],
+        "speed_ms": [],
+        "due": 0,
+        "ef": 2.5,
+        "interval": 0
+      }
+    },
+    {
+      "id": "w207",
+      "traditional": "上課了",
+      "pinyin": "shàngkè le",
+      "english": "class has started; let's begin class",
+      "french": "le cours commence; on commence le cours",
+      "part_of_speech": "phrase",
+      "lesson": 0,
+      "sentences": [
+        {
+          "chinese": "上課了，請坐。",
+          "pinyin": "Shàngkè le, qǐng zuò.",
+          "english": "Class has started; please sit down."
+        },
+        {
+          "chinese": "老師說上課了。",
+          "pinyin": "Lǎoshī shuō shàngkè le.",
+          "english": "The teacher said class has started."
+        },
+        {
+          "chinese": "上課了，請聽。",
+          "pinyin": "Shàngkè le, qǐng tīng.",
+          "english": "Class is starting; please listen."
+        }
+      ],
+      "grammar_links": [],
+      "performance": {
+        "production": [],
+        "speed_ms": [],
+        "due": 0,
+        "ef": 2.5,
+        "interval": 0
+      }
+    },
+    {
+      "id": "w208",
+      "traditional": "下課了",
+      "pinyin": "xiàkè le",
+      "english": "class is over; class has ended",
+      "french": "le cours est terminé; fin du cours",
+      "part_of_speech": "phrase",
+      "lesson": 0,
+      "sentences": [
+        {
+          "chinese": "下課了，再見！",
+          "pinyin": "Xiàkè le, zàijiàn!",
+          "english": "Class is over; goodbye!"
+        },
+        {
+          "chinese": "老師說下課了。",
+          "pinyin": "Lǎoshī shuō xiàkè le.",
+          "english": "The teacher said class is over."
+        },
+        {
+          "chinese": "下課了，我想吃東西。",
+          "pinyin": "Xiàkè le, wǒ xiǎng chī dōngxi.",
+          "english": "Class is over; I want to eat something."
+        }
+      ],
+      "grammar_links": [],
+      "performance": {
+        "production": [],
+        "speed_ms": [],
+        "due": 0,
+        "ef": 2.5,
+        "interval": 0
+      }
+    },
+    {
+      "id": "w209",
+      "traditional": "懂",
+      "pinyin": "dǒng",
+      "english": "to understand",
+      "french": "comprendre",
+      "part_of_speech": "verb",
+      "lesson": 0,
+      "sentences": [
+        {
+          "chinese": "你懂嗎？",
+          "pinyin": "Nǐ dǒng ma?",
+          "english": "Do you understand?"
+        },
+        {
+          "chinese": "我不懂，請再說一次。",
+          "pinyin": "Wǒ bù dǒng, qǐng zài shuō yīcì.",
+          "english": "I don't understand; please say it one more time."
+        },
+        {
+          "chinese": "你聽得懂嗎？",
+          "pinyin": "Nǐ tīng de dǒng ma?",
+          "english": "Can you understand what you hear?"
+        }
+      ],
+      "grammar_links": [],
+      "performance": {
+        "production": [],
+        "speed_ms": [],
+        "due": 0,
+        "ef": 2.5,
+        "interval": 0
+      }
+    },
+    {
+      "id": "w210",
+      "traditional": "再見",
+      "pinyin": "zàijiàn",
+      "english": "goodbye; see you again",
+      "french": "au revoir",
+      "part_of_speech": "phrase",
+      "lesson": 0,
+      "sentences": [
+        {
+          "chinese": "下課了，再見！",
+          "pinyin": "Xiàkè le, zàijiàn!",
+          "english": "Class is over; goodbye!"
+        },
+        {
+          "chinese": "明天再見！",
+          "pinyin": "Míngtiān zàijiàn!",
+          "english": "See you tomorrow!"
+        },
+        {
+          "chinese": "老師，再見！",
+          "pinyin": "Lǎoshī, zàijiàn!",
+          "english": "Teacher, goodbye!"
+        }
+      ],
+      "grammar_links": [],
+      "performance": {
+        "production": [],
+        "speed_ms": [],
+        "due": 0,
+        "ef": 2.5,
+        "interval": 0
+      }
+    },
+    {
+      "id": "w211",
+      "traditional": "再一次",
+      "pinyin": "zài yīcì",
+      "english": "one more time; again",
+      "french": "encore une fois",
+      "part_of_speech": "phrase",
+      "lesson": 0,
+      "sentences": [
+        {
+          "chinese": "請再一次。",
+          "pinyin": "Qǐng zài yīcì.",
+          "english": "Please do it one more time."
+        },
+        {
+          "chinese": "我不懂，再一次好嗎？",
+          "pinyin": "Wǒ bù dǒng, zài yīcì hǎo ma?",
+          "english": "I don't understand; can you do it one more time?"
+        },
+        {
+          "chinese": "老師說再一次。",
+          "pinyin": "Lǎoshī shuō zài yīcì.",
+          "english": "The teacher said one more time."
+        }
+      ],
+      "grammar_links": [],
+      "performance": {
+        "production": [],
+        "speed_ms": [],
+        "due": 0,
+        "ef": 2.5,
+        "interval": 0
+      }
+    },
+    {
+      "id": "w212",
+      "traditional": "寫",
+      "pinyin": "xiě",
+      "english": "to write",
+      "french": "écrire",
+      "part_of_speech": "verb",
+      "lesson": 0,
+      "sentences": [
+        {
+          "chinese": "請寫你的名字。",
+          "pinyin": "Qǐng xiě nǐ de míngzì.",
+          "english": "Please write your name."
+        },
+        {
+          "chinese": "你寫了嗎？",
+          "pinyin": "Nǐ xiě le ma?",
+          "english": "Did you write it?"
+        },
+        {
+          "chinese": "我想學寫中文。",
+          "pinyin": "Wǒ xiǎng xué xiě zhōngwén.",
+          "english": "I want to learn to write Chinese."
+        }
+      ],
+      "grammar_links": [],
+      "performance": {
+        "production": [],
+        "speed_ms": [],
+        "due": 0,
+        "ef": 2.5,
+        "interval": 0
+      }
+    },
+    {
+      "id": "w213",
+      "traditional": "問",
+      "pinyin": "wèn",
+      "english": "to ask (a question)",
+      "french": "demander; poser une question",
+      "part_of_speech": "verb",
+      "lesson": 0,
+      "sentences": [
+        {
+          "chinese": "你可以問老師。",
+          "pinyin": "Nǐ kěyǐ wèn lǎoshī.",
+          "english": "You can ask the teacher."
+        },
+        {
+          "chinese": "我想問你一個問題。",
+          "pinyin": "Wǒ xiǎng wèn nǐ yī gè wèntí.",
+          "english": "I want to ask you a question."
+        },
+        {
+          "chinese": "請問，這是什麼？",
+          "pinyin": "Qǐngwèn, zhè shì shénme?",
+          "english": "Excuse me, what is this?"
+        }
+      ],
+      "grammar_links": [],
       "performance": {
         "production": [],
         "speed_ms": [],
