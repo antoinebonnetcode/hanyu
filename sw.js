@@ -1,4 +1,4 @@
-const CACHE_NAME = 'hanyu-v2';
+const CACHE_NAME = 'hanyu-v1.1';
 const ASSETS = ['/', '/index.html', '/manifest.json'];
 
 // Install
