@@ -494,6 +494,17 @@ input[type=range]::-webkit-slider-thumb{
           <input type="password" class="settings-input" id="qwen-key" placeholder="sk-…" oninput="saveSetting('qwenKey',this.value)">
         </div>
         <div class="settings-row" style="display:block">
+          <div class="settings-label">AI Model</div>
+          <div class="settings-sub">Model used for feedback. Turn off to use local matching only.</div>
+          <div class="pill-row" style="margin-top:8px">
+            <div class="pill" id="model-off"      onclick="setModel('off',this)">Off</div>
+            <div class="pill" id="model-turbo"    onclick="setModel('qwen-turbo',this)">Turbo</div>
+            <div class="pill" id="model-plus"     onclick="setModel('qwen-plus',this)">Plus ★</div>
+            <div class="pill" id="model-max"      onclick="setModel('qwen-max',this)">Max</div>
+          </div>
+          <div class="settings-sub" style="margin-top:6px" id="model-desc"></div>
+        </div>
+        <div class="settings-row" style="display:block">
           <div class="settings-label">Feedback language</div>
           <div class="settings-sub">Language used for explanations in feedback</div>
           <div class="pill-row" style="margin-top:8px">
@@ -631,7 +642,7 @@ let STATE = loadState();
 function loadState(){
   const s = localStorage.getItem('hanyu_state');
   return s ? JSON.parse(s) : {
-    qwenKey:'', feedbackLang:'en', dbUrl:'https://raw.githubusercontent.com/antoinebonnetcode/hanyu/refs/heads/main/database.json',
+    qwenKey:'', qwenModel:'qwen-plus', feedbackLang:'en', dbUrl:'https://raw.githubusercontent.com/antoinebonnetcode/hanyu/refs/heads/main/database.json',
     notifTime:'19:00', notifDaily:true, notifStreak:true, notifSrs:true,
     streak:0, lastStudied:null, totalSessions:0,
     selectedMode:'vocab', selectedLessons:[], selectedFocus:'all', sessionLength:10,
@@ -956,10 +967,19 @@ function buildQuestionHTML(ex, item){
     html += `<div class="answer-area"><p class="answer-label">Answer in Chinese</p><textarea class="answer-input" id="answer-field" rows="3" placeholder="Type your answer…"></textarea></div>`;
   }
 
-  // Focus textarea after render
+  // Focus textarea after render + Enter key submits
   setTimeout(()=>{
     const f = document.getElementById('answer-field');
-    if(f) f.focus();
+    if(f){
+      f.focus();
+      // Enter submits; Shift+Enter inserts newline (for multi-word answers)
+      f.addEventListener('keydown', function(e){
+        if(e.key==='Enter' && !e.shiftKey){
+          e.preventDefault();
+          handleSubmit();
+        }
+      }, {once:false});
+    }
   }, 100);
   return html;
 }
@@ -983,7 +1003,7 @@ async function handleSubmit(){
   const ex = SESSION.currentExercise;
 
   let feedback;
-  if(STATE.qwenKey){
+  if(STATE.qwenKey && STATE.qwenModel !== 'off'){
     feedback = await getAIFeedback(ex, answer);
   } else {
     feedback = getLocalFeedback(ex, answer);
@@ -1118,7 +1138,7 @@ async function getAIFeedback(ex, userAnswer){
       method:'POST',
       headers:{'Content-Type':'application/json','Authorization':'Bearer '+STATE.qwenKey},
       body:JSON.stringify({
-        model:'qwen-plus',
+        model:(STATE.qwenModel&&STATE.qwenModel!=='off')?STATE.qwenModel:'qwen-plus',
         messages:[{role:'user',content:prompt}],
         max_tokens:400,
         temperature:0.1
@@ -1133,10 +1153,23 @@ async function getAIFeedback(ex, userAnswer){
   }
 }
 
+function normChinese(s){
+  // Normalize for comparison: NFC, strip zero-width/invisible chars,
+  // collapse fullwidth spaces, trim whitespace
+  return (s||'')
+    .normalize('NFC')
+    .replace(/[\u200b-\u200f\u202a-\u202e\u2060\ufeff]/g,'') // zero-width
+    .replace(/[\u3000\u00a0]/g,' ')  // fullwidth & nbsp → regular space
+    .replace(/\s+/g,' ')
+    .trim();
+}
+
 function getLocalFeedback(ex, userAnswer){
-  // Simple local comparison when no API key
-  const correct = userAnswer.trim().toLowerCase() === ex.answer.trim().toLowerCase();
-  const partial = !correct && ex.answer.toLowerCase().includes(userAnswer.toLowerCase().substring(0,2));
+  const ua = normChinese(userAnswer);
+  const ans = normChinese(ex.answer);
+  const correct = ua === ans;
+  // partial: first 2 chars match (for Chinese) or first 3 chars (for Latin)
+  const partial = !correct && ans.length>=2 && ua.length>=1 && ans.startsWith(ua.substring(0,Math.min(2,ua.length)));
   return {
     verdict: correct?'correct':partial?'partial':'incorrect',
     errorType: correct?null:'Character error',
@@ -1448,9 +1481,30 @@ function renderSettings(){
   // Feedback lang
   document.querySelectorAll('#lang-en,#lang-fr').forEach(b=>b.classList.remove('selected'));
   document.getElementById('lang-'+(STATE.feedbackLang||'en')).classList.add('selected');
+  const activeModel = STATE.qwenModel||'qwen-plus';
+  const modelPillId = 'model-'+(activeModel==='qwen-plus'?'plus':activeModel==='qwen-turbo'?'turbo':activeModel==='qwen-max'?'max':'off');
+  const mp = document.getElementById(modelPillId);
+  if(mp) mp.classList.add('selected');
+  const mdesc = document.getElementById('model-desc');
+  if(mdesc) mdesc.textContent = MODEL_DESC[activeModel]||'';
 }
 
 function saveSetting(key, val){STATE[key]=val;saveState();}
+
+const MODEL_DESC = {
+  'off':        'Local string matching only — fast, no API calls, less nuanced.',
+  'qwen-turbo': 'Fastest · cheapest · ~€0.003/session. Good for quick drills.',
+  'qwen-plus':  'Recommended · ~€0.01/session. Best balance of speed and accuracy.',
+  'qwen-max':   'Highest quality · ~€0.04/session. Use for deep grammar review.'
+};
+
+function setModel(m, el){
+  STATE.qwenModel = m; saveState();
+  document.querySelectorAll('[id^="model-"]').forEach(b=>b.classList.remove('selected'));
+  if(el) el.classList.add('selected');
+  const desc = document.getElementById('model-desc');
+  if(desc) desc.textContent = MODEL_DESC[m]||'';
+}
 
 function setFeedbackLang(lang, el){
   STATE.feedbackLang=lang; saveState();
