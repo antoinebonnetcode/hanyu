@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, interactive-widget=resizes-content"/>
 <meta name="theme-color" content="#000000"/>
 <meta name="mobile-web-app-capable" content="yes"/>
 <meta name="apple-mobile-web-app-capable" content="yes"/>
@@ -149,6 +149,10 @@ input[type=range]::-webkit-slider-thumb{
 #session-wrap{
   display:none;flex-direction:column;height:100dvh;height:100vh;
   background:var(--white);position:fixed;inset:0;z-index:100;overflow:hidden;
+}
+/* Android keyboard fix: applied via JS visualViewport */
+#session-wrap.keyboard-open .session-footer{
+  position:fixed;bottom:0;left:0;right:0;z-index:200;
 }
 #session-wrap.active{display:flex}
 
@@ -1763,6 +1767,42 @@ if('serviceWorker' in navigator){
 
 // Load voices for TTS
 window.speechSynthesis.onvoiceschanged = () => { window.speechSynthesis.getVoices(); };
+
+// ── ANDROID KEYBOARD FIX ──────────────────────────────
+// On Android, the soft keyboard resizes the visual viewport but not the
+// layout viewport, pushing position:fixed footers off-screen.
+// We use visualViewport API to pin the footer to the visible bottom.
+(function(){
+  if(!window.visualViewport) return;
+  const wrap = document.getElementById('session-wrap');
+  const footer = document.getElementById('session-footer');
+
+  function onViewportResize(){
+    if(!wrap || !wrap.classList.contains('active')) return;
+    const vv = window.visualViewport;
+    const keyboardHeight = window.innerHeight - vv.height - vv.offsetTop;
+    if(keyboardHeight > 100){
+      // Keyboard is open: pin footer above it
+      footer.style.position = 'fixed';
+      footer.style.bottom = keyboardHeight + 'px';
+      footer.style.left = '0';
+      footer.style.right = '0';
+      footer.style.zIndex = '200';
+      wrap.classList.add('keyboard-open');
+    } else {
+      // Keyboard closed: restore normal flow
+      footer.style.position = '';
+      footer.style.bottom = '';
+      footer.style.left = '';
+      footer.style.right = '';
+      footer.style.zIndex = '';
+      wrap.classList.remove('keyboard-open');
+    }
+  }
+
+  window.visualViewport.addEventListener('resize', onViewportResize);
+  window.visualViewport.addEventListener('scroll', onViewportResize);
+})();
 </script>
 </body>
 </html>
