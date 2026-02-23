@@ -214,6 +214,9 @@ input[type=range]::-webkit-slider-thumb{
 .vr-dir-btn{font-size:11px;font-weight:500;letter-spacing:0.07em;padding:6px 12px;background:var(--white);color:var(--gray-400);transition:all 0.15s;white-space:nowrap}
 .vr-dir-btn.active{background:var(--black);color:var(--white)}
 
+.ref-controls-row{display:flex;align-items:center;gap:10px;margin-bottom:14px;flex-wrap:wrap}
+.ref-controls-row .vr-direction-toggle{margin-left:auto}
+
 .vr-card{
   border:1px solid var(--gray-100);padding:28px 20px;text-align:center;
   cursor:pointer;transition:all 0.2s;position:relative;
@@ -230,6 +233,11 @@ input[type=range]::-webkit-slider-thumb{
 .vr-card .vr-pinyin{font-family:var(--mono-font);font-size:13px;color:var(--gray-600);margin-bottom:10px}
 .vr-audio-btn{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:var(--gray-400);border:1px solid var(--gray-200);padding:6px 12px;background:var(--white);letter-spacing:0.04em;margin-top:4px}
 .vr-audio-btn:active{background:var(--off-white)}
+.vr-example{text-align:left;margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid var(--gray-100)}
+.vr-example:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.vr-ex-zh{font-family:var(--chinese-font);font-size:1rem;margin-bottom:2px}
+.vr-ex-py{font-family:var(--mono-font);font-size:11px;color:var(--gray-400);margin-bottom:2px}
+.vr-ex-tr{font-size:12px;color:var(--gray-600);font-style:italic}
 
 /* ─── SELECTION TOOLTIP ──────────────────────────────────────── */
 #selection-tooltip{
@@ -426,21 +434,21 @@ input[type=range]::-webkit-slider-thumb{
 
     <!-- REFERENCE -->
     <div class="screen" id="screen-ref">
-      <div class="vr-header">
-        <div class="search-bar" style="flex:1;margin-bottom:0">
-          <span class="search-bar-icon">⌕</span>
-          <input type="text" id="search-input" placeholder="Search characters, pinyin, meaning…" oninput="renderReference()">
-        </div>
-        <div class="vr-direction-toggle" id="vr-toggle">
-          <button class="vr-dir-btn active" id="vrd-zh" onclick="setVRDirection('zh',this)">ZH→EN</button>
-          <button class="vr-dir-btn" id="vrd-en" onclick="setVRDirection('en',this)">EN→ZH</button>
-        </div>
+      <div class="search-bar" style="margin-bottom:12px">
+        <span class="search-bar-icon">⌕</span>
+        <input type="text" id="search-input" placeholder="Search characters, pinyin, meaning…" oninput="renderReference()">
       </div>
       <div class="ref-tabs">
         <div class="ref-tab active" id="tab-words" onclick="setRefTab('words',this)">Vocabulary</div>
         <div class="ref-tab" id="tab-grammar" onclick="setRefTab('grammar',this)">Grammar</div>
       </div>
-      <div class="pill-row" id="ref-lesson-pills" style="margin-bottom:16px"></div>
+      <div class="ref-controls-row" id="ref-controls-row">
+        <div class="pill-row" id="ref-lesson-pills" style="margin-bottom:0;flex:1"></div>
+        <div class="vr-direction-toggle" id="vr-toggle" style="flex-shrink:0">
+          <button class="vr-dir-btn active" id="vrd-zh" onclick="setVRDirection('zh',this)">ZH→EN</button>
+          <button class="vr-dir-btn" id="vrd-en" onclick="setVRDirection('en',this)">EN→ZH</button>
+        </div>
+      </div>
       <div id="ref-list"></div>
     </div>
 
@@ -556,6 +564,7 @@ input[type=range]::-webkit-slider-thumb{
           <div class="settings-sub">Raw URL of your database.json on GitHub</div>
         </div>
         <input type="url" class="settings-input" id="db-url" placeholder="https://raw.githubusercontent.com/…/database.json" oninput="saveSetting('dbUrl',this.value)" style="margin-top:8px">
+        <p style="font-size:11px;color:var(--gray-400);margin-top:4px">Pre-filled with your GitHub database — click Sync to load latest vocabulary.</p>
         <button class="btn-secondary" onclick="syncDatabase()" style="margin-top:8px">Sync from GitHub →</button>
         <p style="font-size:12px;color:var(--gray-400);margin-top:8px" id="sync-status"></p>
       </div>
@@ -618,7 +627,7 @@ let STATE = loadState();
 function loadState(){
   const s = localStorage.getItem('hanyu_state');
   return s ? JSON.parse(s) : {
-    qwenKey:'', feedbackLang:'en', dbUrl:'',
+    qwenKey:'', feedbackLang:'en', dbUrl:'https://raw.githubusercontent.com/antoinebonnetcode/hanyu/refs/heads/main/database.json',
     notifTime:'19:00', notifDaily:true, notifStreak:true, notifSrs:true,
     streak:0, lastStudied:null, totalSessions:0,
     selectedMode:'vocab', selectedLessons:[], selectedFocus:'all', sessionLength:10,
@@ -864,9 +873,11 @@ function generateExercise(item, mode, forcedType){
   const r = Math.random();
   if(mode==='vocab'){
     const type = forcedType || (r<0.5 ? 'produce_chinese' : 'produce_english');
-    return type==='produce_chinese'
-      ? {type:'produce_chinese', prompt_en:item.english, prompt_fr:item.french, answer:item.traditional, item}
-      : {type:'produce_english', prompt_zh:item.traditional, answer:item.english, item};
+    if(type==='produce_chinese'){
+      const langAnswer = STATE.feedbackLang==='fr'&&item.french ? item.french : item.english;
+      return {type:'produce_chinese', prompt_en:langAnswer, prompt_fr:item.french, answer:item.traditional, item};
+    }
+    return {type:'produce_english', prompt_zh:item.traditional, answer:STATE.feedbackLang==='fr'&&item.french?item.french:item.english, item};
   }
   if(mode==='rw'){
     const types = ['translate_to_chinese','translate_to_english','fill_blank','construct_sentence'];
@@ -912,7 +923,7 @@ function buildQuestionHTML(ex, item){
   let html = `<p class="q-type-label">${groupLabel}</p>`;
 
   if(ex.type==='produce_chinese'){
-    html += `<div class="q-prompt"><p class="q-prompt-text" style="font-size:1.3rem;font-weight:500">${ex.prompt_en}</p><p style="font-size:13px;color:var(--gray-400);margin-top:4px">${ex.prompt_fr||''}</p></div>`;
+    html += `<div class="q-prompt"><p class="q-prompt-text" style="font-size:1.3rem;font-weight:500">${STATE.feedbackLang==='fr'&&ex.prompt_fr?ex.prompt_fr:ex.prompt_en}</p></div>`;
     html += `<div class="answer-area"><p class="answer-label">Write in Traditional Chinese</p><textarea class="answer-input" id="answer-field" rows="3" placeholder="Type characters here…"></textarea><p class="answer-hint">Pinyin support not shown in questions — attempt the characters first</p></div>`;
   }
   else if(ex.type==='produce_english'){
@@ -1190,10 +1201,20 @@ function updateStreak(){
    REFERENCE SCREEN
 ═══════════════════════════════════════════════════════════════ */
 let refTab = 'words';
-let refLesson = null;
+let refLesson = null;       // kept for compat
+let refLessons = new Set(); // multi-select; empty = all
 let openCardId = null;
 let vrDirection = 'zh'; // 'zh' = show Chinese, reveal English; 'en' = show English, reveal Chinese
 let revealedCards = new Set();
+
+// Return the correct translation based on user's language setting
+function getLangTranslation(w){
+  return STATE.feedbackLang==='fr' && w.french ? w.french : w.english;
+}
+// Return the correct sentence translation
+function getLangText(s){
+  return STATE.feedbackLang==='fr' && s.french ? s.french : (s.english||'');
+}
 
 function setVRDirection(dir, el){
   vrDirection = dir;
@@ -1227,14 +1248,19 @@ function renderReference(){
   // Lesson filter pills
   const lessons = getAvailableLessons();
   const pillsEl = document.getElementById('ref-lesson-pills');
-  pillsEl.innerHTML = `<div class="pill ${refLesson===null?'selected':''}" onclick="setRefLesson(null)">All</div>`+
-    lessons.map(l=>`<div class="pill ${refLesson===l?'selected':''}" onclick="setRefLesson(${l})">L${l}</div>`).join('');
+  // Multi-select lesson pills: refLesson is now a Set (or null for all)
+  const allSel = !refLessons || refLessons.size===0;
+  pillsEl.innerHTML = `<div class="pill ${allSel?'selected':''}" onclick="setRefLesson(null)">All</div>`+
+    lessons.map(l=>`<div class="pill ${(!allSel&&refLessons.has(l))?'selected':''}" onclick="toggleRefLesson(${l})">L${l}</div>`).join('');
+  // Show/hide direction toggle based on tab
+  const toggle = document.getElementById('vr-toggle');
+  if(toggle) toggle.style.display = refTab==='words' ? 'flex' : 'none';
 
   const query = (document.getElementById('search-input').value||'').toLowerCase().trim();
   const list = document.getElementById('ref-list');
 
   if(refTab==='words'){
-    let items = DB.words.filter(w=>refLesson===null||w.lesson===refLesson);
+    let items = DB.words.filter(w=>refLessons.size===0||refLessons.has(w.lesson));
     if(query) items = items.filter(w=>
       w.traditional.includes(query)||
       (w.pinyin||'').toLowerCase().includes(query)||
@@ -1249,16 +1275,24 @@ function renderReference(){
       const showZH = vrDirection === 'zh';
       const promptText = showZH
         ? `<div class="vr-prompt">${w.traditional}</div>`
-        : `<div class="vr-prompt latin">${w.english}</div>`;
+        : `<div class="vr-prompt latin">${getLangTranslation(w)}</div>`;
       const answerContent = showZH
-        ? `<div class="vr-answer latin">${w.english}${w.french?`<div style="font-size:13px;color:var(--gray-400);font-style:italic;margin-top:2px">${w.french}</div>`:''}</div>`
+        ? `<div class="vr-answer latin">${getLangTranslation(w)}</div>`
         : `<div class="vr-answer">${w.traditional}</div>`;
+      // Example sentences (max 2)
+      const exSentences = (w.sentences||[]).slice(0,2).map(s=>`
+        <div class="vr-example">
+          <div class="vr-ex-zh">${s.chinese}</div>
+          <div class="vr-ex-py">${s.pinyin||''}</div>
+          <div class="vr-ex-tr">${getLangText(s)}</div>
+        </div>`).join('');
       const revealSection = isRevealed ? `
         <div class="vr-reveal">
           ${showZH?`<div class="vr-pinyin">${w.pinyin||''}</div>`:''}
           ${answerContent}
           ${!showZH?`<div class="vr-pinyin">${w.pinyin||''}</div>`:''}
           <button class="vr-audio-btn" onclick="playWordAudio('${w.traditional.replace(/'/g,"\'")}', event)">▶ Audio</button>
+          ${exSentences?`<div style="width:100%;margin-top:14px;padding-top:14px;border-top:1px solid var(--gray-100)">${exSentences}</div>`:''}
         </div>` : `<div class="vr-hint">tap to reveal</div>`;
       return `
         <div class="vr-card" onclick="toggleReveal('${w.id}', event)">
@@ -1268,7 +1302,7 @@ function renderReference(){
         </div>`;
     }).join('');
   } else {
-    let items = DB.grammar.filter(g=>refLesson===null||g.lesson===refLesson);
+    let items = DB.grammar.filter(g=>refLessons.size===0||refLessons.has(g.lesson));
     if(query) items = items.filter(g=>
       (g.name||'').toLowerCase().includes(query)||
       (g.pattern||'').toLowerCase().includes(query)||
@@ -1311,7 +1345,21 @@ function renderReference(){
   }
 }
 
-function setRefLesson(l){refLesson=l; renderReference();}
+function setRefLesson(l){
+  // l===null means clear all (All button)
+  if(l===null){ refLessons.clear(); }
+  else { refLessons.clear(); refLessons.add(l); }
+  refLesson=l;
+  renderReference();
+}
+
+function toggleRefLesson(l){
+  if(refLessons.has(l)) refLessons.delete(l);
+  else refLessons.add(l);
+  if(refLessons.size===0) refLesson=null;
+  revealedCards.clear();
+  renderReference();
+}
 
 function toggleWordCard(id){
   openCardId = openCardId===id?null:id;
@@ -1386,7 +1434,7 @@ function renderDashboard(){
 ═══════════════════════════════════════════════════════════════ */
 function renderSettings(){
   document.getElementById('qwen-key').value = STATE.qwenKey||'';
-  document.getElementById('db-url').value = STATE.dbUrl||'';
+  document.getElementById('db-url').value = STATE.dbUrl||'https://raw.githubusercontent.com/antoinebonnetcode/hanyu/refs/heads/main/database.json';
   document.getElementById('notif-time').value = STATE.notifTime||'19:00';
   ['daily','streak','srs'].forEach(k=>{
     const el = document.getElementById('toggle-'+k);
@@ -1630,8 +1678,19 @@ document.addEventListener('selectionchange', ()=>{
     const inSession = document.getElementById('session-wrap').contains(sel.anchorNode);
     if(!inSession){ tooltip.classList.remove('visible'); return; }
 
-    // Look up the selected word
-    const found = DB.words.find(w=>w.traditional===text||w.traditional.includes(text)||text.includes(w.traditional));
+    // Bidirectional lookup: selected text can be Chinese OR the translation language
+    const lang = STATE.feedbackLang || 'en';
+    let found = null;
+    const ltext = text.toLowerCase();
+    // Try Chinese match first
+    found = DB.words.find(w=>w.traditional===text||w.traditional.includes(text));
+    // If not found and text looks Latin, try English/French match
+    if(!found && /[a-zA-ZÀ-ÿ]/.test(text)){
+      found = DB.words.find(w=>{
+        const tr = lang==='fr' ? (w.french||w.english) : w.english;
+        return tr.toLowerCase()===ltext || tr.toLowerCase().includes(ltext);
+      });
+    }
     if(!found){ tooltip.classList.remove('visible'); return; }
 
     // Position near selection
@@ -1642,7 +1701,8 @@ document.addEventListener('selectionchange', ()=>{
 
     tooltip.style.left = Math.max(8, x)+'px';
     tooltip.style.top = y+'px';
-    tooltip.innerHTML = `<span style="opacity:0.6;font-size:10px">${found.traditional} · ${found.pinyin||''}</span><br>${found.english}${found.french?`<br><span style="opacity:0.6">${found.french}</span>`:''}`;
+    const translationText = getLangTranslation(found);
+    tooltip.innerHTML = `<span style="opacity:0.6;font-size:10px">${found.traditional} · ${found.pinyin||''}</span><br>${translationText}`;
     tooltip.classList.add('visible');
   }, 200);
 });
