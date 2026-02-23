@@ -205,6 +205,20 @@ input[type=range]::-webkit-slider-thumb{
 .verdict-badge.partial{background:var(--amber);color:var(--white)}
 .verdict-badge.incorrect{background:var(--red);color:var(--white)}
 .verdict-type{font-size:12px;color:var(--gray-400);font-style:italic}
+.self-assess-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-top:4px}
+.self-assess-btn{
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:4px;padding:14px 8px;border:1px solid var(--gray-200);
+  background:var(--white);cursor:pointer;transition:all 0.15s;
+  font-family:var(--mono-font);font-size:10px;letter-spacing:0.08em;
+  text-transform:uppercase;color:var(--gray-500);
+  -webkit-tap-highlight-color:transparent;
+}
+.self-assess-btn:active{transform:scale(0.96)}
+.self-assess-btn .sa-emoji{font-size:1.8rem;line-height:1}
+.self-assess-btn.sa-wrong:active,.self-assess-btn.sa-wrong:hover{border-color:var(--red);color:var(--red);background:#fff5f5}
+.self-assess-btn.sa-close:active,.self-assess-btn.sa-close:hover{border-color:var(--amber);color:var(--amber);background:#fffbf0}
+.self-assess-btn.sa-correct:active,.self-assess-btn.sa-correct:hover{border-color:var(--black);color:var(--black);background:#f5f5f5}
 
 .feedback-section{margin-bottom:14px}
 .feedback-section-label{font-size:10px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray-400);margin-bottom:6px}
@@ -490,7 +504,7 @@ input[type=range]::-webkit-slider-thumb{
         <div class="section-header"><p class="label">AI Configuration</p></div>
         <div class="settings-row" style="display:block">
           <div class="settings-label">Qwen API Key</div>
-          <div class="settings-sub">Get a free key at console.qwen.ai — used for exercise generation and feedback</div>
+          <div class="settings-sub">Get a free key at <strong>openrouter.ai</strong> → API Keys. Supports qwen-turbo/plus/max. Paste the key starting with sk-or-…</div>
           <input type="password" class="settings-input" id="qwen-key" placeholder="sk-…" oninput="saveSetting('qwenKey',this.value)">
         </div>
         <div class="settings-row" style="display:block">
@@ -503,6 +517,13 @@ input[type=range]::-webkit-slider-thumb{
             <div class="pill" id="model-max"      onclick="setModel('qwen-max',this)">Max</div>
           </div>
           <div class="settings-sub" style="margin-top:6px" id="model-desc"></div>
+        </div>
+        <div class="settings-row">
+          <div>
+            <div class="settings-label">Debug mode</div>
+            <div class="settings-sub">Show API errors as toasts — useful for troubleshooting</div>
+          </div>
+          <div class="toggle" id="debug-toggle" onclick="toggleDebug()" style="cursor:pointer;border:1px solid var(--gray-200);padding:4px 12px;font-family:var(--mono-font);font-size:11px;letter-spacing:0.06em">OFF</div>
         </div>
         <div class="settings-row" style="display:block">
           <div class="settings-label">Feedback language</div>
@@ -642,7 +663,7 @@ let STATE = loadState();
 function loadState(){
   const s = localStorage.getItem('hanyu_state');
   return s ? JSON.parse(s) : {
-    qwenKey:'', qwenModel:'qwen-plus', feedbackLang:'en', dbUrl:'https://raw.githubusercontent.com/antoinebonnetcode/hanyu/refs/heads/main/database.json',
+    qwenKey:'', qwenModel:'qwen-plus', feedbackLang:'en', debugMode:false, dbUrl:'https://raw.githubusercontent.com/antoinebonnetcode/hanyu/refs/heads/main/database.json',
     notifTime:'19:00', notifDaily:true, notifStreak:true, notifSrs:true,
     streak:0, lastStudied:null, totalSessions:0,
     selectedMode:'vocab', selectedLessons:[], selectedFocus:'all', sessionLength:10,
@@ -784,6 +805,7 @@ function startSession(){
     queue: queueItems, // Each item is {item, forcedType}
     index: 0,
     answers: [],
+    pendingAnswer: null,
     mode: STATE.selectedMode,
     startTime: Date.now()
   };
@@ -808,6 +830,7 @@ function resumeSession(){
     queue: queueItems,
     index: STATE.pendingSession.index||0,
     answers: [],
+    pendingAnswer: null,
     mode: STATE.pendingSession.mode||'vocab',
     startTime: Date.now()
   };
@@ -976,7 +999,7 @@ function buildQuestionHTML(ex, item){
       f.addEventListener('keydown', function(e){
         if(e.key==='Enter' && !e.shiftKey){
           e.preventDefault();
-          handleSubmit();
+          if(!document.getElementById('feedback-box')) handleSubmit();
         }
       }, {once:false});
     }
@@ -984,87 +1007,87 @@ function buildQuestionHTML(ex, item){
   return html;
 }
 
-async function handleSubmit(){
+function handleSubmit(){
   const feedbackEl = document.getElementById('feedback-box');
-  if(feedbackEl){ // feedback already shown — go to next
-    advanceQuestion();
-    return;
-  }
+  if(feedbackEl){ return; } // buttons handle progression now
+
   const field = document.getElementById('answer-field');
   if(!field) return;
   const answer = field.value.trim();
-  if(!answer){ toast('Please write an answer first'); return; }
+  if(!answer){ toast('Write an answer first'); return; }
 
+  // Disable input + button
+  field.disabled = true;
   const btn = document.getElementById('s-submit-btn');
-  btn.disabled = true;
-  btn.textContent = 'Checking…';
+  if(btn){ btn.disabled = true; btn.style.opacity='0.4'; }
 
+  SESSION.questionStart = SESSION.questionStart || Date.now();
   const speedMs = Date.now() - SESSION.questionStart;
   const ex = SESSION.currentExercise;
 
-  let feedback;
-  if(STATE.qwenKey && STATE.qwenModel !== 'off'){
-    feedback = await getAIFeedback(ex, answer);
-  } else {
-    feedback = getLocalFeedback(ex, answer);
-  }
+  // Store answer + speed for SRS (score applied when user taps self-assess)
+  SESSION.pendingAnswer = {answer, speedMs, ex};
 
-  // Dynamic score: correct=1.0, partial=0.6, incorrect=0.0
-  // If API gave a score field, use it; otherwise map verdict
-  const scoreMap = {correct:1.0, partial:0.6, incorrect:0.0};
-  const dynamicScore = feedback.score !== undefined ? parseFloat(feedback.score) : (scoreMap[feedback.verdict]||0);
-  const isCorrect = dynamicScore >= 0.9;
-  const isPartial = dynamicScore >= 0.4 && dynamicScore < 0.9;
-  updatePerformance(ex.item, dynamicScore, speedMs);
-  SESSION.answers.push({itemId:ex.item.id, correct:isCorrect, score:dynamicScore, answer, speedMs});
-
-  // Update pending session index
-  STATE.pendingSession.index = SESSION.index + 1;
-  saveState();
-
-  renderFeedback(feedback, ex, dynamicScore);
+  renderReveal(ex, answer);
 }
 
-function renderFeedback(feedback, ex, dynamicScore){
+function renderReveal(ex, userAnswer){
   const body = document.getElementById('session-body');
-  const score = dynamicScore !== undefined ? dynamicScore : (feedback.verdict==='correct'?1:feedback.verdict==='partial'?0.6:0);
-  const verdictClass = score>=0.9?'correct':score>=0.4?'partial':'incorrect';
-  const verdictText = score>=0.9?'Correct':score>=0.4?'Partially correct':'Incorrect';
 
-  // Find example sentence pinyin if the question was sentence-level
+  // Find sentence-level pinyin if applicable
   let sentencePinyin = '';
   if(ex.type==='translate_to_chinese'||ex.type==='translate_to_english'||ex.type==='fill_blank'){
-    const matchedSentence = (ex.item.sentences||[]).find(s=>s.chinese===ex.answer||(ex.prompt_zh&&s.chinese===ex.prompt_zh));
-    if(matchedSentence && matchedSentence.pinyin) sentencePinyin = matchedSentence.pinyin;
+    const m = (ex.item.sentences||[]).find(s=>s.chinese===ex.answer||(ex.prompt_zh&&s.chinese===ex.prompt_zh));
+    if(m && m.pinyin) sentencePinyin = m.pinyin;
   }
-  const displayPinyin = sentencePinyin || feedback.pinyin || ex.item.pinyin || '';
+  const displayPinyin = sentencePinyin || ex.item.pinyin || '';
 
-  const feedbackHTML = `
+  const html = `
     <div class="feedback-box" id="feedback-box">
-      <div class="feedback-verdict">
-        <span class="verdict-badge ${verdictClass}">${verdictText}</span>
-        ${score>0&&score<1?`<span class="verdict-type" style="font-family:var(--mono-font);font-size:11px">${Math.round(score*100)}%</span>`:''}
-        <span class="verdict-type">${feedback.errorType||''}</span>
-      </div>
-      ${feedback.explanation?`<div class="feedback-section">
-        <p class="feedback-section-label">Explanation</p>
-        <p class="feedback-text">${feedback.explanation}</p>
-      </div>`:''}
       <div class="feedback-section">
         <p class="feedback-section-label">Correct answer</p>
-        <p class="feedback-corrected">${feedback.corrected||ex.answer}</p>
+        <p class="feedback-corrected">${ex.answer}</p>
         <p class="feedback-pinyin">${displayPinyin}</p>
+      </div>
+      <p class="feedback-section-label" style="margin-bottom:10px">How did you do?</p>
+      <div class="self-assess-row">
+        <button class="self-assess-btn sa-wrong"  onclick="selfAssess(0)">
+          <span class="sa-emoji">😕</span>Wrong
+        </button>
+        <button class="self-assess-btn sa-close"  onclick="selfAssess(0.6)">
+          <span class="sa-emoji">🤔</span>Close
+        </button>
+        <button class="self-assess-btn sa-correct" onclick="selfAssess(1)">
+          <span class="sa-emoji">✓</span>Got it
+        </button>
       </div>
     </div>
   `;
-  body.insertAdjacentHTML('beforeend', feedbackHTML);
+  body.insertAdjacentHTML('beforeend', html);
   body.scrollTop = body.scrollHeight;
 
+  // Hide the submit button area — self-assess buttons take over
   const footer = document.getElementById('session-footer');
-  footer.innerHTML = `<button class="btn-primary" onclick="advanceQuestion()">Next →</button>`;
+  footer.innerHTML = '';
 }
 
+function selfAssess(score){
+  const {answer, speedMs, ex} = SESSION.pendingAnswer || {};
+  if(!ex) return;
+
+  const isCorrect = score >= 0.9;
+  updatePerformance(ex.item, score, speedMs);
+  SESSION.answers.push({itemId:ex.item.id, correct:isCorrect, score, answer, speedMs});
+  STATE.pendingSession.index = SESSION.index + 1;
+  saveState();
+
+  advanceQuestion();
+}
+
+// renderFeedback replaced by renderReveal + selfAssess
+
 function advanceQuestion(){
+  SESSION.pendingAnswer = null;
   SESSION.index++;
   if(SESSION.index >= SESSION.queue.length) showSessionComplete();
   else renderQuestion();
@@ -1134,21 +1157,48 @@ async function getAIFeedback(ex, userAnswer){
   };
   const prompt = prompts[ex.type] || prompts.produce_chinese;
   try{
-    const res = await fetch('https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions',{
+    // Model mapping: Alibaba names → OpenRouter names
+    const modelMap = {
+      'qwen-turbo': 'qwen/qwen-turbo',
+      'qwen-plus':  'qwen/qwen-plus',
+      'qwen-max':   'qwen/qwen-max'
+    };
+    const activeModel = STATE.qwenModel && STATE.qwenModel !== 'off' ? STATE.qwenModel : 'qwen-plus';
+    const orModel = modelMap[activeModel] || 'qwen/qwen-plus';
+
+    const res = await fetch('https://openrouter.ai/api/v1/chat/completions',{
       method:'POST',
-      headers:{'Content-Type':'application/json','Authorization':'Bearer '+STATE.qwenKey},
+      headers:{
+        'Content-Type':'application/json',
+        'Authorization':'Bearer '+STATE.qwenKey,
+        'HTTP-Referer':'https://antoinebonnetcode.github.io',
+        'X-Title':'漢語 Chinese Companion'
+      },
       body:JSON.stringify({
-        model:(STATE.qwenModel&&STATE.qwenModel!=='off')?STATE.qwenModel:'qwen-plus',
+        model: orModel,
         messages:[{role:'user',content:prompt}],
         max_tokens:400,
         temperature:0.1
       })
     });
+    if(!res.ok){
+      const errText = await res.text();
+      console.error('[AI] HTTP',res.status, errText);
+      showDebugToast('AI error '+res.status+': '+errText.substring(0,80));
+      return getLocalFeedback(ex, userAnswer);
+    }
     const data = await res.json();
+    if(data.error){
+      console.error('[AI] API error:', data.error);
+      showDebugToast('API: '+JSON.stringify(data.error).substring(0,80));
+      return getLocalFeedback(ex, userAnswer);
+    }
     const text = data.choices?.[0]?.message?.content||'{}';
     const clean = text.replace(/```json|```/g,'').trim();
     return JSON.parse(clean);
   } catch(e){
+    console.error('[AI] fetch exception:', e);
+    showDebugToast('Exception: '+e.message);
     return getLocalFeedback(ex, userAnswer);
   }
 }
@@ -1165,11 +1215,23 @@ function normChinese(s){
 }
 
 function getLocalFeedback(ex, userAnswer){
-  const ua = normChinese(userAnswer);
-  const ans = normChinese(ex.answer);
+  // For English/French answers: case-insensitive, strip punctuation
+  const isChinese = /[\u4e00-\u9fff]/.test(ex.answer);
+  let ua, ans;
+  if(isChinese){
+    ua = normChinese(userAnswer);
+    ans = normChinese(ex.answer);
+  } else {
+    // Latin answer: lowercase, strip trailing punctuation, collapse spaces
+    const normLatin = s => s.toLowerCase().replace(/[.!?,;:]+$/,'').replace(/\s+/g,' ').trim();
+    ua = normLatin(userAnswer);
+    ans = normLatin(ex.answer);
+    // Also accept any of the slash-separated alternatives e.g. "I / me"
+    const alts = ex.answer.split('/').map(a=>normLatin(a));
+    if(alts.includes(ua)){ return {verdict:'correct', errorType:null, explanation:null, corrected:ex.answer, pinyin:ex.item?.pinyin||''}; }
+  }
   const correct = ua === ans;
-  // partial: first 2 chars match (for Chinese) or first 3 chars (for Latin)
-  const partial = !correct && ans.length>=2 && ua.length>=1 && ans.startsWith(ua.substring(0,Math.min(2,ua.length)));
+  const partial = !correct && ans.length>=2 && ua.length>=1 && ans.toLowerCase().startsWith(ua.substring(0,Math.min(3,ua.length)).toLowerCase());
   return {
     verdict: correct?'correct':partial?'partial':'incorrect',
     errorType: correct?null:'Character error',
@@ -1482,6 +1544,8 @@ function renderSettings(){
   document.querySelectorAll('#lang-en,#lang-fr').forEach(b=>b.classList.remove('selected'));
   document.getElementById('lang-'+(STATE.feedbackLang||'en')).classList.add('selected');
   const activeModel = STATE.qwenModel||'qwen-plus';
+  const dbgEl = document.getElementById('debug-toggle');
+  if(dbgEl) dbgEl.textContent = STATE.debugMode ? 'ON' : 'OFF';
   const modelPillId = 'model-'+(activeModel==='qwen-plus'?'plus':activeModel==='qwen-turbo'?'turbo':activeModel==='qwen-max'?'max':'off');
   const mp = document.getElementById(modelPillId);
   if(mp) mp.classList.add('selected');
@@ -1497,6 +1561,13 @@ const MODEL_DESC = {
   'qwen-plus':  'Recommended · ~€0.01/session. Best balance of speed and accuracy.',
   'qwen-max':   'Highest quality · ~€0.04/session. Use for deep grammar review.'
 };
+
+function toggleDebug(){
+  STATE.debugMode = !STATE.debugMode; saveState();
+  const el = document.getElementById('debug-toggle');
+  if(el) el.textContent = STATE.debugMode ? 'ON' : 'OFF';
+  toast(STATE.debugMode ? 'Debug mode on — API errors will show as toasts' : 'Debug mode off');
+}
 
 function setModel(m, el){
   STATE.qwenModel = m; saveState();
@@ -1709,6 +1780,11 @@ function shuffle(arr){
 }
 
 let toastTimer;
+function showDebugToast(msg){
+  if(!STATE.debugMode) return;
+  toast('🔧 '+msg.substring(0,120));
+}
+
 function toast(msg){
   const el=document.getElementById('toast');
   el.textContent=msg;
