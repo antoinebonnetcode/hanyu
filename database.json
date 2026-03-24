@@ -25,14 +25,7 @@
           "english": "Hello, Teacher!"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w039",
@@ -59,14 +52,7 @@
           "english": "You're welcome, thank you."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w210",
@@ -93,14 +79,7 @@
           "english": "Teacher, goodbye!"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w028",
@@ -127,14 +106,7 @@
           "english": "I have two younger sisters."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w023",
@@ -161,14 +133,7 @@
           "english": "Are you Taiwanese?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w052",
@@ -195,14 +160,7 @@
           "english": "I'm not going; you go ahead."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w021",
@@ -229,14 +187,7 @@
           "english": "Which country are you from?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w047",
@@ -263,19 +214,7 @@
           "english": "What would you like to drink?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [
-          0.5
-        ],
-        "speed_ms": [
-          35399
-        ],
-        "due": 1771858456038,
-        "ef": 2.1799999999999997,
-        "interval": 1,
-        "last_seen": 1771772056038
-      }
+      "grammar_links": []
     },
     {
       "id": "w081",
@@ -302,14 +241,7 @@
           "english": "Please tell me your name."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w125",
@@ -336,14 +268,7 @@
           "english": "I want to learn Chinese."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w031",
@@ -370,14 +295,7 @@
           "english": "OK, thank you."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w045",
@@ -404,14 +322,7 @@
           "english": "He is very busy."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w013",
@@ -433,21 +344,7 @@
           "english": "Learning languages is very interesting."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [
-          0.5,
-          0.5
-        ],
-        "speed_ms": [
-          21778,
-          160246
-        ],
-        "due": 1771858038692,
-        "ef": 1.8599999999999997,
-        "interval": 1,
-        "last_seen": 1771771638692
-      }
+      "grammar_links": []
     },
     {
       "id": "w084",
@@ -474,14 +371,7 @@
           "english": "My mom is a teacher."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w015",
@@ -505,19 +395,7 @@
       ],
       "grammar_links": [
         "g001"
-      ],
-      "performance": {
-        "production": [
-          0.5
-        ],
-        "speed_ms": [
-          137291
-        ],
-        "due": 1771858385331,
-        "ef": 2.1799999999999997,
-        "interval": 1,
-        "last_seen": 1771771985331
-      }
+      ]
     },
     {
       "id": "w115",
@@ -544,14 +422,7 @@
           "english": "Today is the weekend, I want to go hiking."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w110",
@@ -578,14 +449,7 @@
           "english": "Tomorrow is the weekend, let's go hiking."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w018",
@@ -607,14 +471,7 @@
           "english": "What is your job?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w127",
@@ -641,14 +498,7 @@
           "english": "In the morning I eat baozi."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w043",
@@ -675,14 +525,7 @@
           "english": "He doesn't drink coffee."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w022",
@@ -709,14 +552,7 @@
           "english": "Are you coming tomorrow?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w024",
@@ -743,14 +579,7 @@
           "english": "Miss, what would you like to drink?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w025",
@@ -777,14 +606,7 @@
           "english": "Do you have siblings?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w026",
@@ -811,19 +633,7 @@
           "english": "He answered my phone call."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [
-          0.6
-        ],
-        "speed_ms": [
-          133579
-        ],
-        "due": 1771892828590,
-        "ef": 2.1799999999999997,
-        "interval": 1,
-        "last_seen": 1771806428590
-      }
+      "grammar_links": []
     },
     {
       "id": "w027",
@@ -850,14 +660,7 @@
           "english": "We all like to drink tea."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w029",
@@ -884,14 +687,7 @@
           "english": "This cup of tea tastes great."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w030",
@@ -918,14 +714,7 @@
           "english": "This gentleman is a teacher."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w032",
@@ -952,14 +741,7 @@
           "english": "His surname is Chen."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w033",
@@ -986,14 +768,7 @@
           "english": "What is her name?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w034",
@@ -1020,14 +795,7 @@
           "english": "We will go together with you."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w035",
@@ -1054,14 +822,7 @@
           "english": "He is Taiwanese."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w036",
@@ -1088,14 +849,7 @@
           "english": "Welcome to my home."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w037",
@@ -1122,19 +876,7 @@
           "english": "May I ask what your surname is?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [
-          0.5
-        ],
-        "speed_ms": [
-          54103
-        ],
-        "due": 1771858144882,
-        "ef": 2.1799999999999997,
-        "interval": 1,
-        "last_seen": 1771771744882
-      }
+      "grammar_links": []
     },
     {
       "id": "w038",
@@ -1161,14 +903,7 @@
           "english": "Yes, I like to drink tea."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w040",
@@ -1195,14 +930,7 @@
           "english": "Don't mention it, this is my home."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w042",
@@ -1229,19 +957,7 @@
           "english": "Excuse me, what is your name?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [
-          0
-        ],
-        "speed_ms": [
-          66784
-        ],
-        "due": 1771892510712,
-        "ef": 1.96,
-        "interval": 1,
-        "last_seen": 1771806110712
-      }
+      "grammar_links": []
     },
     {
       "id": "w044",
@@ -1268,14 +984,7 @@
           "english": "Please have some tea!"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w046",
@@ -1302,14 +1011,7 @@
           "english": "Does Oolong tea taste good?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w048",
@@ -1336,14 +1038,7 @@
           "english": "There are five people in my family."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w049",
@@ -1370,14 +1065,7 @@
           "english": "He likes to read."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w050",
@@ -1404,14 +1092,7 @@
           "english": "I have two older sisters. What about you?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w051",
@@ -1438,14 +1119,7 @@
           "english": "He has one older brother."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w053",
@@ -1472,14 +1146,7 @@
           "english": "Which one is your book?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w054",
@@ -1506,14 +1173,7 @@
           "english": "What do you want?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w055",
@@ -1540,14 +1200,7 @@
           "english": "Do you want hot or cold coffee?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w056",
@@ -1574,14 +1227,7 @@
           "english": "Do you want Oolong tea or coffee?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w057",
@@ -1608,14 +1254,7 @@
           "english": "Have you been to Japan?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w058",
@@ -1642,19 +1281,7 @@
           "english": "He wants to go to America."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [
-          0
-        ],
-        "speed_ms": [
-          17405
-        ],
-        "due": 1771857792471,
-        "ef": 1.96,
-        "interval": 1,
-        "last_seen": 1771771392471
-      }
+      "grammar_links": []
     },
     {
       "id": "w059",
@@ -1681,14 +1308,7 @@
           "english": "I'm sorry, I don't know."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w060",
@@ -1715,14 +1335,7 @@
           "english": "That is the teacher's book."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w061",
@@ -1749,19 +1362,7 @@
           "english": "My family are all doing well."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [
-          0.5
-        ],
-        "speed_ms": [
-          49790
-        ],
-        "due": 1771857868275,
-        "ef": 2.1799999999999997,
-        "interval": 1,
-        "last_seen": 1771771468275
-      }
+      "grammar_links": []
     },
     {
       "id": "w062",
@@ -1788,14 +1389,7 @@
           "english": "Your home is very beautiful."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w063",
@@ -1822,14 +1416,7 @@
           "english": "This photo is very beautiful."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w064",
@@ -1856,14 +1443,7 @@
           "english": "His family's house is very big."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w065",
@@ -1890,14 +1470,7 @@
           "english": "He is sitting next to me."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w066",
@@ -1924,14 +1497,7 @@
           "english": "There are a lot of books here."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w067",
@@ -1958,14 +1524,7 @@
           "english": "There are a lot of people there."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w068",
@@ -1992,14 +1551,7 @@
           "english": "All these photos were taken by him."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w069",
@@ -2026,14 +1578,7 @@
           "english": "We all like sports."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w070",
@@ -2060,14 +1605,7 @@
           "english": "Do you like taking photos?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w071",
@@ -2094,14 +1632,7 @@
           "english": "Who took that photo?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w072",
@@ -2128,14 +1659,7 @@
           "english": "That house looks very nice."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w073",
@@ -2162,14 +1686,7 @@
           "english": "Who is in that photo?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w074",
@@ -2196,14 +1713,7 @@
           "english": "He doesn't have an older sister."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w075",
@@ -2230,14 +1740,7 @@
           "english": "Her younger sister also really likes sports."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w076",
@@ -2264,14 +1767,7 @@
           "english": "Does your dad like sports?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w077",
@@ -2298,14 +1794,7 @@
           "english": "What nationality is your mom?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w078",
@@ -2332,14 +1821,7 @@
           "english": "The teacher said please come in."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w079",
@@ -2366,14 +1848,7 @@
           "english": "His aunt is a teacher."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w080",
@@ -2400,14 +1875,7 @@
           "english": "May I ask, what is your surname?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w082",
@@ -2434,19 +1902,7 @@
           "english": "I like to read books."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [
-          0
-        ],
-        "speed_ms": [
-          34353
-        ],
-        "due": 1771858555893,
-        "ef": 1.96,
-        "interval": 1,
-        "last_seen": 1771772155893
-      }
+      "grammar_links": []
     },
     {
       "id": "w083",
@@ -2473,14 +1929,7 @@
           "english": "Do you have an older brother?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w085",
@@ -2507,14 +1956,7 @@
           "english": "Do you prefer reading or watching movies?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w086",
@@ -2541,14 +1983,7 @@
           "english": "How many books do you have?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w087",
@@ -2575,14 +2010,7 @@
           "english": "How many friends do you have?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w088",
@@ -2609,14 +2037,7 @@
           "english": "I didn't go."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w089",
@@ -2643,14 +2064,7 @@
           "english": "They are brothers."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w090",
@@ -2677,14 +2091,7 @@
           "english": "They are all sisters."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w091",
@@ -2711,14 +2118,7 @@
           "english": "He has five friends."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w092",
@@ -2745,14 +2145,7 @@
           "english": "He has two older brothers."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w094",
@@ -2779,14 +2172,7 @@
           "english": "On weekends I often go to the park to exercise."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w095",
@@ -2813,14 +2199,7 @@
           "english": "The teacher is speaking and we are all listening."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w096",
@@ -2847,14 +2226,7 @@
           "english": "He doesn't like music, he likes reading."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w097",
@@ -2881,14 +2253,7 @@
           "english": "On weekends I go exercise with friends."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w098",
@@ -2915,19 +2280,7 @@
           "english": "Let's go play baseball on the weekend!"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [
-          0.5
-        ],
-        "speed_ms": [
-          43681
-        ],
-        "due": 1771857758925,
-        "ef": 2.1799999999999997,
-        "interval": 1,
-        "last_seen": 1771771358925
-      }
+      "grammar_links": []
     },
     {
       "id": "w099",
@@ -2954,14 +2307,7 @@
           "english": "Tennis is a lot of fun."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w100",
@@ -2988,14 +2334,7 @@
           "english": "Let's play baseball on the weekend!"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w101",
@@ -3022,14 +2361,7 @@
           "english": "I like music and sports."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w102",
@@ -3056,14 +2388,7 @@
           "english": "I often go swimming."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w103",
@@ -3090,14 +2415,7 @@
           "english": "Do you often watch movies?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w104",
@@ -3124,14 +2442,7 @@
           "english": "Basketball is very fun."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w105",
@@ -3158,14 +2469,7 @@
           "english": "I also want to go see a movie."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w106",
@@ -3192,14 +2496,7 @@
           "english": "Let's go play soccer on the weekend!"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w107",
@@ -3226,14 +2523,7 @@
           "english": "On the weekend we'll go play soccer."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w108",
@@ -3260,14 +2550,7 @@
           "english": "I think he is a good person."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w109",
@@ -3294,14 +2577,7 @@
           "english": "Swimming is fun, do you want to go?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w111",
@@ -3328,14 +2604,7 @@
           "english": "What do you do in the morning?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w112",
@@ -3362,14 +2631,7 @@
           "english": "Where are you going?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w113",
@@ -3396,14 +2658,7 @@
           "english": "Is this good? What do you think?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w114",
@@ -3430,19 +2685,7 @@
           "english": "This is really fun!"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [
-          0
-        ],
-        "speed_ms": [
-          18131
-        ],
-        "due": 1771892858925,
-        "ef": 1.96,
-        "interval": 1,
-        "last_seen": 1771806458925
-      }
+      "grammar_links": []
     },
     {
       "id": "w116",
@@ -3469,14 +2712,7 @@
           "english": "What are you doing tonight?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w117",
@@ -3503,14 +2739,7 @@
           "english": "Do you often watch movies?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w118",
@@ -3537,14 +2766,7 @@
           "english": "Let's go to the movies tonight!"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w119",
@@ -3571,14 +2793,7 @@
           "english": "What sports do you like?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w120",
@@ -3605,14 +2820,7 @@
           "english": "I want to learn Chinese."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w121",
@@ -3639,14 +2847,7 @@
           "english": "Do you like big ones or small ones?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w122",
@@ -3673,14 +2874,7 @@
           "english": "Alright then, let's go together."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w123",
@@ -3707,14 +2901,7 @@
           "english": "You can come to my home."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w124",
@@ -3741,14 +2928,7 @@
           "english": "Do you also want to learn Chinese?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w126",
@@ -3775,14 +2955,7 @@
           "english": "I went hiking together with friends."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w128",
@@ -3809,14 +2982,7 @@
           "english": "Do you like eating Vietnamese dinner?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w129",
@@ -3843,14 +3009,7 @@
           "english": "Have you been to Vietnam?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w130",
@@ -3877,14 +3036,7 @@
           "english": "The aquarium is very fun!"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w131",
@@ -3911,21 +3063,7 @@
           "english": "Do you have many friends?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [
-          0.5,
-          0
-        ],
-        "speed_ms": [
-          48595,
-          73763
-        ],
-        "due": 1771892936879,
-        "ef": 1.6399999999999997,
-        "interval": 1,
-        "last_seen": 1771806536879
-      }
+      "grammar_links": []
     },
     {
       "id": "w132",
@@ -3952,14 +3090,7 @@
           "english": "There are many people in the park."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w133",
@@ -3986,14 +3117,7 @@
           "english": "He is very cute; I like him."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w134",
@@ -4020,14 +3144,7 @@
           "english": "Are you tired?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w135",
@@ -4054,14 +3171,7 @@
           "english": "He is often very busy."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w136",
@@ -4088,14 +3198,7 @@
           "english": "Let's go hiking together!"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w137",
@@ -4122,14 +3225,7 @@
           "english": "There are five of us in total."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w138",
@@ -4156,14 +3252,7 @@
           "english": "How much does this book cost?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w139",
@@ -4190,14 +3279,7 @@
           "english": "That phone is expensive; it costs a lot of money."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w140",
@@ -4224,14 +3306,7 @@
           "english": "He is the owner here."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w141",
@@ -4258,14 +3333,7 @@
           "english": "This is too expensive, I won't buy it."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w142",
@@ -4292,14 +3360,7 @@
           "english": "How much is this cup of tea?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w143",
@@ -4326,14 +3387,7 @@
           "english": "Today is very hot."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w144",
@@ -4360,14 +3414,7 @@
           "english": "Do you like eating baozi?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w145",
@@ -4394,14 +3441,7 @@
           "english": "I want a large one, not a small one."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w146",
@@ -4428,14 +3468,7 @@
           "english": "Medium is fine."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w147",
@@ -4462,14 +3495,7 @@
           "english": "He has a little sister."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w148",
@@ -4496,14 +3522,7 @@
           "english": "Thank you for helping me."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w149",
@@ -4530,14 +3549,7 @@
           "english": "The baozi is cold, I need to microwave it."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w150",
@@ -4564,14 +3576,7 @@
           "english": "I have 100 dollars."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w151",
@@ -4598,14 +3603,7 @@
           "english": "This costs 50 dollars."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w152",
@@ -4632,14 +3630,7 @@
           "english": "Takeaway is fine, thank you."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w153",
@@ -4666,14 +3657,7 @@
           "english": "For here or to go?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w154",
@@ -4700,14 +3684,7 @@
           "english": "How much for one?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w155",
@@ -4734,14 +3711,7 @@
           "english": "Did you buy a new book?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w156",
@@ -4768,14 +3738,7 @@
           "english": "The new phone can go online."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w157",
@@ -4802,14 +3765,7 @@
           "english": "You are way too busy!"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w158",
@@ -4836,14 +3792,7 @@
           "english": "That book is very old."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w159",
@@ -4870,14 +3819,7 @@
           "english": "He has gone; he's not here."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w160",
@@ -4904,14 +3846,7 @@
           "english": "What kind of sports do you like?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w161",
@@ -4938,14 +3873,7 @@
           "english": "I can't go, I'm very busy."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w162",
@@ -4972,19 +3900,7 @@
           "english": "Can this phone go online?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [
-          0.5
-        ],
-        "speed_ms": [
-          37062
-        ],
-        "due": 1771858513747,
-        "ef": 2.1799999999999997,
-        "interval": 1,
-        "last_seen": 1771772113747
-      }
+      "grammar_links": []
     },
     {
       "id": "w163",
@@ -5011,14 +3927,7 @@
           "english": "That one is very expensive."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w164",
@@ -5045,14 +3954,7 @@
           "english": "I want to exercise on the weekend."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w165",
@@ -5079,14 +3981,7 @@
           "english": "I don't like eating this dish."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w166",
@@ -5113,19 +4008,7 @@
           "english": "He went to Japan last year."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [
-          0
-        ],
-        "speed_ms": [
-          134270
-        ],
-        "due": 1771892651231,
-        "ef": 1.96,
-        "interval": 1,
-        "last_seen": 1771806251231
-      }
+      "grammar_links": []
     },
     {
       "id": "w167",
@@ -5152,14 +4035,7 @@
           "english": "Are you busy this month?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w168",
@@ -5186,14 +4062,7 @@
           "english": "What month and day is your birthday?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w169",
@@ -5220,14 +4089,7 @@
           "english": "On Sunday I go hiking."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w170",
@@ -5254,14 +4116,7 @@
           "english": "Do you have free time this week?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w171",
@@ -5288,14 +4143,7 @@
           "english": "Yesterday we went to watch a movie."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w172",
@@ -5322,14 +4170,7 @@
           "english": "I'm not busy at noon."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w173",
@@ -5356,14 +4197,7 @@
           "english": "This afternoon is very hot."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w174",
@@ -5390,14 +4224,7 @@
           "english": "What do you eat for breakfast?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w175",
@@ -5424,14 +4251,7 @@
           "english": "Today I had baozi for lunch."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w176",
@@ -5458,14 +4278,7 @@
           "english": "I like having dinner together with family."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w177",
@@ -5492,14 +4305,7 @@
           "english": "I want to get a new phone."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w178",
@@ -5526,14 +4332,7 @@
           "english": "The baby's diaper is wet."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w179",
@@ -5560,14 +4359,7 @@
           "english": "Is he a teacher? That's right."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w180",
@@ -5594,14 +4386,7 @@
           "english": "Let's go dancing on the weekend!"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w181",
@@ -5628,14 +4413,7 @@
           "english": "I often sing; it's a lot of fun."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w182",
@@ -5662,14 +4440,7 @@
           "english": "Your drawings look great!"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w183",
@@ -5696,14 +4467,7 @@
           "english": "Are you tired? Go to sleep."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w184",
@@ -5730,14 +4494,7 @@
           "english": "Walking is great; you get exercise."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w185",
@@ -5764,14 +4521,7 @@
           "english": "Running is great; you should try it."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w186",
@@ -5798,14 +4548,7 @@
           "english": "Jogging is very good for the body."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w187",
@@ -5832,14 +4575,7 @@
           "english": "Working out is great; I want to go too."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w188",
@@ -5866,14 +4602,7 @@
           "english": "Tonight I want to watch TV."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w189",
@@ -5900,14 +4629,7 @@
           "english": "I need to do homework first, then watch TV."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w190",
@@ -5934,14 +4656,7 @@
           "english": "Riding a bicycle is a lot of fun!"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w191",
@@ -5968,14 +4683,7 @@
           "english": "Yoga is very good for the body."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w192",
@@ -6002,14 +4710,7 @@
           "english": "Everything here is very expensive."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w193",
@@ -6036,14 +4737,7 @@
           "english": "Old ones are cheap; new ones are expensive."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w194",
@@ -6070,14 +4764,7 @@
           "english": "Why don't you like it?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w195",
@@ -6104,14 +4791,7 @@
           "english": "I have 20,000 dollars."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w196",
@@ -6138,14 +4818,7 @@
           "english": "I have 1,000 dollars."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w197",
@@ -6172,14 +4845,7 @@
           "english": "Do you live in a big city?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w198",
@@ -6206,14 +4872,7 @@
           "english": "I like this city."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w199",
@@ -6240,14 +4899,7 @@
           "english": "This computer is very new."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w200",
@@ -6274,14 +4926,7 @@
           "english": "Do you have euros?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w201",
@@ -6308,14 +4953,7 @@
           "english": "Everyone likes eating baozi."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w202",
@@ -6342,14 +4980,7 @@
           "english": "He spent a lot of money buying a phone."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w203",
@@ -6376,14 +5007,7 @@
           "english": "He will probably come today."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w204",
@@ -6410,14 +5034,7 @@
           "english": "Europe is very big and has many cities."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w207",
@@ -6444,14 +5061,7 @@
           "english": "Class is starting; please listen."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w208",
@@ -6478,14 +5088,7 @@
           "english": "Class is over; I want to eat something."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w209",
@@ -6512,14 +5115,7 @@
           "english": "Can you understand what you hear?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w211",
@@ -6546,14 +5142,7 @@
           "english": "The teacher said one more time."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w212",
@@ -6580,14 +5169,7 @@
           "english": "I want to learn to write Chinese."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w213",
@@ -6614,14 +5196,7 @@
           "english": "Excuse me, what is this?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w214",
@@ -6645,14 +5220,7 @@
           "french": "Tu aimes manger du bœuf ?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w215",
@@ -6676,14 +5244,7 @@
           "french": "Tu veux des nouilles ou du riz ?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w216",
@@ -6707,14 +5268,7 @@
           "french": "Ton chinois est vraiment bien — tu l'étudies depuis combien d'années ?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w217",
@@ -6738,14 +5292,7 @@
           "french": "Tu trouves que la nourriture de ce restaurant est bonne ?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w218",
@@ -6769,14 +5316,7 @@
           "french": "Tu sais parler chinois ?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w219",
@@ -6800,14 +5340,7 @@
           "french": "Taiwan a pas mal de snacks célèbres."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w220",
@@ -6831,14 +5364,7 @@
           "french": "Ce magasin est-il connu ?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w221",
@@ -6862,14 +5388,7 @@
           "french": "Quel type de snack tu préfères ?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w222",
@@ -6893,14 +5412,7 @@
           "french": "Quel sport tu aimes le plus ?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w223",
@@ -6924,14 +5436,7 @@
           "french": "Tu veux de la soupe ?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w224",
@@ -6955,14 +5460,7 @@
           "french": "Comment tu es si occupé ?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w225",
@@ -6986,14 +5484,7 @@
           "french": "Tu sais où il est aujourd'hui ?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w226",
@@ -7017,14 +5508,7 @@
           "french": "Tu connais de bons restaurants dans le coin ?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w227",
@@ -7048,14 +5532,7 @@
           "french": "Il est certainement à la maison — va voir."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w228",
@@ -7079,14 +5556,7 @@
           "french": "Qu'est-ce que tu voudrais commander ?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w229",
@@ -7110,14 +5580,7 @@
           "french": "A: Tu aimes aussi les desserts ? B: Oui, c'est ce que j'aime le plus."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w230",
@@ -7141,14 +5604,7 @@
           "french": "Tu sais faire des xiaolongbao ?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w231",
@@ -7172,14 +5628,7 @@
           "french": "Tu trouves que le tofu fermenté est bon ?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w232",
@@ -7203,14 +5652,7 @@
           "french": "Il a dit qu'il peut m'apprendre à faire des desserts — super !"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w233",
@@ -7234,14 +5676,7 @@
           "french": "Tu connais de bons restaurants dans le coin ?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w234",
@@ -7265,14 +5700,7 @@
           "french": "Je veux y aller, mais je suis très occupé aujourd'hui."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w235",
@@ -7296,14 +5724,7 @@
           "french": "Tu crains les plats épicés ?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w236",
@@ -7327,14 +5748,7 @@
           "french": "Il ne craint pas le piquant — il mange de tout."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w237",
@@ -7358,14 +5772,7 @@
           "french": "J'aime beaucoup cuisiner, donc je mange souvent à la maison."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w238",
@@ -7389,14 +5796,7 @@
           "french": "Tu sais faire des desserts toi-même ?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w239",
@@ -7420,14 +5820,7 @@
           "french": "Comment tu cuisines ?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w240",
@@ -7451,14 +5844,7 @@
           "french": "Tu cuisines bien ?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w241",
@@ -7482,14 +5868,7 @@
           "french": "Tu sais parler français ?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w242",
@@ -7513,14 +5892,7 @@
           "french": "Quel dessert tu préfères ?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w243",
@@ -7544,14 +5916,7 @@
           "french": "Ton chinois est pas mal !"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w244",
@@ -7575,14 +5940,7 @@
           "french": "Elle m'a appris à cuisiner — je lui suis très reconnaissant."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w245",
@@ -7606,14 +5964,7 @@
           "french": "Il ne vient pas chez moi — il va jouer au ballon."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w246",
@@ -7637,14 +5988,7 @@
           "french": "Comment tu trouves le café de ce magasin ? C'est un peu cher ?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w247",
@@ -7668,14 +6012,7 @@
           "french": "Qu'est-ce que tu aimes au petit déjeuner ? Du pain ou des nouilles ?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w248",
@@ -7699,14 +6036,7 @@
           "french": "Ce pain contient-il du fromage ?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w249",
@@ -7730,14 +6060,7 @@
           "french": "Tu as trouvé ton téléphone ?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w250",
@@ -7761,14 +6084,7 @@
           "french": "Comment tu vas aujourd'hui ? Ça va ?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w251",
@@ -7792,14 +6108,7 @@
           "french": "Tu sais quelle est la différence entre le bœuf et l'agneau ?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w252",
@@ -7823,14 +6132,7 @@
           "french": "Tu aimes manger du poulet ?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w253",
@@ -7854,14 +6156,7 @@
           "french": "Tu veux du bœuf ou du poulet ?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w254",
@@ -7885,14 +6180,7 @@
           "french": "Tu sais lequel est plus cher, le porc ou le bœuf ?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w255",
@@ -7916,14 +6204,7 @@
           "french": "Tu manges du porc ?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w256",
@@ -7947,14 +6228,7 @@
           "french": "Ce restaurant propose-t-il de l'agneau ?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w257",
@@ -7978,14 +6252,7 @@
           "french": "Tu préfères l'agneau ou le bœuf ?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w258",
@@ -8009,14 +6276,7 @@
           "french": "Tu aimes manger du poisson ?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w259",
@@ -8040,14 +6300,7 @@
           "french": "Le poisson est-il plus cher que le bœuf ?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w260",
@@ -8071,14 +6324,7 @@
           "french": "Tu aimes manger des fruits de mer ?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w261",
@@ -8102,14 +6348,7 @@
           "french": "Tu as peur de manger des crevettes ?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w262",
@@ -8133,14 +6372,7 @@
           "french": "Tu as déjà bu du bubble tea ?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w263",
@@ -8164,14 +6396,7 @@
           "french": "Comment tu aimes manger tes œufs ?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w264",
@@ -8195,14 +6420,7 @@
           "french": "Combien d'assiettes y a-t-il sur la table ?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w265",
@@ -8226,14 +6444,7 @@
           "french": "Il y a un pot de fromage dans le réfrigérateur."
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w266",
@@ -8257,14 +6468,7 @@
           "french": "Ce bol est le tien ?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
     },
     {
       "id": "w267",
@@ -8288,14 +6492,1404 @@
           "french": "Cette bouteille sert à quoi ?"
         }
       ],
-      "grammar_links": [],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      "grammar_links": []
+    },
+    {
+      "id": "w268",
+      "traditional": "他們",
+      "pinyin": "tāmen",
+      "english": "they (for people)",
+      "french": "ils / elles",
+      "part_of_speech": "pronoun",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w269",
+      "traditional": "學校",
+      "pinyin": "xuéxiào",
+      "english": "school",
+      "french": "école",
+      "part_of_speech": "noun",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w270",
+      "traditional": "山上",
+      "pinyin": "shānshàng",
+      "english": "on a mountain / in the mountains",
+      "french": "sur la montagne",
+      "part_of_speech": "noun",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w271",
+      "traditional": "哪裡",
+      "pinyin": "nǎlǐ",
+      "english": "where",
+      "french": "où",
+      "part_of_speech": "pronoun",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w272",
+      "traditional": "遠",
+      "pinyin": "yuǎn",
+      "english": "far",
+      "french": "loin",
+      "part_of_speech": "adjective",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w273",
+      "traditional": "那裡",
+      "pinyin": "nàlǐ",
+      "english": "that place / there",
+      "french": "là-bas / là",
+      "part_of_speech": "pronoun",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w274",
+      "traditional": "風景",
+      "pinyin": "fēngjǐng",
+      "english": "scenery / landscape",
+      "french": "paysage / panorama",
+      "part_of_speech": "noun",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w275",
+      "traditional": "美",
+      "pinyin": "měi",
+      "english": "beautiful",
+      "french": "beau / belle",
+      "part_of_speech": "adjective",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w276",
+      "traditional": "前面",
+      "pinyin": "qiánmiàn",
+      "english": "in front",
+      "french": "devant",
+      "part_of_speech": "noun",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w277",
+      "traditional": "海",
+      "pinyin": "hǎi",
+      "english": "ocean / sea",
+      "french": "mer / océan",
+      "part_of_speech": "noun",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w278",
+      "traditional": "後面",
+      "pinyin": "hòumiàn",
+      "english": "back / behind",
+      "french": "derrière",
+      "part_of_speech": "noun",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w279",
+      "traditional": "山",
+      "pinyin": "shān",
+      "english": "mountain",
+      "french": "montagne",
+      "part_of_speech": "noun",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w280",
+      "traditional": "真的",
+      "pinyin": "zhēnde",
+      "english": "really / truly",
+      "french": "vraiment",
+      "part_of_speech": "adverb",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w281",
+      "traditional": "地方",
+      "pinyin": "dìfang",
+      "english": "place",
+      "french": "endroit / lieu",
+      "part_of_speech": "noun",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w282",
+      "traditional": "現在",
+      "pinyin": "xiànzài",
+      "english": "now",
+      "french": "maintenant",
+      "part_of_speech": "noun",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w283",
+      "traditional": "附近",
+      "pinyin": "fùjìn",
+      "english": "nearby / vicinity",
+      "french": "à proximité / près de",
+      "part_of_speech": "noun",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w284",
+      "traditional": "樓下",
+      "pinyin": "lóuxià",
+      "english": "downstairs",
+      "french": "en bas",
+      "part_of_speech": "noun",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w285",
+      "traditional": "上課",
+      "pinyin": "shàngkè",
+      "english": "to attend class",
+      "french": "aller en cours",
+      "part_of_speech": "verb",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w286",
+      "traditional": "花蓮",
+      "pinyin": "Huālián",
+      "english": "Hualien (city in Taiwan)",
+      "french": "Hualien (ville de Taïwan)",
+      "part_of_speech": "proper noun",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w287",
+      "traditional": "聽說",
+      "pinyin": "tīngshuō",
+      "english": "to hear that / it is said",
+      "french": "on dit que / j'ai entendu dire que",
+      "part_of_speech": "verb",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w288",
+      "traditional": "紅酒",
+      "pinyin": "hóngjiǔ",
+      "english": "red wine",
+      "french": "vin rouge",
+      "part_of_speech": "noun",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w289",
+      "traditional": "燉",
+      "pinyin": "dùn",
+      "english": "to stew / braise",
+      "french": "mijoter / braiser",
+      "part_of_speech": "verb",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w290",
+      "traditional": "麻煩",
+      "pinyin": "máfan",
+      "english": "trouble / troublesome",
+      "french": "ennui / embêtant",
+      "part_of_speech": "adjective",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w291",
+      "traditional": "功課",
+      "pinyin": "gōngkè",
+      "english": "homework",
+      "french": "devoirs",
+      "part_of_speech": "noun",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w292",
+      "traditional": "公司",
+      "pinyin": "gōngsī",
+      "english": "company",
+      "french": "entreprise / société",
+      "part_of_speech": "noun",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w293",
+      "traditional": "旁邊",
+      "pinyin": "pángbiān",
+      "english": "beside / next to",
+      "french": "à côté de",
+      "part_of_speech": "noun",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w294",
+      "traditional": "上面",
+      "pinyin": "shàngmiàn",
+      "english": "above / on top",
+      "french": "au-dessus / en haut",
+      "part_of_speech": "noun",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w295",
+      "traditional": "下面",
+      "pinyin": "xiàmiàn",
+      "english": "below / underneath",
+      "french": "en dessous / en bas",
+      "part_of_speech": "noun",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w296",
+      "traditional": "裡面",
+      "pinyin": "lǐmiàn",
+      "english": "inside",
+      "french": "à l'intérieur",
+      "part_of_speech": "noun",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w297",
+      "traditional": "外面",
+      "pinyin": "wàimiàn",
+      "english": "outside",
+      "french": "à l'extérieur",
+      "part_of_speech": "noun",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w298",
+      "traditional": "游泳池",
+      "pinyin": "yóuyǒngchí",
+      "english": "swimming pool",
+      "french": "piscine",
+      "part_of_speech": "noun",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w299",
+      "traditional": "大樓",
+      "pinyin": "dàlóu",
+      "english": "building / high-rise",
+      "french": "immeuble / grand bâtiment",
+      "part_of_speech": "noun",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w300",
+      "traditional": "一家電影院",
+      "pinyin": "yī jiā diànyǐngyuàn",
+      "english": "a movie theater",
+      "french": "un cinéma",
+      "part_of_speech": "noun",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w301",
+      "traditional": "一家飯店",
+      "pinyin": "yī jiā fàndiàn",
+      "english": "a hotel",
+      "french": "un hôtel",
+      "part_of_speech": "noun",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w302",
+      "traditional": "一家花店",
+      "pinyin": "yī jiā huādiàn",
+      "english": "a flower shop",
+      "french": "un fleuriste",
+      "part_of_speech": "noun",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w303",
+      "traditional": "一家書店",
+      "pinyin": "yī jiā shūdiàn",
+      "english": "a bookstore",
+      "french": "une librairie",
+      "part_of_speech": "noun",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w304",
+      "traditional": "一家銀行",
+      "pinyin": "yī jiā yínháng",
+      "english": "a bank",
+      "french": "une banque",
+      "part_of_speech": "noun",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w305",
+      "traditional": "一家超市",
+      "pinyin": "yī jiā chāoshì",
+      "english": "a supermarket",
+      "french": "un supermarché",
+      "part_of_speech": "noun",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w306",
+      "traditional": "一家郵局",
+      "pinyin": "yī jiā yóujú",
+      "english": "a post office",
+      "french": "un bureau de poste",
+      "part_of_speech": "noun",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w307",
+      "traditional": "近",
+      "pinyin": "jìn",
+      "english": "near / close",
+      "french": "proche / près",
+      "part_of_speech": "adjective",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w308",
+      "traditional": "方便",
+      "pinyin": "fāngbiàn",
+      "english": "convenient",
+      "french": "pratique / commode",
+      "part_of_speech": "adjective",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w309",
+      "traditional": "這裡",
+      "pinyin": "zhèlǐ",
+      "english": "here / this place",
+      "french": "ici / cet endroit",
+      "part_of_speech": "pronoun",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w310",
+      "traditional": "東西",
+      "pinyin": "dōngxi",
+      "english": "things / stuff",
+      "french": "choses / trucs",
+      "part_of_speech": "noun",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w311",
+      "traditional": "商店",
+      "pinyin": "shāngdiàn",
+      "english": "store / shop",
+      "french": "magasin / boutique",
+      "part_of_speech": "noun",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w312",
+      "traditional": "吃飯",
+      "pinyin": "chīfàn",
+      "english": "to eat / have a meal",
+      "french": "manger / prendre un repas",
+      "part_of_speech": "verb",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w313",
+      "traditional": "宿舍",
+      "pinyin": "sùshè",
+      "english": "dormitory",
+      "french": "dortoir / résidence étudiante",
+      "part_of_speech": "noun",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w314",
+      "traditional": "樓",
+      "pinyin": "lóu",
+      "english": "floor / storey / building",
+      "french": "étage / bâtiment",
+      "part_of_speech": "noun",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w315",
+      "traditional": "棟",
+      "pinyin": "dòng",
+      "english": "classifier for buildings",
+      "french": "classificateur pour bâtiments",
+      "part_of_speech": "measure word",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w316",
+      "traditional": "圖書館",
+      "pinyin": "túshūguǎn",
+      "english": "library",
+      "french": "bibliothèque",
+      "part_of_speech": "noun",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w317",
+      "traditional": "教室",
+      "pinyin": "jiàoshì",
+      "english": "classroom",
+      "french": "salle de classe",
+      "part_of_speech": "noun",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w318",
+      "traditional": "荷蘭",
+      "pinyin": "Hélán",
+      "english": "Netherlands / Holland",
+      "french": "Pays-Bas / Hollande",
+      "part_of_speech": "proper noun",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w319",
+      "traditional": "商場",
+      "pinyin": "shāngchǎng",
+      "english": "shopping mall / commercial area",
+      "french": "centre commercial",
+      "part_of_speech": "noun",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w320",
+      "traditional": "以後",
+      "pinyin": "yǐhòu",
+      "english": "after / later / afterwards",
+      "french": "après / plus tard",
+      "part_of_speech": "noun",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w321",
+      "traditional": "加油",
+      "pinyin": "jiāyóu",
+      "english": "come on! / keep it up!",
+      "french": "allez! / courage!",
+      "part_of_speech": "phrase",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w322",
+      "traditional": "出去",
+      "pinyin": "chūqù",
+      "english": "to go out",
+      "french": "sortir",
+      "part_of_speech": "verb",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w323",
+      "traditional": "半夜",
+      "pinyin": "bànyè",
+      "english": "midnight / middle of the night",
+      "french": "minuit / milieu de la nuit",
+      "part_of_speech": "noun",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w324",
+      "traditional": "打電動",
+      "pinyin": "dǎ diàndòng",
+      "english": "to play video games",
+      "french": "jouer aux jeux vidéo",
+      "part_of_speech": "verb",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w325",
+      "traditional": "數學",
+      "pinyin": "shùxué",
+      "english": "mathematics / math",
+      "french": "mathématiques",
+      "part_of_speech": "noun",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w326",
+      "traditional": "啤酒",
+      "pinyin": "píjiǔ",
+      "english": "beer",
+      "french": "bière",
+      "part_of_speech": "noun",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w327",
+      "traditional": "下個星期",
+      "pinyin": "xià ge xīngqī",
+      "english": "next week",
+      "french": "la semaine prochaine",
+      "part_of_speech": "noun",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w328",
+      "traditional": "可靠",
+      "pinyin": "kěkào",
+      "english": "reliable / dependable",
+      "french": "fiable / digne de confiance",
+      "part_of_speech": "adjective",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w329",
+      "traditional": "水彩",
+      "pinyin": "shuǐcǎi",
+      "english": "watercolor / watercolor paint",
+      "french": "aquarelle",
+      "part_of_speech": "noun",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w330",
+      "traditional": "抽象",
+      "pinyin": "chōuxiàng",
+      "english": "abstract",
+      "french": "abstrait",
+      "part_of_speech": "adjective",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w331",
+      "traditional": "畫家",
+      "pinyin": "huàjiā",
+      "english": "painter / artist",
+      "french": "peintre / artiste",
+      "part_of_speech": "noun",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w332",
+      "traditional": "給",
+      "pinyin": "gěi",
+      "english": "to give / for / to",
+      "french": "donner / pour / à",
+      "part_of_speech": "verb",
+      "lesson": 6,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w333",
+      "traditional": "KTV",
+      "pinyin": "KTV",
+      "english": "karaoke (bar)",
+      "french": "karaoké",
+      "part_of_speech": "noun",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w334",
+      "traditional": "分",
+      "pinyin": "fēn",
+      "english": "minute (M)",
+      "french": "minute",
+      "part_of_speech": "measure word",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w335",
+      "traditional": "見面",
+      "pinyin": "jiànmiàn",
+      "english": "to meet (V-sep)",
+      "french": "se retrouver / se rencontrer",
+      "part_of_speech": "verb",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w336",
+      "traditional": "從",
+      "pinyin": "cóng",
+      "english": "from (Prep)",
+      "french": "de / depuis",
+      "part_of_speech": "preposition",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w337",
+      "traditional": "銀行",
+      "pinyin": "yínháng",
+      "english": "bank (N)",
+      "french": "banque",
+      "part_of_speech": "noun",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w338",
+      "traditional": "時候",
+      "pinyin": "shíhòu",
+      "english": "when / the time when (N)",
+      "french": "quand / le moment où",
+      "part_of_speech": "noun",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w339",
+      "traditional": "後天",
+      "pinyin": "hòutiān",
+      "english": "the day after tomorrow (N)",
+      "french": "après-demain",
+      "part_of_speech": "noun",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w340",
+      "traditional": "大安",
+      "pinyin": "Dà'ān",
+      "english": "Da-an (district in Taipei)",
+      "french": "Da-an (quartier de Taipei)",
+      "part_of_speech": "proper noun",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w341",
+      "traditional": "下次",
+      "pinyin": "xià cì",
+      "english": "next time",
+      "french": "la prochaine fois",
+      "part_of_speech": "noun",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w342",
+      "traditional": "沒問題",
+      "pinyin": "méi wèntí",
+      "english": "no problem",
+      "french": "pas de problème",
+      "part_of_speech": "phrase",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w343",
+      "traditional": "對了",
+      "pinyin": "duìle",
+      "english": "by the way",
+      "french": "au fait",
+      "part_of_speech": "phrase",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w344",
+      "traditional": "有空",
+      "pinyin": "yǒu kòng",
+      "english": "to have free time",
+      "french": "avoir du temps libre",
+      "part_of_speech": "verb",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w345",
+      "traditional": "剛",
+      "pinyin": "gāng",
+      "english": "just now (Adv)",
+      "french": "à l'instant / tout juste",
+      "part_of_speech": "adverb",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w346",
+      "traditional": "下課",
+      "pinyin": "xiàkè",
+      "english": "to finish class (V-sep)",
+      "french": "finir le cours",
+      "part_of_speech": "verb",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w347",
+      "traditional": "半",
+      "pinyin": "bàn",
+      "english": "half (N)",
+      "french": "demi",
+      "part_of_speech": "noun",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w348",
+      "traditional": "比賽",
+      "pinyin": "bǐsài",
+      "english": "game / competition (N)",
+      "french": "match / compétition",
+      "part_of_speech": "noun",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w349",
+      "traditional": "結束",
+      "pinyin": "jiéshù",
+      "english": "to finish / to end (Vp)",
+      "french": "finir / terminer",
+      "part_of_speech": "verb",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w350",
+      "traditional": "最近",
+      "pinyin": "zuìjìn",
+      "english": "recently / lately (Adv)",
+      "french": "récemment / dernièrement",
+      "part_of_speech": "adverb",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w351",
+      "traditional": "天",
+      "pinyin": "tiān",
+      "english": "day (M)",
+      "french": "jour",
+      "part_of_speech": "measure word",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w352",
+      "traditional": "書法",
+      "pinyin": "shūfǎ",
+      "english": "calligraphy (N)",
+      "french": "calligraphie",
+      "part_of_speech": "noun",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w353",
+      "traditional": "課",
+      "pinyin": "kè",
+      "english": "class / lesson (N)",
+      "french": "cours / leçon",
+      "part_of_speech": "noun",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w354",
+      "traditional": "開始",
+      "pinyin": "kāishǐ",
+      "english": "to begin / to start (Vp)",
+      "french": "commencer / débuter",
+      "part_of_speech": "verb",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w355",
+      "traditional": "字",
+      "pinyin": "zì",
+      "english": "character (N)",
+      "french": "caractère",
+      "part_of_speech": "noun",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w356",
+      "traditional": "等一下",
+      "pinyin": "děng yīxià",
+      "english": "wait a moment / later",
+      "french": "attends un moment / tout à l'heure",
+      "part_of_speech": "phrase",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w357",
+      "traditional": "有事",
+      "pinyin": "yǒu shì",
+      "english": "to be busy / to have something on",
+      "french": "être occupé / avoir quelque chose à faire",
+      "part_of_speech": "verb",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w358",
+      "traditional": "有意思",
+      "pinyin": "yǒu yìsi",
+      "english": "to be interesting / to be fun",
+      "french": "être intéressant / être amusant",
+      "part_of_speech": "adjective",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w359",
+      "traditional": "刷牙",
+      "pinyin": "shuā yá",
+      "english": "to brush teeth (V-sep)",
+      "french": "se brosser les dents",
+      "part_of_speech": "verb",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w360",
+      "traditional": "洗臉",
+      "pinyin": "xǐ liǎn",
+      "english": "to wash one's face (V-sep)",
+      "french": "se laver le visage",
+      "part_of_speech": "verb",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w361",
+      "traditional": "上班",
+      "pinyin": "shàngbān",
+      "english": "to go to work / start work (V-sep)",
+      "french": "aller au travail / commencer le travail",
+      "part_of_speech": "verb",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w362",
+      "traditional": "下班",
+      "pinyin": "xiàbān",
+      "english": "to finish work / get off work (V-sep)",
+      "french": "finir le travail / quitter le boulot",
+      "part_of_speech": "verb",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w363",
+      "traditional": "開會",
+      "pinyin": "kāihuì",
+      "english": "to have a meeting (V-sep)",
+      "french": "avoir une réunion",
+      "part_of_speech": "verb",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w364",
+      "traditional": "回家",
+      "pinyin": "huíjiā",
+      "english": "to go home (V-sep)",
+      "french": "rentrer à la maison",
+      "part_of_speech": "verb",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w365",
+      "traditional": "做功課",
+      "pinyin": "zuò gōngkè",
+      "english": "to do homework",
+      "french": "faire ses devoirs",
+      "part_of_speech": "verb",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w366",
+      "traditional": "做作業",
+      "pinyin": "zuò zuòyè",
+      "english": "to do assignments / homework",
+      "french": "faire ses exercices / devoirs",
+      "part_of_speech": "verb",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w367",
+      "traditional": "洗澡",
+      "pinyin": "xǐzǎo",
+      "english": "to take a shower / bath (V-sep)",
+      "french": "se doucher / prendre un bain",
+      "part_of_speech": "verb",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w368",
+      "traditional": "洗衣服",
+      "pinyin": "xǐ yīfu",
+      "english": "to do laundry",
+      "french": "faire la lessive",
+      "part_of_speech": "verb",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w369",
+      "traditional": "煮飯",
+      "pinyin": "zhǔfàn",
+      "english": "to cook / make a meal (V-sep)",
+      "french": "cuisiner / préparer un repas",
+      "part_of_speech": "verb",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w370",
+      "traditional": "打掃",
+      "pinyin": "dǎsǎo",
+      "english": "to sweep / clean (V)",
+      "french": "balayer / nettoyer",
+      "part_of_speech": "verb",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w371",
+      "traditional": "洗碗",
+      "pinyin": "xǐ wǎn",
+      "english": "to wash dishes (V-sep)",
+      "french": "faire la vaisselle",
+      "part_of_speech": "verb",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w372",
+      "traditional": "休息",
+      "pinyin": "xiūxi",
+      "english": "to rest (V)",
+      "french": "se reposer",
+      "part_of_speech": "verb",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w373",
+      "traditional": "玩",
+      "pinyin": "wán",
+      "english": "to play / have fun (V)",
+      "french": "jouer / s'amuser",
+      "part_of_speech": "verb",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w374",
+      "traditional": "香蕉",
+      "pinyin": "xiāngjiāo",
+      "english": "banana (N)",
+      "french": "banane",
+      "part_of_speech": "noun",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w375",
+      "traditional": "時間",
+      "pinyin": "shíjiān",
+      "english": "time / period of time (N)",
+      "french": "temps / durée",
+      "part_of_speech": "noun",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w376",
+      "traditional": "最後",
+      "pinyin": "zuìhòu",
+      "english": "finally / last / in the end (Adv)",
+      "french": "finalement / en dernier",
+      "part_of_speech": "adverb",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w377",
+      "traditional": "玩桌游",
+      "pinyin": "wán zhuōyóu",
+      "english": "to play board games",
+      "french": "jouer à des jeux de société",
+      "part_of_speech": "verb",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w378",
+      "traditional": "前天",
+      "pinyin": "qiántiān",
+      "english": "the day before yesterday (N)",
+      "french": "avant-hier",
+      "part_of_speech": "noun",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w379",
+      "traditional": "去年",
+      "pinyin": "qùnián",
+      "english": "last year (N)",
+      "french": "l'année dernière",
+      "part_of_speech": "noun",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w380",
+      "traditional": "今年",
+      "pinyin": "jīnnián",
+      "english": "this year (N)",
+      "french": "cette année",
+      "part_of_speech": "noun",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w381",
+      "traditional": "明年",
+      "pinyin": "míngnián",
+      "english": "next year (N)",
+      "french": "l'année prochaine",
+      "part_of_speech": "noun",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w382",
+      "traditional": "後年",
+      "pinyin": "hòunián",
+      "english": "the year after next (N)",
+      "french": "dans deux ans",
+      "part_of_speech": "noun",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w383",
+      "traditional": "年輕",
+      "pinyin": "niánqīng",
+      "english": "young (Vs)",
+      "french": "jeune",
+      "part_of_speech": "adjective",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w384",
+      "traditional": "然後",
+      "pinyin": "ránhòu",
+      "english": "then / after that (Conj)",
+      "french": "puis / ensuite",
+      "part_of_speech": "conjunction",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w385",
+      "traditional": "公里",
+      "pinyin": "gōnglǐ",
+      "english": "kilometer (M)",
+      "french": "kilomètre",
+      "part_of_speech": "measure word",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w386",
+      "traditional": "遲到",
+      "pinyin": "chídào",
+      "english": "to be late / arrive late (V-sep)",
+      "french": "être en retard / arriver en retard",
+      "part_of_speech": "verb",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w387",
+      "traditional": "衣服",
+      "pinyin": "yīfu",
+      "english": "clothes (N)",
+      "french": "vêtements",
+      "part_of_speech": "noun",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w388",
+      "traditional": "開心",
+      "pinyin": "kāixīn",
+      "english": "happy / glad (Vs)",
+      "french": "heureux / content",
+      "part_of_speech": "adjective",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w389",
+      "traditional": "岳母",
+      "pinyin": "yuèmǔ",
+      "english": "mother-in-law (wife's mother) (N)",
+      "french": "belle-mère (mère de l'épouse)",
+      "part_of_speech": "noun",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w390",
+      "traditional": "壓力",
+      "pinyin": "yālì",
+      "english": "pressure / stress (N)",
+      "french": "pression / stress",
+      "part_of_speech": "noun",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w391",
+      "traditional": "聊天",
+      "pinyin": "liáotiān",
+      "english": "to chat / have a conversation (V-sep)",
+      "french": "bavarder / discuter",
+      "part_of_speech": "verb",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w392",
+      "traditional": "找到",
+      "pinyin": "zhǎodào",
+      "english": "to find / to have found (V)",
+      "french": "trouver / avoir trouvé",
+      "part_of_speech": "verb",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w393",
+      "traditional": "打電話給",
+      "pinyin": "dǎ diànhuà gěi",
+      "english": "to call someone (V)",
+      "french": "appeler quelqu'un (au téléphone)",
+      "part_of_speech": "verb",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
+    },
+    {
+      "id": "w394",
+      "traditional": "同事",
+      "pinyin": "tóngshì",
+      "english": "colleague / coworker (N)",
+      "french": "collègue",
+      "part_of_speech": "noun",
+      "lesson": 7,
+      "sentences": [],
+      "grammar_links": []
     }
   ],
   "grammar": [
@@ -8317,14 +7911,7 @@
           "pinyin": "Tā shì Fàguó rén.",
           "english": "He is French."
         }
-      ],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      ]
     },
     {
       "id": "g002",
@@ -8344,14 +7931,7 @@
           "pinyin": "Wǒ bù hē kāfēi.",
           "english": "I don't drink coffee."
         }
-      ],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      ]
     },
     {
       "id": "g003",
@@ -8371,14 +7951,7 @@
           "pinyin": "Zhōngwén hěn nán.",
           "english": "Chinese is difficult."
         }
-      ],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      ]
     },
     {
       "id": "g004",
@@ -8398,14 +7971,7 @@
           "pinyin": "Nǐ xǐhuān Zhōngwén ma?",
           "english": "Do you like Chinese?"
         }
-      ],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      ]
     },
     {
       "id": "g005",
@@ -8430,14 +7996,7 @@
           "pinyin": "Wǒ de Zhōngwén lǎoshī hěn hǎo.",
           "english": "My Chinese teacher is very good."
         }
-      ],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      ]
     },
     {
       "id": "g006",
@@ -8457,14 +8016,7 @@
           "pinyin": "Míngtiān nǐ qù nǎlǐ?",
           "english": "Where are you going tomorrow?"
         }
-      ],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      ]
     },
     {
       "id": "g007",
@@ -8489,14 +8041,7 @@
           "pinyin": "Tā lái bù lái Táiwān?",
           "english": "Is he coming to Taiwan?"
         }
-      ],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      ]
     },
     {
       "id": "g008",
@@ -8521,14 +8066,7 @@
           "pinyin": "Nǐ yào hē chá ma?",
           "english": "Do you want to drink tea?"
         }
-      ],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      ]
     },
     {
       "id": "g009",
@@ -8548,14 +8086,7 @@
           "pinyin": "Bù, tā bù hē.",
           "english": "No, he doesn't drink (tea)."
         }
-      ],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      ]
     },
     {
       "id": "g010",
@@ -8580,14 +8111,7 @@
           "pinyin": "Tā hěn xǐhuān Táiwān.",
           "english": "He likes Taiwan."
         }
-      ],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      ]
     },
     {
       "id": "g011",
@@ -8607,14 +8131,7 @@
           "pinyin": "Wáng Xiānshēng shì Rìběn rén, Lǐ Xiānshēng ne?",
           "english": "Mr. Wang is Japanese. What about Mr. Li?"
         }
-      ],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      ]
     },
     {
       "id": "g012",
@@ -8639,14 +8156,7 @@
           "pinyin": "wǒ māma",
           "english": "my mom (的 omitted)"
         }
-      ],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      ]
     },
     {
       "id": "g013",
@@ -8671,14 +8181,7 @@
           "pinyin": "hǎohē de kāfēi",
           "english": "tasty coffee"
         }
-      ],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      ]
     },
     {
       "id": "g014",
@@ -8703,14 +8206,7 @@
           "pinyin": "Nǐ yǒu méi yǒu xiōngdì jiěmèi?",
           "english": "Do you have any brothers or sisters?"
         }
-      ],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      ]
     },
     {
       "id": "g015",
@@ -8735,14 +8231,7 @@
           "pinyin": "Zhè liǎng zhāng zhàopiàn dōu shì wǒ jiějie de.",
           "english": "Both of these two photos are my older sister's."
         }
-      ],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      ]
     },
     {
       "id": "g016",
@@ -8767,14 +8256,7 @@
           "pinyin": "Jǐ gè lǎoshī?",
           "english": "How many teachers?"
         }
-      ],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      ]
     },
     {
       "id": "g017",
@@ -8799,14 +8281,7 @@
           "pinyin": "Míngtiān wǎnshàng wǒmen kàn shénme diànyǐng?",
           "english": "What movie are we watching tomorrow evening?"
         }
-      ],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      ]
     },
     {
       "id": "g018",
@@ -8831,14 +8306,7 @@
           "pinyin": "Nǐmen cháng qù chī Yuènán cài ma?",
           "english": "Do you often go eat Vietnamese food?"
         }
-      ],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      ]
     },
     {
       "id": "g019",
@@ -8863,14 +8331,7 @@
           "pinyin": "Dìdi, mèimei, wǒ dōu yǒu.",
           "english": "Younger brothers and sisters — I have both."
         }
-      ],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      ]
     },
     {
       "id": "g020",
@@ -8895,14 +8356,7 @@
           "pinyin": "Wǒ bù cháng kàn diànyǐng.",
           "english": "I don't watch movies often."
         }
-      ],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      ]
     },
     {
       "id": "g021",
@@ -8927,14 +8381,7 @@
           "pinyin": "Wǒmen dǎ wǎngqiú ba!",
           "english": "Let's play tennis!"
         }
-      ],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      ]
     },
     {
       "id": "g022",
@@ -8959,14 +8406,7 @@
           "pinyin": "Nǎ zhǒng shǒujī bù guì?",
           "english": "Which type of cell phone is not expensive?"
         }
-      ],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      ]
     },
     {
       "id": "g023",
@@ -8991,14 +8431,7 @@
           "pinyin": "Shéi néng bāng Āntóng wēibō bāozi?",
           "english": "Who can microwave a baozi for Antong?"
         }
-      ],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      ]
     },
     {
       "id": "g024",
@@ -9023,14 +8456,7 @@
           "pinyin": "Zhè bēi kāfēi bù rè, wǒ yào rè de.",
           "english": "This cup of coffee is not hot. I want a hot one."
         }
-      ],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      ]
     },
     {
       "id": "g025",
@@ -9055,14 +8481,7 @@
           "pinyin": "Wǒ zhè zhī shǒujī tài jiù le, bù hǎokàn.",
           "english": "This cell phone of mine is too old. It's unattractive."
         }
-      ],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      ]
     },
     {
       "id": "g026",
@@ -9087,14 +8506,7 @@
           "pinyin": "Nǐ de shǒujī néng bu néng shàngwǎng?",
           "english": "Can your cell phone go online?"
         }
-      ],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      ]
     },
     {
       "id": "g027",
@@ -9119,14 +8531,7 @@
           "pinyin": "Yī zhī yào yīwàn wǔqiān duō.",
           "english": "One costs over NT$15,000."
         }
-      ],
-      "performance": {
-        "production": [],
-        "speed_ms": [],
-        "due": 0,
-        "ef": 2.5,
-        "interval": 0
-      }
+      ]
     },
     {
       "id": "g028",
